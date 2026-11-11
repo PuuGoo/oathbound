@@ -1,0 +1,20 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+# Assets retained locally; user supply does not establish public distribution rights.
+- path: assets/mounted-lancer.png
+  origin: you
+  source:
+    vendor: "User-supplied AFK Arena asset; original rights holder not verified"
+    product: "Estrilda / Mounted Lancer Animation Sprite Sheet"
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/Estrilda/Mounted Lancer Animation Sprite Sheet.png"
+  licence:
+    id: UNKNOWN
+    note: "Explicitly approved for this local prototype; public distribution rights unverified."
+  date: 2026-11-11
+  ships: false
+  usage: "Loaded locally by index.html; not approved for public export."
+- path: assets/notes.md
+  origin: code
+  tool: "Claude Code asset mapping notes"
+  model: "tinb/gpt-6.1-sol"
+  date: 2026-11-11
+  ships: false

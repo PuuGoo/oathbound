@@ -1,0 +1,144 @@
+# The one-shot's small check (check-run/1).
+# Written by one-shot-check.sh --record: the results are /prototype's reading of
+# evidence/self-check.tsv; never edited by hand.
+kind: check-run/1
+engine: web
+browser: "HeadlessChrome/157.0.0.0"
+time: "2026-11-11 21:28:57"
+checks:
+  - id: boots
+    result: pass
+    evidence:
+      - "evidence/self-check.tsv"
+  - id: shot
+    result: pass
+    evidence:
+      - "evidence/play.png"
+  - id: outlines
+    result: pass
+    evidence:
+      - "evidence/figures.png"
+  - id: brief-words
+    result: pass
+    evidence:
+      - "evidence/brief-words.tsv"
+  - id: emoji
+    result: pass
+    evidence:
+      - "evidence/self-check.tsv"
+  - id: nearest-game
+    result: pass
+    evidence:
+      - "evidence/nearest-game.txt"
+brief_checklist:
+  - id: L1
+    result: pass
+    evidence: "evidence/play.png"
+    item: "Mood / View: Fantasy cổ tích trang trọng; sân đấu 2D nhìn ngang, hai đội đối diện, camera cố định. *(inferred (strong))*"
+  - id: L2
+    result: pass
+    evidence: "evidence/figures.png"
+    item: "Shapes / Values: Năm dáng riêng: kỵ sĩ thương, hộ vệ khiên, xạ thủ, pháp sư và trị liệu; nền dịu để nhân vật và đòn đánh nổi bật. *(guessed)*"
+  - id: L3
+    result: pass
+    evidence: "evidence/figures.png"
+    item: "Palette: Xanh hải quân–vàng cho anh hùng, tím than–đỏ cho nguy hiểm; ánh sáng ấm và bóng lạnh. *(inferred (strong))*"
+  - id: L4
+    result: fail
+    why: broken
+    evidence: "evidence/figures.png"
+    item: "Detail / Rules / Signature: Trang phục nhiều lớp, viền thống nhất, đổ bóng minh họa; vệt sáng theo vũ khí và ấn ký khi tiến hóa; mọi nhân vật được vẽ, không emoji hay hình tròn thay nhân vật. *(guessed)*"
+  - id: L5
+    result: not_run
+    mark: not assessed
+    why: "Sprite sheet was viewed and original silhouettes drawn; Campaign page returned HTTP 402, so exact reference content could not be checked."
+    evidence: "evidence/nearest-game.txt"
+    item: "References: Mounted Lancer Animation Sprite Sheet.png tại đường dẫn trên cho tỷ lệ, tư thế, hiệu ứng; AFK Arena cho ý tưởng đội hình và chiến dịch, không lấy nhân vật hay UI nguyên bản. Trang Campaign trả HTTP 402, nội dung chưa xác minh."
+  - id: F1
+    result: pass
+    evidence: "index.html:59"
+    item: "Đội 5 anh hùng đấu 5 địch, bố trí 2 trước / 3 sau; xem kỹ năng trước trận. *(bố trí guessed)*"
+  - id: F2
+    result: pass
+    evidence: "evidence/play.png"
+    item: "Tự đánh theo lượt; hiển thị người sắp hành động, sát thương, hồi máu và trạng thái. *(hiển thị guessed)*"
+  - id: F3
+    result: pass
+    evidence: "index.html:69"
+    item: "Năm vai trò phối hợp; ít nhất ba loại địch có hành vi khác nhau. *(guessed)*"
+  - id: F4
+    result: pass
+    evidence: "index.html:49"
+    item: "Map 2 chương × 5 ải mở tuần tự, thủ lĩnh cuối chương. *(quy mô guessed)*"
+  - id: F5
+    result: pass
+    evidence: "evidence/evolution.png"
+    item: "Vàng + kinh nghiệm tăng cấp; nguyên liệu riêng tiến hóa một bậc tăng chỉ số và cải thiện kỹ năng (thin stand-in). *(công thức guessed)*"
+  - id: F6
+    result: pass
+    evidence: "index.html:53"
+    item: "Thưởng lần đầu và đánh lại; lưu đội, tài nguyên, ải đã mở trong trình duyệt. *(guessed)*"
+  - id: F7
+    result: pass
+    evidence: "index.html:89"
+    item: "Hoạt ảnh chờ, tấn công, trúng đòn, bị hạ; kết quả rõ ràng. *(inferred (strong))*"
+  - id: S1
+    result: pass
+    evidence: "evidence/play.png"
+    item: "5 anh hùng đấu 5 quái chiến dịch · in the slice"
+  - id: S2
+    result: pass
+    evidence: "evidence/play.png"
+    item: "đội tự đánh theo lượt · in the slice"
+  - id: S3
+    result: pass
+    evidence: "evidence/map.png"
+    item: "nâng cấp tướng bằng tài nguyên · thin stand-in *(guessed)*"
+  - id: S4
+    result: pass
+    evidence: "evidence/evolution.png"
+    item: "tiến hóa tướng · thin stand-in *(guessed)*"
+  - id: S5
+    result: pass
+    evidence: "index.html:50"
+    item: "map chiến dịch, độ khó tăng theo chương · in the slice"
+  - id: M1
+    result: pass
+    evidence: "evidence/map.png"
+    item: "Mở bản đồ tại ải 1-1 với đủ năm anh hùng."
+  - id: M2
+    result: pass
+    evidence: "evidence/play.png"
+    item: "Bạn xem vai trò, bắt đầu và thấy hai đội tự đánh theo thứ tự lượt."
+  - id: M3
+    result: pass
+    evidence: "evidence/victory.png"
+    item: "Chiến thắng cộng tài nguyên, gợi ý nâng cấp rồi bước sang ải tiếp."
+  - id: M4
+    result: pass
+    evidence: "brief.md:27"
+    item: "*(guessed)*"
+  - id: C1
+    result: pass
+    evidence: "index.html:50"
+    item: "Độ khó tăng theo chương."
+  - id: C2
+    result: not_run
+    mark: not assessed
+    why: "Enemy composition and bosses implemented, but whether stage 1-3 requires upgrades and full difficulty curve needs human play; only stages 1-1 and 1-2 observed to victory."
+    evidence: "index.html:49"
+    item: "Ải 1-1 dạy đọc trận, 1-3 bắt đầu cần nâng cấp hoặc đổi vị trí, 1-5 có thủ lĩnh; chương 2 phối hợp địch khó hơn."
+  - id: C3
+    result: pass
+    evidence: "index.html:75"
+    item: "Thua không mất tài nguyên hay tướng, được thử lại."
+  - id: C4
+    result: pass
+    evidence: "brief.md:30"
+    item: "*(chi tiết provisional)*"
+measures:
+  - id: step-time
+    value: 0.800
+    unit: ms
+    by: browser
+    detail: "mean 0.012 ms, slowest 0.800 ms, 282 steps"

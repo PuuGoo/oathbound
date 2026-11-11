@@ -1,0 +1,25 @@
+L1	pass	evidence/play.png	Fixed 2D side-facing fantasy battle, original forest backdrop.
+L2	pass	evidence/figures.png	Mounted lancer, broad shield, hood and bow, robed mage and lantern healer have different outlines.
+L3	pass	evidence/figures.png	Navy and gold allies, muted purple enemies, warm accents and cool scenery.
+L4	broken	evidence/figures.png	Original outlined vector figures and effects exist, but illustration detail falls short of the supplied detailed sprite reference; movement is procedural, not full sprite animation.
+L5	not_assessed	evidence/nearest-game.txt	Sprite sheet was viewed and original silhouettes drawn; Campaign page returned HTTP 402, so exact reference content could not be checked.
+F1	pass	index.html:59	Five units each side; formation slots 0-1 front and 2-4 back, swap by selecting cards; side panel describes selected ability.
+F2	pass	evidence/play.png	Visible next actors, HP, damage; act() implements healing and shielding.
+F3	pass	index.html:69	Five original hero roles; brute, archer, shaman, assassin and boss have distinct targeting or skills.
+F4	pass	index.html:49	Config defines 2 chapters with 5 stages, progressive unlock and boss at each chapter end; only early stages were played.
+F5	pass	evidence/evolution.png	Observed level 3 Aveline evolve to Tinh Anh; gold and four shards spent, HP/attack increased; act() improves evolved skills.
+F6	pass	index.html:53	First-clear vs repeat reward rules, persistent storage with validation and writes after currency/formation changes; browser confirmed saves, reload persistence not separately exercised.
+F7	pass	index.html:89	Procedural idle, attack motion, hit flash, death fade; victory screen observed in evidence/victory.png. Not a full sprite animation set.
+S1	pass	evidence/play.png	Five allies against five enemies observed.
+S2	pass	evidence/play.png	Actions execute without individual player commands via fixed-step queue.
+S3	pass	evidence/map.png	Two upgrades consumed gold and experience, level 3 displayed.
+S4	pass	evidence/evolution.png	One-tier evolution working and observed after clearing two stages.
+S5	pass	index.html:50	Chapter and stage growth multiplies enemy stats, boss and later enemy behavior changes wired to stages.
+M1	pass	evidence/map.png	Chapter 1 map starts with a full team and stage 1-1 selected.
+M2	pass	evidence/play.png	Role cards and ordered automatic combat visible.
+M3	pass	evidence/victory.png	Rewards observed; renderUI result text guides upgrade, returnMap selects the next stage.
+M4	pass	brief.md:27	Guessed label is metadata for the preceding first-minute sentences, not a separate mechanic.
+C1	pass	index.html:50	Enemy scaling increases by stage and chapter; formula exists, balance not judged by smoke test.
+C2	not_assessed	index.html:49	Enemy composition and bosses implemented, but whether stage 1-3 requires upgrades and full difficulty curve needs human play; only stages 1-1 and 1-2 observed to victory.
+C3	pass	index.html:75	Defeat does not spend resources or clear progress; results provides retry and map recovery. Defeat screen not separately exercised.
+C4	pass	brief.md:30	Provisional label is metadata for the preceding challenge sentences.
