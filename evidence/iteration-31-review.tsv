@@ -1,0 +1,8 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+iteration	31
+scope	Direct actual distance/ranged/moveUnit/constrainUnit helper checks; no alternate combat loop, source/config/balance changes or browser run.
+result	10 named cases passed; retained output iteration-31-movement-unit.tsv.
+covered	Diagonal speed, melee/ranged stopping boundaries, already-in-range no movement, lancer/assassin multipliers, charge speed/stop, retreat direction/facing, leftward facing, zero timestep, finite coincident positions and arena bounds.
+counts	118 named cases now exist across ten files; only the10 new movement cases ran this iteration, NOT a fresh combined118 pass. Previous combined run was96 cases in iteration25;12 progression cases ran separately in iteration26.
+not_assessed	AI movement decisions, ally separation, full encounters, animation quality, native input, actual90-second timeout and all four live lancer skill variants.
+interpretation	No source defect established. Fixed-helper coverage is not a visual/feel pass. No speculative gameplay change.

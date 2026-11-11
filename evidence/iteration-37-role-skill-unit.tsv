@@ -1,0 +1,10 @@
+PASS	warden shields living front slots only
+PASS	warden falls back to self when no front slot survives
+PASS	warden preserves stronger existing shield rather than stacking
+PASS	mage releases exactly one area delivery per living foe
+PASS	enemy boss area skill targets heroes not own team
+PASS	lancer secondary delivery excludes primary and dead rear targets
+PASS	evolution adds skill multiplier but not normal attack multiplier
+PASS	enemy shaman heals living own-team replacement after target death
+unit_total	8
+not_assessed	projectile arrival, actual damage, live skill timing/animation and full encounters; delivery calls recorded, not simulated

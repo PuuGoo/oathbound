@@ -1,0 +1,127 @@
+browser	/c/Program Files/Google/Chrome/Application/chrome.exe
+time	2026-11-12 02:55:08
+render	cheap
+ua	HeadlessChrome/157.0.0.0
+scene	0	title
+state	0	title	{"t":0,"score":4,"gained":"","chapter":0,"selectedStage":4,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+scene	1	play
+state	1	play	{"t":0.02,"score":4,"gained":"","chapter":0,"selectedStage":4,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+playinput	64	click:text=Estrilda
+saved	128	localstorage	oathbound.save.v1
+scene	972	results
+state	972	results	{"t":16.2,"score":5,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":4,"selectedHero":0,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":4,"heroes":[{"maxHP":931,"attack":95
+state	1014	results	{"t":16.9,"score":5,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":4,"selectedHero":0,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":4,"heroes":[{"maxHP":931,"attack":95
+digits	log	14px "Segoe UI", Arial	tabular	0
+digits	log	12px "Segoe UI", Arial	tabular	0
+digits	log	19px "Segoe UI", Arial	tabular	0
+loop	log	none	no loop() step was marked
+first	log	none	no state.beat
+ending	log	results	gained	Ải đã được giải phóng
+pressure	none	the game set no number state.margin in play
+steptime	1014	0.028	1.100
+frametime	16	55.7	116.7	60	16	8
+done	1014	results	stop	16.9	1631
+measured	1280x720
+text	results	canvas	476,205,498,216	16.2	10.86	inside	Sylra
+text	results	canvas	531,261,554,269	16.2	11.91	inside	Lumi
+text	results	canvas	513,318,541,326	16.2	11.04	inside	Orren
+text	results	canvas	463,294,510,303	16.2	11.91	inside	406 / 490
+text	results	canvas	520,390,564,399	16.2	11.83	inside	931 / 931
+text	results	canvas	504,447,550,456	16.2	11.76	inside	408 / 490
+text	results	canvas	734,204,763,216	22.9	2.53	inside	−95
+text	results	canvas	734,223,763,235	22.9	12.01	inside	−76
+text	results	html	89,14,291,41	13.5	13.57	inside	OATHBOUND
+text	results	html	89,45,261,59	13.5	8.21	inside	CHIẾN DỊCH BÌNH MINH
+text	results	html	349,18,586,36	13.5	13.57	inside	Chương 1 · Rừng Thức Giấc
+text	results	html	349,42,574,57	13.5	8.21	inside	5 / 10 ải đã giải phóng · Sức mạnh đội 7364
+text	results	html	855,21,887,36	13.5	8.21	inside	VÀNG
+text	results	html	855,36,878,54	13.5	13.57	inside	283
+text	results	html	927,21,1006,36	13.5	8.21	inside	KINH NGHIỆM
+text	results	html	927,36,950,54	13.5	13.57	inside	325
+text	results	html	1045,21,1121,36	13.5	8.21	inside	ẤN TIẾN HÓA
+text	results	html	1045,36,1053,54	13.5	13.57	inside	2
+text	results	html	1150,30,1181,45	13.5	9.72	inside	Đặt lại
+text	results	html	89,100,346,114	13.5	9.95	inside	ẢI 1-5 · TỰ CHIẾN THỜI GIAN THỰC
+text	results	html	89,114,268,142	13.5	13.57	inside	Ngai Sừng Tàn
+text	results	html	784,112,868,131	13.5	9.72	inside	Tạm dừng · P
+text	results	html	99,166,149,180	13.5	10.56	inside	Lumi · 1.0s
+text	results	html	174,166,235,180	13.5	12.79	inside	Bram · Đã hạ
+text	results	html	260,166,309,180	13.5	12.79	inside	Sylra · 0.1s
+text	results	html	335,166,389,180	13.5	12.79	inside	Orren · 3.3s
+text	results	html	414,166,485,180	13.5	12.79	inside	Estrilda · Đã hạ
+text	results	html	940,120,1101,134	13.5	9.95	inside	GIAO TRANH LIÊN TỤC
+text	results	html	1136,120,1169,134	13.5	9.95	inside	5 vs 5
+text	results	html	940,149,997,177	13.5	13.57	inside	12.9
+text	results	html	997,162,1044,175	13.5	8.21	inside	/ 90 giây
+text	results	html	940,184,1114,199	13.5	10.01	inside	3 anh hùng · 0 địch còn chiến đấu
+text	results	html	940,229,1117,244	13.5	9.95	inside	KỸ NĂNG VỪA THI TRIỂN
+text	results	html	940,246,1062,260	13.5	11.24	inside	Orren: Tinh vân thức giấc!
+text	results	html	940,371,1147,423	13.5	10.01	inside	Cận chiến áp sát · đánh xa giữ cự ly. Mỗi tướng có nhịp đánh
+text	results	html	953,435,997,450	13.5	10.01	inside	Đội bạn
+text	results	html	996,498,1120,516	13.5	9.72	inside	Tạm dừng / rút lui
+text	results	html	951,544,1081,559	13.5	13.57	inside	Bảng HP · khiên của hai đội
+text	results	html	940,566,973,580	13.5	13.57	inside	Tướng
+text	results	html	1077,566,1092,580	13.5	13.57	inside	HP
+text	results	html	1134,566,1163,580	13.5	13.57	inside	Khiên
+text	results	html	940,580,989,595	13.5	13.57	inside	Bạn · Lumi
+text	results	html	1077,580,1116,595	13.5	13.57	inside	931/931
+text	results	html	1134,580,1152,595	13.5	13.57	inside	146
+text	results	html	940,595,991,609	13.5	13.57	inside	Bạn · Bram
+text	results	html	1077,595,1110,609	13.5	13.57	inside	0/1643
+text	results	html	1134,595,1140,609	13.5	13.57	inside	0
+text	results	html	940,609,988,624	13.5	13.57	inside	Bạn · Sylra
+text	results	html	1077,609,1116,624	13.5	13.57	inside	406/490
+text	results	html	1134,609,1140,624	13.5	13.57	inside	0
+text	results	html	940,624,993,638	13.5	13.57	inside	Bạn · Orren
+text	results	html	1077,624,1116,638	13.5	13.57	inside	408/490
+text	results	html	1134,624,1140,638	13.5	13.57	inside	0
+text	results	html	940,638,1000,652	13.5	13.57	inside	Bạn · Estrilda
+text	results	html	1077,638,1110,652	13.5	13.57	inside	0/1040
+text	results	html	1134,638,1140,652	13.5	13.57	inside	0
+text	results	html	940,652,1034,667	13.5	13.57	inside	Địch · Vua Sừng Tàn
+text	results	html	1077,652,1105,667	13.5	13.57	inside	0/919
+text	results	html	1134,652,1140,667	13.5	13.57	inside	0
+text	results	html	940,667,1020,681	13.5	13.57	inside	Địch · Thạch Nha
+text	results	html	1077,667,1105,681	13.5	13.57	inside	0/919
+text	results	html	1134,667,1140,681	13.5	13.57	inside	0
+text	results	html	940,681,1007,696	13.5	13.57	inside	Địch · Gai Độc
+text	results	html	1077,681,1105,696	13.5	13.57	inside	0/613
+text	results	html	1134,681,1140,696	13.5	13.57	inside	0
+text	results	html	940,696,1007,710	13.5	13.57	inside	Địch · Gai Độc
+text	results	html	1077,696,1105,710	13.5	13.57	inside	0/613
+text	results	html	1134,696,1140,710	13.5	13.57	inside	0
+text	results	html	940,710,1013,724	13.5	13.57	outside	Địch · Tư Tế Tro
+text	results	html	1077,710,1105,724	13.5	13.57	outside	0/613
+text	results	html	1134,710,1140,724	13.5	13.57	outside	0
+text	results	html	86,538,210,552	13.5	9.95	inside	NĂM NGƯỜI GIỮ LỜI
+text	results	html	733,538,897,552	13.5	13.57	inside	Đội tự di chuyển · Nhịp đánh riêng
+text	results	html	184,571,231,584	13.5	10.32	inside	1 · TRƯỚC
+text	results	html	151,602,193,620	13.5	13.57	inside	Lumi
+text	results	html	151,625,190,639	13.5	8.21	inside	TRỊ LIỆU
+text	results	html	151,648,214,662	13.5	9.63	inside	Cấp 6 · Thường
+text	results	html	348,571,395,584	13.5	10.32	inside	2 · TRƯỚC
+text	results	html	315,602,360,620	13.5	13.57	inside	Bram
+text	results	html	315,625,346,639	13.5	8.21	inside	HỘ VỆ
+text	results	html	315,648,383,662	13.5	9.63	inside	Cấp 5 · Tinh Anh
+text	results	html	527,571,559,584	13.5	10.32	inside	3 · SAU
+text	results	html	480,602,520,620	13.5	13.57	inside	Sylra
+text	results	html	480,625,517,639	13.5	8.21	inside	XẠ THỦ
+text	results	html	480,648,542,662	13.5	9.63	inside	Cấp 1 · Thường
+text	results	html	691,571,723,584	13.5	10.32	inside	4 · SAU
+text	results	html	644,602,692,620	13.5	13.57	inside	Orren
+text	results	html	644,625,687,639	13.5	8.21	inside	PHÁP SƯ
+text	results	html	644,648,707,662	13.5	9.63	inside	Cấp 1 · Thường
+text	results	html	855,571,888,584	13.5	10.32	inside	5 · SAU
+text	results	html	808,602,871,620	13.5	13.57	inside	Estrilda
+text	results	html	808,625,832,639	13.5	8.21	inside	KỴ SĨ
+text	results	html	808,648,875,662	13.5	9.63	inside	Cấp 3 · Tinh Anh
+text	results	html	86,692,241,707	13.5	8.86	inside	Lưu tự động trên trình duyệt này
+text	results	html	576,692,897,707	13.5	8.86	inside	Enter: tiếp tục · Space: chiến đấu · U: nâng cấp · E: tiến h
+text	results	html	550,238,730,253	13.5	11.49	inside	LỜI THỀ ĐƯỢC GIỮ TRỌN
+text	results	html	499,265,781,299	13.5	15.69	inside	Chiến thắng · 1-5
+text	results	html	388,314,892,359	13.5	12.29	inside	Vùng đất này đã được giải phóng. Về bản đồ, chọn tướng rồi b
+text	results	html	494,384,786,403	13.5	12.29	inside	+224 vàng · +84 kinh nghiệm · +2 ấn tiến hóa
+text	results	html	573,453,707,472	13.5	1.23	inside	VỀ BẢN ĐỒ · ENTER
+screen	1014	results	2ed7cf02	drawn
+uncaught	0
+shot	/c/Users/PuuGoo/Desktop/my-game/prototypes/oathbound/evidence/iteration-19-evolved-lancer.png	273371

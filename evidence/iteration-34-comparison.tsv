@@ -1,0 +1,21 @@
+reference	iteration-33-baseline step360
+sample	iteration-34-mixed-pauses step514
+measured_text_rows_equal	true
+png_sha256_equal	true
+sample_sha256	773a1f4b5f06e4a2fe7aabe51e9944c1c701fa830c409da9772a594a2d1c700b
+scene	0	title
+state	0	title	{"t":0,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+scene	1	play
+state	1	play	{"t":0.02,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+scene	129	pause
+state	129	pause	{"t":2.13,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":0,"heroes":[{"maxHP":588,"attack":86,"hp":484,"kind":"lan
+scene	205	play
+state	205	play	{"t":2.13,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":0,"heroes":[{"maxHP":588,"attack":86,"hp":484,"kind":"lan
+scene	269	pause
+state	269	pause	{"t":3.18,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":0,"heroes":[{"maxHP":588,"attack":86,"hp":484,"kind":"lan
+scene	345	play
+state	345	play	{"t":3.18,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":0,"heroes":[{"maxHP":588,"attack":86,"hp":484,"kind":"lan
+state	514	play	{"t":6,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":0,"heroes":[{"maxHP":588,"attack":86,"hp":484,"kind":"lancer
+done	514	play	stop	8.6	1307
+uncaught	0
+not_assessed	native keyboard behavior, full internal state equality and other seeds/timings

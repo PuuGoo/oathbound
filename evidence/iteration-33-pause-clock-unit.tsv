@@ -1,0 +1,6 @@
+PASS	P pause entry freezes visual clock and combat together
+PASS	Escape pause entry also freezes both clocks
+PASS	pause hold and resume do not advance visual or combat clocks
+PASS	ordinary battle step advances visual time and combat once
+unit_total	4
+not_assessed	native pause inputs, visual quality and full combat determinism; direct update with combat-call recorder

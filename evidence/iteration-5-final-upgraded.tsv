@@ -1,0 +1,131 @@
+browser	/c/Program Files/Google/Chrome/Application/chrome.exe
+time	2026-11-12 01:20:27
+render	cheap
+ua	HeadlessChrome/157.0.0.0
+scene	0	title
+state	0	title	{"t":0,"score":9,"gained":"","chapter":1,"selectedStage":9,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+scene	1	play
+state	1	play	{"t":0.02,"score":9,"gained":"","chapter":1,"selectedStage":9,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+playinput	64	click:text=Bram
+saved	128	localstorage	oathbound.save.v1
+scene	1059	results
+state	1059	results	{"t":17.65,"score":10,"gained":"Bình minh đã trở lại","chapter":1,"selectedStage":9,"selectedHero":4,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":9,"heroes":[{"maxHP":1590,"attack":
+state	2510	results	{"t":41.83,"score":10,"gained":"Bình minh đã trở lại","chapter":1,"selectedStage":9,"selectedHero":4,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":9,"heroes":[{"maxHP":1590,"attack":
+digits	log	14px "Segoe UI", Arial	tabular	0
+digits	log	12px "Segoe UI", Arial	tabular	0
+digits	log	19px "Segoe UI", Arial	tabular	0
+loop	log	none	no loop() step was marked
+first	log	none	no state.beat
+ending	log	results	gained	Bình minh đã trở lại
+pressure	none	the game set no number state.margin in play
+steptime	2510	0.010	1.100
+frametime	17	53.2	89.1	60	17	9
+done	2510	results	stop	41.8	3178
+measured	1280x720
+text	results	canvas	513,208,536,219	16.2	11.76	inside	Sylra
+text	results	canvas	512,267,539,276	16.2	11.51	inside	Orren
+text	results	canvas	714,277,748,285	16.2	12.19	inside	Estrilda
+text	results	canvas	469,313,492,321	16.2	11.91	inside	Lumi
+text	results	canvas	682,322,706,331	16.2	12.19	inside	Bram
+text	results	canvas	499,337,550,346	16.2	11.83	inside	934 / 1210
+text	results	canvas	502,396,549,405	16.2	11.90	inside	485 / 755
+text	results	canvas	704,405,760,414	16.2	11.71	inside	1123 / 1590
+text	results	canvas	457,442,504,451	16.2	11.86	inside	486 / 755
+text	results	canvas	670,451,720,460	16.2	12.00	inside	161 / 1987
+text	results	canvas	728,314,766,326	22.9	1.06	inside	−144
+text	results	canvas	762,343,798,355	22.9	12.01	inside	−561
+text	results	html	89,6,291,33	13.5	13.57	inside	OATHBOUND
+text	results	html	89,37,261,51	13.5	8.21	inside	CHIẾN DỊCH BÌNH MINH
+text	results	html	349,9,575,28	13.5	13.57	inside	Chương 2 · Thành Tro Tàn
+text	results	html	349,34,587,49	13.5	8.21	inside	10 / 10 ải đã giải phóng · Sức mạnh đội 10437
+text	results	html	855,13,887,27	13.5	8.21	inside	VÀNG
+text	results	html	855,27,878,45	13.5	13.57	inside	311
+text	results	html	927,13,1006,27	13.5	8.21	inside	KINH NGHIỆM
+text	results	html	927,27,950,45	13.5	13.57	inside	579
+text	results	html	1045,13,1121,27	13.5	8.21	inside	ẤN TIẾN HÓA
+text	results	html	1045,27,1053,45	13.5	13.57	inside	8
+text	results	html	1150,22,1181,36	13.5	9.72	inside	Đặt lại
+text	results	html	89,92,346,106	13.5	9.95	inside	ẢI 2-5 · TỰ CHIẾN THỜI GIAN THỰC
+text	results	html	89,106,315,134	13.5	13.57	inside	Bình Minh Trở Lại
+text	results	html	784,104,868,123	13.5	9.72	inside	Tạm dừng · P
+text	results	html	99,158,160,172	13.5	10.56	inside	Estrilda · 2.9s
+text	results	html	186,158,237,172	13.5	12.79	inside	Bram · 0.1s
+text	results	html	262,158,312,172	13.5	12.79	inside	Sylra · 2.5s
+text	results	html	337,158,391,172	13.5	12.79	inside	Orren · 1.2s
+text	results	html	416,158,466,172	13.5	12.79	inside	Lumi · 3.2s
+text	results	html	940,112,1101,126	13.5	9.95	inside	GIAO TRANH LIÊN TỤC
+text	results	html	1136,112,1169,126	13.5	9.95	inside	5 vs 5
+text	results	html	940,141,993,169	13.5	13.57	inside	11.4
+text	results	html	993,154,1041,167	13.5	8.21	inside	/ 90 giây
+text	results	html	940,176,1114,191	13.5	10.01	inside	5 anh hùng · 0 địch còn chiến đấu
+text	results	html	940,221,1117,236	13.5	9.95	inside	KỸ NĂNG VỪA THI TRIỂN
+text	results	html	940,237,1047,252	13.5	11.24	inside	Lumi: Ánh đèn dẫn lối!
+text	results	html	940,363,1147,415	13.5	10.01	inside	Cận chiến áp sát · đánh xa giữ cự ly. Mỗi tướng có nhịp đánh
+text	results	html	953,427,997,442	13.5	10.01	inside	Đội bạn
+text	results	html	996,489,1120,507	13.5	9.72	inside	Tạm dừng / rút lui
+text	results	html	951,536,1081,551	13.5	13.57	inside	Bảng HP · khiên của hai đội
+text	results	html	940,558,973,572	13.5	13.57	inside	Tướng
+text	results	html	1068,558,1083,572	13.5	13.57	inside	HP
+text	results	html	1137,558,1166,572	13.5	13.57	inside	Khiên
+text	results	html	940,572,1000,587	13.5	13.57	inside	Bạn · Estrilda
+text	results	html	1068,572,1119,587	13.5	13.57	inside	1123/1590
+text	results	html	1137,572,1154,587	13.5	13.57	inside	429
+text	results	html	940,587,991,601	13.5	13.57	inside	Bạn · Bram
+text	results	html	1068,587,1113,601	13.5	13.57	inside	161/1987
+text	results	html	1137,587,1143,601	13.5	13.57	inside	0
+text	results	html	940,601,988,615	13.5	13.57	inside	Bạn · Sylra
+text	results	html	1068,601,1113,615	13.5	13.57	inside	934/1210
+text	results	html	1137,601,1143,615	13.5	13.57	inside	0
+text	results	html	940,615,993,630	13.5	13.57	inside	Bạn · Orren
+text	results	html	1068,615,1107,630	13.5	13.57	inside	485/755
+text	results	html	1137,615,1143,630	13.5	13.57	inside	0
+text	results	html	940,630,989,644	13.5	13.57	inside	Bạn · Lumi
+text	results	html	1068,630,1107,644	13.5	13.57	inside	486/755
+text	results	html	1137,630,1143,644	13.5	13.57	inside	0
+text	results	html	940,644,1034,659	13.5	13.57	inside	Địch · Vua Sừng Tàn
+text	results	html	1068,644,1101,659	13.5	13.57	inside	0/1492
+text	results	html	1137,644,1143,659	13.5	13.57	inside	0
+text	results	html	940,659,1020,673	13.5	13.57	inside	Địch · Thạch Nha
+text	results	html	1068,659,1101,673	13.5	13.57	inside	0/1492
+text	results	html	1137,659,1143,673	13.5	13.57	inside	0
+text	results	html	940,673,1007,687	13.5	13.57	inside	Địch · Gai Độc
+text	results	html	1068,673,1095,687	13.5	13.57	inside	0/995
+text	results	html	1137,673,1143,687	13.5	13.57	inside	0
+text	results	html	940,687,1012,702	13.5	13.57	inside	Địch · Ảnh Trảo
+text	results	html	1068,687,1095,702	13.5	13.57	inside	0/995
+text	results	html	1137,687,1143,702	13.5	13.57	inside	0
+text	results	html	940,702,1013,716	13.5	13.57	inside	Địch · Tư Tế Tro
+text	results	html	1068,702,1095,716	13.5	13.57	inside	0/995
+text	results	html	1137,702,1143,716	13.5	13.57	inside	0
+text	results	html	86,530,210,544	13.5	9.95	inside	NĂM NGƯỜI GIỮ LỜI
+text	results	html	733,530,897,544	13.5	13.57	inside	Đội tự di chuyển · Nhịp đánh riêng
+text	results	html	184,563,231,576	13.5	10.32	inside	1 · TRƯỚC
+text	results	html	151,594,214,612	13.5	13.57	inside	Estrilda
+text	results	html	151,617,175,631	13.5	8.21	inside	KỴ SĨ
+text	results	html	151,640,219,654	13.5	9.63	inside	Cấp 7 · Tinh Anh
+text	results	html	348,563,395,576	13.5	10.32	inside	2 · TRƯỚC
+text	results	html	315,594,360,612	13.5	13.57	inside	Bram
+text	results	html	315,617,346,631	13.5	8.21	inside	HỘ VỆ
+text	results	html	315,640,383,654	13.5	9.63	inside	Cấp 7 · Tinh Anh
+text	results	html	527,563,559,576	13.5	10.32	inside	3 · SAU
+text	results	html	480,594,520,612	13.5	13.57	inside	Sylra
+text	results	html	480,617,517,631	13.5	8.21	inside	XẠ THỦ
+text	results	html	480,640,547,654	13.5	9.63	inside	Cấp 6 · Tinh Anh
+text	results	html	691,563,723,576	13.5	10.32	inside	4 · SAU
+text	results	html	644,594,692,612	13.5	13.57	inside	Orren
+text	results	html	644,617,687,631	13.5	8.21	inside	PHÁP SƯ
+text	results	html	644,640,707,654	13.5	9.63	inside	Cấp 4 · Thường
+text	results	html	855,563,888,576	13.5	10.32	inside	5 · SAU
+text	results	html	808,594,850,612	13.5	13.57	inside	Lumi
+text	results	html	808,617,847,631	13.5	8.21	inside	TRỊ LIỆU
+text	results	html	808,640,871,654	13.5	9.63	inside	Cấp 4 · Thường
+text	results	html	86,687,241,701	13.5	8.86	inside	Lưu tự động trên trình duyệt này
+text	results	html	86,704,407,718	13.5	8.86	inside	Enter: tiếp tục · Space: chiến đấu · U: nâng cấp · E: tiến h
+text	results	html	550,243,730,257	13.5	11.49	inside	LỜI THỀ ĐƯỢC GIỮ TRỌN
+text	results	html	483,270,797,303	13.5	15.69	inside	Bình minh đã trở lại!
+text	results	html	411,319,869,338	13.5	12.29	inside	Bạn đã hoàn thành cả hai chương. Tiếp tục nâng đội hoặc chơi
+text	results	html	490,363,789,382	13.5	12.29	inside	+304 vàng · +114 kinh nghiệm · +2 ấn tiến hóa
+text	results	html	573,432,707,451	13.5	1.23	inside	VỀ BẢN ĐỒ · ENTER
+screen	2510	results	3b2e5c3c	drawn
+uncaught	0
+shot	/c/Users/PuuGoo/Desktop/my-game/prototypes/oathbound/evidence/iteration-5-final-upgraded.png	248585

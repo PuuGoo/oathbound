@@ -1,0 +1,12 @@
+PASS	diagonal approach advances by configured speed times step
+PASS	melee approach stops at configured hysteresis boundary without overshoot
+PASS	ranged approach uses ranged stopping distance
+PASS	already within approach range does not move or accumulate motion
+PASS	lancer and assassin movement multipliers apply independently
+PASS	charge applies its speed and stops at charge range
+PASS	retreat moves away while continuing to face destination
+PASS	leftward target updates facing and zero step adds no movement
+PASS	coincident positions stay finite for approach and retreat
+PASS	arena clamp handles both extremes and preserves interior position
+unit_total	10
+not_assessed	AI movement decisions, ally separation, full encounters, animation quality or native input; actual movement/clamp helpers tested once per fixed fixture

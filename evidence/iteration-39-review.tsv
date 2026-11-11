@@ -1,0 +1,8 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+iteration	39
+scope	On-screen pause/resume regression after iteration33 keyboard-entry clock fix; no source/config/balance changes.
+method	Prescribed runner seed617 fresh isolated profile: Enter Space wait:2.5 click:text=Tạm_dừng_·_P wait:1.2 click:text=TIẾP_TỤC_·_P wait:10.
+observed	Pause transition159, resume235, victory629. Difference versus uninterrupted victory553 is76steps, matching button pause span. One victory save at628. Final reward160gold/60essence/2shards, score1. Result screenshot inspected.
+runtime	uncaught0; no reported console/crash/error/nonfinite/not_assessed rows. No new unit run.
+evidence	iteration-39-button-pause.png; iteration-39-button-pause.tsv.
+limits	Synthetic exact-label activation, not native mouse/touch/focus proof. No pixel/full-state comparison this iteration; result shows successful completion and expected reward for one seed/stage. Latest combined122-case pass remains iteration33; eight role-skill cases passed separately in iteration37.

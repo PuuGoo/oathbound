@@ -1,0 +1,19 @@
+comparison	baseline360 versus paused436
+final_truncated_state_equal	true
+all_measured_text_rows_equal	false
+png_sha256_equal	false
+baseline_png_sha256	773a1f4b5f06e4a2fe7aabe51e9944c1c701fa830c409da9772a594a2d1c700b
+aligned_png_sha256	dbd5d8a3b1e1002d229b338aeff62f961d51c9c02901d7943c51aa41be931a46
+not_assessed	full internal state equality; driver state rows truncated, PNG/text compare only this sampled endpoint
+comparison	baseline360 versus resumed437
+all_measured_text_rows_equal	true
+png_sha256_equal	false
+resumed_png_sha256	2282b16c33f14b4c637dd03c6a0e68fc9fd1e01945de078e7362844ebc6b56b0
+interpretation	436 is one combat step short; 437 matches measured text rows, not full internal state or PNG bytes
+followup	iteration32 decoded RGB8 pixel comparison of baseline360/resumed437; no new browser run or game edit
+decoded_different_pixels	4127
+decoded_different_percent	0.447808
+decoded_difference_bounds	263,228,804,658
+decoded_maximum_channel_delta	60
+pixel_analysis_evidence	iteration-32-pixel-comparison.tsv
+pixel_analysis_limit	Differences are not solely PNG encoding; root cause/perceptual severity/internal combat state equality remain undetermined. Decoder analysis not independently validated.

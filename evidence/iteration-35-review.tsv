@@ -1,0 +1,9 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+iteration	35
+scope	Regression to final victory/rewards after iteration33 pause-clock fix. No game source/config changes.
+method	Prescribed runner seed617 fresh profiles: uninterrupted stop700 Enter Space wait:15; paused stop854 Enter Space wait:2 KeyP wait:1.2 KeyP wait:1 Escape wait:1.2 Escape wait:15.
+result	Victory transitions553 versus707, difference154 pause-related steps. Both grant160gold/60essence/2shards and cleared1/10. One saved row in each log. Both runtime logs uncaught0 with no console/crash/error/nonfinite rows.
+comparison	Measured text rows and PNG SHA256 equal at final endpoints. Paused result screenshot inspected. iteration-35-comparison.tsv retains comparison.
+analysis_error	Initial inline Node comparison command had SyntaxError due to an extra closing parenthesis. Corrected analysis command ran successfully; no game edit or repeat browser run required.
+evidence	iteration-35-uninterrupted-result.png/tsv; iteration-35-paused-result.png/tsv; iteration-35-comparison.tsv.
+limits	One seed/stage/input sequence; no native input proof, full saved JSON comparison or universal/full-state determinism claim. No new unit run; latest combined122-case pass remains iteration33.

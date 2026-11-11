@@ -1,0 +1,121 @@
+browser	/c/Program Files/Google/Chrome/Application/chrome.exe
+time	2026-11-12 02:54:19
+render	cheap
+ua	HeadlessChrome/157.0.0.0
+scene	0	title
+state	0	title	{"t":0,"score":4,"gained":"","chapter":0,"selectedStage":4,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+scene	1	play
+state	1	play	{"t":0.02,"score":4,"gained":"","chapter":0,"selectedStage":4,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+playinput	64	click:text=Xếp_đội
+saved	192	localstorage	oathbound.save.v1
+state	1074	play	{"t":17.9,"score":4,"gained":"","chapter":0,"selectedStage":4,"selectedHero":4,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":4,"heroes":[{"maxHP":931,"attack":95,"hp":533,"kind":"hea
+digits	log	14px "Segoe UI", Arial	tabular	0
+digits	log	12px "Segoe UI", Arial	tabular	0
+digits	log	19px "Segoe UI", Arial	tabular	0
+loop	log	none	no loop() step was marked
+first	log	none	no state.beat
+pressure	none	the game set no number state.margin in play
+steptime	1074	0.027	1.900
+frametime	17	68.3	110.5	60	17	11
+done	1074	play	stop	17.9	1936
+measured	1280x720
+text	play	canvas	668,213,706,223	16.2	11.76	inside	Gai Độc
+text	play	canvas	513,251,536,259	16.2	11.76	inside	Lumi
+text	play	canvas	707,259,745,269	16.2	11.91	inside	Gai Độc
+text	play	canvas	455,224,478,235	16.2	11.76	inside	Sylra
+text	play	canvas	445,323,473,331	16.2	11.51	inside	Orren
+text	play	canvas	664,341,709,350	16.2	12.19	inside	274 / 613
+text	play	canvas	502,380,546,389	16.2	11.90	inside	533 / 931
+text	play	canvas	703,388,748,397	16.2	11.91	inside	380 / 613
+text	play	canvas	447,353,487,362	16.2	11.42	inside	37 / 490
+text	play	canvas	437,452,482,461	16.2	11.76	inside	322 / 490
+text	play	html	89,14,291,41	13.5	13.57	inside	OATHBOUND
+text	play	html	89,45,261,59	13.5	8.21	inside	CHIẾN DỊCH BÌNH MINH
+text	play	html	349,18,586,36	13.5	13.57	inside	Chương 1 · Rừng Thức Giấc
+text	play	html	349,42,574,57	13.5	8.21	inside	4 / 10 ải đã giải phóng · Sức mạnh đội 6582
+text	play	html	855,21,887,36	13.5	8.21	inside	VÀNG
+text	play	html	855,36,878,54	13.5	13.57	inside	361
+text	play	html	927,21,1006,36	13.5	8.21	inside	KINH NGHIỆM
+text	play	html	927,36,950,54	13.5	13.57	inside	268
+text	play	html	1045,21,1121,36	13.5	8.21	inside	ẤN TIẾN HÓA
+text	play	html	1045,36,1053,54	13.5	13.57	inside	4
+text	play	html	1150,30,1181,45	13.5	9.72	inside	Đặt lại
+text	play	html	89,100,346,114	13.5	9.95	inside	ẢI 1-5 · TỰ CHIẾN THỜI GIAN THỰC
+text	play	html	89,114,268,142	13.5	13.57	inside	Ngai Sừng Tàn
+text	play	html	784,112,868,131	13.5	9.72	inside	Tạm dừng · P
+text	play	html	99,166,149,180	13.5	10.56	inside	Lumi · 1.3s
+text	play	html	174,166,235,180	13.5	12.79	inside	Bram · Đã hạ
+text	play	html	260,166,309,180	13.5	12.79	inside	Sylra · 0.7s
+text	play	html	335,166,389,180	13.5	12.79	inside	Orren · 2.6s
+text	play	html	414,166,485,180	13.5	12.79	inside	Estrilda · Đã hạ
+text	play	html	940,120,1101,134	13.5	9.95	inside	GIAO TRANH LIÊN TỤC
+text	play	html	1136,120,1169,134	13.5	9.95	inside	5 vs 5
+text	play	html	940,149,997,177	13.5	13.57	inside	12.6
+text	play	html	997,162,1044,175	13.5	8.21	inside	/ 90 giây
+text	play	html	940,184,1114,199	13.5	10.01	inside	3 anh hùng · 2 địch còn chiến đấu
+text	play	html	940,229,1117,244	13.5	9.95	inside	KỸ NĂNG VỪA THI TRIỂN
+text	play	html	940,246,1062,260	13.5	11.24	inside	Orren: Tinh vân thức giấc!
+text	play	html	940,371,1147,423	13.5	10.01	inside	Cận chiến áp sát · đánh xa giữ cự ly. Mỗi tướng có nhịp đánh
+text	play	html	953,435,997,450	13.5	10.01	inside	Đội bạn
+text	play	html	996,498,1120,516	13.5	9.72	inside	Tạm dừng / rút lui
+text	play	html	951,544,1081,559	13.5	13.57	inside	Bảng HP · khiên của hai đội
+text	play	html	940,566,973,580	13.5	13.57	inside	Tướng
+text	play	html	1077,566,1092,580	13.5	13.57	inside	HP
+text	play	html	1134,566,1163,580	13.5	13.57	inside	Khiên
+text	play	html	940,580,989,595	13.5	13.57	inside	Bạn · Lumi
+text	play	html	1077,580,1116,595	13.5	13.57	inside	533/931
+text	play	html	1134,580,1140,595	13.5	13.57	inside	0
+text	play	html	940,595,991,609	13.5	13.57	inside	Bạn · Bram
+text	play	html	1077,595,1110,609	13.5	13.57	inside	0/1643
+text	play	html	1134,595,1140,609	13.5	13.57	inside	0
+text	play	html	940,609,988,624	13.5	13.57	inside	Bạn · Sylra
+text	play	html	1077,609,1110,624	13.5	13.57	inside	37/490
+text	play	html	1134,609,1140,624	13.5	13.57	inside	0
+text	play	html	940,624,993,638	13.5	13.57	inside	Bạn · Orren
+text	play	html	1077,624,1116,638	13.5	13.57	inside	322/490
+text	play	html	1134,624,1140,638	13.5	13.57	inside	0
+text	play	html	940,638,1000,652	13.5	13.57	inside	Bạn · Estrilda
+text	play	html	1077,638,1105,652	13.5	13.57	inside	0/588
+text	play	html	1134,638,1140,652	13.5	13.57	inside	0
+text	play	html	940,652,1034,667	13.5	13.57	inside	Địch · Vua Sừng Tàn
+text	play	html	1077,652,1105,667	13.5	13.57	inside	0/919
+text	play	html	1134,652,1140,667	13.5	13.57	inside	0
+text	play	html	940,667,1020,681	13.5	13.57	inside	Địch · Thạch Nha
+text	play	html	1077,667,1105,681	13.5	13.57	inside	0/919
+text	play	html	1134,667,1140,681	13.5	13.57	inside	0
+text	play	html	940,681,1007,696	13.5	13.57	inside	Địch · Gai Độc
+text	play	html	1077,681,1116,696	13.5	13.57	inside	274/613
+text	play	html	1134,681,1140,696	13.5	13.57	inside	0
+text	play	html	940,696,1007,710	13.5	13.57	inside	Địch · Gai Độc
+text	play	html	1077,696,1116,710	13.5	13.57	inside	380/613
+text	play	html	1134,696,1140,710	13.5	13.57	inside	0
+text	play	html	940,710,1013,724	13.5	13.57	outside	Địch · Tư Tế Tro
+text	play	html	1077,710,1105,724	13.5	13.57	outside	0/613
+text	play	html	1134,710,1140,724	13.5	13.57	outside	0
+text	play	html	86,538,210,552	13.5	9.95	inside	NĂM NGƯỜI GIỮ LỜI
+text	play	html	733,538,897,552	13.5	13.57	inside	Đội tự di chuyển · Nhịp đánh riêng
+text	play	html	184,571,231,584	13.5	10.32	inside	1 · TRƯỚC
+text	play	html	151,602,193,620	13.5	13.57	inside	Lumi
+text	play	html	151,625,190,639	13.5	8.21	inside	TRỊ LIỆU
+text	play	html	151,648,214,662	13.5	9.63	inside	Cấp 6 · Thường
+text	play	html	348,571,395,584	13.5	10.32	inside	2 · TRƯỚC
+text	play	html	315,602,360,620	13.5	13.57	inside	Bram
+text	play	html	315,625,346,639	13.5	8.21	inside	HỘ VỆ
+text	play	html	315,648,383,662	13.5	9.63	inside	Cấp 5 · Tinh Anh
+text	play	html	527,571,559,584	13.5	10.32	inside	3 · SAU
+text	play	html	480,602,520,620	13.5	13.57	inside	Sylra
+text	play	html	480,625,517,639	13.5	8.21	inside	XẠ THỦ
+text	play	html	480,648,542,662	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	691,571,723,584	13.5	10.32	inside	4 · SAU
+text	play	html	644,602,692,620	13.5	13.57	inside	Orren
+text	play	html	644,625,687,639	13.5	8.21	inside	PHÁP SƯ
+text	play	html	644,648,707,662	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	855,571,888,584	13.5	10.32	inside	5 · SAU
+text	play	html	808,602,871,620	13.5	13.57	inside	Estrilda
+text	play	html	808,625,832,639	13.5	8.21	inside	KỴ SĨ
+text	play	html	808,648,871,662	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	86,692,241,707	13.5	8.86	inside	Lưu tự động trên trình duyệt này
+text	play	html	576,692,897,707	13.5	8.86	inside	Enter: tiếp tục · Space: chiến đấu · U: nâng cấp · E: tiến h
+screen	1074	play	69fdc548	drawn
+uncaught	0
+shot	/c/Users/PuuGoo/Desktop/my-game/prototypes/oathbound/evidence/iteration-19-boss-backline.png	350112

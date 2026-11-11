@@ -1,0 +1,415 @@
+browser	/c/Program Files/Google/Chrome/Application/chrome.exe
+time	2026-11-12 01:43:16
+render	cheap
+ua	HeadlessChrome/157.0.0.0
+scene	0	title
+state	0	title	{"t":0,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+scene	1	play
+state	1	play	{"t":0.02,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+playinput	4	KeyU
+saved	4	localstorage	oathbound.save.v1
+frame	481	2d7795d3
+frame	482	7ccfbc7f
+frame	483	134c2fac
+frame	484	29189786
+frame	485	af3562c9
+frame	486	c18e90c4
+frame	487	bad1d835
+frame	488	d17da4fe
+frame	489	dcb1fb51
+frame	490	11ef0288
+frame	491	7e5c1e31
+frame	492	ff94811b
+frame	493	9a8697ba
+frame	494	1aa3145a
+frame	495	4d007f84
+frame	496	3cff985d
+frame	497	b179a89c
+frame	498	b0dece8d
+frame	499	cda71a0b
+frame	500	2de3c6bc
+frame	501	ca629f1f
+frame	502	f21601b4
+frame	503	f9b91732
+frame	504	1a435e34
+frame	505	1312ec29
+frame	506	e6aa791d
+frame	507	fb84afe8
+scene	507	results
+state	507	results	{"t":8.45,"score":1,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":0,"heroes":[{"maxHP":800,"attack":11
+frame	508	28bfbce4
+frame	509	e3dc1ce
+frame	510	fd0e4edc
+frame	511	4a129d64
+frame	512	294b3b05
+frame	513	bf14ed4e
+frame	514	4fb6c8c1
+frame	515	c51bce58
+frame	516	fd02403
+frame	517	f7401c73
+frame	518	2cbcde9c
+frame	519	7cbab450
+frame	520	413035ac
+frame	521	850e86bf
+frame	522	6f23aeff
+frame	523	b82b4cec
+frame	524	b16e134c
+frame	525	a3d126b0
+frame	526	6156e44c
+frame	527	c324080c
+frame	528	41757900
+frame	529	b0b99c57
+frame	530	9d9a4bf2
+frame	531	6c9299a2
+frame	532	8eb458da
+frame	533	3abb478b
+frame	534	7c87f5b7
+frame	535	ca0e8be6
+frame	536	c658814c
+frame	537	4943c0e2
+frame	538	1d929620
+frame	539	1d618f86
+frame	540	bdaa0681
+frame	541	518d1eb2
+frame	542	61903667
+frame	543	93b47b05
+frame	544	32ad59dc
+frame	545	539eefe9
+frame	546	5b57a8a6
+frame	547	31b4110c
+frame	548	5d83143
+frame	549	11479fc0
+frame	550	e90342b4
+frame	551	872f2609
+frame	552	e448fef2
+frame	553	73ee9d6e
+frame	554	87a469d3
+frame	555	a14de02b
+frame	556	257f31ea
+frame	557	812d5e85
+frame	558	e63da359
+frame	559	fb136046
+frame	560	62f581ed
+frame	561	a644074a
+frame	562	ec575b57
+frame	563	8f588543
+frame	564	7ae1c638
+frame	565	50dc754e
+frame	566	4bcc85e0
+frame	567	f38cfb9e
+frame	568	162d94a6
+frame	569	9aca2764
+frame	570	937e4f1d
+frame	571	2e6cd796
+frame	572	f5bf208c
+frame	573	60de532b
+frame	574	61fe56c0
+frame	575	9bec66d6
+frame	576	48da56b0
+frame	577	94cd0d7e
+frame	578	3727b3d
+frame	579	653ee544
+frame	580	3e376ed1
+frame	581	2189ca5f
+frame	582	c9271751
+frame	583	55989709
+frame	584	fdeb24d8
+frame	585	c5272d56
+frame	586	843f64
+frame	587	9a642ffa
+frame	588	a09120e4
+frame	589	7cc80c01
+frame	590	40fa6643
+frame	591	6ac1a895
+frame	592	71cfdef2
+frame	593	4cd0d323
+frame	594	c1846776
+frame	595	6a760812
+frame	596	7a98f756
+frame	597	cd9c4bb7
+frame	598	d7627161
+frame	599	e403a9fe
+frame	600	f7505a64
+frame	601	deb3f69c
+frame	602	baadeb22
+frame	603	c11f8b23
+frame	604	775d0755
+frame	605	1202d8ca
+frame	606	4eac9306
+frame	607	90275897
+frame	608	d72357d0
+frame	609	3449e588
+frame	610	1ea6e69c
+frame	611	3d425ff
+frame	612	2bb9407b
+frame	613	5697a324
+frame	614	9a65a09
+frame	615	44525c8f
+frame	616	500bb6e3
+frame	617	7606a113
+frame	618	5c57c626
+frame	619	8ebfa4e7
+frame	620	702600b7
+frame	621	e67da9a5
+frame	622	1894c051
+frame	623	35eb6ea0
+frame	624	8127b5da
+frame	625	1e40eb12
+frame	626	bf7c5466
+frame	627	32112fa0
+frame	628	a30d4522
+frame	629	a3b6e78
+frame	630	c5bc51b4
+frame	631	b62dad70
+frame	632	9f9439ef
+frame	633	b79a4ce2
+frame	634	e284009a
+frame	635	6e51618d
+frame	636	92359050
+frame	637	2bbb3756
+frame	638	de40980
+frame	639	815d4cc0
+frame	640	60094612
+frame	641	1dd2477e
+frame	642	5d2c0667
+frame	643	baa7e64a
+frame	644	cc0750dc
+frame	645	97081353
+frame	646	87174541
+frame	647	848d8b90
+frame	648	50951786
+frame	649	9c085a63
+frame	650	9855dfc2
+frame	651	7cea6aad
+frame	652	9de2fd53
+frame	653	aca37070
+frame	654	dd184878
+frame	655	156ca9c8
+frame	656	a81cdcbf
+frame	657	d6bacd23
+frame	658	861d5f6a
+frame	659	7043454d
+frame	660	214f45de
+frame	661	aa82cd64
+frame	662	473eede1
+frame	663	12d93f8c
+frame	664	b59d3202
+frame	665	342a304a
+frame	666	9a8262d4
+frame	667	43086328
+frame	668	d176bcf8
+frame	669	188c8f9b
+frame	670	821798e7
+frame	671	a385f9cc
+frame	672	cb21569a
+frame	673	be5c0154
+frame	674	e893ab12
+frame	675	d4bce367
+frame	676	b6934b6b
+frame	677	2aeed2f9
+frame	678	e318d55a
+frame	679	6248c359
+frame	680	8e24aadb
+frame	681	80dba44a
+frame	682	1aa11dd
+frame	683	6e483e28
+frame	684	8f1e5df0
+frame	685	c6dfab8d
+frame	686	ba30a183
+frame	687	f9997477
+frame	688	312eaac9
+frame	689	87d7f8b6
+frame	690	843beeaf
+frame	691	227f8c6a
+frame	692	2ec703f3
+frame	693	5205c0cc
+frame	694	cd459133
+frame	695	560f56f9
+frame	696	b0fd8239
+frame	697	95587090
+frame	698	aa8b60f
+frame	699	de8daab5
+frame	700	cde03f20
+frame	701	10982338
+frame	702	1c6f1780
+frame	703	cccfaa96
+frame	704	a0961567
+frame	705	4c633b9
+frame	706	6c2f1a2b
+frame	707	b9a870db
+frame	708	ec6d1762
+frame	709	78b57312
+frame	710	3e20da75
+frame	711	6e87cc98
+frame	712	33678686
+frame	713	706263da
+frame	714	e87971d4
+frame	715	ec212c5b
+frame	716	bc123560
+frame	717	7ebe92a5
+frame	718	4f24b345
+frame	719	bf3364b
+frame	720	c74e37db
+frame	721	81a378b5
+frame	722	5a8a9f23
+frame	723	ef7070cb
+frame	724	1066f66d
+frame	725	85182b05
+frame	726	b59c2214
+frame	727	f8787be6
+frame	728	95d01b12
+frame	729	d1ebc36e
+frame	730	bb94a7fd
+frame	731	304c9062
+frame	732	4db590dd
+frame	733	f906ff
+frame	734	f7fcb714
+frame	735	75d65e36
+frame	736	322211b8
+frame	737	c1b56ebd
+frame	738	5a15b20c
+frame	739	2b290d28
+frame	740	610c77cd
+frame	741	be248183
+frame	742	71d91afb
+frame	743	3038004e
+frame	744	a93cd16
+frame	745	3ca26f54
+frame	746	1956edde
+frame	747	46a7b2d0
+frame	748	e8790bfb
+frame	749	b69d45a9
+frame	750	64137c25
+frame	751	b4fc9ca
+frame	752	fba738e3
+frame	753	3426085f
+frame	754	11c3ad2d
+frame	755	c83a9613
+frame	756	b813f3ef
+frame	757	48f58a77
+frame	758	6fe587c1
+frame	759	77ef547d
+frame	760	6d3e7924
+frame	761	4504225d
+frame	762	8b8e2b37
+frame	763	cfa74da
+frame	764	6a07c011
+frame	765	8396ec69
+frame	766	ea8cf8af
+state	766	results	{"t":12.77,"score":1,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":0,"heroes":[{"maxHP":800,"attack":1
+digits	log	14px "Segoe UI", Arial	tabular	0
+digits	log	12px "Segoe UI", Arial	tabular	0
+digits	log	19px "Segoe UI", Arial	tabular	0
+loop	log	none	no loop() step was marked
+first	log	none	no state.beat
+ending	log	results	gained	Ải đã được giải phóng
+pressure	none	the game set no number state.margin in play
+steptime	766	0.039	1.100
+frametime	8	67.1	126.5	60	8	8
+done	766	results	stop	12.8	22693
+measured	1280x720
+text	results	canvas	466,206,488,217	16.2	10.88	inside	Sylra
+text	results	canvas	466,266,494,274	16.2	11.51	inside	Orren
+text	results	canvas	658,283,693,291	16.2	12.19	inside	Estrilda
+text	results	canvas	458,325,481,334	16.2	11.83	inside	Lumi
+text	results	canvas	454,295,500,304	16.2	11.88	inside	490 / 490
+text	results	canvas	457,394,503,403	16.2	10.88	inside	490 / 490
+text	results	canvas	653,412,698,421	16.2	11.90	inside	711 / 800
+text	results	canvas	446,454,492,463	16.2	11.88	inside	490 / 490
+text	results	canvas	708,242,737,254	22.9	3.16	inside	−72
+text	results	canvas	723,245,749,257	22.9	12.01	inside	−91
+text	results	html	89,14,291,41	13.5	13.57	inside	OATHBOUND
+text	results	html	89,45,261,59	13.5	8.21	inside	CHIẾN DỊCH BÌNH MINH
+text	results	html	349,18,586,36	13.5	13.57	inside	Chương 1 · Rừng Thức Giấc
+text	results	html	349,42,574,57	13.5	8.21	inside	1 / 10 ải đã giải phóng · Sức mạnh đội 5030
+text	results	html	855,21,887,36	13.5	8.21	inside	VÀNG
+text	results	html	855,36,878,54	13.5	13.57	inside	488
+text	results	html	927,21,1006,36	13.5	8.21	inside	KINH NGHIỆM
+text	results	html	927,36,950,54	13.5	13.57	inside	153
+text	results	html	1045,21,1121,36	13.5	8.21	inside	ẤN TIẾN HÓA
+text	results	html	1045,36,1053,54	13.5	13.57	inside	2
+text	results	html	1150,30,1181,45	13.5	9.72	inside	Đặt lại
+text	results	html	89,100,346,114	13.5	9.95	inside	ẢI 1-1 · TỰ CHIẾN THỜI GIAN THỰC
+text	results	html	89,114,286,142	13.5	13.57	inside	Lối Mòn Sương
+text	results	html	784,112,868,131	13.5	9.72	inside	Tạm dừng · P
+text	results	html	99,166,160,180	13.5	10.56	inside	Estrilda · 1.3s
+text	results	html	186,166,246,180	13.5	12.79	inside	Bram · Đã hạ
+text	results	html	272,166,321,180	13.5	12.79	inside	Sylra · 1.3s
+text	results	html	346,166,400,180	13.5	12.79	inside	Orren · 2.9s
+text	results	html	426,166,475,180	13.5	12.79	inside	Lumi · 2.2s
+text	results	html	940,120,1101,134	13.5	9.95	inside	GIAO TRANH LIÊN TỤC
+text	results	html	1136,120,1169,134	13.5	9.95	inside	5 vs 5
+text	results	html	940,149,986,177	13.5	13.57	inside	8.2
+text	results	html	986,162,1033,175	13.5	8.21	inside	/ 90 giây
+text	results	html	940,184,1114,199	13.5	10.01	inside	4 anh hùng · 0 địch còn chiến đấu
+text	results	html	940,229,1117,244	13.5	9.95	inside	KỸ NĂNG VỪA THI TRIỂN
+text	results	html	940,246,1062,260	13.5	11.24	inside	Orren: Tinh vân thức giấc!
+text	results	html	940,371,1147,423	13.5	10.01	inside	Cận chiến áp sát · đánh xa giữ cự ly. Mỗi tướng có nhịp đánh
+text	results	html	953,435,997,450	13.5	10.01	inside	Đội bạn
+text	results	html	996,498,1120,516	13.5	9.72	inside	Tạm dừng / rút lui
+text	results	html	951,544,1081,559	13.5	13.57	inside	Bảng HP · khiên của hai đội
+text	results	html	940,566,973,580	13.5	13.57	inside	Tướng
+text	results	html	1068,566,1083,580	13.5	13.57	inside	HP
+text	results	html	1130,566,1159,580	13.5	13.57	inside	Khiên
+text	results	html	940,580,1000,595	13.5	13.57	inside	Bạn · Estrilda
+text	results	html	1068,580,1107,595	13.5	13.57	inside	711/800
+text	results	html	1130,580,1136,595	13.5	13.57	inside	0
+text	results	html	940,595,991,609	13.5	13.57	inside	Bạn · Bram
+text	results	html	1068,595,1095,609	13.5	13.57	inside	0/735
+text	results	html	1130,595,1136,609	13.5	13.57	inside	0
+text	results	html	940,609,988,624	13.5	13.57	inside	Bạn · Sylra
+text	results	html	1068,609,1107,624	13.5	13.57	inside	490/490
+text	results	html	1130,609,1136,624	13.5	13.57	inside	0
+text	results	html	940,624,993,638	13.5	13.57	inside	Bạn · Orren
+text	results	html	1068,624,1107,638	13.5	13.57	inside	490/490
+text	results	html	1130,624,1136,638	13.5	13.57	inside	0
+text	results	html	940,638,989,652	13.5	13.57	inside	Bạn · Lumi
+text	results	html	1068,638,1107,652	13.5	13.57	inside	490/490
+text	results	html	1130,638,1136,652	13.5	13.57	inside	0
+text	results	html	940,652,1020,667	13.5	13.57	inside	Địch · Thạch Nha
+text	results	html	1068,652,1095,667	13.5	13.57	inside	0/485
+text	results	html	1130,652,1136,667	13.5	13.57	inside	0
+text	results	html	940,667,1020,681	13.5	13.57	inside	Địch · Thạch Nha
+text	results	html	1068,667,1095,681	13.5	13.57	inside	0/485
+text	results	html	1130,667,1136,681	13.5	13.57	inside	0
+text	results	html	940,681,1007,696	13.5	13.57	inside	Địch · Gai Độc
+text	results	html	1068,681,1095,696	13.5	13.57	inside	0/323
+text	results	html	1130,681,1136,696	13.5	13.57	inside	0
+text	results	html	940,696,1007,710	13.5	13.57	inside	Địch · Gai Độc
+text	results	html	1068,696,1095,710	13.5	13.57	inside	0/323
+text	results	html	1130,696,1136,710	13.5	13.57	inside	0
+text	results	html	940,710,1007,724	13.5	13.57	outside	Địch · Gai Độc
+text	results	html	1068,710,1095,724	13.5	13.57	outside	0/323
+text	results	html	1130,710,1136,724	13.5	13.57	outside	0
+text	results	html	86,538,210,552	13.5	9.95	inside	NĂM NGƯỜI GIỮ LỜI
+text	results	html	733,538,897,552	13.5	13.57	inside	Đội tự di chuyển · Nhịp đánh riêng
+text	results	html	184,571,231,584	13.5	10.32	inside	1 · TRƯỚC
+text	results	html	151,602,214,620	13.5	13.57	inside	Estrilda
+text	results	html	151,625,175,639	13.5	8.21	inside	KỴ SĨ
+text	results	html	151,648,214,662	13.5	9.63	inside	Cấp 3 · Thường
+text	results	html	348,571,395,584	13.5	10.32	inside	2 · TRƯỚC
+text	results	html	315,602,360,620	13.5	13.57	inside	Bram
+text	results	html	315,625,346,639	13.5	8.21	inside	HỘ VỆ
+text	results	html	315,648,378,662	13.5	9.63	inside	Cấp 1 · Thường
+text	results	html	527,571,559,584	13.5	10.32	inside	3 · SAU
+text	results	html	480,602,520,620	13.5	13.57	inside	Sylra
+text	results	html	480,625,517,639	13.5	8.21	inside	XẠ THỦ
+text	results	html	480,648,542,662	13.5	9.63	inside	Cấp 1 · Thường
+text	results	html	691,571,723,584	13.5	10.32	inside	4 · SAU
+text	results	html	644,602,692,620	13.5	13.57	inside	Orren
+text	results	html	644,625,687,639	13.5	8.21	inside	PHÁP SƯ
+text	results	html	644,648,707,662	13.5	9.63	inside	Cấp 1 · Thường
+text	results	html	855,571,888,584	13.5	10.32	inside	5 · SAU
+text	results	html	808,602,850,620	13.5	13.57	inside	Lumi
+text	results	html	808,625,847,639	13.5	8.21	inside	TRỊ LIỆU
+text	results	html	808,648,871,662	13.5	9.63	inside	Cấp 1 · Thường
+text	results	html	86,692,241,707	13.5	8.86	inside	Lưu tự động trên trình duyệt này
+text	results	html	576,692,897,707	13.5	8.86	inside	Enter: tiếp tục · Space: chiến đấu · U: nâng cấp · E: tiến h
+text	results	html	550,238,730,253	13.5	11.49	inside	LỜI THỀ ĐƯỢC GIỮ TRỌN
+text	results	html	500,265,780,299	13.5	15.69	inside	Chiến thắng · 1-1
+text	results	html	388,314,892,359	13.5	12.29	inside	Vùng đất này đã được giải phóng. Về bản đồ, chọn tướng rồi b
+text	results	html	494,384,786,403	13.5	12.29	inside	+160 vàng · +60 kinh nghiệm · +2 ấn tiến hóa
+text	results	html	573,453,707,472	13.5	1.23	inside	VỀ BẢN ĐỒ · ENTER
+screen	766	results	ea8cf8af	drawn
+uncaught	0
+shot	/c/Users/PuuGoo/Desktop/my-game/prototypes/oathbound/evidence/iteration-7-replay-b.png	272185

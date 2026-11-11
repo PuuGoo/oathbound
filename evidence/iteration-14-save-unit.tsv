@@ -1,0 +1,20 @@
+PASS	missing save returns fresh progress
+PASS	malformed JSON returns fresh progress
+PASS	blocked reads return fresh progress
+PASS	wrong version returns fresh progress
+PASS	valid progress retains resources levels evolution and formation
+PASS	duplicate formation is rejected
+PASS	out-of-range formation identity is rejected
+PASS	fractional formation identity is rejected
+PASS	wrong roster or formation lengths are rejected
+PASS	null hero is rejected without throwing
+PASS	invalid resource fields are rejected
+PASS	invalid cleared counts are rejected
+PASS	invalid levels are rejected
+PASS	non-boolean evolution is rejected
+PASS	separate fresh saves do not share hero objects
+PASS	successful save stores progress and clears failure flag
+PASS	failed write preserves session progress and previous stored value
+PASS	later successful save recovers from temporary write failure
+unit_total	18
+not_assessed	native browser storage quota/private-mode behavior, corrupt-file recovery UI and user saves; storage doubles only

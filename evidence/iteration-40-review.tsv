@@ -1,0 +1,8 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+iteration	40
+scope	Read-only integrity comparison of original supplied sprite, local retained PNG and embedded data URI. No source/config/assets changes, browser run or network interception.
+result	All three byte-identical,2916310bytes,1086x1448,SHA256f1c72682b604a1db175b6c35d5f37e805f797a9878650dd84443817a39f7d971.
+static_scan	Dedicated source search of index.html/config.js found local config script and embedded/local PNG loading, no remote URL or fetch/XMLHttpRequest/WebSocket/import() occurrence. Static scan is not runtime network proof.
+provenance	Existing provenance retains UNKNOWN public rights and ships:false. User supply/local-use approval does not authorize publication.
+evidence	iteration-40-asset-integrity.tsv.
+limits	No runtime network interception or public-rights verification. No new gameplay defect or fix. Original asset untouched.

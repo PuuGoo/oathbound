@@ -1,0 +1,8 @@
+method	PNG RGB8 noninterlaced scanline unfilter using Node zlib; existing images only
+size	1280x720
+different_pixels	4127
+different_percent	0.447808
+difference_bounds	263,228,804,658
+maximum_channel_delta	60
+mean_absolute_channel_delta	0.014346
+not_assessed	root cause, perceptual severity, internal combat state equality; decoder is analysis code, not an independent decoder validation

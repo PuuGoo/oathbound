@@ -1,0 +1,14 @@
+PASS	exact upgrade currency buys one level and saves once
+PASS	one gold short does not spend either currency
+PASS	one essence short does not spend either currency
+PASS	maximum level rejects upgrade without spending
+PASS	last permitted upgrade reaches cap and another cannot spend
+PASS	upgrade follows selected hero identity after formation rearrangement
+PASS	exact evolution threshold spends only gold and shards once
+PASS	evolution one level below threshold preserves all resources
+PASS	evolution one shard short preserves all resources
+PASS	evolution one gold short preserves all resources
+PASS	already evolved hero cannot spend a second evolution cost
+PASS	both progression actions reject covered scenes and active combat
+unit_total	12
+not_assessed	browser upgrade/evolution presentation, native controls, real persistence failures and long-term balance; actual progression helpers with save/toast recorders

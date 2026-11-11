@@ -1,0 +1,7 @@
+reproduced_old_behavior	pending P resumes immediately after old blur handler
+PASS	focus loss clears both held and pending input
+PASS	pending P cannot undo automatic pause on next step
+PASS	map focus loss clears pending upgrade and stage selection without scene change
+PASS	existing pause and results are not resumed by focus loss
+unit_total	4
+not_assessed	native OS focus switching and browser blur timing; actual helper and update functions tested with isolated pending-input sets

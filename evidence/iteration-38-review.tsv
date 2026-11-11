@@ -1,0 +1,8 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+iteration	38
+scope	Synthetic game shortcuts while reset dialog is open, followed by cancellation; isolated fresh verification profile, no destructive confirmation or game edits.
+method	Prescribed runner seed617: Enter Space wait:11 Enter wait:1.2 click:text=Đặt_lại wait:1.2 KeyU Space ArrowLeft KeyE wait:1.2 click:text=Giữ_tiến_trình wait:1.2.
+observed	Final screenshot inspected: map stage1-2, cleared1/10, all heroes level1,610gold/180essence/2shards retained. Final state mode:map,battle:null,selectedStage:1. Only original victory saved row552; uncaught0 and no reported console/crash/error/nonfinite/not_assessed rows.
+interpretation	No queued upgrade/battle/previous-stage/evolution command observed after cancellation for this synthetic sequence. No new defect or source fix.
+evidence	iteration-38-modal-keys.png; iteration-38-modal-keys.tsv.
+limits	Does not establish native Tab/Escape/focus trapping, native key defaults or destructive confirmation behavior. Previous iteration36 provides dialog-open screenshot; this run captures final cancellation state, not every intermediate dialog state. No new unit rerun; latest combined122-case run remains iteration33, eight later role cases passed separately.

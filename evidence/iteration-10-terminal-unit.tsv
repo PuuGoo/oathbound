@@ -1,0 +1,11 @@
+PASS	ongoing battle before timeout stays active
+PASS	exact timeout boundary loses without spending or rewarding
+PASS	timeout beyond boundary also loses
+PASS	defeat takes precedence over timeout wording
+PASS	enemy elimination at timeout awards victory
+PASS	first-clear victory awards configured battle reward exactly once per finish call
+PASS	repeat clear does not increment campaign count
+PASS	final clear reaches configured total without exceeding it
+PASS	defeat keeps progression and emits defeat event
+unit_total	9
+not_assessed	actual 90-second browser fight, action/projectile simulation and simultaneous-wipe design; terminal checks use isolated dt=0 fixtures

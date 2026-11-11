@@ -1,0 +1,8 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+iteration	36
+scope	Observe reset confirmation and non-destructive cancellation after earned first-stage win, fresh isolated verification profiles only; no game source/config changes or user browser data access.
+method	Prescribed runner seed617: Enter Space wait:11 Enter wait:1.2 click:text=Đặt_lại wait:1.2; second run continues click:text=Giữ_tiến_trình wait:1.2. Never activated confirm deletion.
+observed	Both screenshots inspected. First shows open native dialog with keep-progress control; second shows dialog closed, selectedstage1(zero-based)=1-2, cleared1/10,610gold/180essence/2shards, all hero cards level1.
+runtime	Two logs uncaught0, no console/crash/error/nonfinite/not_assessed rows. Each reports only original victory save at552; cancel path does not produce extra save row.
+evidence	iteration-36-reset-dialog.png/tsv; iteration-36-cancel-reset.png/tsv.
+limits	Synthetic label activation only; native focus trap, Tab/Escape behavior, pointer hit testing, destructive confirm path and full saved JSON equality NOT ASSESSED. No new unit run; latest combined122-case run remains iteration33.

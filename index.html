@@ -6,16 +6,18 @@
 #side{height:668px}#roster{right:354px}.rosterHead{font-size:12px}.rosterHead b{letter-spacing:1px;font-size:12px}.heroCard{padding-left:77px}.heroCard b{font-size:17px;margin-top:17px}.heroCard .slot{font-size:12px;top:8px}.heroCard .skill{display:none}.heroCard small,.heroCard .level,.rosterFooter,#accessibility,.wallet small,.brand small,.stat small{font-size:12px}.rosterFooter{display:block;line-height:1.6}.rosterFooter span:last-child{display:block}#accessibility{display:none}.stat b{color:var(--ink)}
 #cards .heroCard:disabled{opacity:1}.heroCard .level{font-size:12px;white-space:nowrap;letter-spacing:-.25px}.heroCard b{font-size:17px}.heroCard .slot{font-size:11.5px}.heroCard small{font-size:12px}.rosterHead #rosterHint{font-size:12px;max-width:530px;text-align:right}.wallet{gap:16px}#side .hint{font-size:12px}#side .eyebrow{font-size:12px}#side .tag{font-size:12px}
 #side details table{border-collapse:collapse;line-height:14px}#side details th,#side details td{padding:1px 0;font-size:12px}#side details{max-height:215px;overflow:auto}#side small{font-size:12px!important}#side button.gold{color:#152c34!important}.heroCard{padding-left:72px}.heroCard .level{font-size:11px;letter-spacing:-.3px}.rosterHead #rosterHint{font-size:12px}body{font-variant-numeric:tabular-nums}
+#roster .rosterHead{gap:10px;min-height:29px;margin-bottom:5px}#roster .rosterHead>b{white-space:nowrap}#roster .rosterHead #rosterHint{flex:1;max-width:none}#formationButton{padding:5px 10px;font-size:12px;white-space:nowrap}#formationButton[aria-pressed="true"]{border-color:var(--gold);color:var(--gold)}
+#roster .rosterFooter{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:6px;line-height:18px;white-space:nowrap}#roster .rosterFooter span:last-child{display:inline}
 </style></head><body>
 <div id="app"><canvas id="game" width="1280" height="800" aria-label="Sân đấu minh họa fantasy, bản đồ chiến dịch và chân dung anh hùng"></canvas>
 <header class="top" id="top"><div class="brand"><h1>OATHBOUND</h1><small>CHIẾN DỊCH BÌNH MINH</small></div><div class="chapterTitle"><b id="chapterName"></b><small id="progressText"></small></div><div class="wallet" aria-label="Tài nguyên"><span><svg viewBox="0 0 24 30" aria-hidden="true"><path fill="#e5be72" stroke="#ffdf99" d="M12 2 22 8v14l-10 6L2 22V8Z"/><path fill="none" stroke="#72572d" d="M12 7v16M8 10h7l-6 10h7"/></svg><div><small>VÀNG</small><b id="gold"></b></div></span><span><svg viewBox="0 0 24 30" aria-hidden="true"><path fill="#9fc9d4" stroke="#d6f5fa" d="m12 2 8 10-3 12-5 4-5-4-3-12Z"/><path fill="none" stroke="#4e7d89" d="m12 2-2 15 2 11 3-15Z"/></svg><div><small>KINH NGHIỆM</small><b id="essence"></b></div></span><span><svg viewBox="0 0 24 30" aria-hidden="true"><path fill="#c7addb" stroke="#eee0ff" d="m12 2 9 9-5 15-4 3-7-9L3 11Z"/><path fill="none" stroke="#75598b" d="m3 11 12 4 9-4M12 15v14"/></svg><div><small>ẤN TIẾN HÓA</small><b id="shards"></b></div></span></div><button id="resetButton" title="Xóa tiến trình của game này">Đặt lại</button></header>
 <div class="worldLabel" id="worldLabel"><div class="eyebrow">HÀNH TRÌNH CỦA NGƯỜI GIỮ LỜI</div><h2 id="mapHeading">Miền Rừng Thức Giấc</h2><p id="mapSub">Năm lời thề. Một bình minh chưa tới.</p></div>
 <nav class="chapterTabs" id="chapterTabs" aria-label="Chọn chương"><button data-chapter="0">01 · Rừng Thức Giấc</button><button data-chapter="1">02 · Thành Tro Tàn</button></nav>
-<div id="battleHUD"><div class="battleHeading"><div><div class="eyebrow" id="battleStage">CHIẾN TRƯỜNG</div><h2 id="battleTitle">Trận chiến bắt đầu</h2></div><button id="pauseButton">Tạm dừng · P</button></div><div class="turns" id="turnOrder" aria-label="Thứ tự lượt"></div></div>
+<div id="battleHUD"><div class="battleHeading"><div><div class="eyebrow" id="battleStage">CHIẾN TRƯỜNG</div><h2 id="battleTitle">Trận chiến bắt đầu</h2></div><button id="pauseButton">Tạm dừng · P</button></div><div class="turns" id="turnOrder" aria-label="Hồi chiêu kỹ năng từng tướng"></div></div>
 <aside id="side" aria-live="polite"></aside>
-<section id="roster"><div class="rosterHead"><b>NĂM NGƯỜI GIỮ LỜI</b><span id="rosterHint">Chọn tướng để nâng cấp · Chọn hai tướng liên tiếp để đổi vị trí</span></div><div id="cards"></div><div class="rosterFooter"><span id="saveStatus">Lưu tự động trên trình duyệt này</span><span>Enter: tiếp tục · Space: chiến đấu · U: nâng cấp · E: tiến hóa · P: dừng</span></div></section>
+<section id="roster"><div class="rosterHead"><b>NĂM NGƯỜI GIỮ LỜI</b><span id="rosterHint">Chọn tướng để xem và nâng cấp</span><button id="formationButton" aria-pressed="false">Xếp đội</button></div><div id="cards"></div><div class="rosterFooter"><span id="saveStatus">Lưu tự động trên trình duyệt này</span><span>Enter: tiếp tục · Space: chiến đấu · U: nâng cấp · E: tiến hóa · P: dừng</span></div></section>
 <div id="toast" hidden></div><div id="accessibility">HP được ghi bằng số trên mỗi nhân vật · Hàng trước: vị trí 1–2 · Hàng sau: vị trí 3–5</div>
-<div id="titleScreen"><div class="titleBox"><div class="eyebrow">MỘT CUỘC VIỄN CHINH FANTASY · 5 ĐẤU 5</div><h1>OATHBOUND</h1><h2>Chiến Dịch Bình Minh</h2><p>Rừng xưa đã đánh mất ánh mặt trời.<br>Hãy dẫn năm người giữ lời thề đi tìm lại bình minh.</p><button class="gold" id="startButton">BẮT ĐẦU HÀNH TRÌNH</button><div class="controls">Xếp đội hình → xem tự chiến đấu → nhận thưởng → nâng cấp & tiến hóa.<br>Không cần chọn lệnh trong trận. Mọi nhân vật tự hành động theo lượt.<br>Enter để bắt đầu · Game hoạt động ngoại tuyến.</div></div></div>
+<div id="titleScreen"><div class="titleBox"><div class="eyebrow">MỘT CUỘC VIỄN CHINH FANTASY · 5 ĐẤU 5</div><h1>OATHBOUND</h1><h2>Chiến Dịch Bình Minh</h2><p>Rừng xưa đã đánh mất ánh mặt trời.<br>Hãy dẫn năm người giữ lời thề đi tìm lại bình minh.</p><button class="gold" id="startButton">BẮT ĐẦU HÀNH TRÌNH</button><div class="controls">Xếp đội hình → xem tự chiến đấu → nhận thưởng → nâng cấp & tiến hóa.<br>Không cần chọn lệnh trong trận. Mọi nhân vật tự di chuyển, đánh và tung kỹ năng liên tục.<br>Enter để bắt đầu · Game hoạt động ngoại tuyến.</div></div></div>
 <div id="resultScreen"><div class="titleBox"><div class="eyebrow" id="resultKicker"></div><h2 id="resultTitle"></h2><p id="resultDesc"></p><p class="resultLoot" id="resultLoot"></p><button class="gold" id="continueButton">VỀ BẢN ĐỒ · ENTER</button><button id="retryButton">ĐÁNH LẠI</button></div></div>
 <div id="pauseScreen"><div class="titleBox"><div class="eyebrow">TRẬN ĐẤU ĐANG DỪNG</div><h2>Một nhịp nghỉ giữa chiến trường</h2><p>Không có hành động nào diễn ra khi tạm dừng.</p><button class="gold" id="resumeButton">TIẾP TỤC · P</button><button id="retreatButton">RÚT LUI</button></div></div>
 <div id="galleryLabel"><div class="eyebrow">OATHBOUND · BỘ NHÂN VẬT GỐC</div><h2>Người giữ lời & sinh vật của màn đêm</h2></div>
@@ -29,7 +31,7 @@ const canvas=document.getElementById('game'),ctx=canvas.getContext('2d'),app=doc
 const $=id=>document.getElementById(id),events=[],hit=new Set(),down=new Set();
 let scene='title',state,seed=CONFIG.seed,acc=0,last=clock.now(),uiDirty=true,toastTime=0,hoverNode=-1;
 const C={ink:'#f4e9d2',gold:'#e8c483',teal:'#a6d1c9',night:'#10242e',outline:'#172531'};
-const HEROES=[{id:'lancer',name:'Aveline',role:'KỴ SĨ',skill:'Thương bình minh',detail:'Xuyên mục tiêu hàng trước và một địch phía sau.',speed:9},{id:'warden',name:'Bram',role:'HỘ VỆ',skill:'Lời thề thép',detail:'Tạo khiên cho hai đồng minh hàng trước.',speed:5},{id:'ranger',name:'Sylra',role:'XẠ THỦ',skill:'Mũi tên truy ảnh',detail:'Bắn địch yếu máu nhất, kể cả hàng sau.',speed:12},{id:'mage',name:'Orren',role:'PHÁP SƯ',skill:'Tinh vân thức giấc',detail:'Gây sát thương lên toàn đội địch.',speed:7},{id:'healer',name:'Lumi',role:'TRỊ LIỆU',skill:'Ánh đèn dẫn lối',detail:'Chữa lành đồng minh có tỷ lệ máu thấp nhất.',speed:8}];
+const HEROES=[{id:'lancer',name:'Estrilda',role:'KỴ SĨ',skill:'Thương bình minh',detail:'Xuyên mục tiêu hàng trước và một địch phía sau.',speed:9},{id:'warden',name:'Bram',role:'HỘ VỆ',skill:'Lời thề thép',detail:'Tạo khiên cho hai đồng minh hàng trước.',speed:5},{id:'ranger',name:'Sylra',role:'XẠ THỦ',skill:'Mũi tên truy ảnh',detail:'Bắn địch yếu máu nhất, kể cả hàng sau.',speed:12},{id:'mage',name:'Orren',role:'PHÁP SƯ',skill:'Tinh vân thức giấc',detail:'Gây sát thương lên toàn đội địch.',speed:7},{id:'healer',name:'Lumi',role:'TRỊ LIỆU',skill:'Ánh đèn dẫn lối',detail:'Chữa lành đồng minh có tỷ lệ máu thấp nhất.',speed:8}];
 const ENEMIES={brute:{name:'Thạch Nha',speed:4},archer:{name:'Gai Độc',speed:10},shaman:{name:'Tư Tế Tro',speed:6},assassin:{name:'Ảnh Trảo',speed:13},boss:{name:'Vua Sừng Tàn',speed:8}};
 const CHAPTERS=['Rừng Thức Giấc','Thành Tro Tàn'];
 const STAGES=['Lối Mòn Sương','Bờ Suối Vắng','Rễ Cây Cổ','Vọng Gác Rừng','Ngai Sừng Tàn','Cổng Than Hồng','Đường Tro Bay','Điện Hoang Phế','Tháp Lặng Im','Bình Minh Trở Lại'];
@@ -64,7 +66,7 @@ function fresh(){return{version:1,gold:tune.startGold,essence:tune.startEssence,
 function load(){try{const p=JSON.parse(localStorage.getItem(SAVE));if(!p||p.version!==1||!Array.isArray(p.heroes)||p.heroes.length!==5||!Array.isArray(p.formation)||p.formation.length!==5||new Set(p.formation).size!==5||p.formation.some(n=>!Number.isInteger(n)||n<0||n>4))return fresh();if(!['gold','essence','shards','cleared'].every(k=>Number.isFinite(p[k])&&p[k]>=0)||!Number.isInteger(p.cleared)||p.cleared>10||p.heroes.some(h=>!Number.isInteger(h.level)||h.level<1||h.level>30||typeof h.evolved!=='boolean'))return fresh();return p;}catch{return fresh();}}
 let progress=load();
 function save(){try{localStorage.setItem(SAVE,JSON.stringify(progress));state.saveFailed=false;}catch{state.saveFailed=true;}uiDirty=true;}
-function reset(){seed=Number(params.get('seed'))||CONFIG.seed;state={t:0,score:progress.cleared,gained:'',chapter:Math.min(Math.floor(progress.cleared/tune.stagesPerChapter),tune.chapters-1),selectedStage:Math.min(progress.cleared,totalStages()-1),selectedHero:0,swap:null,mode:'map',battle:null,saveFailed:false};uiDirty=true;}
+function reset(){seed=Number(params.get('seed'))||CONFIG.seed;state={t:0,score:progress.cleared,gained:'',chapter:Math.min(Math.floor(progress.cleared/tune.stagesPerChapter),tune.chapters-1),selectedStage:Math.min(progress.cleared,totalStages()-1),selectedHero:0,swap:null,arranging:false,mode:'map',battle:null,saveFailed:false};uiDirty=true;}
 function toast(s){$('toast').textContent=s;$('toast').hidden=false;toastTime=3.5;}
 function statFor(kind,level=1,evolved=false,mult=1){const factor=(1+(level-1)*tune.levelGrowth)*(evolved?tune.evolveMultiplier:1)*mult;const hp=tune.baseHP*(kind==='warden'?tune.tankHP:kind==='lancer'?tune.lancerHP:kind==='brute'?tune.tankHP:kind==='boss'?tune.tankHP:1)*factor;const attack=tune.baseAttack*(kind==='warden'||kind==='brute'?tune.tankAttack:kind==='lancer'?tune.lancerAttack:kind==='ranger'||kind==='archer'?tune.rangerAttack:kind==='mage'||kind==='shaman'?tune.mageAttack:kind==='healer'?tune.healerAttack:1)*factor;return{maxHP:Math.round(hp),attack:Math.round(attack)};}
 function enemyKinds(stage){const kinds=['brute','brute','archer','archer','archer'];if(stage>=tune.enemyCasterStage)kinds[4]='shaman';if(stage>=tune.enemyAssassinStage)kinds[3]='assassin';if((stage+1)%tune.stagesPerChapter===0)kinds[0]='boss';return kinds;}
@@ -77,27 +79,169 @@ function upgradeCost(h){return{gold:Math.round(tune.upgradeGold*Math.pow(tune.co
 function upgrade(){if(scene!=='play'||state.mode!=='map')return;const h=progress.heroes[state.selectedHero],cost=upgradeCost(h);if(h.level>=tune.maxLevel)return toast('Tướng đã đạt cấp tối đa của bản đầu.');if(progress.gold<cost.gold||progress.essence<cost.essence)return toast('Chưa đủ tài nguyên. Đánh lại ải đã thắng để nhận thêm.');progress.gold-=cost.gold;progress.essence-=cost.essence;h.level++;save();toast(`${HEROES[state.selectedHero].name} đạt cấp ${h.level}. Sức mạnh đã tăng!`);}
 /** Evolve once after meeting level and currency requirements. */
 function evolve(){if(scene!=='play'||state.mode!=='map')return;const h=progress.heroes[state.selectedHero];if(h.evolved)return toast('Tướng đã tiến hóa thành Tinh Anh.');if(h.level<tune.evolveLevel)return toast(`Cần cấp ${tune.evolveLevel} để tiến hóa.`);if(progress.shards<tune.evolveShards||progress.gold<tune.evolveGold)return toast('Chưa đủ vàng hoặc ấn tiến hóa. Ấn nhận khi thắng ải mới.');progress.shards-=tune.evolveShards;progress.gold-=tune.evolveGold;h.evolved=true;save();toast(`${HEROES[state.selectedHero].name} thức tỉnh! Chỉ số và kỹ năng tăng cường.`);}
-function selectHero(i){if(scene!=='play'||state.mode!=='map')return;if(state.swap!==null&&state.swap!==i){const a=progress.formation.indexOf(state.swap),b=progress.formation.indexOf(i);[progress.formation[a],progress.formation[b]]=[progress.formation[b],progress.formation[a]];toast(`${HEROES[state.swap].name} và ${HEROES[i].name} đã đổi vị trí.`);state.swap=null;save();}else state.swap=state.swap===i?null:i;state.selectedHero=i;uiDirty=true;}
-function selectStage(i){if(state.mode!=='map'||i>progress.cleared)return;state.selectedStage=i;state.swap=null;uiDirty=true;}
+/** Selecting for upgrades never changes formation unless the explicit arrange mode is active. */
+function selectHero(i){
+  if(scene!=='play'||state.mode!=='map')return;
+  if(state.arranging){
+    if(state.swap!==null&&state.swap!==i){
+      const a=progress.formation.indexOf(state.swap),b=progress.formation.indexOf(i);
+      [progress.formation[a],progress.formation[b]]=[progress.formation[b],progress.formation[a]];
+      toast(`${HEROES[state.swap].name} và ${HEROES[i].name} đã đổi vị trí.`);state.swap=null;save();
+    }else state.swap=state.swap===i?null:i;
+  }else state.swap=null;
+  state.selectedHero=i;uiDirty=true;
+}
+/** Explicitly enter/leave formation editing and discard any unfinished swap. */
+function toggleFormation(){if(scene!=='play'||state.mode!=='map')return;state.arranging=!state.arranging;state.swap=null;uiDirty=true;}
+/** Select an unlocked campaign stage and keep its visible chapter synchronized. */
+function selectStage(i){if(scene!=='play'||state.mode!=='map'||!Number.isInteger(i)||i<0||i>=totalStages()||i>progress.cleared)return;state.selectedStage=i;state.chapter=Math.floor(i/tune.stagesPerChapter);state.swap=null;uiDirty=true;}
 /** Begin a battle with a fresh snapshot; campaign progress changes only on victory. */
-function beginBattle(){if(scene!=='play'||state.mode!=='map'||state.selectedStage>progress.cleared)return;const stage=state.selectedStage;seed=(Number(params.get('seed'))||CONFIG.seed)+stage;const make=(kind,side,slot,index,stats)=>({...stats,hp:stats.maxHP,kind,side,slot,index,shield:0,actions:0,flash:0,deadTime:0,animation:'idle',animationTime:0,name:side===0?HEROES[index].name:ENEMIES[kind].name,speed:tune[kind+'Speed']});const heroes=progress.formation.map((i,s)=>make(HEROES[i].id,0,s,i,statFor(HEROES[i].id,progress.heroes[i].level,progress.heroes[i].evolved)));const enemies=enemyKinds(stage).map((k,s)=>make(k,1,s,s,statFor(k,1,false,enemyFactor(stage))));state.battle={stage,heroes,enemies,round:0,queue:[],timer:tune.actionInterval,active:null,effects:[],log:['Hai đội đã sẵn sàng.'],won:false,reward:reward(stage)};state.mode='battle';state.swap=null;newRound();events.push({type:'battle-start',stage});uiDirty=true;}
-function newRound(){const b=state.battle;b.round++;b.queue=[...b.heroes,...b.enemies].filter(u=>u.hp>0).sort((a,c)=>c.speed-a.speed||a.side-c.side||a.slot-c.slot);uiDirty=true;}
+function beginBattle(){
+  if(scene!=='play'||state.mode!=='map'||state.selectedStage>progress.cleared)return;
+  const stage=state.selectedStage;seed=(Number(params.get('seed'))||CONFIG.seed)+stage;
+  const slots=[[320,355],[345,470],[130,330],[175,410],[220,485]];
+  const make=(kind,side,slot,index,stats)=>{
+    const [sx,y]=slots[slot],speed=tune[kind+'Speed'];
+    return {...stats,hp:stats.maxHP,kind,side,slot,index,x:side?921-sx:sx,y,facing:side===0?1:-1,
+      shield:0,actions:0,skills:0,flash:0,deadTime:0,animation:'idle',animationTime:0,
+      name:side===0?HEROES[index].name:ENEMIES[kind].name,speed,
+      attackCD:slot*tune.spawnStagger,skillCD:tune.firstSkillDelay+slot*tune.spawnStagger,
+      action:null,recovery:0,target:null,moving:false,motion:0};
+  };
+  const heroes=progress.formation.map((i,s)=>make(HEROES[i].id,0,s,i,statFor(HEROES[i].id,progress.heroes[i].level,progress.heroes[i].evolved)));
+  const enemies=enemyKinds(stage).map((k,s)=>make(k,1,s,s,statFor(k,1,false,enemyFactor(stage))));
+  state.battle={stage,heroes,enemies,elapsed:0,uiClock:0,projectiles:[],effects:[],log:['Hai đội tiến vào giao tranh.'],won:false,reward:reward(stage)};
+  state.mode='battle';state.swap=null;state.arranging=false;events.push({type:'battle-start',stage});uiDirty=true;
+}
 function living(units){return units.filter(u=>u.hp>0);}
 function log(s){const b=state.battle;b.log.unshift(s);b.log=b.log.slice(0,5);uiDirty=true;}
-function frontTarget(list){const live=living(list),front=live.filter(u=>u.slot<2);const pool=front.length?front:live;return pool[Math.floor(rng()*pool.length)];}
 function weakest(list){return living(list).sort((a,b)=>a.hp/a.maxHP-b.hp/b.maxHP)[0];}
-function impact(source,target,amount,heal=false){if(!target)return;const b=state.battle;let value=Math.round(amount);if(heal){value=Math.min(value,target.maxHP-target.hp);target.hp+=value;}else{if(target.kind==='warden'||target.kind==='brute'||target.kind==='boss')value=Math.round(value*(1-tune.armorReduction));value=Math.round(value*(1+(rng()*2-1)*tune.damageVariance));const absorbed=Math.min(target.shield,value);target.shield-=absorbed;value-=absorbed;target.hp=Math.max(0,target.hp-value);if(value>0)playUnitAnimation(target,target.hp===0?'death':'hit');target.flash=tune.animationDuration;}b.effects.push({source,target,value,heal,t:0,life:tune.animationDuration});}
-function act(unit){const b=state.battle;unit.actions++;b.active=unit;const foes=unit.side===0?b.enemies:b.heroes,allies=unit.side===0?b.heroes:b.enemies;const special=unit.actions%tune.skillEvery===0;const evolved=unit.side===0&&progress.heroes[unit.index].evolved;const attack=unit.attack;const bonus=evolved&&special?tune.evolveMultiplier:1;let target=frontTarget(foes);if(!target)return;
-if(unit.kind==='lancer'){const skills=['skill','skillShield','skillAura','skillArc'];playUnitAnimation(unit,special?skills[(Math.floor(unit.actions/tune.skillEvery)-1)%skills.length]:'attack');}
-if(special&&(unit.kind==='healer'||unit.kind==='shaman')){target=weakest(allies);impact(unit,target,attack*tune.healPower*bonus,true);log(`${unit.name} hồi phục cho ${target.name}.`);}
-else if(special&&unit.kind==='warden'){const protect=living(allies).filter(u=>u.slot<2);(protect.length?protect:[unit]).forEach(u=>{u.shield+=Math.round(attack*tune.shieldPower*bonus);});log(`${unit.name}: Lời thề thép — tạo khiên hàng trước.`);}
-else if(special&&(unit.kind==='mage'||unit.kind==='boss')){living(foes).forEach(t=>impact(unit,t,attack*tune.areaDamage*bonus));log(`${unit.name} tung ${unit.kind==='boss'?'Bão sừng tàn':'Tinh vân thức giấc'}!`);}
-else{if(unit.kind==='assassin')target=weakest(living(foes).filter(u=>u.slot>=2))||target;if(special&&(unit.kind==='ranger'||unit.kind==='archer'))target=weakest(foes);impact(unit,target,attack*(special?tune.skillDamage:1)*bonus);if(special&&unit.kind==='lancer'){const rear=living(foes).find(u=>u.slot>=2);if(rear)impact(unit,rear,attack*tune.areaDamage*bonus);}log(`${unit.name}${special?' tung tuyệt kỹ,':' đánh'} ${target.name}.`);}
-events.push({type:'action',actor:unit.name,skill:special,round:b.round});uiDirty=true;}
-function finish(won,timeout=false){const b=state.battle;b.won=won;if(won){progress.gold+=b.reward.gold;progress.essence+=b.reward.essence;progress.shards+=b.reward.shards;if(b.stage===progress.cleared)progress.cleared++;state.score=progress.cleared;state.gained=progress.cleared===totalStages()?'Bình minh đã trở lại':'Ải đã được giải phóng';save();}else state.gained=timeout?'Hết giới hạn lượt':'Đội hình đã gục ngã';scene='results';events.push({type:won?'victory':'defeat',stage:b.stage});uiDirty=true;}
+function distance(a,b){return Math.hypot(a.x-b.x,a.y-b.y);}
+function ranged(unit){return ['ranger','mage','healer','archer','shaman'].includes(unit.kind);}
+function cadence(unit){return Math.pow(tune.speedReference/unit.speed,tune.speedExponent);}
+/** Retain a living target; reacquire by actual distance, not by a shared turn queue. */
+function acquireTarget(unit,foes){
+  if(unit.target?.hp>0)return unit.target;
+  const live=living(foes),rear=unit.kind==='assassin'?live.filter(u=>u.slot>=2):[];
+  unit.target=(rear.length?rear:live).sort((a,b)=>distance(unit,a)-distance(unit,b))[0]||null;
+  return unit.target;
+}
+/** Damage cannot revive a corpse. Busy attack/skill clips resist visual hit interruption. */
+function impact(source,target,amount,heal=false){
+  if(!target||target.hp<=0)return;
+  const b=state.battle;let value=Math.round(amount),absorbed=0;
+  if(heal){value=Math.min(value,target.maxHP-target.hp);target.hp+=value;}
+  else{
+    if(['warden','brute','boss'].includes(target.kind))value=Math.round(value*(1-tune.armorReduction));
+    value=Math.round(value*(1+(rng()*2-1)*tune.damageVariance));
+    absorbed=Math.min(target.shield,value);target.shield-=absorbed;value-=absorbed;
+    target.hp=Math.max(0,target.hp-value);
+    if(target.hp===0){target.action=null;target.moving=false;playUnitAnimation(target,'death');}
+    else if(value>0&&!target.action&&target.recovery<=0)playUnitAnimation(target,'hit');
+    target.flash=tune.animationDuration;
+  }
+  b.effects.push({source,target,x:target.x,y:target.y,value,absorbed,heal,t:0,life:tune.animationDuration});uiDirty=true;
+}
+/** Deliver ranged effects on projectile arrival; melee resolves only within reach. */
+function deliver(unit,target,amount,heal=false,spell=false){
+  if(!target||target.hp<=0)return;
+  if(ranged(unit)||spell){state.battle.projectiles.push({source:unit,target,x:unit.x,y:unit.y-65,amount,heal,spell,t:0});}
+  else if(distance(unit,target)<=tune.meleeRange+tune.rangeHysteresis)impact(unit,target,amount,heal);
+}
+/** Windup completion releases a skill without blocking any other unit's clock. */
+function resolveAction(unit,action){
+  const b=state.battle,foes=unit.side===0?b.enemies:b.heroes,allies=unit.side===0?b.heroes:b.enemies;
+  const special=action.special,bonus=special&&unit.side===0&&progress.heroes[unit.index].evolved?tune.evolveMultiplier:1,attack=unit.attack*bonus;
+  let target=action.target;
+  if(special&&(unit.kind==='healer'||unit.kind==='shaman')){
+    target=target?.hp>0?target:weakest(allies);deliver(unit,target,attack*tune.healPower,true,true);
+  }else if(special&&unit.kind==='warden'){
+    const protect=living(allies).filter(u=>u.slot<2);
+    (protect.length?protect:[unit]).forEach(u=>{u.shield=Math.max(u.shield,Math.round(attack*tune.shieldPower));b.effects.push({source:unit,target:u,x:u.x,y:u.y,shield:true,t:0,life:tune.animationDuration});});
+  }else if(special&&(unit.kind==='mage'||unit.kind==='boss')){
+    living(foes).forEach(t=>deliver(unit,t,attack*tune.areaDamage,false,true));
+  }else{
+    if(target?.hp>0)deliver(unit,target,attack*(special?tune.skillDamage:1));
+    if(special&&unit.kind==='lancer'){
+      const rear=living(foes).find(u=>u.slot>=2&&u!==target);
+      if(rear)deliver(unit,rear,attack*tune.areaDamage,false,true);
+    }
+  }
+  events.push({type:'impact-release',actor:unit.name,skill:special,time:b.elapsed});
+}
+/** Begin a private windup and cooldown; several units can cast in the same fixed step. */
+function startAction(unit,target,special){
+  const b=state.battle;unit.actions++;
+  if(special){unit.skills++;unit.skillCD=tune.skillCooldown*cadence(unit);}
+  unit.attackCD=tune.attackInterval*cadence(unit);
+  unit.action={target,special,left:special?tune.skillWindup:tune.attackWindup};unit.moving=false;
+  const skills=['skill','skillShield','skillAura','skillArc'];
+  playUnitAnimation(unit,special?skills[(unit.skills-1)%skills.length]:'attack');
+  if(special)log(`${unit.name}: ${unit.side===0?HEROES[unit.index].skill:'Tuyệt kỹ'}!`);
+  events.push({type:'action',actor:unit.name,skill:special,time:b.elapsed,x:unit.x,y:unit.y});uiDirty=true;
+}
+/** World-space movement: approach, charge or retreat, with bounded ally separation. */
+function moveUnit(unit,target,dt,charge=false,retreat=false){
+  let dx=target.x-unit.x,dy=target.y-unit.y,d=Math.hypot(dx,dy)||1;
+  const kindSpeed=unit.kind==='lancer'?tune.lancerMoveMultiplier:unit.kind==='assassin'?tune.assassinMoveMultiplier:1;
+  const speed=tune.moveSpeed*kindSpeed*(charge?tune.chargeMultiplier:retreat?tune.retreatMultiplier:1);
+  const stop=retreat?0:charge?tune.chargeStopRange:(ranged(unit)?tune.rangedRange-tune.rangeHysteresis:tune.meleeRange-tune.rangeHysteresis);
+  const amount=retreat?speed*dt:Math.min(speed*dt,Math.max(0,d-stop));
+  unit.x+=dx/d*amount*(retreat?-1:1);unit.y+=dy/d*amount*(retreat?-1:1);
+  unit.moving=amount>0;unit.motion+=amount;unit.facing=dx>=0?1:-1;
+}
+function constrainUnit(unit){unit.x=Math.max(tune.arenaLeft,Math.min(tune.arenaRight,unit.x));unit.y=Math.max(tune.arenaTop,Math.min(tune.arenaBottom,unit.y));}
+/** Fixed-step independent AI, simultaneous windups, and homing projectile delivery. */
+function updateBattle(dt){
+  const b=state.battle,all=[...b.heroes,...b.enemies];b.elapsed+=dt;advanceAnimations(dt);
+  b.effects.forEach(e=>e.t+=dt);b.effects=b.effects.filter(e=>e.t<e.life);
+  for(const u of all){
+    u.flash=Math.max(0,u.flash-dt);u.moving=false;
+    if(u.hp<=0){u.deadTime+=dt;continue;}
+    u.attackCD=Math.max(0,u.attackCD-dt);u.skillCD=Math.max(0,u.skillCD-dt);u.recovery=Math.max(0,u.recovery-dt);
+    if(u.action){
+      const a=u.action;
+      if(a.special&&u.kind==='lancer'&&a.target.hp>0)moveUnit(u,a.target,dt,true);
+      a.left-=dt;if(a.left<=0){u.action=null;resolveAction(u,a);u.recovery=tune.actionRecovery;}
+      constrainUnit(u);continue;
+    }
+    if(u.recovery>0)continue;
+    const foes=u.side===0?b.enemies:b.heroes,allies=u.side===0?b.heroes:b.enemies,target=acquireTarget(u,foes);
+    if(!target)continue;u.facing=target.x>=u.x?1:-1;
+    const special=u.skillCD<=0,support=special&&['healer','shaman','warden'].includes(u.kind);
+    const inRange=distance(u,target)<=(ranged(u)?tune.rangedRange:tune.meleeRange);
+    if(support||(special&&u.kind==='boss')||inRange){
+      if(special||u.attackCD<=0){
+        const chosen=support&&u.kind!=='warden'?weakest(allies):special&&['ranger','archer'].includes(u.kind)?weakest(foes):target;
+        startAction(u,chosen,special);continue;
+      }
+    }
+    if(ranged(u)&&distance(u,target)<tune.rangedMinRange)moveUnit(u,target,dt,false,true);
+    else if(!inRange)moveUnit(u,target,dt);
+    constrainUnit(u);
+  }
+  // Symmetric ally separation prevents a retargeted team collapsing into one sprite.
+  for(const team of [b.heroes,b.enemies])for(let i=0;i<team.length;i++)for(let j=i+1;j<team.length;j++){
+    const a=team[i],c=team[j];if(a.hp<=0||c.hp<=0)continue;
+    const dx=c.x-a.x,dy=c.y-a.y,d=Math.hypot(dx,dy),push=Math.min(tune.separationSpeed*dt,Math.max(0,tune.bodySpacing-d)/2);
+    if(push>0){const nx=d?dx/d:0,ny=d?dy/d:1;a.x-=nx*push;a.y-=ny*push;c.x+=nx*push;c.y+=ny*push;constrainUnit(a);constrainUnit(c);}
+  }
+  b.projectiles=b.projectiles.filter(p=>{
+    if(p.target.hp<=0)return false;
+    const tx=p.target.x,ty=p.target.y-65,dx=tx-p.x,dy=ty-p.y,d=Math.hypot(dx,dy),move=tune.projectileSpeed*dt;p.t+=dt;
+    if(d<=move){impact(p.source,p.target,p.amount,p.heal);return false;}
+    p.x+=dx/d*move;p.y+=dy/d*move;return true;
+  });
+  b.uiClock+=dt;if(b.uiClock>=tune.uiRefreshInterval){b.uiClock=0;uiDirty=true;}
+  if(!living(b.enemies).length)finish(true);
+  else if(!living(b.heroes).length)finish(false);
+  else if(b.elapsed>=tune.maxBattleSeconds)finish(false,true);
+}
+function finish(won,timeout=false){const b=state.battle;b.won=won;if(won){progress.gold+=b.reward.gold;progress.essence+=b.reward.essence;progress.shards+=b.reward.shards;if(b.stage===progress.cleared)progress.cleared++;state.score=progress.cleared;state.gained=progress.cleared===totalStages()?'Bình minh đã trở lại':'Ải đã được giải phóng';save();}else state.gained=timeout?'Hết thời gian giao tranh':'Đội hình đã gục ngã';scene='results';events.push({type:won?'victory':'defeat',stage:b.stage});uiDirty=true;}
 function returnMap(){scene='play';state.mode='map';if(state.battle?.won){state.selectedStage=Math.min(progress.cleared,totalStages()-1);state.chapter=Math.min(Math.floor(state.selectedStage/tune.stagesPerChapter),tune.chapters-1);}state.battle=null;uiDirty=true;}
-function update(dt){state.t+=dt;if(toastTime>0){toastTime-=dt;if(toastTime<=0)$('toast').hidden=true;}if(scene==='title'){if(hit.has('Enter')||hit.has('Space')){scene='play';uiDirty=true;}return;}if(scene==='pause'){if(hit.has('KeyP')||hit.has('Escape')){scene='play';uiDirty=true;}return;}if(scene==='results'){advanceAnimations(dt);if(hit.has('Enter')||hit.has('Space'))returnMap();return;}if(scene==='figures')return;if(hit.has('KeyP')||hit.has('Escape')){if(state.mode==='battle'){scene='pause';uiDirty=true;}return;}if(state.mode==='map'){if(hit.has('KeyU'))upgrade();if(hit.has('KeyE'))evolve();if(hit.has('Space'))beginBattle();if(hit.has('ArrowRight'))selectStage(Math.min(state.selectedStage+1,progress.cleared,totalStages()-1));return;}
-const b=state.battle;advanceAnimations(dt);b.effects.forEach(e=>e.t+=dt);b.effects=b.effects.filter(e=>e.t<e.life);[...b.heroes,...b.enemies].forEach(u=>{u.flash=Math.max(0,u.flash-dt);if(u.hp<=0)u.deadTime+=dt;});b.timer-=dt;if(b.timer>0)return;b.timer=tune.actionInterval;if(!living(b.enemies).length){finish(true);return;}if(!living(b.heroes).length){finish(false);return;}if(!b.queue.length){if(b.round>=tune.maxRounds){finish(false,true);return;}newRound();}const next=b.queue.shift();if(next?.hp>0)act(next);}
+/** Pause entry must freeze the visual clock on the same step as combat. */
+function update(dt){const enteringPause=scene==='play'&&state.mode==='battle'&&(hit.has('KeyP')||hit.has('Escape'));if(scene!=='pause'&&!enteringPause)state.t+=dt;if(toastTime>0){toastTime-=dt;if(toastTime<=0)$('toast').hidden=true;}if(scene==='title'){if(hit.has('Enter')||hit.has('Space')){scene='play';uiDirty=true;}return;}if(scene==='pause'){if(hit.has('KeyP')||hit.has('Escape')){scene='play';uiDirty=true;}return;}if(scene==='results'){advanceAnimations(dt);if(hit.has('Enter')||hit.has('Space'))returnMap();return;}if(scene==='figures')return;if(hit.has('KeyP')||hit.has('Escape')){if(state.mode==='battle'){scene='pause';uiDirty=true;}return;}if(state.mode==='map'){if(hit.has('KeyU'))upgrade();if(hit.has('KeyE'))evolve();if(hit.has('Space'))beginBattle();if(hit.has('ArrowLeft'))selectStage(Math.max(0,state.selectedStage-1));if(hit.has('ArrowRight'))selectStage(Math.min(state.selectedStage+1,progress.cleared,totalStages()-1));return;}
+updateBattle(dt);}
 
 // Original code-drawn illustrations. Shared anatomy does not imply shared silhouettes:
 // horse/lance, broad tower shield, archer hood/bow, split robes/staff, lantern bearer;
@@ -108,7 +252,7 @@ function line(points,color,width=2){ctx.beginPath();points.forEach((p,i)=>i?ctx.
 function text(s,x,y,size=14,color=C.ink,align='center',serif=false){ctx.fillStyle=color;ctx.font=`${size}px ${serif?'Georgia':'Segoe UI, Arial'}`;ctx.textAlign=align;ctx.textBaseline='middle';ctx.fillText(s,x,y);}
 function rounded(x,y,w,h,r,fill,stroke){ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fillStyle=fill;ctx.fill();if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=1;ctx.stroke();}}
 function star(x,y,r,color){const pts=[];for(let i=0;i<8;i++){const a=i*Math.PI/4;pts.push([x+Math.cos(a)*(i%2?r*.3:r),y+Math.sin(a)*(i%2?r*.3:r)]);}poly(pts,color,null);}
-function character(kind,x,y,scale=1,flip=false,pose=0,evolved=false,dead=0){if(kind==='lancer'){drawLancerSprite(x,y,scale*tune.lancerSpriteScale,flip,dead>0?'death':'idle',dead>0?dead:state.t,evolved);return;}ctx.save();ctx.translate(x,y);ctx.scale(flip?-scale:scale,scale);if(dead>0){ctx.globalAlpha=Math.max(.2,1-dead*1.7);ctx.translate(0,12);ctx.rotate(-.2);}else ctx.translate(0,Math.sin(state.t*2+x)*1.6);ellipse(0,2,36,8,'#0005');if(evolved){ctx.save();ctx.globalAlpha=.45;ellipse(0,-5,41,9,'#e7c46b');star(-34,-61,8,'#ffe7a0');ctx.restore();}
+function character(kind,x,y,scale=1,flip=false,pose=0,evolved=false,dead=0){if(kind==='lancer'){drawLancerSprite(x,y,scale*tune.lancerSpriteScale,flip,dead>0?'death':'idle',dead>0?dead:state.t,evolved);return;}ctx.save();ctx.translate(x,y);ctx.scale(flip?-scale:scale,scale);if(dead>0){ctx.globalAlpha=Math.max(0,1-dead*1.7);ctx.translate(0,12);ctx.rotate(-.2);}else ctx.translate(0,Math.sin(state.t*2+x)*1.6);ellipse(0,2,36,8,'#0005');if(evolved){ctx.save();ctx.globalAlpha=.45;ellipse(0,-5,41,9,'#e7c46b');star(-34,-61,8,'#ffe7a0');ctx.restore();}
 const navy='#284858',light='#76939b',gold='#d6b36e',skin='#e4c5a4';
 if(kind==='warden'){
 poly([[-24,-37],[-24,0],[-9,0],[-7,-34]],'#485b68');poly([[5,-36],[10,0],[25,0],[21,-38]],'#405565');poly([[-31,-69],[-19,-85],[20,-83],[34,-61],[20,-27],[-21,-25]],navy);poly([[-31,-69],[-39,-59],[-18,-51],[-7,-72]],light);poly([[15,-77],[33,-80],[43,-61],[22,-51]],'#b2beb2');line([[-18,-60],[16,-58],[15,-31],[-13,-31]],gold,3);
@@ -150,32 +294,116 @@ NODEPOS.forEach(([x,y],n)=>{const stage=state.chapter*tune.stagesPerChapter+n;if
 if(n===tune.stagesPerChapter-1){poly([[x-25,y+10],[x-25,y-32],[x-14,y-32],[x-14,y-45],[x-2,y-45],[x-2,y-33],[x+12,y-33],[x+12,y-46],[x+24,y-46],[x+29,y+10]],locked?'#485353':'#7b7966');poly([[x-7,y+12],[x-7,y-12],[x+7,y-15],[x+9,y+12]],'#203135');line([[x-24,y-24],[x+24,y-24]],'#c0ac7a',2);}else{poly([[x-24,y+6],[x-18,y-18],[x,y-31],[x+20,y-18],[x+27,y+8],[x,y+20]],locked?'#445353':done?'#577d72':'#7b8770',locked?'#697773':'#d5be86',2);poly([[x-12,y+5],[x,y-17],[x+13,y+5]],locked?'#6b7b74':'#d3bd80',null);if(done)line([[x-9,y-2],[x-2,y+4],[x+11,y-9]],'#193b39',3);}
 rounded(x-35,y+33,70,27,4,chosen?'#e0c38b':'#132d33e8',chosen?'#f2daa1':'#7d896e');text(stageLabel(stage),x,y+47,14,chosen?'#1b3036':'#f0dfb6');text(locked?'Chưa mở':STAGES[stage],x,y+80,12,locked?'#a0b0a7':'#e5e7d3');});
 text('Chọn dấu mốc để xem đội địch và phần thưởng',466,551,13,'#c1cfc4');ctx.restore();}
-function unitPos(u){const ally=u.side===0;const slots=[[360,350],[398,464],[140,315],[200,416],[258,515]];const [x,y]=slots[u.slot];return[ally?x:921-x,y];}
+function unitPos(u){return[u.x,u.y];}
 function battleDraw(){const b=state.battle;background(Math.floor(b.stage/tune.stagesPerChapter)===1);ctx.save();ctx.beginPath();ctx.rect(0,215,930,355);ctx.clip();
 // Ancient circular paving and torch-lit plinths.
 ellipse(467,474,352,80,'#7280712a','#81917c38');ellipse(467,474,270,59,'#71847218','#8c967c40');for(let i=0;i<11;i++){const a=i/11*Math.PI*2;line([[467+Math.cos(a)*278,474+Math.sin(a)*61],[467+Math.cos(a)*344,474+Math.sin(a)*76]],'#75847140',2);}for(const x of[83,837]){poly([[x-13,389],[x-8,300],[x+8,300],[x+14,389]],'#657565');poly([[x-17,303],[x-20,289],[x+20,289],[x+17,303]],'#a28e65');poly([[x-9,286],[x-11,268],[x-3,250],[x+1,272],[x+9,261],[x+11,281],[x+4,292]],'#e8bc74',null);}
-const all=[...b.heroes,...b.enemies].sort((a,c)=>unitPos(a)[1]-unitPos(c)[1]);all.forEach(u=>{let[x,y]=unitPos(u);const effect=b.effects.find(e=>e.source===u);const pose=!!effect;if(effect&&u.kind!=='lancer'){const p=Math.sin(Math.min(1,effect.t/effect.life)*Math.PI);x+=(u.side===0?1:-1)*p*24;}if(b.active===u&&u.hp>0)ellipse(x,y+8,41,12,'#e6cc8b12','#e6cc8b');if(u.kind==='lancer')drawLancerSprite(x,y,.84*tune.lancerSpriteScale,u.side===1,u.animation,u.animationTime,u.side===0&&progress.heroes[u.index].evolved);else character(u.kind,x,y,.84,u.side===1,pose,u.side===0&&progress.heroes[u.index].evolved,u.deadTime);if(u.flash>0&&u.kind!=='lancer'){ctx.save();ctx.globalAlpha=u.flash/tune.animationDuration*.28;ellipse(x,y-40,28,46,'#fff1c5');ctx.restore();}const bx=x-43,by=y+14;rounded(bx,by,86,7,3,'#152c34');rounded(bx,by,Math.max(0,86*u.hp/u.maxHP),7,3,u.side===0?'#3987e5':'#d95926');if(u.shield>0){line([[bx,by-3],[bx+Math.min(86,u.shield/u.maxHP*86),by-3]],'#e5c984',3);}rounded(x-55,by+11,110,35,4,'#122832dc');text(`${Math.ceil(u.hp)} / ${u.maxHP}${u.shield?' +'+u.shield:''}`,x,by+21,12,'#f4eedc');text(u.name,x,by+37,12,'#f4e4c6');});
-b.effects.forEach(e=>{const [sx,sy]=unitPos(e.source),[tx,ty]=unitPos(e.target),p=Math.min(1,e.t/e.life);ctx.save();ctx.globalAlpha=1-p;line([[sx,sy-65],[tx,ty-61]],e.heal?'#c0e1ae':'#f1d39b',e.heal?2:3);star(tx,ty-63,14+18*p,e.heal?'#ceefb4':'#fbe3a5');text((e.heal?'+':'−')+e.value,tx,ty-93-p*33,23,e.heal?'#d1f0ba':'#ffe0b7');ctx.restore();});ctx.restore();}
+const all=[...b.heroes,...b.enemies].sort((a,c)=>a.y-c.y);
+all.forEach(u=>{
+  const x=u.x,y=u.y,busy=!!u.action||u.recovery>0;
+  const bob=u.moving?Math.sin(u.motion*.12)*3:0;
+  if(u.moving){for(let i=0;i<3;i++)ellipse(x-u.facing*(16+i*13),y+3,7-i,3,'#dfce9d22');}
+  if(u.action?.special){ellipse(x,y,43,12,'#edd29333','#edcd8b');star(x,y-112,10+Math.sin(state.t*20)*3,'#ffe1a2');}
+  if(u.kind==='lancer')drawLancerSprite(x,y+bob,.84*tune.lancerSpriteScale,u.facing<0,u.animation,u.animationTime,u.side===0&&progress.heroes[u.index].evolved);
+  else character(u.kind,x,y+bob,.84,u.facing<0,busy,u.side===0&&progress.heroes[u.index].evolved,u.deadTime);
+  if(u.flash>0&&u.kind!=='lancer'){ctx.save();ctx.globalAlpha=u.flash/tune.animationDuration*.28;ellipse(x,y-40,28,46,'#fff1c5');ctx.restore();}
+});
+// Health bars and annotations follow every figure so foreground bodies cannot hide team status.
+all.filter(u=>u.hp>0).forEach(u=>{
+  const bx=u.x-38,by=u.y+10;
+  rounded(bx,by,76,7,3,'#152c34');rounded(bx,by,76*u.hp/u.maxHP,7,3,u.side===0?'#3987e5':'#d95926');
+  if(u.shield>0)line([[bx,by-3],[bx+Math.min(76,u.shield/u.maxHP*76),by-3]],'#e5c984',3);
+});
+// Keep identity and numeric health together; connect displaced badges to their unit's health bar.
+function drawUnitBadges(){
+const labels=[];
+all.filter(u=>u.hp>0).forEach(u=>{
+  const desiredY=u.y+39,candidates=[];
+  for(const dx of [0,-104,104,-208,208])for(const dy of [0,35,-35,70,-70]){
+    const x=Math.max(54,Math.min(876,u.x+dx)),y=Math.max(235,Math.min(546,desiredY+dy));
+    const overlaps=labels.filter(p=>Math.abs(p.x-x)<102&&Math.abs(p.y-y)<34).length;
+    candidates.push({x,y,score:overlaps*10000+Math.hypot(x-u.x,y-desiredY)});
+  }
+  const badge=candidates.sort((a,c)=>a.score-c.score)[0];labels.push(badge);
+  if(Math.hypot(badge.x-u.x,badge.y-desiredY)>8)line([[u.x,u.y+17],[badge.x,badge.y-16]],'#b1c6be99',1);
+  rounded(badge.x-49,badge.y-16,98,32,3,'#122832f2');
+  text(u.name,badge.x,badge.y-7,12,'#f4e4c6');
+  text(`${Math.ceil(u.hp)} / ${u.maxHP}`,badge.x,badge.y+7,11,'#d5dfd8');
+});
+}
+b.projectiles.forEach(p=>{
+  const color=p.heal?'#ceefb4':p.spell?'#c6c2ff':'#fbe3a5';
+  const angle=Math.atan2(p.target.y-65-p.y,p.target.x-p.x);
+  line([[p.x-Math.cos(angle)*22,p.y-Math.sin(angle)*22],[p.x,p.y]],color,p.spell?4:2);
+  if(p.spell)star(p.x,p.y,8,color);
+});
+b.effects.forEach(e=>{
+  const p=Math.min(1,e.t/e.life),tx=e.x,ty=e.y;ctx.save();ctx.globalAlpha=1-p;
+  if(e.shield){ellipse(tx,ty-43,40+p*10,54,'#e4cd8b22','#f1d39b');}
+  else{
+    const color=e.heal?'#ceefb4':'#fbe3a5';star(tx,ty-63,14+18*p,color);
+    if(e.source.kind==='lancer'&&!e.heal){ctx.beginPath();ctx.ellipse(tx,ty-48,45+28*p,25,-.5,-1.4,1.5);ctx.strokeStyle='#ffe4ad';ctx.lineWidth=5*(1-p)+1;ctx.stroke();}
+    const blocked=!e.heal&&e.value===0&&e.absorbed>0;
+    rounded(tx-24,ty-100-p*33,48,24,4,'#152832');text(blocked?'CHẶN':(e.heal?'+':'−')+e.value,tx,ty-88-p*33,blocked?12:19,e.heal?'#d1f0ba':'#ffe0b7');
+  }
+  ctx.restore();
+});drawUnitBadges();ctx.restore();}
 function rosterArt(){if(scene==='figures')return;progress.formation.forEach((index,slot)=>{const x=60+slot*181.2;ctx.save();ctx.beginPath();ctx.rect(35+slot*181.2,642,66,90);ctx.clip();character(HEROES[index].id,x+10,729,HEROES[index].id==='lancer'?tune.lancerPortraitScale:.65,false,0,progress.heroes[index].evolved);ctx.restore();});}
 function galleryDraw(){background();if(params.has('sprite-preview')){const clips=['idle','attack','hit','death','skill','skillShield','skillAura','skillArc'];clips.forEach((name,i)=>{const x=160+(i%4)*318,y=i<4?350:675;rounded(x-120,y-235,240,290,8,'#11272ddd','#6b796a');const clip=lancerClip(name),elapsed=state.t;drawLancerSprite(x,y,1,false,name,elapsed);text(name,x,y+22,20,C.ink);text(`Hàng ${i+1} · ${clip.count} khung · ${clip.fps} fps`,x,y+45,13,C.gold);});return;}const kinds=[...HEROES.map(h=>h.id),...Object.keys(ENEMIES)];kinds.forEach((k,i)=>{const x=115+(i%5)*258,y=i<5?342:657;rounded(x-98,y-200,196,258,8,'#11272dbb','#6b796a');character(k,x,y,1,false,0,i===0);text(i<5?HEROES[i].name:ENEMIES[k].name,x,y+26,20,C.ink,'center',true);text(i<5?HEROES[i].role:k==='brute'?'CHẶN HÀNG TRƯỚC':k==='archer'?'TẤN CÔNG TỪ XA':k==='shaman'?'HỒI PHỤC':k==='assassin'?'SĂN HÀNG SAU':'ĐÒN DIỆN RỘNG',x,y+47,12,C.gold);});}
 function draw(){ctx.clearRect(0,0,W,H);if(scene==='figures')galleryDraw();else{if(state.mode==='battle'&&state.battle)battleDraw();else mapDraw();rosterArt();}if(uiDirty){renderUI();uiDirty=false;}}
-function renderUI(){const figures=scene==='figures';['top','roster','accessibility'].forEach(id=>$(id).style.display=figures?'none':'');$('galleryLabel').style.display=figures?'block':'none';$('titleScreen').style.display=scene==='title'?'flex':'none';$('pauseScreen').style.display=scene==='pause'?'flex':'none';$('resultScreen').style.display=scene==='results'?'flex':'none';const battle=state.mode==='battle';$('worldLabel').style.display=figures||battle?'none':'block';$('chapterTabs').style.display=figures||battle?'none':'flex';$('battleHUD').style.display=!figures&&battle?'block':'none';$('side').style.display=figures?'none':'block';if(figures)return;
+/** Keep keyboard focus on the same rebuilt control; disabled upgrades fall back to the selected hero. */
+function restorePanelFocus(previous){
+  if(!previous||previous.isConnected||scene!=='play')return;
+  let next=previous.dataset.hero!==undefined?document.querySelector(`[data-hero="${previous.dataset.hero}"]`):previous.id?$(previous.id):previous.tagName==='SUMMARY'?$('side').querySelector('summary'):null;
+  if((!next||next.disabled||!next.getClientRects().length)&&state.mode==='map')next=document.querySelector(`[data-hero="${state.selectedHero}"]`);
+  if(next&&!next.disabled&&next.getClientRects().length)next.focus({preventScroll:true});
+}
+/** Keep covered game controls out of keyboard/pointer interaction while an overlay is active. */
+function syncBackgroundInteraction(){
+  for(const id of ['top','chapterTabs','battleHUD','side','roster'])$(id).inert=scene!=='play';
+}
+function renderUI(){syncBackgroundInteraction();const active=document.activeElement,previousFocus=($('cards').contains(active)||$('side').contains(active))?active:null;const figures=scene==='figures';['top','roster','accessibility'].forEach(id=>$(id).style.display=figures?'none':'');$('galleryLabel').style.display=figures?'block':'none';$('titleScreen').style.display=scene==='title'?'flex':'none';$('pauseScreen').style.display=scene==='pause'?'flex':'none';$('resultScreen').style.display=scene==='results'?'flex':'none';const battle=state.mode==='battle';$('worldLabel').style.display=figures||battle?'none':'block';$('chapterTabs').style.display=figures||battle?'none':'flex';$('battleHUD').style.display=!figures&&battle?'block':'none';$('side').style.display=figures?'none':'block';if(figures)return;
 $('gold').textContent=progress.gold;$('essence').textContent=progress.essence;$('shards').textContent=progress.shards;$('chapterName').textContent=`Chương ${state.chapter+1} · ${CHAPTERS[state.chapter]}`;$('progressText').textContent=`${progress.cleared} / ${totalStages()} ải đã giải phóng · Sức mạnh đội ${Math.round(teamPower())}`;$('mapHeading').textContent=state.chapter===0?'Miền Rừng Thức Giấc':'Tàn Tích Thành Tro';$('mapSub').textContent=state.chapter===0?'Năm lời thề. Một bình minh chưa tới.':'Đi qua tro tàn. Thắp lại ngọn lửa đầu tiên.';$('saveStatus').textContent=state.saveFailed?'Không thể lưu — tiến trình chỉ giữ trong phiên này':'Lưu tự động trên trình duyệt này';document.querySelectorAll('[data-chapter]').forEach(el=>{el.classList.toggle('active',+el.dataset.chapter===state.chapter);el.disabled=battle||(+el.dataset.chapter===1&&progress.cleared<tune.stagesPerChapter);});
-$('rosterHint').textContent=battle?'Đội tự chiến đấu · Kỹ năng tự dùng mỗi '+tune.skillEvery+' lượt riêng':state.swap!==null?'Đã chọn '+HEROES[state.swap].name+' · chọn tướng khác để đổi vị trí':'Chọn tướng để nâng cấp · Chọn hai tướng liên tiếp để đổi vị trí';
+$('rosterHint').textContent=battle?'Đội tự di chuyển · Nhịp đánh riêng':state.arranging?(state.swap!==null?'Đổi chỗ '+HEROES[state.swap].name+' với tướng nào?':'Chọn hai tướng để đổi vị trí'):'Chọn tướng để xem và nâng cấp';
+$('formationButton').hidden=battle;
+$('formationButton').textContent=state.arranging?'Xong xếp đội':'Xếp đội';
+$('formationButton').setAttribute('aria-pressed',String(state.arranging));
 $('cards').innerHTML=progress.formation.map((i,s)=>{const h=progress.heroes[i];return`<button class="heroCard ${state.selectedHero===i?'selected':''}" data-hero="${i}" ${battle?'disabled':''} aria-label="${HEROES[i].name}, cấp ${h.level}, ${s<2?'hàng trước':'hàng sau'}"><span class="slot">${s+1} · ${s<2?'TRƯỚC':'SAU'}</span><b>${HEROES[i].name}</b><small>${HEROES[i].role}</small><span class="level">Cấp ${h.level} · ${h.evolved?'Tinh Anh':'Thường'}</span><span class="skill">${HEROES[i].skill}</span></button>`;}).join('');
-const side=$('side'),detailsOpen=!!side.querySelector('details[open]');if(battle){const b=state.battle;$('battleStage').textContent=`ẢI ${stageLabel(b.stage)} · TỰ ĐỘNG THEO LƯỢT`;$('battleTitle').textContent=STAGES[b.stage];$('turnOrder').innerHTML=b.queue.filter(u=>u.hp>0).slice(0,7).map((u,i)=>`<span class="turn">${i===0?'Tiếp: ':''}${u.name}</span>`).join('');side.innerHTML=`<div class="sideHead"><span class="eyebrow">NHỊP CHIẾN TRẬN</span><span class="tag">5 vs 5</span></div><h2>Vòng ${b.round} <small style="font-size:15px">/ ${tune.maxRounds}</small></h2><p class="desc">${living(b.heroes).length} anh hùng · ${living(b.enemies).length} địch còn chiến đấu</p><div class="rule"></div><div class="eyebrow">DIỄN BIẾN MỚI NHẤT</div><div id="log">${b.log.join('<br>')}</div><div class="rule"></div><p class="desc">Kỹ năng tự kích hoạt mỗi ${tune.skillEvery} lượt của nhân vật. Khiên hiển thị bằng vạch vàng và số cộng.</p><p class="desc" style="margin-top:9px"><span style="display:inline-block;width:10px;height:10px;background:#3987e5;margin-right:5px"></span>Đội bạn <span style="display:inline-block;width:10px;height:10px;background:#d95926;margin:0 5px 0 12px"></span>Đội địch</p><button class="wide" id="sidePause" style="margin-top:15px">Tạm dừng / rút lui</button><details ${detailsOpen?'open':''} style="font-size:12px;margin-top:18px"><summary style="cursor:pointer">Bảng HP · khiên của hai đội</summary><table style="width:100%;margin-top:8px;font-size:12px;text-align:left"><thead><tr><th>Tướng</th><th>HP</th><th>Khiên</th></tr></thead><tbody>${[...b.heroes,...b.enemies].map(u=>`<tr><td>${u.side===0?'Bạn':'Địch'} · ${u.name}</td><td>${u.hp}/${u.maxHP}</td><td>${u.shield}</td></tr>`).join('')}</tbody></table></details>`;
+const side=$('side'),detailsOpen=!!side.querySelector('details[open]');if(battle){
+const b=state.battle;
+$('battleStage').textContent=`ẢI ${stageLabel(b.stage)} · TỰ CHIẾN THỜI GIAN THỰC`;
+$('battleTitle').textContent=STAGES[b.stage];
+$('turnOrder').innerHTML=b.heroes.map(u=>`<span class="turn">${u.name} · ${u.hp<=0?'Đã hạ':u.action?.special?'ĐANG TUNG CHIÊU':u.skillCD<=0?'Sẵn sàng':u.skillCD.toFixed(1)+'s'}</span>`).join('');
+side.innerHTML=`<div class="sideHead"><span class="eyebrow">GIAO TRANH LIÊN TỤC</span><span class="tag">5 vs 5</span></div><h2>${b.elapsed.toFixed(1)} <small style="font-size:15px">/ ${tune.maxBattleSeconds} giây</small></h2><p class="desc">${living(b.heroes).length} anh hùng · ${living(b.enemies).length} địch còn chiến đấu</p><div class="rule"></div><div class="eyebrow">KỸ NĂNG VỪA THI TRIỂN</div><div id="log">${b.log.join('<br>')}</div><div class="rule"></div><p class="desc">Cận chiến áp sát · đánh xa giữ cự ly. Mỗi tướng có nhịp đánh riêng; kỹ năng hồi khoảng ${tune.skillCooldown} giây tùy tốc độ.</p><p class="desc" style="margin-top:9px"><span style="display:inline-block;width:10px;height:10px;background:#3987e5;margin-right:5px"></span>Đội bạn <span style="display:inline-block;width:10px;height:10px;background:#d95926;margin:0 5px 0 12px"></span>Đội địch<br>Khiên: vạch vàng · số chi tiết bên dưới.</p><button class="wide" id="sidePause" style="margin-top:15px">Tạm dừng / rút lui</button><details ${detailsOpen?'open':''} style="font-size:12px;margin-top:18px"><summary style="cursor:pointer">Bảng HP · khiên của hai đội</summary><table style="width:100%;margin-top:8px;font-size:12px;text-align:left"><thead><tr><th>Tướng</th><th>HP</th><th>Khiên</th></tr></thead><tbody>${[...b.heroes,...b.enemies].map(u=>`<tr><td>${u.side===0?'Bạn':'Địch'} · ${u.name}</td><td>${u.hp}/${u.maxHP}</td><td>${u.shield}</td></tr>`).join('')}</tbody></table></details>`;
 }else{const i=state.selectedHero,h=progress.heroes[i],hero=HEROES[i],cost=upgradeCost(h),s=statFor(hero.id,h.level,h.evolved),stage=state.selectedStage,r=reward(stage);side.innerHTML=`<div class="sideHead"><span class="eyebrow">ẢI ${stageLabel(stage)}</span><span class="tag">${stage<progress.cleared?'ĐÃ QUA':'THỬ THÁCH MỚI'}</span></div><h2>${STAGES[stage]}</h2><p class="desc">${enemyKinds(stage).map(k=>ENEMIES[k].name).join(' · ')}</p><div class="stats"><div class="stat"><b>${Math.round(teamPower())}</b><small>ĐỘI CỦA BẠN</small></div><div class="stat"><b>${Math.round(enemyPower(stage))}</b><small>ĐỘI ĐỐI THỦ</small></div></div><div class="reward" title="Phần thưởng khi chiến thắng"><span>${r.gold} vàng</span><span>${r.essence} KN</span><span>${r.shards} ấn</span></div><button class="gold wide" id="fightButton">CHIẾN ĐẤU · SPACE</button><div class="rule"></div><div style="display:flex;justify-content:space-between;align-items:center"><b>${hero.name} · Cấp ${h.level}</b><small>${h.evolved?'Tinh Anh':'Khởi Nguyên'}</small></div><p class="desc" style="font-size:12px;margin-top:7px">HP ${s.maxHP} · Công ${s.attack}<br>${hero.detail}</p><div style="display:flex;gap:7px;margin-top:11px"><button id="upgradeButton" style="flex:1;padding:8px;font-size:12px" ${h.level>=tune.maxLevel||progress.gold<cost.gold||progress.essence<cost.essence?'disabled':''}>Nâng cấp · U<br><small>${cost.gold} vàng + ${cost.essence} KN</small></button><button id="evolveButton" style="flex:1;padding:8px;font-size:12px" ${h.evolved||h.level<tune.evolveLevel||progress.gold<tune.evolveGold||progress.shards<tune.evolveShards?'disabled':''}>${h.evolved?'Đã tiến hóa':'Tiến hóa · E'}<br><small>Cấp ${tune.evolveLevel} · ${tune.evolveGold} vàng · ${tune.evolveShards} ấn</small></button></div><p class="hint">${stage<progress.cleared?'Đánh lại nhận vàng và KN; ấn chỉ thưởng lần đầu.':'Mẹo: để hộ vệ phía trước, trị liệu phía sau.'}</p>`;}
 if(scene==='results'){const b=state.battle,complete=progress.cleared>=totalStages();$('resultKicker').textContent=b.won?'LỜI THỀ ĐƯỢC GIỮ TRỌN':'HÀNH TRÌNH CHƯA KẾT THÚC';$('resultTitle').textContent=b.won?(complete?'Bình minh đã trở lại!':'Chiến thắng · '+stageLabel(b.stage)):'Chưa thể vượt qua';$('resultDesc').textContent=b.won?(complete?'Bạn đã hoàn thành cả hai chương. Tiếp tục nâng đội hoặc chơi lại các ải.':'Vùng đất này đã được giải phóng. Về bản đồ, chọn tướng rồi bấm Nâng cấp để chuẩn bị ải tiếp theo.'):'Giữ nguyên tài nguyên và tiến trình. Thử đổi vị trí, nâng cấp hoặc đánh lại ải cũ.';$('resultLoot').textContent=b.won?`+${b.reward.gold} vàng · +${b.reward.essence} kinh nghiệm · +${b.reward.shards} ấn tiến hóa`:state.gained;$('retryButton').style.display=b.won?'none':'';}
+restorePanelFocus(previousFocus);
 }
 function fit(){const s=Math.min(innerWidth/W,innerHeight/H);app.style.transform=`scale(${s})`;app.style.left=`${(innerWidth-W*s)/2}px`;app.style.top=`${(innerHeight-H*s)/2}px`;const d=Math.min(devicePixelRatio||1,2);canvas.width=W*d;canvas.height=H*d;ctx.setTransform(d,0,0,d,0,0);draw();}
-app.addEventListener('click',e=>{const button=e.target.closest('button');if(!button||button.disabled)return;const id=button.id;if(button.dataset.hero!==undefined)selectHero(+button.dataset.hero);if(button.dataset.chapter!==undefined&&state.mode==='map'){state.chapter=+button.dataset.chapter;state.selectedStage=Math.min(state.chapter*tune.stagesPerChapter,progress.cleared);uiDirty=true;}if(id==='startButton'){scene='play';uiDirty=true;}if(id==='fightButton')beginBattle();if(id==='upgradeButton')upgrade();if(id==='evolveButton')evolve();if(['pauseButton','sidePause'].includes(id)){scene='pause';uiDirty=true;}if(id==='resumeButton'){scene='play';uiDirty=true;}if(id==='continueButton')returnMap();if(id==='retryButton'){const stage=state.battle.stage;returnMap();state.selectedStage=stage;beginBattle();}if(id==='retreatButton')returnMap();if(id==='resetButton')$('resetDialog').showModal();});
+app.addEventListener('click',e=>{const button=e.target.closest('button');if(!button||button.disabled)return;const id=button.id;if(button.dataset.hero!==undefined)selectHero(+button.dataset.hero);if(button.dataset.chapter!==undefined&&state.mode==='map'){state.chapter=+button.dataset.chapter;state.selectedStage=Math.min(state.chapter*tune.stagesPerChapter,progress.cleared);uiDirty=true;}if(id==='startButton'){scene='play';uiDirty=true;}if(id==='formationButton')toggleFormation();if(id==='fightButton')beginBattle();if(id==='upgradeButton')upgrade();if(id==='evolveButton')evolve();if(['pauseButton','sidePause'].includes(id)){scene='pause';uiDirty=true;}if(id==='resumeButton'){scene='play';uiDirty=true;}if(id==='continueButton')returnMap();if(id==='retryButton'){const stage=state.battle.stage;returnMap();state.selectedStage=stage;beginBattle();}if(id==='retreatButton')returnMap();if(id==='resetButton')$('resetDialog').showModal();});
 canvas.addEventListener('click',e=>{if(scene!=='play'||state.mode!=='map')return;const r=canvas.getBoundingClientRect(),x=(e.clientX-r.left)*W/r.width,y=(e.clientY-r.top)*H/r.height;NODEPOS.forEach(([nx,ny],n)=>{if(Math.hypot(x-nx,y-ny)<43)selectStage(state.chapter*tune.stagesPerChapter+n);});});
 $('cancelReset').onclick=()=>$('resetDialog').close();$('confirmReset').onclick=()=>{progress=fresh();reset();save();scene='title';$('resetDialog').close();uiDirty=true;};
-addEventListener('keydown',e=>{if($('resetDialog').open)return;if(!e.repeat){down.add(e.code);hit.add(e.code);}if(e.code==='Space'||e.code.startsWith('Arrow'))e.preventDefault();});addEventListener('keyup',e=>down.delete(e.code));addEventListener('blur',()=>{down.clear();if(scene==='play'&&state.mode==='battle'){scene='pause';uiDirty=true;}});addEventListener('resize',fit);
+/** Let native controls consume activation/editing keys instead of also triggering game shortcuts. */
+function controlOwnsKey(event){
+  if(event.defaultPrevented||event.isComposing||event.ctrlKey||event.altKey||event.metaKey)return true;
+  const target=event.target instanceof Element?event.target:null;
+  if(!target)return false;
+  if(target.closest('input,textarea,select,[contenteditable]:not([contenteditable="false"])'))return true;
+  return(event.code==='Space'||event.code==='Enter')&&!!target.closest('button,summary,a[href]');
+}
+/** Discard pending input before auto-pausing so an old P press cannot immediately resume combat. */
+function handleFocusLoss(){down.clear();hit.clear();if(scene==='play'&&state.mode==='battle'){scene='pause';uiDirty=true;}}
+addEventListener('keydown',e=>{if($('resetDialog').open||controlOwnsKey(e))return;if(!e.repeat){down.add(e.code);hit.add(e.code);}if(e.code==='Space'||e.code.startsWith('Arrow'))e.preventDefault();});addEventListener('keyup',e=>down.delete(e.code));addEventListener('blur',handleFocusLoss);addEventListener('resize',fit);
 function step(){if(!$('resetDialog').open)update(STEP);hit.clear();}
 function tick(){const now=clock.now();acc+=Math.min(Math.max(0,now-last),.25);last=now;while(acc>=STEP){step();acc-=STEP;}draw();}
 function frame(){tick();requestAnimationFrame(frame);}function timer(){if(document.visibilityState==='visible'&&clock.now()-last>.1)tick();}
 /** Stable fixed-step observation hooks, shared by manual and scripted input. */
-window.game={get scene(){return scene;},get state(){return state;},get events(){return events;},press(code){hit.add(code);},hold(code,on){on?down.add(code):down.delete(code);},step(n=1,render=true){for(let i=0;i<n;i++)step();if(render)draw();}};
+/** Acyclic observation snapshot; callers cannot mutate live combat through the hook. */
+function observeState(){
+  const b=state.battle;if(!b)return{...state};
+  const units=list=>list.map(u=>({...u,target:u.target?.name||null,action:u.action?{...u.action,target:u.action.target.name}:null}));
+  return{...state,battle:{...b,heroes:units(b.heroes),enemies:units(b.enemies),projectiles:b.projectiles.map(p=>({...p,source:p.source.name,target:p.target.name})),effects:b.effects.map(e=>({...e,source:e.source.name,target:e.target.name}))}};
+}
+window.game={get scene(){return scene;},get state(){return observeState();},get events(){return events;},press(code){hit.add(code);},hold(code,on){on?down.add(code):down.delete(code);},step(n=1,render=true){for(let i=0;i<n;i++)step();if(render)draw();}};
 reset();scene=['title','play','figures'].includes(params.get('scene'))?params.get('scene'):'title';fit();if(params.get('manual')==='1')draw();else{requestAnimationFrame(frame);setInterval(timer,50);}
 </script></body></html>

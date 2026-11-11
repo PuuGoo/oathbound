@@ -1,0 +1,8 @@
+comparison	uninterrupted700 versus twice-paused854
+result_transition_steps	553 versus707; difference154 equals pause-related steps
+measured_text_rows_equal	true
+png_sha256_equal	true
+reward	160gold/60essence/2shards in both
+cleared	1/10 in both
+save_rows	1 versus 1
+not_assessed	full saved JSON equality, all seeds, native input and full internal state equality

@@ -1,0 +1,95 @@
+browser	/c/Program Files/Google/Chrome/Application/chrome.exe
+time	2026-11-12 00:53:25
+render	cheap
+ua	HeadlessChrome/157.0.0.0
+scene	0	title
+state	0	title	{"t":0,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+scene	1	play
+state	1	play	{"t":0.02,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+playinput	64	click:text=Xếp_đội
+saved	192	localstorage	oathbound.save.v1
+state	286	play	{"t":4.77,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":1,"swap":null,"arranging":true,"mode":"map","battle":null,"saveFailed":false}
+digits	log	14px "Segoe UI", Arial	tabular	0
+loop	log	none	no loop() step was marked
+first	log	none	no state.beat
+pressure	none	the game set no number state.margin in play
+steptime	286	0.002	0.200
+frametime	4	80.7	108.2	60	4	4
+done	286	play	stop	4.8	829
+measured	1280x720
+text	play	canvas	167,422,184,431	17.5	8.11	inside	1-1
+text	play	canvas	139,452,212,463	16.2	9.90	inside	Lối Mòn Sương
+text	play	canvas	303,375,321,384	17.5	10.98	inside	1-2
+text	play	canvas	290,404,334,413	16.2	5.80	inside	Chưa mở
+text	play	canvas	428,418,445,427	17.5	10.58	inside	1-3
+text	play	canvas	415,448,459,457	16.2	5.41	inside	Chưa mở
+text	play	canvas	560,347,579,356	17.5	10.98	inside	1-4
+text	play	canvas	547,376,591,385	16.2	5.80	inside	Chưa mở
+text	play	canvas	717,300,734,309	17.5	10.98	inside	1-5
+text	play	canvas	704,329,748,338	16.2	5.80	inside	Chưa mở
+text	play	canvas	360,480,606,494	16.2	8.46	inside	Chọn dấu mốc để xem đội địch và phần thưởng
+text	play	html	89,6,291,33	13.5	13.57	inside	OATHBOUND
+text	play	html	89,37,261,51	13.5	8.21	inside	CHIẾN DỊCH BÌNH MINH
+text	play	html	349,9,586,28	13.5	13.57	inside	Chương 1 · Rừng Thức Giấc
+text	play	html	349,34,574,49	13.5	8.21	inside	0 / 10 ải đã giải phóng · Sức mạnh đội 4663
+text	play	html	855,13,887,27	13.5	8.21	inside	VÀNG
+text	play	html	855,27,878,45	13.5	13.57	inside	450
+text	play	html	927,13,1006,27	13.5	8.21	inside	KINH NGHIỆM
+text	play	html	927,27,950,45	13.5	13.57	inside	120
+text	play	html	1045,13,1121,27	13.5	8.21	inside	ẤN TIẾN HÓA
+text	play	html	1045,27,1053,45	13.5	13.57	inside	0
+text	play	html	1150,22,1181,36	13.5	9.72	inside	Đặt lại
+text	play	html	93,91,334,105	13.5	9.95	inside	HÀNH TRÌNH CỦA NGƯỜI GIỮ LỜI
+text	play	html	93,112,413,143	13.5	13.57	inside	Miền Rừng Thức Giấc
+text	play	html	93,149,298,167	13.5	11.25	inside	Năm lời thề. Một bình minh chưa tới.
+text	play	html	107,188,210,203	13.5	9.49	inside	01 · Rừng Thức Giấc
+text	play	html	246,188,339,203	13.5	4.06	inside	02 · Thành Tro Tàn
+text	play	html	940,112,985,126	13.5	9.95	inside	ẢI 1-1
+text	play	html	1075,112,1169,126	13.5	9.95	inside	THỬ THÁCH MỚI
+text	play	html	940,141,1137,169	13.5	13.57	inside	Lối Mòn Sương
+text	play	html	940,176,1164,210	13.5	10.01	inside	Thạch Nha · Thạch Nha · Gai Độc · Gai Độc · Gai Độc
+text	play	html	979,234,1016,255	13.5	13.57	inside	4663
+text	play	html	964,259,1031,273	13.5	8.21	inside	ĐỘI CỦA BẠN
+text	play	html	1100,234,1137,255	13.5	13.57	inside	3239
+text	play	html	1087,259,1150,273	13.5	8.21	inside	ĐỘI ĐỐI THỦ
+text	play	html	940,294,991,311	13.5	13.57	inside	160 vàng
+text	play	html	1004,294,1038,311	13.5	13.57	inside	60 KN
+text	play	html	1051,294,1075,311	13.5	13.57	inside	2 ấn
+text	play	html	988,335,1128,353	13.5	1.12	inside	CHIẾN ĐẤU · SPACE
+text	play	html	940,394,1025,413	13.5	13.57	inside	Bram · Cấp 1
+text	play	html	1114,396,1176,410	13.5	8.21	inside	Khởi Nguyên
+text	play	html	940,420,1022,434	13.5	10.01	inside	HP 735 · Công 55
+text	play	html	967,479,1028,493	13.5	9.72	inside	Nâng cấp · U
+text	play	html	957,493,1037,508	13.5	5.87	inside	55 vàng + 12 KN
+text	play	html	1091,472,1146,486	13.5	3.52	inside	Tiến hóa · E
+text	play	html	1072,486,1165,515	13.5	5.87	inside	Cấp 3 · 180 vàng · 4 ấn
+text	play	html	940,534,1140,548	13.5	8.91	inside	Mẹo: để hộ vệ phía trước, trị liệu phía sau.
+text	play	html	86,530,210,544	13.5	9.95	inside	NĂM NGƯỜI GIỮ LỜI
+text	play	html	674,530,805,544	13.5	13.57	inside	Chọn hai tướng để đổi vị trí
+text	play	html	824,530,888,544	13.5	7.12	inside	Xong xếp đội
+text	play	html	184,563,231,576	13.5	10.32	inside	1 · TRƯỚC
+text	play	html	151,594,195,612	13.5	13.57	inside	Bram
+text	play	html	151,617,182,631	13.5	8.21	inside	HỘ VỆ
+text	play	html	151,640,214,654	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	348,563,395,576	13.5	10.32	inside	2 · TRƯỚC
+text	play	html	315,594,378,612	13.5	13.57	inside	Estrilda
+text	play	html	315,617,339,631	13.5	8.21	inside	KỴ SĨ
+text	play	html	315,640,378,654	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	527,563,559,576	13.5	10.32	inside	3 · SAU
+text	play	html	480,594,520,612	13.5	13.57	inside	Sylra
+text	play	html	480,617,517,631	13.5	8.21	inside	XẠ THỦ
+text	play	html	480,640,542,654	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	691,563,723,576	13.5	10.32	inside	4 · SAU
+text	play	html	644,594,692,612	13.5	13.57	inside	Orren
+text	play	html	644,617,687,631	13.5	8.21	inside	PHÁP SƯ
+text	play	html	644,640,707,654	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	855,563,888,576	13.5	10.32	inside	5 · SAU
+text	play	html	808,594,850,612	13.5	13.57	inside	Lumi
+text	play	html	808,617,847,631	13.5	8.21	inside	TRỊ LIỆU
+text	play	html	808,640,871,654	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	86,687,241,701	13.5	8.86	inside	Lưu tự động trên trình duyệt này
+text	play	html	86,704,407,718	13.5	8.86	inside	Enter: tiếp tục · Space: chiến đấu · U: nâng cấp · E: tiến h
+text	play	html	328,489,485,506	13.5	12.79	inside	Estrilda và Bram đã đổi vị trí.
+screen	286	play	1ef0d121	drawn
+uncaught	0
+shot	/c/Users/PuuGoo/Desktop/my-game/prototypes/oathbound/evidence/iteration-4-arrange.png	334594

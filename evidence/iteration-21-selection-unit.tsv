@@ -1,0 +1,8 @@
+PASS	next chapter selection updates visible chapter
+PASS	previous chapter selection restores visible chapter
+PASS	locked stage is ignored
+PASS	invalid indices are ignored
+PASS	selection outside play is ignored
+PASS	selection during battle is ignored
+unit_total	6
+not_assessed	native keyboard navigation; helper assertions only, see prescribed runtime captures separately

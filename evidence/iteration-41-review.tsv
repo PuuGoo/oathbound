@@ -1,0 +1,10 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+iteration	41
+scope	Final in-flight regression completed; user requested stop after current task. No game/config/balance changes.
+method	Prescribed runner seed618 fresh profiles; baseline stop850 Enter Space wait:18; paused stop897 Enter Space wait:2.25 Escape wait:0.7 KeyP wait:18.
+observed	Baseline victory582/save581; paused pause144/resume190/victory629/save628. Victory delayed47 simulation steps. Both final truncated states show t14.17/score1; all measured text rows equal. One save per run. Paused result screenshot inspected: victory1-1,160gold/60essence/2shards.
+comparison	Final PNG byte-identical; SHA2569ac43c89adab265506c7a2a5c89061c2d4ae1b019381490939fad9276f7935d8.
+runtime	Both uncaught0; no console/crash/error/nonfinite/not_assessed rows found. No unit rerun.
+evidence	iteration-41-seed618-baseline.tsv/png; iteration-41-seed618-paused.tsv/png.
+limits	One additional seed/stage and synthetic input sequence, not exhaustive timing/native input verification. State rows truncated; no full-state equality claim. Existing native input/actual90s timeout/live-variant/video-fidelity gaps remain.
+stop	Dynamic loop stopped; tool cancelled1 pending wakeup. No Monitor armed. No additional tasks selected.

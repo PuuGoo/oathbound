@@ -1,0 +1,16 @@
+PASS	Space and Enter belong to a native focused control
+PASS	game shortcuts remain available outside controls
+PASS	non-activation shortcut remains available on buttons
+PASS	editing fields own all keyboard input
+PASS	non-element event target does not suppress shortcuts
+PASS	removed hero card resolves by identity, not formation position
+PASS	removed action resolves by ID
+PASS	disabled upgrade falls back to selected hero
+PASS	hidden upgrade falls back to selected hero
+PASS	connected or absent focus is untouched
+PASS	pause and results do not restore background panel focus
+PASS	battle details summary resolves without map fallback
+PASS	overlay scenes mark every background control region inert
+PASS	play scene restores background interaction
+unit_total	14
+not_assessed	native browser focus, Tab order and default button activation; these are DOM-double unit tests only

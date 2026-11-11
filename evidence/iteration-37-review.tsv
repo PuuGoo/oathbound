@@ -1,0 +1,7 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+iteration	37
+scope	Eight direct resolveAction role-skill cases using delivery-call recorder; no game source/config/balance changes or browser run.
+result	8 named cases pass; iteration-37-role-skill-unit.tsv retained.
+covered	Warden living front-slot shields/self fallback/non-stacking; mage living-foe area releases; enemy boss opposing-team selection; lancer distinct living rear secondary target; skill-only extra evolution multiplier; enemy shaman own-team healing replacement.
+counts	130 named cases now exist across12 unit files. Only8 new cases ran this iteration; NOT a fresh combined130 pass. Last combined122-case pass remains iteration33.
+limits	Delivery recorder does not apply projectile arrival/damage or prove live timing, animation quality, full-encounter behavior or native input. No new source defect established.

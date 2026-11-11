@@ -1,0 +1,15 @@
+PASS	idle wraps at configured frame count
+PASS	negative render time clamps to first frame
+PASS	one-shot rendering clamps to final frame
+PASS	all clip crops remain within original 1086x1448 atlas
+PASS	draw uses configured row crop and anchor
+PASS	facing changes transform sign without changing crop
+PASS	unavailable sprite returns false without drawing
+PASS	new animation resets time and records one event
+PASS	death cannot be interrupted by attack hit or skill
+PASS	non-lancer does not enter sprite clips
+PASS	one-shot stays active before duration and returns idle at boundary
+PASS	death clock advances but terminal clip remains death
+PASS	no battle animation advance is safe
+unit_total	13
+not_assessed	visual animation quality and all four skill variants in a live fight; draw arguments and helper transitions only

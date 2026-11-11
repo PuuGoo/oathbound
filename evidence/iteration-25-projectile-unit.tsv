@@ -1,0 +1,9 @@
+PASS	released projectile still lands after source death while battle continues
+PASS	dead destination cancels projectile without damage or effects
+PASS	exact single-step arrival applies damage and removes projectile
+PASS	projectile just beyond arrival travels but does not apply early damage
+PASS	homing direction uses current destination position
+PASS	healing projectile caps HP on arrival
+PASS	later projectile drops after earlier arrival kills shared destination
+unit_total	7
+not_assessed	browser flight rendering, full encounter timing, movement AI and animation playback; actual helpers called once per fixed recovery fixture, midpoint damage RNG

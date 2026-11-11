@@ -1,0 +1,24 @@
+PASS	living retained target wins over nearest candidate
+PASS	dead target is replaced with nearest living foe
+PASS	assassin initially prefers surviving back row
+PASS	assassin falls back when back row is dead
+PASS	no living targets returns null
+PASS	healing caps at maximum HP
+PASS	healing cannot revive a dead target
+PASS	shield absorbs damage before HP
+PASS	fully absorbed damage leaves HP intact
+PASS	death cancels unreleased action and movement
+PASS	damage does not restart animation on a dead target
+PASS	busy windup is not replaced by a hit reaction
+PASS	recovery is not replaced by a hit reaction
+PASS	idle living target receives hit reaction
+PASS	melee release at exact reach boundary hits
+PASS	melee release beyond reach misses
+PASS	ranged release queues projectile without immediate damage
+PASS	release ignores already-dead targets
+PASS	healer retargets a dead selected ally to living weakest ally
+PASS	dead primary target receives no released single-target attack
+PASS	shield feedback records absorption without changing HP damage
+PASS	partial shield feedback retains actual HP damage
+unit_total	22
+not_assessed	full projectile flight, animation playback, movement and live timing interactions; direct helpers use fixed fixtures and midpoint damage RNG

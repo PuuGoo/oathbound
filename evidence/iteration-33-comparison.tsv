@@ -1,0 +1,5 @@
+measured_text_rows_equal	true
+png_sha256_equal	true
+baseline_sha256	773a1f4b5f06e4a2fe7aabe51e9944c1c701fa830c409da9772a594a2d1c700b
+resumed_sha256	773a1f4b5f06e4a2fe7aabe51e9944c1c701fa830c409da9772a594a2d1c700b
+not_assessed	full internal state and universal pause determinism; sampled seed617 endpoint only

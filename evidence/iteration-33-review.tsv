@@ -1,0 +1,12 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+iteration	33
+finding	Keyboard P/Escape entry into pause returned before combat update but advanced state.t by1/60s, offsetting procedural visual clocks after resume.
+red_test	iteration-33-before.tsv retains exit1 AssertionError: actual10.016666666666667 versus expected10.
+fix	index.html update computes enteringPause and does not advance state.t on that transition. Combat/cooldowns/rewards/config unchanged.
+unit_result	Fresh combined run of11 suites passes122 named cases; iteration-33-combined-unit.tsv. Four new pause-clock cases and existing focus-loss cases pass.
+runtime_method	Prescribed one-shot-run.sh seed617 baseline stop360 Enter Space wait:8; resumed stop437 Enter Space wait:2 KeyP wait:1.2 KeyP wait:8.
+runtime_result	Both logs uncaught0, no console/crash/error/nonfinite rows; all measured text rows equal; PNG SHA256 equal773a1f4b5f06e4a2fe7aabe51e9944c1c701fa830c409da9772a594a2d1c700b. Resumed screenshot inspected.
+evidence	iteration-33-pause-clock-unit.cjs; iteration-33-before.tsv; iteration-33-pause-clock-unit.tsv; iteration-33-baseline.png/tsv; iteration-33-resumed.png/tsv; iteration-33-comparison.tsv; iteration-33-combined-unit.tsv.
+historical_evidence	Iteration30/32 pre-fix mismatches preserved, not overwritten. Post-fix sampled PNG equality does not prove full internal state equality or universal pause determinism.
+not_assessed	Native keyboard/focus/OS blur, other pause timings/seeds, actual90-second timeout, all four live skill variants, full video fidelity and human visual approval.
+whitespace	git diff --check passes; existing LF-to-CRLF notice only.

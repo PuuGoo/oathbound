@@ -1,0 +1,121 @@
+browser	/c/Program Files/Google/Chrome/Application/chrome.exe
+time	2026-11-12 00:24:46
+render	cheap
+ua	HeadlessChrome/157.0.0.0
+scene	0	title
+state	0	title	{"t":0,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"mode":"map","battle":null,"saveFailed":false}
+scene	1	play
+state	1	play	{"t":0.02,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"mode":"map","battle":null,"saveFailed":false}
+playinput	4	KeyU
+saved	4	localstorage	oathbound.save.v1
+scene	507	results
+state	507	results	{"t":8.45,"score":1,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"mode":"battle","battle":{"stage":0,"heroes":[{"maxHP":800,"attack":117,"hp":711,"kind":
+scene	737	play
+state	737	play	{"t":12.28,"score":1,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":1,"selectedHero":0,"swap":null,"mode":"map","battle":null,"saveFailed":false}
+scene	1335	results
+state	1335	results	{"t":22.25,"score":2,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":1,"selectedHero":0,"swap":null,"mode":"battle","battle":{"stage":1,"heroes":[{"maxHP":800,"attack":117,"hp":0,"kind":"
+scene	1945	play
+state	1945	play	{"t":32.42,"score":2,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":2,"selectedHero":0,"swap":null,"mode":"map","battle":null,"saveFailed":false}
+scene	2479	results
+state	2479	results	{"t":41.32,"score":3,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":2,"selectedHero":0,"swap":null,"mode":"battle","battle":{"stage":2,"heroes":[{"maxHP":1315,"attack":193,"hp":889,"kind
+scene	3165	play
+state	3165	play	{"t":52.75,"score":3,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":3,"selectedHero":0,"swap":null,"mode":"map","battle":null,"saveFailed":false}
+scene	3754	results
+state	3754	results	{"t":62.57,"score":4,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":3,"selectedHero":0,"swap":null,"mode":"battle","battle":{"stage":3,"heroes":[{"maxHP":1452,"attack":213,"hp":596,"kind
+scene	4677	play
+state	4677	play	{"t":77.95,"score":4,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":4,"selectedHero":0,"swap":null,"mode":"map","battle":null,"saveFailed":false}
+scene	5473	results
+state	5473	results	{"t":91.22,"score":4,"gained":"Đội hình đã gục ngã","chapter":0,"selectedStage":4,"selectedHero":0,"swap":null,"mode":"battle","battle":{"stage":4,"heroes":[{"maxHP":1590,"attack":233,"hp":0,"kind":"l
+scene	5889	play
+state	5889	play	{"t":98.15,"score":4,"gained":"Đội hình đã gục ngã","chapter":0,"selectedStage":4,"selectedHero":0,"swap":null,"mode":"map","battle":null,"saveFailed":false}
+state	6278	play	{"t":104.63,"score":4,"gained":"Đội hình đã gục ngã","chapter":0,"selectedStage":4,"selectedHero":4,"swap":null,"mode":"map","battle":null,"saveFailed":false}
+digits	log	14px "Segoe UI", Arial	tabular	0
+digits	log	12px "Segoe UI", Arial	tabular	0
+digits	log	19px "Segoe UI", Arial	tabular	0
+loop	log	none	no loop() step was marked
+first	log	none	no state.beat
+ending	log	results	gained	Ải đã được giải phóng
+ending	log	results	gained	Ải đã được giải phóng
+ending	log	results	gained	Ải đã được giải phóng
+ending	log	results	gained	Ải đã được giải phóng
+ending	log	results	gained	Đội hình đã gục ngã
+pressure	none	the game set no number state.margin in play
+steptime	6278	0.013	1.400
+frametime	57	63.1	126.1	60	57	35
+done	6278	play	stop	104.6	8892
+measured	1280x720
+text	play	canvas	167,429,184,438	17.6	10.57	inside	1-1
+text	play	canvas	139,459,212,470	16.2	9.90	inside	Lối Mòn Sương
+text	play	canvas	303,382,321,391	17.6	10.98	inside	1-2
+text	play	canvas	279,411,343,423	16.2	10.45	inside	Bờ Suối Vắng
+text	play	canvas	428,426,445,435	17.6	10.58	inside	1-3
+text	play	canvas	412,454,461,466	16.2	9.75	inside	Rễ Cây Cổ
+text	play	canvas	560,354,579,363	17.6	10.98	inside	1-4
+text	play	canvas	531,385,606,395	16.2	10.45	inside	Vọng Gác Rừng
+text	play	canvas	717,307,734,316	17.6	8.11	inside	1-5
+text	play	canvas	691,337,760,348	16.2	10.45	inside	Ngai Sừng Tàn
+text	play	canvas	360,487,606,501	16.2	8.46	inside	Chọn dấu mốc để xem đội địch và phần thưởng
+text	play	html	89,14,291,41	13.5	13.57	inside	OATHBOUND
+text	play	html	89,44,261,59	13.5	8.21	inside	CHIẾN DỊCH BÌNH MINH
+text	play	html	349,17,586,36	13.5	13.57	inside	Chương 1 · Rừng Thức Giấc
+text	play	html	349,41,574,56	13.5	8.21	inside	4 / 10 ải đã giải phóng · Sức mạnh đội 7467
+text	play	html	855,20,887,35	13.5	8.21	inside	VÀNG
+text	play	html	855,35,871,53	13.5	13.57	inside	23
+text	play	html	927,20,1006,35	13.5	8.21	inside	KINH NGHIỆM
+text	play	html	927,35,950,53	13.5	13.57	inside	180
+text	play	html	1045,20,1121,35	13.5	8.21	inside	ẤN TIẾN HÓA
+text	play	html	1045,35,1053,53	13.5	13.57	inside	4
+text	play	html	1150,29,1181,44	13.5	9.72	inside	Đặt lại
+text	play	html	93,98,334,113	13.5	9.95	inside	HÀNH TRÌNH CỦA NGƯỜI GIỮ LỜI
+text	play	html	93,119,413,150	13.5	13.57	inside	Miền Rừng Thức Giấc
+text	play	html	93,157,298,174	13.5	11.25	inside	Năm lời thề. Một bình minh chưa tới.
+text	play	html	107,195,210,211	13.5	9.49	inside	01 · Rừng Thức Giấc
+text	play	html	246,195,339,211	13.5	4.06	inside	02 · Thành Tro Tàn
+text	play	html	940,119,985,133	13.5	9.95	inside	ẢI 1-5
+text	play	html	1075,119,1169,133	13.5	9.95	inside	THỬ THÁCH MỚI
+text	play	html	940,149,1119,176	13.5	13.57	inside	Ngai Sừng Tàn
+text	play	html	940,184,1173,218	13.5	10.01	inside	Vua Sừng Tàn · Thạch Nha · Gai Độc · Gai Độc · Tư Tế Tro
+text	play	html	979,241,1016,262	13.5	13.57	inside	7467
+text	play	html	964,266,1031,280	13.5	8.21	inside	ĐỘI CỦA BẠN
+text	play	html	1100,241,1137,262	13.5	13.57	inside	6237
+text	play	html	1087,266,1150,280	13.5	8.21	inside	ĐỘI ĐỐI THỦ
+text	play	html	940,301,991,318	13.5	13.57	inside	224 vàng
+text	play	html	1004,301,1038,318	13.5	13.57	inside	84 KN
+text	play	html	1051,301,1075,318	13.5	13.57	inside	2 ấn
+text	play	html	988,343,1128,361	13.5	1.12	inside	CHIẾN ĐẤU · SPACE
+text	play	html	940,401,1023,420	13.5	13.57	inside	Lumi · Cấp 1
+text	play	html	1114,403,1176,418	13.5	8.21	inside	Khởi Nguyên
+text	play	html	940,427,1022,442	13.5	10.01	inside	HP 490 · Công 50
+text	play	html	967,486,1028,500	13.5	3.52	inside	Nâng cấp · U
+text	play	html	957,500,1037,515	13.5	5.87	inside	55 vàng + 12 KN
+text	play	html	1091,479,1146,493	13.5	3.52	inside	Tiến hóa · E
+text	play	html	1072,493,1165,522	13.5	5.87	inside	Cấp 3 · 180 vàng · 4 ấn
+text	play	html	940,541,1140,555	13.5	8.91	inside	Mẹo: để hộ vệ phía trước, trị liệu phía sau.
+text	play	html	86,531,210,545	13.5	9.95	inside	NĂM NGƯỜI GIỮ LỜI
+text	play	html	598,531,897,545	13.5	13.57	inside	Chọn tướng để nâng cấp · Chọn hai tướng liên tiếp để đổi vị 
+text	play	html	184,563,231,576	13.5	10.32	inside	1 · TRƯỚC
+text	play	html	151,594,214,612	13.5	13.57	inside	Estrilda
+text	play	html	151,617,175,631	13.5	8.21	inside	KỴ SĨ
+text	play	html	151,640,219,654	13.5	9.63	inside	Cấp 7 · Tinh Anh
+text	play	html	348,563,395,576	13.5	10.32	inside	2 · TRƯỚC
+text	play	html	315,594,356,612	13.5	13.57	inside	Sylra
+text	play	html	315,617,352,631	13.5	8.21	inside	XẠ THỦ
+text	play	html	315,640,378,654	13.5	9.63	inside	Cấp 4 · Thường
+text	play	html	527,563,559,576	13.5	10.32	inside	3 · SAU
+text	play	html	480,594,524,612	13.5	13.57	inside	Bram
+text	play	html	480,617,511,631	13.5	8.21	inside	HỘ VỆ
+text	play	html	480,640,542,654	13.5	9.63	inside	Cấp 4 · Thường
+text	play	html	691,563,723,576	13.5	10.32	inside	4 · SAU
+text	play	html	644,594,686,612	13.5	13.57	inside	Lumi
+text	play	html	644,617,683,631	13.5	8.21	inside	TRỊ LIỆU
+text	play	html	644,640,707,654	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	855,563,888,576	13.5	10.32	inside	5 · SAU
+text	play	html	808,594,856,612	13.5	13.57	inside	Orren
+text	play	html	808,617,851,631	13.5	8.21	inside	PHÁP SƯ
+text	play	html	808,640,871,654	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	86,687,241,701	13.5	8.86	inside	Lưu tự động trên trình duyệt này
+text	play	html	86,704,407,718	13.5	8.86	inside	Enter: tiếp tục · Space: chiến đấu · U: nâng cấp · E: tiến h
+text	play	html	328,496,638,513	13.5	12.79	inside	Chưa đủ tài nguyên. Đánh lại ải đã thắng để nhận thêm.
+screen	6278	play	809ddf75	drawn
+uncaught	0
+shot	/c/Users/PuuGoo/Desktop/my-game/prototypes/oathbound/evidence/iteration-3-party-map.png	343925

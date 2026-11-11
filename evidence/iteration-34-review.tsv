@@ -1,0 +1,8 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+iteration	34
+scope	Regression of iteration33 pause-entry visual clock fix across two pause/resume cycles, P then Escape. No source/config/balance changes.
+method	Prescribed one-shot-run.sh seed617 stop514 log Enter Space wait:2 KeyP wait:1.2 KeyP wait:1 Escape wait:1.2 Escape wait:8; compare retained iteration33 baseline stop360.
+observations	Pause/resume transitions129/205 and269/345. Final global t6.00; all measured text rows equal baseline; PNG SHA256 equal773a1f4b5f06e4a2fe7aabe51e9944c1c701fa830c409da9772a594a2d1c700b.
+runtime	uncaught0; no reported console/crash/error/nonfinite/not_assessed rows in runtime log. Screenshot inspected.
+evidence	iteration-34-mixed-pauses.png; iteration-34-mixed-pauses.tsv; iteration-34-comparison.tsv.
+limits	One sampled endpoint at seed617; not proof of universal determinism, full internal state equality or native keyboard/focus behavior. No new unit suite run; most recent combined run remains122 cases at iteration33.
