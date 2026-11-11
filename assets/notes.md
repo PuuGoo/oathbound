@@ -18,6 +18,6 @@ Six columns, each 181 pixels wide. Rows are packed vertically at irregular inter
 | 7 | 1051 | 188 | skillAura (rearing/aura visual) | 180 |
 | 8 | 1239 | 209 | skillArc (purple slash visual) | 174 |
 
-The four skill rows cycle on successive automatic skill activations as visual variants of the existing lancer skill. They do not grant new shield, healing or other combat effects. All balance values and action order are unchanged. Attack/skill/hit return to idle, death cannot be interrupted and holds its last frame. Pause freezes the animation clock. Local image loading uses no network service.
+The four skill rows cycle on successive automatic skill activations as visual variants of the existing lancer skill. They do not grant new shield, healing or other combat effects. All balance values and action order are unchanged. Attack/skill/hit return to idle, death cannot be interrupted and holds its last frame. Pause freezes the animation clock. Local image loading uses no network service. An identical base64 copy of the PNG is embedded in `../config.js` so drawing the image does not taint the canvas when opened via `file://`; `assets/mounted-lancer.png` remains the unchanged source copy.
 
 Preview all rows: `index.html?scene=figures&sprite-preview=1`.

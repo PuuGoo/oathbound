@@ -45,7 +45,7 @@ Hoàn thành 2 chương × 5 ải. Thua khi cả đội bị hạ hoặc hết g
 - [x] Map 2 chương × 5 ải mở tuần tự, thủ lĩnh cuối chương. *(quy mô guessed)*
 - [x] Vàng + kinh nghiệm tăng cấp; nguyên liệu riêng tiến hóa một bậc tăng chỉ số và cải thiện kỹ năng (thin stand-in). *(công thức guessed)*
 - [x] Thưởng lần đầu và đánh lại; lưu đội, tài nguyên, ải đã mở trong trình duyệt. *(guessed)*
-- [x] Hoạt ảnh chờ, tấn công, trúng đòn, bị hạ; kết quả rõ ràng. *(inferred (strong))*
+- [x] Hoạt ảnh chờ, tấn công, trúng đòn, bị hạ; kết quả rõ ràng. Kỵ sĩ dùng trực tiếp sprite sheet đã chỉ định: idle lặp, attack/hit/skill một lần rồi về idle, death giữ khung cuối; bốn hàng skill luân phiên chỉ thay hình ảnh, không thay chỉ số hay hiệu ứng cơ học.
 
 ## Your systems
 - 5 anh hùng đấu 5 quái chiến dịch · in the slice

@@ -38,7 +38,7 @@ const lancerSheet=new Image();
 let lancerAssetReady=false;
 lancerSheet.onload=()=>{lancerAssetReady=true;uiDirty=true;};
 lancerSheet.onerror=()=>{console.error('Không tải được assets/mounted-lancer.png');toast('Thiếu sprite mounted-lancer.png. Hãy giữ thư mục assets cạnh index.html.');};
-lancerSheet.src='assets/mounted-lancer.png';
+lancerSheet.src=window.LANCER_SPRITE_DATA||'assets/mounted-lancer.png';
 /** Resolve packed atlas rows and anchors live from config, without trimming animation frames. */
 function lancerClip(name){const key='lancer'+name[0].toUpperCase()+name.slice(1);return{y:tune[key+'Y'],height:tune[key+'Height'],anchorY:tune[key+'AnchorY'],fps:tune[key+'FPS'],count:tune.lancerFrameCount};}
 /** Start a one-shot visual animation; combat statistics and damage rules are unchanged. */
