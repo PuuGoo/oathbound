@@ -23,7 +23,7 @@
 <div id="galleryLabel"><div class="eyebrow">OATHBOUND · BỘ NHÂN VẬT GỐC</div><h2>Người giữ lời & sinh vật của màn đêm</h2></div>
 </div>
 <dialog id="resetDialog"><h2>Khởi đầu một hành trình mới?</h2><p>Chỉ xóa tiến trình Oathbound trên trình duyệt này: vàng, cấp tướng, tiến hóa và ải đã mở. Không ảnh hưởng Last Light.</p><button id="cancelReset">Giữ tiến trình</button> <button id="confirmReset">Xóa và bắt đầu lại</button></dialog>
-<script src="config.js"></script><script>
+<script src="config.js"></script><script src="belinda-sprite.js"></script><script>
 'use strict';
 const params=new URLSearchParams(location.search),tune=new Proxy({},{get:(_,k)=>CONFIG[k].value});
 const STEP=1/60,W=1280,H=800,clock=window.GAME_CLOCK||{now:()=>performance.now()/1000},CHEAP=params.get('render')==='cheap';
@@ -31,7 +31,7 @@ const canvas=document.getElementById('game'),ctx=canvas.getContext('2d'),app=doc
 const $=id=>document.getElementById(id),events=[],hit=new Set(),down=new Set();
 let scene='title',state,seed=CONFIG.seed,acc=0,last=clock.now(),uiDirty=true,toastTime=0,hoverNode=-1;
 const C={ink:'#f4e9d2',gold:'#e8c483',teal:'#a6d1c9',night:'#10242e',outline:'#172531'};
-const HEROES=[{id:'lancer',name:'Estrilda',role:'KỴ SĨ',skill:'Thương bình minh',detail:'Xuyên mục tiêu hàng trước và một địch phía sau.',speed:9},{id:'warden',name:'Bram',role:'HỘ VỆ',skill:'Lời thề thép',detail:'Tạo khiên cho hai đồng minh hàng trước.',speed:5},{id:'ranger',name:'Sylra',role:'XẠ THỦ',skill:'Mũi tên truy ảnh',detail:'Bắn địch yếu máu nhất, kể cả hàng sau.',speed:12},{id:'mage',name:'Orren',role:'PHÁP SƯ',skill:'Tinh vân thức giấc',detail:'Gây sát thương lên toàn đội địch.',speed:7},{id:'healer',name:'Lumi',role:'TRỊ LIỆU',skill:'Ánh đèn dẫn lối',detail:'Chữa lành đồng minh có tỷ lệ máu thấp nhất.',speed:8}];
+const HEROES=[{id:'lancer',name:'Estrilda',role:'KỴ SĨ',skill:'Thương bình minh',detail:'Xuyên mục tiêu hàng trước và một địch phía sau.',speed:9},{id:'warden',name:'Bram',role:'HỘ VỆ',skill:'Lời thề thép',detail:'Tạo khiên cho hai đồng minh hàng trước.',speed:5},{id:'ranger',name:'Sylra',role:'XẠ THỦ',skill:'Mũi tên truy ảnh',detail:'Bắn địch yếu máu nhất, kể cả hàng sau.',speed:12},{id:'mage',name:'Belinda',role:'PHÁP SƯ',skill:'Phán quyết ánh sáng',detail:'Gây sát thương ánh sáng lên toàn đội địch.',speed:7},{id:'healer',name:'Lumi',role:'TRỊ LIỆU',skill:'Ánh đèn dẫn lối',detail:'Chữa lành đồng minh có tỷ lệ máu thấp nhất.',speed:8}];
 const ENEMIES={brute:{name:'Thạch Nha',speed:4},archer:{name:'Gai Độc',speed:10},shaman:{name:'Tư Tế Tro',speed:6},assassin:{name:'Ảnh Trảo',speed:13},boss:{name:'Vua Sừng Tàn',speed:8}};
 const CHAPTERS=['Rừng Thức Giấc','Thành Tro Tàn'];
 const STAGES=['Lối Mòn Sương','Bờ Suối Vắng','Rễ Cây Cổ','Vọng Gác Rừng','Ngai Sừng Tàn','Cổng Than Hồng','Đường Tro Bay','Điện Hoang Phế','Tháp Lặng Im','Bình Minh Trở Lại'];
@@ -41,11 +41,18 @@ let lancerAssetReady=false;
 lancerSheet.onload=()=>{lancerAssetReady=true;uiDirty=true;};
 lancerSheet.onerror=()=>{console.error('Không tải được assets/mounted-lancer.png');toast('Thiếu sprite mounted-lancer.png. Hãy giữ thư mục assets cạnh index.html.');};
 lancerSheet.src=window.LANCER_SPRITE_DATA||'assets/mounted-lancer.png';
+const belindaSheet=new Image();
+let belindaAssetReady=false;
+belindaSheet.onload=()=>{belindaAssetReady=true;uiDirty=true;};
+belindaSheet.onerror=()=>{console.error('Không tải được assets/belinda-mage.png');toast('Thiếu sprite Belinda. Hãy giữ belinda-sprite.js và thư mục assets cạnh index.html.');};
+belindaSheet.src=window.BELINDA_SPRITE_DATA||'assets/belinda-mage.png';
 /** Resolve packed atlas rows and anchors live from config, without trimming animation frames. */
 function lancerClip(name){const key='lancer'+name[0].toUpperCase()+name.slice(1);return{y:tune[key+'Y'],height:tune[key+'Height'],anchorY:tune[key+'AnchorY'],fps:tune[key+'FPS'],count:tune.lancerFrameCount};}
+/** Resolve Belinda's packed rows with their own frame counts. */
+function belindaClip(name){const key='belinda'+name[0].toUpperCase()+name.slice(1);return{y:tune[key+'Y'],height:tune[key+'Height'],anchorY:tune[key+'AnchorY'],fps:tune[key+'FPS'],count:tune[key+'Count']};}
 /** Start a one-shot visual animation; combat statistics and damage rules are unchanged. */
-function playUnitAnimation(unit,name){if(unit.kind!=='lancer'||unit.animation==='death')return;unit.animation=name;unit.animationTime=0;events.push({type:'sprite-animation',actor:unit.name,animation:name});}
-function advanceAnimations(dt){if(!state.battle)return;for(const unit of [...state.battle.heroes,...state.battle.enemies]){unit.animationTime+=dt;if(unit.kind==='lancer'&&unit.animation!=='idle'&&unit.animation!=='death'){const clip=lancerClip(unit.animation);if(unit.animationTime>=clip.count/clip.fps){unit.animation='idle';unit.animationTime=0;}}}}
+function playUnitAnimation(unit,name){if(!['lancer','mage'].includes(unit.kind)||unit.animation==='death')return;unit.animation=name;unit.animationTime=0;events.push({type:'sprite-animation',actor:unit.name,animation:name});}
+function advanceAnimations(dt){if(!state.battle)return;for(const unit of [...state.battle.heroes,...state.battle.enemies]){unit.animationTime+=dt;if(['lancer','mage'].includes(unit.kind)&&unit.animation!=='idle'&&unit.animation!=='death'){const clip=unit.kind==='mage'?belindaClip(unit.animation):lancerClip(unit.animation);if(unit.animationTime>=clip.count/clip.fps){unit.animation='idle';unit.animationTime=0;}}}}
 /** Draw one atlas frame with fixed ground anchor, optional facing, and terminal death hold. */
 function drawLancerSprite(x,y,scale,flip=false,animation='idle',time=0,evolved=false){
   if(!lancerAssetReady)return false;
@@ -55,6 +62,17 @@ function drawLancerSprite(x,y,scale,flip=false,animation='idle',time=0,evolved=f
   ellipse(0,2,36,8,'#0005');
   if(evolved&&animation!=='death'){ellipse(0,-2,40,8,'#e7c46b55');star(-37,-78,6,'#ffe7a0');}
   ctx.drawImage(lancerSheet,frame*tune.lancerFrameWidth,clip.y,tune.lancerFrameWidth,clip.height,-tune.lancerAnchorX,-clip.anchorY,tune.lancerFrameWidth,clip.height);
+  ctx.restore();return true;
+}
+/** Draw Belinda from the transparent packed atlas, with a fixed ground anchor. */
+function drawBelindaSprite(x,y,scale,flip=false,animation='idle',time=0,evolved=false){
+  if(!belindaAssetReady)return false;
+  const clip=belindaClip(animation),raw=Math.floor(Math.max(0,time)*clip.fps+1e-7);
+  const frame=animation==='idle'?raw%clip.count:Math.min(clip.count-1,raw);
+  ctx.save();ctx.translate(x,y);ctx.scale(flip?-scale:scale,scale);
+  ellipse(0,2,28,7,'#0005');
+  if(evolved&&animation!=='death'){ellipse(0,-2,36,8,'#e7c46b55');star(-32,-85,6,'#ffe7a0');}
+  ctx.drawImage(belindaSheet,frame*tune.belindaFrameWidth,clip.y,tune.belindaFrameWidth,clip.height,-tune.belindaAnchorX,-clip.anchorY,tune.belindaFrameWidth,clip.height);
   ctx.restore();return true;
 }
 /** Deterministic gameplay RNG; decoration does not consume it. */
@@ -252,7 +270,7 @@ function line(points,color,width=2){ctx.beginPath();points.forEach((p,i)=>i?ctx.
 function text(s,x,y,size=14,color=C.ink,align='center',serif=false){ctx.fillStyle=color;ctx.font=`${size}px ${serif?'Georgia':'Segoe UI, Arial'}`;ctx.textAlign=align;ctx.textBaseline='middle';ctx.fillText(s,x,y);}
 function rounded(x,y,w,h,r,fill,stroke){ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fillStyle=fill;ctx.fill();if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=1;ctx.stroke();}}
 function star(x,y,r,color){const pts=[];for(let i=0;i<8;i++){const a=i*Math.PI/4;pts.push([x+Math.cos(a)*(i%2?r*.3:r),y+Math.sin(a)*(i%2?r*.3:r)]);}poly(pts,color,null);}
-function character(kind,x,y,scale=1,flip=false,pose=0,evolved=false,dead=0){if(kind==='lancer'){drawLancerSprite(x,y,scale*tune.lancerSpriteScale,flip,dead>0?'death':'idle',dead>0?dead:state.t,evolved);return;}ctx.save();ctx.translate(x,y);ctx.scale(flip?-scale:scale,scale);if(dead>0){ctx.globalAlpha=Math.max(0,1-dead*1.7);ctx.translate(0,12);ctx.rotate(-.2);}else ctx.translate(0,Math.sin(state.t*2+x)*1.6);ellipse(0,2,36,8,'#0005');if(evolved){ctx.save();ctx.globalAlpha=.45;ellipse(0,-5,41,9,'#e7c46b');star(-34,-61,8,'#ffe7a0');ctx.restore();}
+function character(kind,x,y,scale=1,flip=false,pose=0,evolved=false,dead=0){if(kind==='mage'){drawBelindaSprite(x,y,scale*tune.belindaSpriteScale,flip,dead>0?'death':'idle',dead>0?dead:state.t,evolved);return;}if(kind==='lancer'){drawLancerSprite(x,y,scale*tune.lancerSpriteScale,flip,dead>0?'death':'idle',dead>0?dead:state.t,evolved);return;}ctx.save();ctx.translate(x,y);ctx.scale(flip?-scale:scale,scale);if(dead>0){ctx.globalAlpha=Math.max(0,1-dead*1.7);ctx.translate(0,12);ctx.rotate(-.2);}else ctx.translate(0,Math.sin(state.t*2+x)*1.6);ellipse(0,2,36,8,'#0005');if(evolved){ctx.save();ctx.globalAlpha=.45;ellipse(0,-5,41,9,'#e7c46b');star(-34,-61,8,'#ffe7a0');ctx.restore();}
 const navy='#284858',light='#76939b',gold='#d6b36e',skin='#e4c5a4';
 if(kind==='warden'){
 poly([[-24,-37],[-24,0],[-9,0],[-7,-34]],'#485b68');poly([[5,-36],[10,0],[25,0],[21,-38]],'#405565');poly([[-31,-69],[-19,-85],[20,-83],[34,-61],[20,-27],[-21,-25]],navy);poly([[-31,-69],[-39,-59],[-18,-51],[-7,-72]],light);poly([[15,-77],[33,-80],[43,-61],[22,-51]],'#b2beb2');line([[-18,-60],[16,-58],[15,-31],[-13,-31]],gold,3);
@@ -305,8 +323,9 @@ all.forEach(u=>{
   if(u.moving){for(let i=0;i<3;i++)ellipse(x-u.facing*(16+i*13),y+3,7-i,3,'#dfce9d22');}
   if(u.action?.special){ellipse(x,y,43,12,'#edd29333','#edcd8b');star(x,y-112,10+Math.sin(state.t*20)*3,'#ffe1a2');}
   if(u.kind==='lancer')drawLancerSprite(x,y+bob,.84*tune.lancerSpriteScale,u.facing<0,u.animation,u.animationTime,u.side===0&&progress.heroes[u.index].evolved);
+  else if(u.kind==='mage')drawBelindaSprite(x,y+bob,.84*tune.belindaSpriteScale,u.facing<0,u.animation,u.animationTime,u.side===0&&progress.heroes[u.index].evolved);
   else character(u.kind,x,y+bob,.84,u.facing<0,busy,u.side===0&&progress.heroes[u.index].evolved,u.deadTime);
-  if(u.flash>0&&u.kind!=='lancer'){ctx.save();ctx.globalAlpha=u.flash/tune.animationDuration*.28;ellipse(x,y-40,28,46,'#fff1c5');ctx.restore();}
+  if(u.flash>0&&!['lancer','mage'].includes(u.kind)){ctx.save();ctx.globalAlpha=u.flash/tune.animationDuration*.28;ellipse(x,y-40,28,46,'#fff1c5');ctx.restore();}
 });
 // Health bars and annotations follow every figure so foreground bodies cannot hide team status.
 all.filter(u=>u.hp>0).forEach(u=>{
@@ -348,7 +367,7 @@ b.effects.forEach(e=>{
   }
   ctx.restore();
 });drawUnitBadges();ctx.restore();}
-function rosterArt(){if(scene==='figures')return;progress.formation.forEach((index,slot)=>{const x=60+slot*181.2;ctx.save();ctx.beginPath();ctx.rect(35+slot*181.2,642,66,90);ctx.clip();character(HEROES[index].id,x+10,729,HEROES[index].id==='lancer'?tune.lancerPortraitScale:.65,false,0,progress.heroes[index].evolved);ctx.restore();});}
+function rosterArt(){if(scene==='figures')return;progress.formation.forEach((index,slot)=>{const x=60+slot*181.2;ctx.save();ctx.beginPath();ctx.rect(35+slot*181.2,642,66,90);ctx.clip();character(HEROES[index].id,x+10,729,HEROES[index].id==='lancer'?tune.lancerPortraitScale:HEROES[index].id==='mage'?tune.belindaPortraitScale:.65,false,0,progress.heroes[index].evolved);ctx.restore();});}
 function galleryDraw(){background();if(params.has('sprite-preview')){const clips=['idle','attack','hit','death','skill','skillShield','skillAura','skillArc'];clips.forEach((name,i)=>{const x=160+(i%4)*318,y=i<4?350:675;rounded(x-120,y-235,240,290,8,'#11272ddd','#6b796a');const clip=lancerClip(name),elapsed=state.t;drawLancerSprite(x,y,1,false,name,elapsed);text(name,x,y+22,20,C.ink);text(`Hàng ${i+1} · ${clip.count} khung · ${clip.fps} fps`,x,y+45,13,C.gold);});return;}const kinds=[...HEROES.map(h=>h.id),...Object.keys(ENEMIES)];kinds.forEach((k,i)=>{const x=115+(i%5)*258,y=i<5?342:657;rounded(x-98,y-200,196,258,8,'#11272dbb','#6b796a');character(k,x,y,1,false,0,i===0);text(i<5?HEROES[i].name:ENEMIES[k].name,x,y+26,20,C.ink,'center',true);text(i<5?HEROES[i].role:k==='brute'?'CHẶN HÀNG TRƯỚC':k==='archer'?'TẤN CÔNG TỪ XA':k==='shaman'?'HỒI PHỤC':k==='assassin'?'SĂN HÀNG SAU':'ĐÒN DIỆN RỘNG',x,y+47,12,C.gold);});}
 function draw(){ctx.clearRect(0,0,W,H);if(scene==='figures')galleryDraw();else{if(state.mode==='battle'&&state.battle)battleDraw();else mapDraw();rosterArt();}if(uiDirty){renderUI();uiDirty=false;}}
 /** Keep keyboard focus on the same rebuilt control; disabled upgrades fall back to the selected hero. */

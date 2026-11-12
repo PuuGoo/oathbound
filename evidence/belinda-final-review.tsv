@@ -1,0 +1,8 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+scope	Final Belinda selection/upgrade and later-combat observations. No additional game-source changes.
+selection	Fresh isolated seed617; selected Belinda and KeyU. Screenshot inspected: Belinda level2,HP578/attack104,team power4826,395gold/108essence; other heroes level1. One localstorage save98,uncaught0.
+combat	Fresh seed617 stop400. Screenshot inspected: battle6.6s,Belinda490/490 advanced toward enemy as fight progressed;4heroes/2enemies living. uncaught0. Filename belinda-second-cast is descriptive intent only: screenshot shows Belinda ready, NOT a confirmed second skill cast.
+evidence	belinda-selected-upgrade.png/tsv;belinda-second-cast.png/tsv.
+verification	Latest combined136 named cases/13 suites passed before these observations. No new unit run. Prior final map/battle/victory screenshots inspected; first skill observed live and stage1-1 victory553.
+limits	No complete live animation-variant/death/hit coverage or native-input proof. White-background extraction/crop limitations remain as recorded in belinda-import-review.tsv. No full campaign rerun.
+status	Belinda import task complete; autonomous loop remains stopped. No commit/push/publication/install or original asset/README/Last Light changes.

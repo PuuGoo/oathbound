@@ -1,0 +1,11 @@
+source_sha256	f04c5898c63d0703b2b6d80db3774beb9645a3db8e3db1093261ff97efad05d8
+derived	2048x2048	1911662bytes
+removed_edge_connected_background_pixels	993259
+row	idle	0-177	7frames
+row	attack	177-353	7frames
+row	hit	353-531	7frames
+row	death	531-708	8frames
+row	skill	708-888	8frames
+row	skillShield	888-1052	8frames
+row	skillAura	1052-1230	8frames
+row	skillArc	1230-1448	8frames

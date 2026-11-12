@@ -12,6 +12,20 @@
   date: 2026-11-11
   ships: false
   usage: "Loaded locally by index.html; not approved for public export."
+- path: assets/belinda-mage.png
+  origin: you
+  source:
+    vendor: "User-supplied AFK Arena asset; original rights holder not verified"
+    product: "Belinda’s Radiant Mage Sprite Atlas"
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/2.Belinda/Belinda’s Radiant Mage Sprite Atlas.png"
+    sha256: "f04c5898c63d0703b2b6d80db3774beb9645a3db8e3db1093261ff97efad05d8"
+  licence:
+    id: UNKNOWN
+    note: "Requested for this local prototype only; public distribution rights unverified."
+  transformation: "Edge-connected near-white removal; measured nonuniform crops packed in 256px cells. See tools/import-belinda.cjs."
+  date: 2026-11-12
+  ships: false
+  usage: "Local runtime; identical derived PNG embedded in belinda-sprite.js."
 - path: assets/notes.md
   origin: code
   tool: "Claude Code asset mapping notes"

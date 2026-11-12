@@ -12,6 +12,8 @@ After play: /c/Users/PuuGoo/Downloads/Estrilda_GamePlay.mp4 tôi gameplay phải
 
 Decision: Bạn chọn chiến đấu thời gian thực, thay cơ chế lượt chung; giữ chiến dịch, 5v5 và phát triển đội. Tên hiển thị kỵ sĩ đổi thành Estrilda. Ban đầu video chưa đọc được; iteration 3 đã giải mã bằng trình duyệt và xem các khung 3/12/22/32 giây. Đã thấy đội hình đổi vị trí, hiệu ứng đồng thời và nhấn mạnh chân dung kỹ năng; chuyển động, âm thanh và độ giống toàn clip chưa được đánh giá.
 
+After play: Bạn yêu cầu import `Belinda’s Radiant Mage Sprite Atlas.png`. Belinda thay hình vẽ và tên pháp sư Orren; giữ ID `mage`, vị trí lưu, cấp, tiến hóa và cơ chế sát thương diện rộng. Atlas nền trắng được tạo bản nền trong suốt và cắt từng khung không đều; ảnh gốc giữ nguyên. Các hàng/FPS và tên kỹ năng hiển thị là suy luận cho prototype, không phải metadata hoặc bộ kỹ năng AFK Arena chính thức.
+
 **Pitch:** Dẫn đội năm anh hùng vượt bản đồ chiến dịch, dùng chiến lợi phẩm nâng cấp và tiến hóa để vượt đội hình địch ngày càng mạnh.
 **Genre:** RPG chiến dịch kết hợp chiến đấu tự động thời gian thực.
 **Controls:** Chuột chọn ải và chọn tướng để xem/nâng cấp; nút **Xếp đội** bật chế độ chọn hai tướng đổi vị trí, **Xong xếp đội** thoát và hủy cặp chưa hoàn tất. Chọn tướng thông thường không đổi đội hình. Không cần thao tác chiến đấu. ←/→ chọn ải trước/sau đã mở, tự chuyển chương tương ứng. Enter bắt đầu, Space đánh, U nâng cấp, E tiến hóa, P tạm dừng. *(phím guessed)*
@@ -24,7 +26,7 @@ Decision: Bạn chọn chiến đấu thời gian thực, thay cơ chế lượt
 - Shapes / Values: Năm dáng riêng: kỵ sĩ thương, hộ vệ khiên, xạ thủ, pháp sư và trị liệu; nền dịu để nhân vật và đòn đánh nổi bật. *(guessed)*
 - Palette: Xanh hải quân–vàng cho anh hùng, tím than–đỏ cho nguy hiểm; ánh sáng ấm và bóng lạnh. *(inferred (strong))*
 - Detail / Rules / Signature: Trang phục nhiều lớp, viền thống nhất, đổ bóng minh họa; vệt sáng theo vũ khí và ấn ký khi tiến hóa; mọi nhân vật được vẽ, không emoji hay hình tròn thay nhân vật. *(guessed)*
-- References: Dùng trực tiếp `assets/mounted-lancer.png` (Mounted Lancer Animation Sprite Sheet.png do bạn chỉ định) cho Estrilda trong prototype cục bộ: idle, attack, hit, death và bốn biến thể hình ảnh skill; tọa độ/FPS suy ra từ ảnh, chưa có metadata gốc. Chưa xác nhận hàng chạy: khi di chuyển dùng idle + nhún/vệt bụi; kỹ năng có lao tới mục tiêu. Bốn tướng còn lại giữ hình vẽ bằng mã, có di chuyển và thi triển tự động. AFK Arena cho ý tưởng đội hình và chiến dịch; không lấy UI nguyên bản. Trang Campaign trả HTTP 402, nội dung chưa xác minh.
+- References: Dùng trực tiếp `assets/mounted-lancer.png` (Mounted Lancer Animation Sprite Sheet.png do bạn chỉ định) cho Estrilda trong prototype cục bộ: idle, attack, hit, death và bốn biến thể hình ảnh skill; tọa độ/FPS suy ra từ ảnh, chưa có metadata gốc. Chưa xác nhận hàng chạy: khi di chuyển dùng idle + nhún/vệt bụi; kỹ năng có lao tới mục tiêu. Belinda dùng `assets/belinda-mage.png`, bản dẫn xuất nền trong suốt từ atlas bạn cung cấp, thay Orren ở vị trí pháp sư; giữ nguyên tiến trình và cơ chế. Ba tướng còn lại giữ hình vẽ bằng mã, có di chuyển và thi triển tự động. AFK Arena cho ý tưởng đội hình và chiến dịch; không lấy UI nguyên bản. Trang Campaign trả HTTP 402, nội dung chưa xác minh.
 
 ## First minute
 Mở bản đồ tại ải 1-1 với đủ năm anh hùng. Bạn xem vai trò, bắt đầu và thấy cận chiến áp sát, đánh xa tiến/lùi giữ cự ly, kỹ năng liên tục chồng nhịp giữa hai đội. Chiến thắng cộng tài nguyên, gợi ý nâng cấp rồi bước sang ải tiếp. *(chi tiết guessed)*
@@ -63,7 +65,7 @@ Hoàn thành 2 chương × 5 ải. Thua khi cả đội bị hạ hoặc hết t
 ## Keep
 
 ## Avoid
-- Không sao chép logo, giao diện hay các nhân vật AFK Arena khác. Ngoại lệ được bạn duyệt: sprite Mounted Lancer và tên hiển thị Estrilda cho prototype cục bộ; quyền phát hành công khai chưa xác minh.
+- Không sao chép logo, giao diện hay các nhân vật AFK Arena khác. Ngoại lệ được bạn yêu cầu: sprite Mounted Lancer/Estrilda và Radiant Mage/Belinda cho prototype cục bộ; quyền phát hành công khai chưa xác minh.
 - Chọn lệnh thủ công trong trận.
 
 ## Out of scope
