@@ -1,0 +1,33 @@
+PASS	Palmer lastcatalogidentity own1active3passive not Fawkeshealer
+PASS	all Palmer numerical adaptations are live configured records
+PASS	openingprayercontrolimmuneheals80percentattackevery1point5s and addsfaithmax10
+PASS	Faithbuffnearonlyduringprayer initialattackflat3percent then allalliesafterprayerends
+PASS	prayerendsat10faithoractualHPdamageover60percent notshielddamage or nootherallies
+PASS	Illuminationpermanentlyblesshighestattackunblessedotherbefore240percent5hitfallback
+PASS	blessingcriticalamplificationaffectsonlyactualcriticalnotchanceornormalnoncriticaldamage
+PASS	Scripture normalalternates200percentadmonitionhighestattackweaken thenpreceptstopally15percentstack3noenergy
+PASS	prayerstopsnormalandactiveworkuntilendwithoutphantomcasts
+PASS	DivineDefense40percentlowestabsoluteHPshareothersnonlethalonlyactualhealthbounddamage
+PASS	distributedHPdebt60percentrecoveredover5secondsexactnotmanufacturedfrompreventedshare
+PASS	firstallydeathimmediatelyrefundsoutstandingdistributedHPand30percentreduction5s onlyonce
+FAIL	firstdeathafter5secondpartialrecoveryrefundsremaining40percentnotalreadyhealed60	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 9982.720000000041
+- 10000
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:17:322
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:17:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+PASS	actual normal dispatch uses Scripture instead of generic Fawkes heal or SilverBolt
+PASS	snapshot stays acyclic with reciprocaltargetsblessingsanddebt while purebonus doesnot advanceprayer
+PASS	capacitylimitedsharecannotgrant40percentreductionwithoutactuallypayingnonlethalHP
+unit_total	15
+unit_failed	1

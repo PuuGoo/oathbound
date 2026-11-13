@@ -1,0 +1,35 @@
+PASS	Sonja index20 own3active1passive not Lucius defensive kit
+PASS	Sonja values geometry durations thresholds counts and proc limits are configured
+PASS	Gold allallies5charges halve5incominghits and refresh rather than stack charges
+PASS	Gold reaction80percent is queued once from actual damage attempt with norecursivechain
+PASS	Glimmer outside20percent reduction and70percent retaliation at mostoncepersecond
+PASS	Glimmer firstHPbelow60 enters25s once and stops normal release but leaves skills enabled
+PASS	Glimmer heals2percentmaxHP perpresentrose eachsecond capped12percent without energy
+PASS	Dark Vines fixedarea3x180 then weakestally8sshield actualHPdamage floor220percent
+PASS	shieldedBlackRosecannotinflateearnedshield and releasedBlackRosepersistsaftercasterdeath
+PASS	Blood placesonmostinjuredpreferunmarked then5actualHPdamageevents70percentextra andcapped8percentdrain
+PASS	Blood secondarydoesnotconsumeitself or otherrosesandshieldonlyhitdoesnotconsumeRed
+PASS	deadbanishedentering recipients nevergainroses/heal or resurrection
+PASS	actual snapshot serializes scalarroseownership and deferred reactions with live reciprocal targets
+PASS	production normal dispatch suppresses actual Sonja attack only during Glimmer
+PASS	rose color counts and heal cap are pure and reaction work never cascades between two Sonjas
+PASS	Glimmer sixor more roses capheal at12percent and noheal with zero valid roses
+PASS	Sonja presentation defines captions and pure finite shapes for groundroses and counters
+FAIL	actual HP hit below60 activates Glimmer before later healing can hide threshold crossing	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 1
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:22:185
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:22:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+PASS	Blood reclaim doubles only actual health drained while Glimmer and never heals prevented damage
+PASS	outside Glimmer retaliation is rearmed on exactly60fixedsteps and zeroimmunehit consumes no Gold
+unit_total	19
+unit_failed	1

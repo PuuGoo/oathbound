@@ -4,6 +4,12 @@
 (function(root){
 'use strict';
 const KITS={
+  palmer:[
+    {id:'illumination',name:'Illumination',animation:'skillArc',summary:'Ban phúc crit-amplification vĩnh viễn cho người công cao chưa có; đủ đồng minh thì5đòn240%địch công cao.',cooldown:'illuminationCooldown',delay:'illuminationDelay',support:true},
+    {id:'powerLight',name:'Power of Light',animation:'skillAura',summary:'Đầu trận cầu nguyện miễn khống chế,80%công hồi gần/1.5s,+Faith tối đa10. Buffcông/giảm damage chuyển thể; kết thúc thì toàn đội.',reactive:true},
+    {id:'sacredScripture',name:'Sacred Scripture',animation:'attack',summary:'Đánh thường luân phiên200%/suy công20%5s và Precepts+15%damage8s tối đa3; bỏ nhánhenergy.',passive:true},
+    {id:'divineDefense',name:'Divine Defense',animation:'skillShield',summary:'Ít nhất2đồng minh:chia40%đònHP thấp nhất sang người khác khôngchết,hồi60%/5s; lầnđầu đồng minhchết hoàn phầnnợcòn vàgiảm30%5s.',reactive:true}
+  ],
   sonja:[
     {id:'goldRoses',name:'Gold Roses',animation:'skillShield',summary:'Mỗi đồng minh5lần giảm50%damage, nguồn đánh mất80%công Sonja; dùng lại refresh5.',cooldown:'goldCooldown',delay:'goldDelay',support:true},
     {id:'glimmeringBrilliance',name:'Glimmering Brilliance',animation:'skillAura',summary:'Ngoài trạng thái:giảm20%,phản70% tối đa1/s. Lần đầu HP<60%:25s ngừng đánh thường,hồi2%HP/hoa/s cap12%; khôngenergy.',reactive:true},
@@ -175,6 +181,52 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   function addMiasma(source,target){if(target.hp<=0||target.side===source.side||target.banishLeft>0||target.entryLeft>0)return;target.miasma??=[];const ownLayers=target.miasma.filter(e=>e.source===source.side+':'+source.slot&&e.left>0);if(ownLayers.length>=tune.miasmaCap){const oldest=ownLayers.sort((a,b)=>a.left-b.left)[0];target.miasma.splice(target.miasma.indexOf(oldest),1);}target.miasma.push({source:source.side+':'+source.slot,left:tune.miasmaDuration});if(miasmaCount(target,source)>=tune.miasmaCap){controlStatus(target,'rootLeft',0);controlStatus(target,'silenceLeft',0);source.castCounts.shadedCorruption=(source.castCounts.shadedCorruption||0)+1;}visual?.buff(source,target,'shadedCorruption');}
   /** Arm cooldown before damage, avoiding recursive aura chains from its own explosion. */
   function triggerDarkAura(u,b){if(u.hp<=0||u.banishLeft>0||u.entryLeft>0||u.darkAuraLeft>0)return;const enemies=alive(foes(u,b));if(!enemies.length)return;const subject=alive([...b.heroes,...b.enemies]).filter(t=>t.hp/t.maxHP<tune.darkAuraThreshold).sort((a,c)=>a.hp/a.maxHP-c.hp/c.maxHP||a.side-c.side||a.slot-c.slot)[0];if(!subject)return;const center=[...enemies].sort((a,c)=>within(enemies,c,tune.darkAuraRadius).length-within(enemies,a,tune.darkAuraRadius).length||a.slot-c.slot)[0];u.darkAuraLeft=tune.darkAuraCooldown;u.castCounts.darkAura=(u.castCounts.darkAura||0)+1;subject.x=center.x;subject.y=center.y;subject.action=null;subject.channelLeft=0;subject.castToken++;const victims=[...new Set([subject,...within(enemies,center,tune.darkAuraRadius)])];for(const t of victims)hit(u,t,u.attack*tune.darkAuraDamage,'darkAura');visual?.release(u,{skillId:'darkAura',target:subject});}
+  /** Permanent blessing records survive their source; Faith applies only from available Palmers. */
+  function palmerBonus(u,key){
+    if(key==='critAmplification')return (u.illuminations||[]).reduce((n,e)=>n+e.amp,0);
+    if(kitKey(u)==='palmer'&&u.praying&&key==='controlImmune')return 1;
+    if(!['attack','reduction'].includes(key)||!battle())return 0;
+    return alive(own(u,battle())).filter(p=>kitKey(p)==='palmer'&&(!p.praying||distance(p,u)<=tune.prayerRadius)).reduce((n,p)=>n+(key==='attack'?(p.initialAttack||0)*p.faith*tune.faithAttack/Math.max(1,u.attack):p.faith*tune.faithDefense),0);
+  }
+  /** Track actual received health damage, not shield loss or requested overkill. */
+  function recordHealthDamage(u,lost){if(kitKey(u)==='palmer'&&u.praying){u.prayerDamage+=lost;if(u.prayerDamage>u.maxHP*tune.prayerDamageLimit)u.praying=false;}}
+  /** Recover exact fractional debt without manufacturing HP through repeated rounding. */
+  function recoverDebt(source,target,amount){if(amount<=0||target.hp<=0||target.banishLeft>0||target.entryLeft>0)return 0;const healed=Math.min(amount,target.maxHP-target.hp);target.hp+=healed;if(healed>0)battle().effects.push({source,target,x:target.x,y:target.y,value:healed,heal:true,t:0,life:tune.animationDuration});return healed;}
+  /** Share only HP-bound damage; nonlethal capacity limits the reduction actually granted. */
+  function divineDistribute(source,target,value){
+    if(value<=0)return value;const b=battle(),team=alive(own(target,b));if(team.length<2)return value;
+    const p=team.filter(u=>kitKey(u)==='palmer').sort((a,c)=>a.slot-c.slot)[0];if(!p)return value;
+    const lowest=[...team].sort((a,c)=>a.hp-c.hp||a.slot-c.slot)[0];if(lowest!==target)return value;
+    const others=team.filter(t=>t!==target),share=value*tune.divineShare/others.length;b.divineDebts??=[];let distributed=0;
+    for(const t of others){const lost=Math.min(share,Math.max(0,t.hp-1));if(lost<=0)continue;t.hp-=lost;distributed+=lost;source.damageDealt=(source.damageDealt||0)+lost;recordHealthDamage(t,lost);afterDamage(t);
+      b.divineDebts.push({ownerSide:p.side,ownerSlot:p.slot,targetSide:t.side,targetSlot:t.slot,total:lost,recovered:0,left:tune.divineRecoveryDuration});
+      b.effects.push({source,target:t,x:t.x,y:t.y,value:lost,heal:false,t:0,life:tune.animationDuration});
+    }if(distributed>0){p.castCounts.divineDefense=(p.castCounts.divineDefense||0)+1;visual?.buff(p,target,'divineDefense');}return Math.max(0,value-distributed);
+  }
+  /** A real first allied death refunds only unrecovered debt and never revives anyone. */
+  function alliedDeath(dead){
+    const b=battle();for(const p of own(dead,b).filter(u=>kitKey(u)==='palmer'&&!u.divineDeathUsed)){
+      p.divineDeathUsed=true;
+      const debts=[...(b.divineDebts||[]),...(b.divineOutstanding||[])].filter(e=>e.ownerSide===p.side&&e.ownerSlot===p.slot);
+      for(const e of debts){const t=own(p,b).find(t=>t.slot===e.targetSlot);if(t)recoverDebt(p,t,Math.max(0,e.total-e.recovered));}
+      b.divineDebts=(b.divineDebts||[]).filter(e=>e.ownerSide!==p.side||e.ownerSlot!==p.slot);
+      b.divineOutstanding=(b.divineOutstanding||[]).filter(e=>e.ownerSide!==p.side||e.ownerSlot!==p.slot);
+      for(const t of alive(own(p,b)))buff(p,t,'divineDeath',{reduction:tune.divineDeathReduction},tune.divineDeathDuration);
+    }
+  }
+  function tickPalmer(u,b,dt){
+    if(u.hp<=0||u.banishLeft>0||u.entryLeft>0)return;
+    if(u.praying){if(!alive(own(u,b)).some(t=>t!==u)){u.praying=false;return;}u.prayerClock+=dt;
+      while(u.praying&&u.prayerClock+Number.EPSILON*1024>=tune.prayerInterval){u.prayerClock-=tune.prayerInterval;for(const t of within(own(u,b),u,tune.prayerRadius))impact(u,t,u.attack*tune.prayerHeal,true);u.faith=Math.min(tune.faithCap,u.faith+1);u.castCounts.powerLight=(u.castCounts.powerLight||0)+1;visual?.buff(u,u,'powerLight');if(u.faith>=tune.faithCap)u.praying=false;}
+    }
+  }
+  function tickDivineDebts(b,dt){if(b.divineDebts)b.divineDebts=b.divineDebts.filter(e=>{
+    const p=roseOwner(e),target=[...b.heroes,...b.enemies].find(t=>t.side===e.targetSide&&t.slot===e.targetSlot);if(!target||target.hp<=0)return false;
+    const duration=tune.divineRecoveryDuration,span=Math.min(dt,e.left);e.left=Math.max(0,e.left-dt);if(e.left<Number.EPSILON*1024)e.left=0;
+    const scheduled=Math.min(e.total*tune.divineRecovery-e.recovered,e.total*tune.divineRecovery*span/duration);if(p)e.recovered+=recoverDebt(p,target,scheduled);
+    if(e.left===0&&p&&!p.divineDeathUsed&&e.total>e.recovered){b.divineOutstanding??=[];let pending=b.divineOutstanding.find(d=>d.ownerSide===e.ownerSide&&d.ownerSlot===e.ownerSlot&&d.targetSide===e.targetSide&&d.targetSlot===e.targetSlot);if(!pending){pending={ownerSide:e.ownerSide,ownerSlot:e.ownerSlot,targetSide:e.targetSide,targetSlot:e.targetSlot,total:0,recovered:0};b.divineOutstanding.push(pending);}pending.total+=e.total-e.recovered;}
+    return e.left>0;
+  });}
   /** Pure rose lookup; ownership uses scalar IDs, never circular unit references. */
   function roseCount(target,color){return (target[color==='gold'?'goldRoses':'redRoses']||[]).filter(e=>e.charges>0).length;}
   const roseOwner=e=>[...battle().heroes,...battle().enemies].find(u=>u.side===e.ownerSide&&u.slot===e.ownerSlot);
@@ -211,7 +263,7 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
     for(const e of b.roseReactions?.splice(0)||[]){const source=roseOwner(e),target=[...b.heroes,...b.enemies].find(t=>t.side===e.targetSide&&t.slot===e.targetSlot);if(!source||!target||target.hp<=0||target.banishLeft>0||target.entryLeft>0)continue;const hp=target.hp;hit(source,target,e.amount,e.skill,0,{roseSecondary:true,noCrit:true});if(e.drain&&hp>target.hp&&source.hp>0&&!(source.banishLeft>0)&&!(source.entryLeft>0))impact(source,source,(hp-target.hp)*e.multiplier,true);}
     if(b.blackRoses)b.blackRoses=b.blackRoses.filter(e=>{
       const source=roseOwner(e);if(!source)return false;e.clock+=dt;
-      while(e.remaining>0&&e.clock+Number.EPSILON*1024>=tune.roseInterval){e.clock-=tune.roseInterval;e.remaining--;for(const t of within(foes(source,b),e,tune.vinesRadius)){const hp=t.hp;hit(source,t,e.amount,'darkVines',0,{roseSecondary:true,noCrit:true});e.damage+=hp-t.hp;}}
+      while(e.remaining>0&&e.clock+Number.EPSILON*1024>=tune.roseInterval){e.clock-=tune.roseInterval;e.remaining--;for(const t of within(foes(source,b),e,tune.vinesRadius)){const hp=t.hp;hit(source,t,e.amount,'darkVines');e.damage+=hp-t.hp;}}
       if(e.remaining===0){const target=alive(own(source,b)).sort((a,c)=>a.hp/a.maxHP-c.hp/c.maxHP||a.slot-c.slot)[0];if(target){target.shield=Math.max(target.shield||0,Math.round(Math.max(e.damage,e.minimum)));target.shieldLeft=Math.max(target.shieldLeft||0,tune.vinesShieldDuration);visual?.buff(source,target,'darkVines');}return false;}return true;
     });
   }
@@ -305,10 +357,11 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   }
   const activeBuffs=u=>Object.values(u.buffs||{}).filter(b=>b.left>0);
   // Distinct buffs add; refreshing one ID still replaces its own record.
-  const bonus=(u,key)=>passiveBonus(u,key)+activeBuffs(u).reduce((sum,b)=>sum+(b[key]||0),0);
+  const bonus=(u,key)=>passiveBonus(u,key)+palmerBonus(u,key)+activeBuffs(u).reduce((sum,b)=>sum+(b[key]||0),0);
   /** Initialize per-battle timers only: save records remain unchanged. */
   function initialize(u){
     u.buffs={};u.controlLeft=0;u.channelLeft=0;u.castToken=0;u.skillTimers={};u.castCounts={};u.critCount=0;u.banishLeft=0;
+    u.illuminations=[];if(kitKey(u)==='palmer'){u.praying=true;u.prayerClock=0;u.prayerDamage=0;u.faith=0;u.initialAttack=u.attack;u.initialCritAmp=tune.palmerInitialCritAmp;u.scripturePrecepts=false;u.divineDeathUsed=false;}
     u.goldRoses=[];u.redRoses=[];if(kitKey(u)==='sonja'){u.glimmerUsed=false;u.glimmerLeft=0;u.glimmerClock=0;u.glimmerRetaliationLeft=0;}
     u.slainSides={};u.miasma=[];if(kitKey(u)==='scarlet')u.darkAuraLeft=0;u.damageDealt=0;u.rootLeft=0;u.silenceLeft=0;u.charmLeft=0;if(kitKey(u)==='morrow')u.abyssalTimers={};u.fateProficiency=tune.fateProficiency;u.fateDissolve=tune.fateDissolve;
     if(kitKey(u)==='eluard-awakened'){u.causalDrift=0;u.divergence=0;u.realmActive=false;u.realmClock=0;u.causalPulses=0;u.fateClock=0;u.fateChecks={};u.fateTotal=0;u.negateUsed=0;u.astralProjections=foes(u,battle()).map(t=>({side:t.side,slot:t.slot,attack:0,defense:0,hp:0,initialAttack:t.attack,initialHP:t.maxHP}));}
@@ -329,7 +382,7 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   }
   /** Most overdue ready skill wins; independent cooldowns cannot starve later skills. */
   function ready(u,target=null){
-    if(u.entryLeft>0||u.silenceLeft>0||u.charmLeft>0||bonus(u,'skillBlocked')>0||(kitKey(u)==='walker'&&u.saloonLeft>0))return null;
+    if(u.entryLeft>0||(kitKey(u)==='palmer'&&u.praying)||u.silenceLeft>0||u.charmLeft>0||bonus(u,'skillBlocked')>0||(kitKey(u)==='walker'&&u.saloonLeft>0))return null;
     const ordered=kit(u).filter(s=>(s.id!=='duelingBlades'||!vortex(u))&&!s.passive&&!s.reactive&&(s.id!=='sliceDice'||sliceKnife(u))&&(s.id!=='fineCuts'||alive(foes(u,battle())).some(t=>distance(u,t)<=tune.fineCutsRange))&&(s.id!=='drunkenFrenzy'||!(u.frenzyLeft>0))&&(!(kitKey(u)==='rosaline'&&s.support)||followTarget(u))&&(s.id!=='divineArrow'||alive(foes(u,battle())).some(t=>inEnemyHalf(u,t)))&&(!s.requiresCrits||u.executionCharges>=tune.executionCrits)&&(u.skillTimers?.[s.id]??Infinity)<=0).sort((a,b)=>u.skillTimers[a.id]-u.skillTimers[b.id]);
     if(kitKey(u)==='walker')return ordered[0]||null;
     return (target?ordered.find(s=>s.support||distance(u,target)<=tune[s.range]):null)||ordered[0]||null;
@@ -404,11 +457,11 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
     let multiplier=1;
     if(original(source,'ranger'))multiplier+=tune.exploitMax*Math.max(0,1-target.hp/(target.maxHP||target.hp||1));
     if(original(source,'healer')&&normal){multiplier+=tune.silverBoltBonus;if(Object.values(target.buffs||{}).some(b=>b.left>0&&(b.slow||b.weaken||b.vulnerable||b.fromSide===source.side))||target.controlLeft>0)multiplier+=tune.silverBoltDebuff;}
-    multiplier*=1+bonus(source,'attack');multiplier*=Math.max(0,1-bonus(source,'weaken'));
+    multiplier*=1+bonus(source,'attack');multiplier*=1+bonus(source,'damageBonus');multiplier*=Math.max(0,1-bonus(source,'weaken'));
     const offensive=amount*multiplier;
     multiplier*=1+bonus(target,'vulnerable');multiplier*=Math.max(0,1-bonus(target,'reduction'));
     if(target.buffs?.lockOn?.left>0&&target.buffs.lockOn.fromSide===source.side){source.buffs??={};source.buffs.lockOnReward={haste:tune.lockOnHaste,crit:tune.lockOnCrit,left:tune.lockOnBuffDuration};}
-    const critMultiplier=tune.criticalMultiplier+(kitKey(source)==='walker'?(source.oldFaithful||0):0);
+    const critMultiplier=tune.criticalMultiplier+bonus(source,'critAmplification')+(kitKey(source)==='walker'?(source.oldFaithful||0):0);
     const chance=(original(source,'mage')?tune.brillianceCrit:0)+bonus(source,'crit')+(options.crit||0);
     const critical=!options.noCrit&&chance>0&&(rng()<Math.min(tune.critChanceCap,chance)||correctFate(source,target));if(critical){visual?.critical(source,target);source.critCount=(source.critCount||0)+1;if(kitKey(source)==='walker'){source.oldFaithful=Math.min(tune.oldFaithfulCap,(source.oldFaithful||0)+tune.oldFaithfulStep);source.castCounts.oldFaithful=(source.castCounts.oldFaithful||0)+1;visual?.buff(source,source,'oldFaithful');}if(kitKey(source)==='thane')source.executionCharges=(source.executionCharges||0)+1;if(kitKey(source)==='gwyneth'&&passiveBonus(source,'crit')>0){source.castCounts.strengthInNumbers=(source.castCounts.strengthInNumbers||0)+1;visual?.buff(source,source,'strengthInNumbers');}emit({type:'critical',actor:source.name,target:target.name,passive:original(source,'mage')?'brilliance':kitKey(source)==='prototype-mage'?'protoSpark':kitKey(source)==='thane'?'focus':null});if(original(source,'mage')&&!source.action&&!(source.channelLeft>0)&&source.animation!=='death')animate(source,'skillAura');}
     const unmitigated=offensive*(critical?critMultiplier:1);
@@ -425,6 +478,7 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   function endStandfast(u){u.standfastLeft=0;u.standfastClock=0;u.channelLeft=0;}
   /** React after actual HP loss, never resurrecting or triggering from shield-only damage. */
   function afterDamage(u){
+    if(kitKey(u)==='sonja')tickSonja(u,battle(),0);
     if(kitKey(u)!=='hendrik'||u.hp<=0||u.banishLeft>0||u.standfastUsed||u.hp/u.maxHP>=tune.standfastThreshold)return;
     u.standfastUsed=true;u.standfastLeft=tune.standfastDuration;u.standfastClock=0;
     u.action=null;u.castToken++;u.channelLeft=tune.standfastDuration;u.moving=false;
@@ -520,13 +574,17 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   function resolve(u,a){
     if(!a.skillId)return false;
     const prototype=kitKey(u)?.startsWith('prototype-');
-    if((prototype||['sonja','thane-awakened','thane','hendrik','rowan','gwyneth','rosaline','cecilia','rigby','oscar','eluard','eluard-awakened','peggy','walker','morrow','scarlet'].includes(kitKey(u)))&&!kit(u).some(s=>s.id===a.skillId&&!s.passive&&!s.reactive))return false;
+    if((prototype||['palmer','sonja','thane-awakened','thane','hendrik','rowan','gwyneth','rosaline','cecilia','rigby','oscar','eluard','eluard-awakened','peggy','walker','morrow','scarlet'].includes(kitKey(u)))&&!kit(u).some(s=>s.id===a.skillId&&!s.passive&&!s.reactive))return false;
     if(a.skillId==='execution'&&(!u.executionAuthorized||u.executionToken!==u.castToken))return false;
     const b=battle(),enemies=alive(foes(u,b)),allies=alive(own(u,b));
     const target=a.target?.hp>0&&!(a.target.banishLeft>0)&&!(a.target.entryLeft>0)?a.target:enemies.sort((p,q)=>distance(u,p)-distance(u,q))[0];
     const power=u.attack*(a.evolved?tune.evolveMultiplier:1);
     if(prototype)resolvePrototype(u,a,b,enemies,allies,target,power);
-    else if(a.skillId==='goldRoses'){
+    else if(a.skillId==='illumination'){
+      const t=allies.filter(t=>t!==u&&!(t.illuminations||[]).some(e=>e.ownerSide===u.side&&e.ownerSlot===u.slot)).sort((a,c)=>c.attack-a.attack||a.slot-c.slot)[0];
+      if(t){t.illuminations??=[];t.illuminations.push({ownerSide:u.side,ownerSlot:u.slot,amp:tune.illuminationAmp+u.initialCritAmp*tune.illuminationScale});visual?.buff(u,t,a.skillId);}
+      else{const enemy=[...enemies].sort((a,c)=>c.attack-a.attack||a.slot-c.slot)[0];if(enemy)schedule(u,[enemy],power*tune.illuminationDamage,a.skillId,tune.illuminationHits,tune.illuminationInterval);}
+    }else if(a.skillId==='goldRoses'){
       for(const t of allies){t.goldRoses??=[];t.goldRoses=t.goldRoses.filter(e=>e.ownerSide!==u.side||e.ownerSlot!==u.slot);t.goldRoses.push({ownerSide:u.side,ownerSlot:u.slot,charges:tune.goldCharges});visual?.buff(u,t,a.skillId);}
     }else if(a.skillId==='darkVines'){
       const t=[...enemies].sort((a,c)=>a.hp/a.maxHP-c.hp/c.maxHP||a.slot-c.slot)[0];if(t){b.blackRoses??=[];b.blackRoses.push({ownerSide:u.side,ownerSlot:u.slot,x:t.x,y:t.y,amount:power*tune.vinesDamage,minimum:power*tune.vinesShield,remaining:tune.vinesHits,clock:0,damage:0});}
@@ -709,6 +767,12 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   }
   /** Roll elemental conversions at release; only a projectile arrival applies damage or burns. */
   function normalAttack(u,target,amount){
+    if(kitKey(u)==='palmer'){
+      if(u.praying)return true;
+      if(u.scripturePrecepts){const chosen=alive(own(u,battle())).sort((a,c)=>c.attack-a.attack||a.slot-c.slot)[0];if(chosen){const previous=chosen.buffs?.precepts,stacks=Math.min(tune.preceptsCap,(previous?.left>0?previous.stacks:0)+1);buff(u,chosen,'precepts',{stacks,damageBonus:stacks*tune.preceptsDamage},tune.preceptsDuration);}}
+      else{if(target&&target.hp>0&&!(target.banishLeft>0)&&!(target.entryLeft>0))hit(u,target,amount*tune.scriptureDamage,'sacredScripture');const enemy=alive(foes(u,battle())).sort((a,c)=>c.attack-a.attack||a.slot-c.slot)[0];if(enemy)buff(u,enemy,'admonitions',{weaken:tune.scriptureWeaken},tune.scriptureWeakenDuration);}
+      u.scripturePrecepts=!u.scripturePrecepts;u.castCounts.sacredScripture=(u.castCounts.sacredScripture||0)+1;return true;
+    }
     if(kitKey(u)==='sonja'&&u.glimmerLeft>0)return true;
     if(kitKey(u)==='thane-awakened'){
       if(target&&target.hp>0&&!(target.banishLeft>0)&&!(target.entryLeft>0)&&distance(u,target)<=tune.meleeRange+tune.rangeHysteresis){impact(u,target,amount,false,true);hit(u,target,amount*tune.maelstromNormalDamage,'maelstrom');}return true;
@@ -780,11 +844,13 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   }
   /** Tick with simulation time only; pause does not call this method. */
   function tick(b,dt){
+    tickDivineDebts(b,dt);
     tickRoses(b,dt);
     if(b.windVortices)b.windVortices=b.windVortices.filter(e=>{e.left=Math.max(0,e.left-dt);if(e.left<Number.EPSILON*1024)e.left=0;const u=(e.ownerSide===0?b.heroes:b.enemies).find(u=>u.slot===e.ownerSlot);return e.left>0&&u&&vortex(u)===e;});
     for(const u of [...b.heroes,...b.enemies])if(kitKey(u)==='thane-awakened')windsFury(u,b);
     for(const key of ['oscarKnives','oscarAuras'])if(b[key])b[key]=b[key].filter(e=>{e.left=Math.max(0,e.left-dt);return e.left>0;});
     for(const u of [...b.heroes,...b.enemies]){
+      if(kitKey(u)==='palmer')tickPalmer(u,b,dt);
       if(kitKey(u)==='sonja')tickSonja(u,b,dt);
       if(u.miasma)u.miasma=u.miasma.filter(e=>{e.left=Math.max(0,e.left-dt);if(e.left<Number.EPSILON*1024)e.left=0;return e.left>0;});
       if(kitKey(u)==='scarlet'){u.darkAuraLeft=Math.max(0,u.darkAuraLeft-dt);if(u.darkAuraLeft<Number.EPSILON*1024)u.darkAuraLeft=0;triggerDarkAura(u,b);}
@@ -889,7 +955,7 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
       for(const t of targets){if(h.skill==='bladePurification'&&distance(h.source,t)>tune.meleeRange+tune.rangeHysteresis)continue;if(h.skill==='avianAssault'&&distance(h.source,t)>tune.avianRange)continue;hit(h.source,t,h.amount,h.skill,h.control);if(h.skill==='avianAssault'&&t.hp>0&&!(t.banishLeft>0))buff(h.source,t,'avianAssault',{weaken:tune.avianWeaken},tune.avianDuration);}return false;
     });
   }
-  return{kit,initialize,ready,nextCooldown,cast,resolve,normalAttack,roseCount,roseIncoming,roseDamage,duelTarget,attackTargets,miasmaCount,followTarget,sinCount,absorbDivine,negateFatal,interceptGuard,projectileImpact,tick,damage,stun,bonus,guardDamage,afterDamage,incomingDamage};
+  return{kit,initialize,ready,nextCooldown,cast,resolve,normalAttack,divineDistribute,recordHealthDamage,alliedDeath,roseCount,roseIncoming,roseDamage,duelTarget,attackTargets,miasmaCount,followTarget,sinCount,absorbDivine,negateFatal,interceptGuard,projectileImpact,tick,damage,stun,bonus,guardDamage,afterDamage,incomingDamage};
 }
 root.HERO_KITS=KITS;root.createHeroSkillSystem=createHeroSkillSystem;
 if(typeof module!=='undefined')module.exports={KITS,createHeroSkillSystem};

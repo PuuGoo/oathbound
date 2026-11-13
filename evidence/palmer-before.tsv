@@ -1,0 +1,161 @@
+FAIL	Palmer lastcatalogidentity own1active3passive not Fawkeshealer	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'prototype-support'
+- 'palmer'
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:5:83
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	all Palmer numerical adaptations are live configured records	AssertionError [ERR_ASSERTION]: illuminationCooldown
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:6:613
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	openingprayercontrolimmuneheals80percentattackevery1point5s and addsfaithmax10	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ undefined
+- true
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:7:117
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Faithbuffnearonlyduringprayer initialattackflat3percent then allalliesafterprayerends	AssertionError [ERR_ASSERTION]: 0 ~= NaN
+    at close (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:3:726)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:8:144
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:8:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	prayerendsat10faithoractualHPdamageover60percent notshielddamage or nootherallies	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ undefined
+- false
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:9:253
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Illuminationpermanentlyblesshighestattackunblessedotherbefore240percent5hitfallback	AssertionError [ERR_ASSERTION]: illumination
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:4:1039)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:10:160
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	blessingcriticalamplificationaffectsonlyactualcriticalnotchanceornormalnoncriticaldamage	AssertionError [ERR_ASSERTION]: illumination
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:4:1039)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:11:140
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Scripture normalalternates200percentadmonitionhighestattackweaken thenpreceptstopally15percentstack3noenergy	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+false !== true
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:12:212
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:12:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	prayerstopsnormalandactiveworkuntilendwithoutphantomcasts	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+false !== true
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:13:167
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:13:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	DivineDefense40percentlowestabsoluteHPshareothersnonlethalonlyactualhealthbounddamage	AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(f.ally.hp>hp-F.hit)
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:14:224
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	distributedHPdebt60percentrecoveredover5secondsexactnotmanufacturedfrompreventedshare	AssertionError [ERR_ASSERTION]: 10000 ~= NaN
+    at close (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:3:726)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:15:316
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	firstallydeathimmediatelyrefundsoutstandingdistributedHPand30percentreduction5s onlyonce	AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(f.u.hp<F.hp)
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:16:189
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\palmer-skills-unit.cjs:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+unit_total	0
+unit_failed	12

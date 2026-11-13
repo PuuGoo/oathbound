@@ -1,0 +1,19 @@
+PASS	Sonja index20 own3active1passive not Lucius defensive kit
+PASS	Sonja values geometry durations thresholds counts and proc limits are configured
+PASS	Gold allallies5charges halve5incominghits and refresh rather than stack charges
+PASS	Gold reaction80percent is queued once from actual damage attempt with norecursivechain
+PASS	Glimmer outside20percent reduction and70percent retaliation at mostoncepersecond
+PASS	Glimmer firstHPbelow60 enters25s once and stops normal release but leaves skills enabled
+PASS	Glimmer heals2percentmaxHP perpresentrose eachsecond capped12percent without energy
+PASS	Dark Vines fixedarea3x180 then weakestally8sshield actualHPdamage floor220percent
+PASS	shieldedBlackRosecannotinflateearnedshield and releasedBlackRosepersistsaftercasterdeath
+PASS	Blood placesonmostinjuredpreferunmarked then5actualHPdamageevents70percentextra andcapped8percentdrain
+PASS	Blood secondarydoesnotconsumeitself or otherrosesandshieldonlyhitdoesnotconsumeRed
+PASS	deadbanishedentering recipients nevergainroses/heal or resurrection
+PASS	actual snapshot serializes scalarroseownership and deferred reactions with live reciprocal targets
+PASS	production normal dispatch suppresses actual Sonja attack only during Glimmer
+PASS	rose color counts and heal cap are pure and reaction work never cascades between two Sonjas
+PASS	Glimmer sixor more roses capheal at12percent and noheal with zero valid roses
+PASS	Sonja presentation defines captions and pure finite shapes for groundroses and counters
+unit_total	17
+unit_failed	0
