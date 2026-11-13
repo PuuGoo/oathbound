@@ -1,0 +1,18 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+item	observation
+scope	Small follow-up UI corrections only; no gameplay tuning or asset changes
+health_details	Named summary exposes stable identity, button role and expanded state; delegated activation synchronously toggles open before panel rebuild and prevents duplicate default action
+battle_guide	Replace stale experimental-kit wording and always-on-passive claim with active cooldowns and conditional passive activation
+health_cells	Round detailed HP, maxHP and shield text only; preserve exact fractional simulation data
+regression	615 named cases across43suites; zero failed suites; ui-polish-combined.tsv
+test_first	battle-guide-before.tsv reproduced2failures; health-table-before.tsv reproduced1failure; both focused suites pass after changes
+syntax	Inline JavaScript parse and whitespace checks passed; line-ending warning only
+normal_observation	Retained screenshot107 inspected at1280x720; corrected guidance contained in panel
+small_observation	Retained screenshot108 inspected at800x450; corrected guidance contained but text remains small
+final_screen_observation	Retained screenshot110 inspected with health-cell rounding source; actual boss combat at4.8s; details remained collapsed
+details_observation	Earlier screenshots109through112 stayed collapsed and did not establish expanded-table success; final accessible-control screenshots113normal and114small show all10rows contained with rounded HP/shields;115confirms closing returns skill panel
+details_limit	Synthetic interaction does not establish human keyboard, touch or screen-reader approval; normal and small expanded-table layout now visually inspected
+health_proof	Actual extracted production row template verifies rounded output and exact input-state preservation; not a substitute for expanded-table visual approval
+runtime_logs	107through115 uncaught0; no error or badinput observed
+helper_correction	First small capture attempted unsupported width/height flags and exited2; corrected to documented size800x450 option and retained successful screenshot108
+protection	No original resource, README, LastLight, root fishing brief, browser profile or asset payload in this follow-up

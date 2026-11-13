@@ -1,0 +1,10 @@
+FAIL	battle guide distinguishes active cooldowns and conditional passive activation	The expression evaluated to a falsy value:
+
+  assert.ok(battle.includes('Chiêu chủ động có hồi chiêu riêng; nội tại kích hoạt theo điều kiện.'))
+
+FAIL	completed roster battle guide does not claim new kits are generic experimental or all passives always active	The expression evaluated to a falsy value:
+
+  assert.ok(!battle.includes('Chiêu mới ghi “Thử nghiệm”'))
+
+unit_total	0
+unit_failed	2

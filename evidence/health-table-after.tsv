@@ -1,0 +1,4 @@
+PASS	detailed HP table rounds fractional display cells without long floating point tails
+PASS	rendering detailed HP table preserves exact fractional simulation values
+unit_total	2
+unit_failed	0

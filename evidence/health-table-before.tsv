@@ -1,0 +1,9 @@
+FAIL	detailed HP table rounds fractional display cells without long floating point tails	Expected values to be strictly equal:
++ actual - expected
+
++ '<tr><td>Bạn · ally</td><td>10.125/100.5</td><td>12.375</td></tr><tr><td>Địch · enemy</td><td>0/200</td><td>0</td></tr>'
+- '<tr><td>Bạn · ally</td><td>10/101</td><td>12</td></tr><tr><td>Địch · enemy</td><td>0/200</td><td>0</td></tr>'
+
+PASS	rendering detailed HP table preserves exact fractional simulation values
+unit_total	1
+unit_failed	1

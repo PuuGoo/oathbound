@@ -1,0 +1,10 @@
+FAIL	battle details activation commits open state synchronously before panel rebuild	Expected values to be strictly equal:
+
+false !== true
+
+FAIL	second activation closes details exactly once without duplicate browser default toggle	Expected values to be strictly equal:
+
+true !== false
+
+unit_total	0
+unit_failed	2

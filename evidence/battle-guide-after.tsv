@@ -1,0 +1,4 @@
+PASS	battle guide distinguishes active cooldowns and conditional passive activation
+PASS	completed roster battle guide does not claim new kits are generic experimental or all passives always active
+unit_total	2
+unit_failed	0

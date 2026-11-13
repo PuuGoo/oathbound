@@ -1,0 +1,6 @@
+PASS	battle details activation commits open state synchronously before panel rebuild
+PASS	second activation closes details exactly once without duplicate browser default toggle
+PASS	health summary exposes stable button identity and rendered expanded state
+PASS	unrelated nonbutton clicks do not change UI or consume browser default
+unit_total	4
+unit_failed	0
