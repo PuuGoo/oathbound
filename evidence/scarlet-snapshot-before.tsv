@@ -1,0 +1,32 @@
+PASS	Scarlet index18 has two actives two passives without inherited Belinda crit
+PASS	Scarlet balance timing geometry friendlyfire and source-typo interpretation are configurable
+PASS	Dark Rage produces12seeded190percent enemy hits with expiring Miasma instead of immediate global damage
+PASS	seeded friendlyfire may hit Scarlet herself but never applies allied Miasma
+PASS	five Miasma layers root and silence but permit normal attacks without adopting upgraded healing reduction
+PASS	Miasma layer expiry is per-hit and control disappears as soon as fewer than five remain
+PASS	Arcane absorbs10percent maxHP capped600percent attack from enemies in range and heals actual HP lost only
+PASS	fully shielded or invulnerable absorption cannot create healing from prevented damage
+PASS	Dark Aura chooses lowHP subject then densest enemy cluster, teleports and damages subject only once
+PASS	Dark Aura can consume an allied lowHP subject but does not damage other allies
+PASS	Aura ignores banished entering dead and non-lowHP subjects and unavailable Scarlet
+PASS	interrupt cancels unreleased Rage and pure Miasma queries never advance simulation
+FAIL	actual observation snapshot remains serializable with five layers and live bidirectional targets	AssertionError [ERR_ASSERTION]: Got unwanted exception.
+Actual message: "Converting circular structure to JSON
+    --> starting at object with constructor 'Array'
+    |     index 0 -> object with constructor 'Object'
+    |     property 'source' -> object with constructor 'Object'
+    |     property 'target' -> object with constructor 'Object'
+    --- property 'miasma' closes the circle"
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:17:462
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:3:595)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:17:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+PASS	production root and active readiness obey five-layer corruption while normal remains available
+unit_total	13
+unit_failed	1

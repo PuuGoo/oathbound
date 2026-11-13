@@ -1,0 +1,18 @@
+PASS	Scarlet index18 has two actives two passives without inherited Belinda crit
+PASS	Scarlet balance timing geometry friendlyfire and source-typo interpretation are configurable
+PASS	Dark Rage produces12seeded190percent enemy hits with expiring Miasma instead of immediate global damage
+PASS	seeded friendlyfire may hit Scarlet herself but never applies allied Miasma
+PASS	five Miasma layers root and silence but permit normal attacks without adopting upgraded healing reduction
+PASS	Miasma layer expiry is per-hit and control disappears as soon as fewer than five remain
+PASS	Arcane absorbs10percent maxHP capped600percent attack from enemies in range and heals actual HP lost only
+PASS	fully shielded or invulnerable absorption cannot create healing from prevented damage
+PASS	Dark Aura chooses lowHP subject then densest enemy cluster, teleports and damages subject only once
+PASS	Dark Aura can consume an allied lowHP subject but does not damage other allies
+PASS	Aura ignores banished entering dead and non-lowHP subjects and unavailable Scarlet
+PASS	interrupt cancels unreleased Rage and pure Miasma queries never advance simulation
+PASS	actual observation snapshot remains serializable with five layers and live bidirectional targets
+PASS	production root and active readiness obey five-layer corruption while normal remains available
+PASS	Scarlet presentation uses defined captions finite Canvas values and no gameplay mutation
+PASS	Scarlet rejects role skills and control immunity prevents corruption without hiding layer counts
+unit_total	16
+unit_failed	0

@@ -2,6 +2,24 @@
 // All balance and timing values are live, editable tuning values.
 window.CONFIG = {
   seed: 617,
+  // Scarlet base kit; source Dark Aura '8 20%' interpreted explicitly as 820%.
+  rageCooldown: {value:13,min:1,max:30,step:0.1},
+  rageDelay: {value:1.5,min:0,max:15,step:0.1},
+  rageHits: {value:12,min:1,max:20,step:1},
+  rageDamage: {value:1.9,min:0,max:5,step:0.1},
+  rageInterval: {value:0.16,min:0.05,max:1,step:0.01},
+  rageFriendly: {value:0.2,min:0,max:1,step:0.01},
+  miasmaDuration: {value:5,min:0.1,max:15,step:0.1},
+  miasmaCap: {value:5,min:1,max:10,step:1},
+  absorptionCooldown: {value:8,min:1,max:30,step:0.1},
+  absorptionDelay: {value:0.8,min:0,max:15,step:0.1},
+  absorptionHP: {value:0.1,min:0,max:1,step:0.01},
+  absorptionCap: {value:6,min:0,max:15,step:0.1},
+  absorptionRadius: {value:260,min:20,max:600,step:5},
+  darkAuraThreshold: {value:0.15,min:0.01,max:0.5,step:0.01},
+  darkAuraCooldown: {value:20,min:1,max:60,step:0.1},
+  darkAuraDamage: {value:8.2,min:0,max:15,step:0.1},
+  darkAuraRadius: {value:145,min:20,max:400,step:5},
   // Morrow: Ultimate block becomes active-skill silence; roots do not stun.
   eyeCooldown: {value:11,min:1,max:30,step:0.1},
   eyeDelay: {value:1.2,min:0,max:15,step:0.1},

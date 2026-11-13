@@ -4,6 +4,12 @@
 (function(root){
 'use strict';
 const KITS={
+  scarlet:[
+    {id:'darkRage',name:'Dark Rage',animation:'skillArc',summary:'12nhịp190%,20%đánh phe mình; địch trúng nhậnMiasma5s/tối đa5tầng.',cooldown:'rageCooldown',delay:'rageDelay',support:true},
+    {id:'shadedCorruption',name:'Shaded Corruption',animation:'skillShield',summary:'Đủ5tầngMiasma cùng nguồn thì trói chân/khóa chiêu; không giảmheal upgrade21.',passive:true},
+    {id:'arcaneAbsorption',name:'Arcane Absorption',animation:'skillAura',summary:'Hút10%maxHP địch gần,cap600%công mỗi đích; hồiHPthật mất,khôngenergy.',cooldown:'absorptionCooldown',delay:'absorptionDelay',support:true},
+    {id:'darkAura',name:'Dark Aura',animation:'skill',summary:'Có người<15%HP:dịch vào cụmđịch dày nhất và nổ820%(diễn giải lỗi chữ nguồn),hồi20s.',reactive:true}
+  ],
   morrow:[
     {id:'eyeEvil',name:'Eye of Evil',animation:'skill',summary:'Năm nhịp200% vùng quanh đích,khóa chiêu chủ động4s thayUltimate; không khóa đánh thường.',cooldown:'eyeCooldown',delay:'eyeDelay',support:true},
     {id:'bindingTerror',name:'Binding Terror',animation:'skillShield',summary:'220%công,trói chân4s không choáng; loại người đang bị thao túng.',cooldown:'bindingCooldown',delay:'bindingDelay',range:'bindingRange'},
@@ -152,7 +158,13 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   const kitKey=u=>typeof u==='string'?u:(u.kitKind??u.kind);
   const kit=u=>KITS[kitKey(u)]||[];
   const original=(u,role)=>kitKey(u)===role;
+  /** Pure per-source layer lookup; expired layers never count between ticks. */
+  function miasmaCount(target,source=null){const layers=(target.miasma||[]).filter(e=>e.left>0&&(!source||e.source===source.side+':'+source.slot));if(source)return layers.length;const counts=new Map();for(const e of layers)counts.set(e.source,(counts.get(e.source)||0)+1);return Math.max(0,...counts.values());}
+  function addMiasma(source,target){if(target.hp<=0||target.side===source.side||target.banishLeft>0||target.entryLeft>0)return;target.miasma??=[];const ownLayers=target.miasma.filter(e=>e.source===source.side+':'+source.slot&&e.left>0);if(ownLayers.length>=tune.miasmaCap){const oldest=ownLayers.sort((a,b)=>a.left-b.left)[0];target.miasma.splice(target.miasma.indexOf(oldest),1);}target.miasma.push({source:source.side+':'+source.slot,left:tune.miasmaDuration});if(miasmaCount(target,source)>=tune.miasmaCap){controlStatus(target,'rootLeft',0);controlStatus(target,'silenceLeft',0);source.castCounts.shadedCorruption=(source.castCounts.shadedCorruption||0)+1;}visual?.buff(source,target,'shadedCorruption');}
+  /** Arm cooldown before damage, avoiding recursive aura chains from its own explosion. */
+  function triggerDarkAura(u,b){if(u.hp<=0||u.banishLeft>0||u.entryLeft>0||u.darkAuraLeft>0)return;const enemies=alive(foes(u,b));if(!enemies.length)return;const subject=alive([...b.heroes,...b.enemies]).filter(t=>t.hp/t.maxHP<tune.darkAuraThreshold).sort((a,c)=>a.hp/a.maxHP-c.hp/c.maxHP||a.side-c.side||a.slot-c.slot)[0];if(!subject)return;const center=[...enemies].sort((a,c)=>within(enemies,c,tune.darkAuraRadius).length-within(enemies,a,tune.darkAuraRadius).length||a.slot-c.slot)[0];u.darkAuraLeft=tune.darkAuraCooldown;u.castCounts.darkAura=(u.castCounts.darkAura||0)+1;subject.x=center.x;subject.y=center.y;subject.action=null;subject.channelLeft=0;subject.castToken++;const victims=[...new Set([subject,...within(enemies,center,tune.darkAuraRadius)])];for(const t of victims)hit(u,t,u.attack*tune.darkAuraDamage,'darkAura');visual?.release(u,{skillId:'darkAura',target:subject});}
   const passiveBonus=(u,key)=>{
+    if(['rooted','skillBlocked'].includes(key)&&miasmaCount(u)>=tune.miasmaCap&&bonus(u,'controlImmune')<=0&&u.action?.skillId!=='royalCharge')return 1;
     if(kitKey(u)==='eluard'&&key==='vulnerable')return u.divineShield>0?0:tune.miracleVulnerability-1;
     if(key==='damageImmune'&&battle()&&alive(own(u,battle())).some(s=>kitKey(s)==='eluard'&&s.prayerTargetSlot===u.slot&&s.prayerToken===s.castToken&&s.channelLeft>0))return 1;
     if(kitKey(u)==='oscar'&&u.unfazedActive&&key==='crit')return tune.unfazedCrit;
@@ -230,7 +242,7 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   /** Initialize per-battle timers only: save records remain unchanged. */
   function initialize(u){
     u.buffs={};u.controlLeft=0;u.channelLeft=0;u.castToken=0;u.skillTimers={};u.castCounts={};u.critCount=0;u.banishLeft=0;
-    u.slainSides={};u.damageDealt=0;u.rootLeft=0;u.silenceLeft=0;u.charmLeft=0;if(kitKey(u)==='morrow')u.abyssalTimers={};u.fateProficiency=tune.fateProficiency;u.fateDissolve=tune.fateDissolve;
+    u.slainSides={};u.miasma=[];if(kitKey(u)==='scarlet')u.darkAuraLeft=0;u.damageDealt=0;u.rootLeft=0;u.silenceLeft=0;u.charmLeft=0;if(kitKey(u)==='morrow')u.abyssalTimers={};u.fateProficiency=tune.fateProficiency;u.fateDissolve=tune.fateDissolve;
     if(kitKey(u)==='eluard-awakened'){u.causalDrift=0;u.divergence=0;u.realmActive=false;u.realmClock=0;u.causalPulses=0;u.fateClock=0;u.fateChecks={};u.fateTotal=0;u.negateUsed=0;u.astralProjections=foes(u,battle()).map(t=>({side:t.side,slot:t.slot,attack:0,defense:0,hp:0,initialAttack:t.attack,initialHP:t.maxHP}));}
     if(kitKey(u)==='walker'){u.oldFaithful=0;u.saloonLeft=0;u.reloadLeft=0;u.shotgunAmmo=tune.shotgunMagazine;}
     if(kitKey(u)==='peggy'){u.guardAttacks=0;u.royalGuards=[makeGuard(u,0),makeGuard(u,1)];}
@@ -248,7 +260,7 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   }
   /** Most overdue ready skill wins; independent cooldowns cannot starve later skills. */
   function ready(u,target=null){
-    if(u.entryLeft>0||u.silenceLeft>0||u.charmLeft>0||(kitKey(u)==='walker'&&u.saloonLeft>0))return null;
+    if(u.entryLeft>0||u.silenceLeft>0||u.charmLeft>0||bonus(u,'skillBlocked')>0||(kitKey(u)==='walker'&&u.saloonLeft>0))return null;
     const ordered=kit(u).filter(s=>!s.passive&&!s.reactive&&(s.id!=='sliceDice'||sliceKnife(u))&&(s.id!=='fineCuts'||alive(foes(u,battle())).some(t=>distance(u,t)<=tune.fineCutsRange))&&(s.id!=='drunkenFrenzy'||!(u.frenzyLeft>0))&&(!(kitKey(u)==='rosaline'&&s.support)||followTarget(u))&&(s.id!=='divineArrow'||alive(foes(u,battle())).some(t=>inEnemyHalf(u,t)))&&(!s.requiresCrits||u.executionCharges>=tune.executionCrits)&&(u.skillTimers?.[s.id]??Infinity)<=0).sort((a,b)=>u.skillTimers[a.id]-u.skillTimers[b.id]);
     if(kitKey(u)==='walker')return ordered[0]||null;
     return (target?ordered.find(s=>s.support||distance(u,target)<=tune[s.range]):null)||ordered[0]||null;
@@ -439,14 +451,18 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   function resolve(u,a){
     if(!a.skillId)return false;
     const prototype=kitKey(u)?.startsWith('prototype-');
-    if((prototype||['thane','hendrik','rowan','gwyneth','rosaline','cecilia','rigby','oscar','eluard','eluard-awakened','peggy','walker','morrow'].includes(kitKey(u)))&&!kit(u).some(s=>s.id===a.skillId&&!s.passive&&!s.reactive))return false;
+    if((prototype||['thane','hendrik','rowan','gwyneth','rosaline','cecilia','rigby','oscar','eluard','eluard-awakened','peggy','walker','morrow','scarlet'].includes(kitKey(u)))&&!kit(u).some(s=>s.id===a.skillId&&!s.passive&&!s.reactive))return false;
     if(a.skillId==='execution'&&(!u.executionAuthorized||u.executionToken!==u.castToken))return false;
     const b=battle(),enemies=alive(foes(u,b)),allies=alive(own(u,b));
     const target=a.target?.hp>0&&!(a.target.banishLeft>0)&&!(a.target.entryLeft>0)?a.target:enemies.sort((p,q)=>distance(u,p)-distance(u,q))[0];
     const power=u.attack*(a.evolved?tune.evolveMultiplier:1);
     if(prototype)resolvePrototype(u,a,b,enemies,allies,target,power);
-    else if(a.skillId==='eyeEvil'){
-      if(target){for(let n=0;n<tune.eyeHits;n++)b.skillHits.push({source:u,eye:true,x:target.x,y:target.y,amount:power*tune.eyeDamage,skill:a.skillId,left:n*tune.eyeInterval,token:u.castToken});u.channelLeft=(tune.eyeHits-1)*tune.eyeInterval;}
+    else if(a.skillId==='darkRage'){
+      for(let n=0;n<tune.rageHits;n++)b.skillHits.push({source:u,targets:[],rage:true,amount:power*tune.rageDamage,skill:a.skillId,left:n*tune.rageInterval,token:u.castToken});u.channelLeft=(tune.rageHits-1)*tune.rageInterval;
+    }else if(a.skillId==='arcaneAbsorption'){
+      let stolen=0;for(const t of within(enemies,u,tune.absorptionRadius)){const hp=t.hp;hit(u,t,Math.min(t.maxHP*tune.absorptionHP,power*tune.absorptionCap),a.skillId);stolen+=hp-t.hp;}if(stolen>0)impact(u,u,stolen,true);
+    }else if(a.skillId==='eyeEvil'){
+      if(target){for(let n=0;n<tune.eyeHits;n++)b.skillHits.push({source:u,eye:true,targets:[],x:target.x,y:target.y,amount:power*tune.eyeDamage,skill:a.skillId,left:n*tune.eyeInterval,token:u.castToken});u.channelLeft=(tune.eyeHits-1)*tune.eyeInterval;}
     }else if(a.skillId==='bindingTerror'){
       const t=enemies.filter(t=>!(t.charmLeft>0)&&distance(u,t)<=tune.bindingRange).sort((a,c)=>distance(u,a)-distance(u,c)||a.slot-c.slot)[0];if(t){hit(u,t,power*tune.bindingDamage,a.skillId);controlStatus(t,'rootLeft',tune.bindingDuration);}
     }else if(a.skillId==='demonicMurmurs'){
@@ -669,6 +685,8 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   function tick(b,dt){
     for(const key of ['oscarKnives','oscarAuras'])if(b[key])b[key]=b[key].filter(e=>{e.left=Math.max(0,e.left-dt);return e.left>0;});
     for(const u of [...b.heroes,...b.enemies]){
+      if(u.miasma)u.miasma=u.miasma.filter(e=>{e.left=Math.max(0,e.left-dt);if(e.left<Number.EPSILON*1024)e.left=0;return e.left>0;});
+      if(kitKey(u)==='scarlet'){u.darkAuraLeft=Math.max(0,u.darkAuraLeft-dt);if(u.darkAuraLeft<Number.EPSILON*1024)u.darkAuraLeft=0;triggerDarkAura(u,b);}
       for(const key of ['rootLeft','silenceLeft','charmLeft']){u[key]=Math.max(0,(u[key]||0)-dt);if(u[key]<Number.EPSILON*1024)u[key]=0;}
       if(u.abyssalTimers)for(const key of Object.keys(u.abyssalTimers)){u.abyssalTimers[key]=Math.max(0,u.abyssalTimers[key]-dt);if(u.abyssalTimers[key]<Number.EPSILON*1024)delete u.abyssalTimers[key];}
       if(kitKey(u)==='walker'&&u.hp>0){u.saloonLeft=Math.max(0,u.saloonLeft-dt);if(u.saloonLeft<Number.EPSILON*1024)u.saloonLeft=0;if(u.reloadLeft>0){u.reloadLeft=Math.max(0,u.reloadLeft-dt);if(u.reloadLeft<Number.EPSILON*1024){u.reloadLeft=0;u.shotgunAmmo=tune.shotgunMagazine;}}}
@@ -738,6 +756,7 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
     b.skillHits=b.skillHits.filter(h=>{
       if(h.source.hp<=0||h.source.banishLeft>0||h.token!==h.source.castToken)return false;
       h.left-=dt;if(h.left>0)return true;
+      if(h.rage){const friendly=rng()<tune.rageFriendly,candidates=alive(friendly?own(h.source,b):foes(h.source,b));if(candidates.length){const t=candidates[Math.min(candidates.length-1,Math.floor(rng()*candidates.length))];hit(h.source,t,h.amount,h.skill);if(!friendly)addMiasma(h.source,t);}return false;}
       if(h.eye){for(const t of within(foes(h.source,b),h,tune.eyeRadius)){hit(h.source,t,h.amount,h.skill);controlStatus(t,'silenceLeft',tune.eyeSilence);}return false;}
       if(h.walkerFollow){for(const t of h.targets)if(t.hp>0&&!(t.banishLeft>0)&&!(t.entryLeft>0))b.projectiles.push({source:h.source,target:t,x:h.source.x,y:h.source.y-65,amount:h.amount,skillId:h.skill,spell:false,heal:false,t:0});return false;}
       if(h.marksman){for(const t of h.targets)if(t.hp>0&&!(t.banishLeft>0)&&!(t.entryLeft>0))b.projectiles.push({source:h.source,target:t,x:h.source.x,y:h.source.y-65,amount:h.amount,skillId:h.skill,spell:false,heal:false,t:0});return false;}
@@ -766,7 +785,7 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
       for(const t of targets){if(h.skill==='bladePurification'&&distance(h.source,t)>tune.meleeRange+tune.rangeHysteresis)continue;if(h.skill==='avianAssault'&&distance(h.source,t)>tune.avianRange)continue;hit(h.source,t,h.amount,h.skill,h.control);if(h.skill==='avianAssault'&&t.hp>0&&!(t.banishLeft>0))buff(h.source,t,'avianAssault',{weaken:tune.avianWeaken},tune.avianDuration);}return false;
     });
   }
-  return{kit,initialize,ready,nextCooldown,cast,resolve,normalAttack,attackTargets,followTarget,sinCount,absorbDivine,negateFatal,interceptGuard,projectileImpact,tick,damage,stun,bonus,guardDamage,afterDamage,incomingDamage};
+  return{kit,initialize,ready,nextCooldown,cast,resolve,normalAttack,attackTargets,miasmaCount,followTarget,sinCount,absorbDivine,negateFatal,interceptGuard,projectileImpact,tick,damage,stun,bonus,guardDamage,afterDamage,incomingDamage};
 }
 root.HERO_KITS=KITS;root.createHeroSkillSystem=createHeroSkillSystem;
 if(typeof module!=='undefined')module.exports={KITS,createHeroSkillSystem};

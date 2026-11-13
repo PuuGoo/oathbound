@@ -1,0 +1,14 @@
+browser	/c/Program Files/Google/Chrome/Application/chrome.exe
+time	2026-11-13 10:30:23
+render	cheap
+ua	HeadlessChrome/157.0.0.0
+scene	0	title
+state	0	title	{"t":0,"score":22,"gained":"","chapter":4,"selectedStage":22,"selectedHero":16,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+scene	1	play
+state	1	play	{"t":0.02,"score":22,"gained":"","chapter":4,"selectedStage":22,"selectedHero":16,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+playinput	4	click:text=Bộ_sưu_tập_·_22
+saved	12	localstorage	oathbound.save.v1
+error	117	Uncaught TypeError: Cannot read properties of undefined (reading 'map')
+console	1253	Uncaught TypeError: Cannot read properties of undefined (reading 'map')
+uncaught	1
+shot	C:/Users/PuuGoo/Desktop/my-game/production/qa/evidence/oathbound-expanded/81-morrow-combat.png	456442

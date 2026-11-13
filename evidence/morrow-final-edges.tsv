@@ -1,0 +1,25 @@
+PASS	Morrow index17 has three actives one passive and no inherited Belinda
+PASS	all Morrow damage duration geometry and cadence values have editable records
+PASS	Eye releases five200percent local area pulses and silence without stun or root
+PASS	silence blocks active readiness but never cancels released damage or a normal
+PASS	Binding220percent roots movement4s without interrupting attacks and excludes manipulated target
+PASS	Demonic selects highest actual damage dealt enemy then250percent and6s manipulation without changing side
+PASS	damageDealt counts actual HP lost not overkill shield or heals
+PASS	charm target lookup selects own living eligible teammates excluding self while keeping victory sides stable
+PASS	Abyssal additional220percent uses a separate4s cooldown per enemy at normal projectile arrival
+PASS	dead banished entering destinations receive neither Morrow projectile damage nor passive
+PASS	released Morrow projectile survives caster death but unreleased Eye pulses cancel on interruption
+PASS	root silence and manipulation expire exactly on fixed simulation boundaries, with no lookup mutation
+PASS	production movement cannot advance a rooted unit but does not suppress its normal release
+PASS	actual acquireTarget clears hostile cache during charm and friendly cache after charm expires
+PASS	charmed Walker shell captures allied pellet recipients at release and does not hit the original enemy team
+PASS	actual AI picks an in-range uncharmed Binding target and charmed generic units use normals against teammates
+PASS	Morrow render has finite colors captions and projectiles and leaves battle unchanged
+PASS	control immune target does not receive root silence or manipulation from Morrow
+PASS	Morrow refuses generic role spells and catalog explains Ultimate substitution
+PASS	Eye silence cancels unreleased special but leaves ordinary windup intact
+PASS	actual normal-action dispatch releases Morrow bolt and rooted production AI can still attack
+PASS	charmed unit with no eligible teammate has no target and never attacks itself
+PASS	charmed Gwyneth lightning retains allied recipient group after manipulation ends
+unit_total	23
+unit_failed	0

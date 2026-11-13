@@ -1,0 +1,135 @@
+FAIL	Scarlet index18 has two actives two passives without inherited Belinda crit	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'prototype-mage'
+- 'scarlet'
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:5:96
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:3:595)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Scarlet balance timing geometry friendlyfire and source-typo interpretation are configurable	AssertionError [ERR_ASSERTION]: rageCooldown
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:6:432
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:3:595)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Dark Rage produces12seeded190percent enemy hits with expiring Miasma instead of immediate global damage	AssertionError [ERR_ASSERTION]: darkRage
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:4:1014)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:7:137
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:3:595)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	seeded friendlyfire may hit Scarlet herself but never applies allied Miasma	AssertionError [ERR_ASSERTION]: darkRage
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:4:1014)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:8:110
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:3:595)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:8:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	five Miasma layers root and silence but permit normal attacks without adopting upgraded healing reduction	AssertionError [ERR_ASSERTION]: darkRage
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:4:1014)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:9:139
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:3:595)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Miasma layer expiry is per-hit and control disappears as soon as fewer than five remain	AssertionError [ERR_ASSERTION]: darkRage
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:4:1014)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:10:121
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:3:595)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Arcane absorbs10percent maxHP capped600percent attack from enemies in range and heals actual HP lost only	AssertionError [ERR_ASSERTION]: arcaneAbsorption
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:4:1014)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:11:163
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:3:595)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	fully shielded or invulnerable absorption cannot create healing from prevented damage	AssertionError [ERR_ASSERTION]: arcaneAbsorption
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:4:1014)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:12:160
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:3:595)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:12:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Dark Aura chooses lowHP subject then densest enemy cluster, teleports and damages subject only once	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+900 !== 360
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:13:181
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:3:595)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:13:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Dark Aura can consume an allied lowHP subject but does not damage other allies	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+300 !== 360
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:14:161
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:3:595)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+PASS	Aura ignores banished entering dead and non-lowHP subjects and unavailable Scarlet
+FAIL	interrupt cancels unreleased Rage and pure Miasma queries never advance simulation	AssertionError [ERR_ASSERTION]: darkRage
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:4:1014)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:16:116
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:3:595)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\scarlet-skills-unit.cjs:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+unit_total	1
+unit_failed	11

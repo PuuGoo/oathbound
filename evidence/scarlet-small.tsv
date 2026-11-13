@@ -1,0 +1,193 @@
+browser	/c/Program Files/Google/Chrome/Application/chrome.exe
+time	2026-11-13 11:44:06
+render	cheap
+ua	HeadlessChrome/157.0.0.0
+scene	0	title
+state	0	title	{"t":0,"score":24,"gained":"","chapter":4,"selectedStage":24,"selectedHero":18,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+scene	1	play
+state	1	play	{"t":0.02,"score":24,"gained":"","chapter":4,"selectedStage":24,"selectedHero":18,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+playinput	4	click:text=CHIẾN_ĐẤU_·_SPACE
+saved	346	localstorage	oathbound.save.v1
+scene	347	results
+state	347	results	{"t":5.78,"score":25,"gained":"Ải đã được giải phóng","chapter":4,"selectedStage":24,"selectedHero":18,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":24,"heroes":[{"maxHP":666,"attack
+state	398	results	{"t":6.63,"score":25,"gained":"Ải đã được giải phóng","chapter":4,"selectedStage":24,"selectedHero":18,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":24,"heroes":[{"maxHP":666,"attack
+digits	log	14px "Segoe UI", Arial	tabular	0
+digits	log	19px "Segoe UI", Arial	tabular	0
+digits	log	11px "Segoe UI", Arial	tabular	0
+digits	log	10px "Segoe UI", Arial	tabular	0
+loop	log	none	no loop() step was marked
+first	log	none	no state.beat
+ending	log	results	gained	Ải đã được giải phóng
+pressure	none	the game set no number state.margin in play
+steptime	398	0.168	5.200
+frametime	5	101.2	223.3	60	5	5
+done	398	results	stop	6.6	2057
+measured	800x450
+text	results	canvas	414,123,447,130	13.5	6.02	inside	ĐÁNH NGÃ
+text	results	canvas	415,108,447,113	12.2	3.32	inside	MIASMA 2/5
+text	results	canvas	260,223,292,228	12.2	8.72	inside	TĂNG CÔNG
+text	results	canvas	301,141,344,146	12.2	4.87	inside	THAO TÚNG 4.0s
+text	results	canvas	307,134,339,139	12.2	2.34	inside	MIASMA 3/5
+text	results	canvas	342,159,375,166	13.5	8.42	inside	ĐÁNH NGÃ
+text	results	canvas	337,151,381,156	12.2	6.25	inside	KHÓA CHIÊU 1.7s
+text	results	canvas	343,144,375,149	12.2	4.75	inside	MIASMA 4/5
+text	results	canvas	250,257,335,264	12.2	7.96	inside	TĂNG CÔNG · NHỊP THAY ENERGY
+text	results	canvas	214,267,300,274	12.2	7.15	inside	TĂNG CÔNG · NHỊP THAY ENERGY
+text	results	canvas	296,283,430,290	12.2	7.47	inside	TĂNG CHÍ MẠNG · TĂNG CÔNG · NHỊP THAY ENERGY
+text	results	canvas	399,192,432,198	13.5	10.48	inside	ĐÁNH NGÃ
+text	results	canvas	399,176,431,181	12.2	4.60	inside	MIASMA 1/5
+text	results	canvas	283,189,302,196	22.9	6.24	inside	+99
+text	results	canvas	404,220,427,227	22.9	12.01	inside	−145
+text	results	canvas	266,228,287,233	16.2	12.00	inside	Scarlet
+text	results	canvas	263,236,289,241	13.5	10.90	inside	427 / 666
+text	results	canvas	231,259,251,264	16.2	12.05	inside	Rowan
+text	results	canvas	228,267,254,272	13.5	10.93	inside	278 / 490
+text	results	canvas	281,282,305,288	16.2	11.93	inside	Hendrik
+text	results	canvas	276,291,309,296	13.5	11.05	inside	1038 / 1643
+text	results	canvas	187,292,210,297	16.2	12.05	inside	Morrow
+text	results	canvas	185,301,211,306	13.5	11.05	inside	363 / 490
+text	results	canvas	353,288,372,293	16.2	12.05	inside	Thane
+text	results	canvas	348,296,378,302	13.5	11.05	inside	446 / 1040
+text	results	html	56,9,182,26	21.6	13.57	inside	OATHBOUND
+text	results	html	56,28,163,37	21.6	8.21	inside	CHIẾN DỊCH BÌNH MINH
+text	results	html	218,11,343,23	21.6	13.57	inside	Chương 5 · Vực Tinh Tú
+text	results	html	218,26,363,36	21.6	8.21	inside	25 / 30 ải đã giải phóng · Sức mạnh đội 7004
+text	results	html	534,13,554,22	21.6	8.21	inside	VÀNG
+text	results	html	534,22,554,33	21.6	13.57	inside	7130
+text	results	html	579,13,629,22	21.6	8.21	inside	KINH NGHIỆM
+text	results	html	579,22,599,33	21.6	13.57	inside	3111
+text	results	html	653,13,700,22	21.6	8.21	inside	ẤN TIẾN HÓA
+text	results	html	653,22,663,33	21.6	13.57	inside	34
+text	results	html	719,19,738,28	21.6	9.72	inside	Đặt lại
+text	results	html	56,62,216,71	21.6	9.95	inside	ẢI 5-5 · TỰ CHIẾN THỜI GIAN THỰC
+text	results	html	56,71,160,89	21.6	13.57	inside	Mắt Vực Sâu
+text	results	html	490,70,542,82	21.6	9.72	inside	Tạm dừng · P
+text	results	html	62,104,99,113	21.6	10.56	inside	Scarlet · 3.1s
+text	results	html	114,104,170,113	21.6	12.79	inside	Hendrik · Sẵn sàng
+text	results	html	186,104,222,113	21.6	12.79	inside	Rowan · 0.1s
+text	results	html	238,104,278,113	21.6	12.79	inside	Morrow · 2.6s
+text	results	html	294,104,329,113	21.6	12.79	inside	Thane · 0.3s
+text	results	html	587,75,688,84	21.6	9.95	inside	GIAO TRANH LIÊN TỤC
+text	results	html	710,75,731,84	21.6	9.95	inside	5 vs 5
+text	results	html	587,93,614,111	21.6	13.57	inside	5.7
+text	results	html	614,101,643,109	21.6	8.21	inside	/ 90 giây
+text	results	html	587,115,696,124	21.6	10.01	inside	5 anh hùng · 0 địch còn chiến đấu
+text	results	html	587,137,698,146	21.6	9.95	inside	KỸ NĂNG VỪA THI TRIỂN
+text	results	html	587,146,672,155	21.6	11.24	inside	Morrow: Demonic Murmurs!
+text	results	html	587,187,733,208	21.6	10.01	inside	Cận chiến áp sát · kỹ năng có hồi chiêu riêng. Chiêu mới ghi
+text	results	html	587,213,676,221	21.6	9.95	inside	5 BỘ KỸ NĂNG · CUỘN XEM ↓
+text	results	html	587,229,645,238	21.6	13.57	inside	Scarlet · 4 kỹ năng
+text	results	html	587,238,632,247	21.6	8.21	inside	Aura 17.9s · ×1
+text	results	html	590,253,623,262	21.6	9.74	inside	Dark Rage
+text	results	html	590,263,615,272	21.6	10.04	inside	8.8s · ×1
+text	results	html	664,253,724,262	21.6	9.74	inside	Shaded Corruption
+text	results	html	664,263,714,272	21.6	10.04	inside	Nội tại · luôn bật
+text	results	html	590,280,650,289	21.6	9.74	inside	Arcane Absorption
+text	results	html	590,291,615,300	21.6	10.04	inside	3.1s · ×1
+text	results	html	664,280,696,289	21.6	9.74	inside	Dark Aura
+text	results	html	664,291,692,300	21.6	10.04	inside	17.9s · ×1
+text	results	html	587,308,649,317	21.6	13.57	inside	Hendrik · 4 kỹ năng
+text	results	html	590,323,637,332	21.6	9.74	inside	Crippling Blow
+text	results	html	590,333,615,342	21.6	10.04	inside	3.7s · ×1
+text	results	html	664,323,700,332	21.6	9.74	inside	Shield Bash
+text	results	html	664,333,689,342	21.6	10.04	inside	0.0s · ×1
+text	results	html	590,350,642,359	21.6	9.74	inside	Sacrificial Shield
+text	results	html	590,361,644,370	21.6	10.04	inside	Chờ cứu hàng sau
+text	results	html	664,350,694,359	21.6	9.74	inside	Standfast
+text	results	html	664,361,700,370	21.6	10.04	inside	Thủ thế 5.9s
+text	results	html	587,378,645,387	21.6	13.57	inside	Rowan · 4 kỹ năng
+text	results	html	590,392,611,401	21.6	9.74	inside	Dazzle
+text	results	html	590,403,615,412	21.6	10.04	inside	5.9s · ×1
+text	results	html	664,392,707,401	21.6	9.74	inside	Avian Assault
+text	results	html	664,403,689,412	21.6	10.04	inside	0.1s · ×1
+text	results	html	590,420,643,429	21.6	9.74	inside	Healthy Supplies
+text	results	html	590,431,642,440	21.6	10.04	inside	Còn 0/3 bình · ×3
+text	results	html	664,420,716,429	21.6	9.74	inside	Damage Control
+text	results	html	664,431,689,440	21.6	10.04	inside	0.0s · ×1
+text	results	html	587,447,649,456	21.6	13.57	outside	Morrow · 4 kỹ năng
+text	results	html	587,456,673,465	21.6	8.21	outside	Gây mất HP 3173 · Bồi kích 1
+text	results	html	590,471,622,480	21.6	9.74	outside	Eye of Evil
+text	results	html	590,482,615,491	21.6	10.04	outside	7.2s · ×1
+text	results	html	664,471,710,480	21.6	9.74	outside	Binding Terror
+text	results	html	664,482,689,491	21.6	10.04	outside	2.6s · ×1
+text	results	html	590,499,649,508	21.6	9.74	outside	Demonic Murmurs
+text	results	html	590,509,619,518	21.6	10.04	outside	10.7s · ×1
+text	results	html	664,499,726,508	21.6	9.74	outside	Abyssal Retribution
+text	results	html	664,509,700,518	21.6	10.04	outside	Bồi kích · ×1
+text	results	html	587,526,643,535	21.6	13.57	outside	Thane · 4 kỹ năng
+text	results	html	590,541,622,550	21.6	9.74	outside	Eviscerate
+text	results	html	590,551,615,560	21.6	10.04	outside	6.4s · ×1
+text	results	html	664,541,683,550	21.6	9.74	outside	Lunge
+text	results	html	664,551,689,560	21.6	10.04	outside	0.3s · ×1
+text	results	html	590,568,621,577	21.6	9.74	outside	Execution
+text	results	html	590,579,644,588	21.6	10.04	outside	Chí mạng 2/4 · ×0
+text	results	html	664,568,682,577	21.6	9.74	outside	Focus
+text	results	html	664,579,722,588	21.6	10.04	outside	Nội tại · 2 chí mạng
+text	results	html	596,351,623,361	21.6	10.01	inside	Đội bạn
+text	results	html	622,386,700,398	21.6	9.72	inside	Tạm dừng / rút lui
+text	results	html	594,416,676,425	21.6	13.57	inside	Bảng HP · khiên của hai đội
+text	results	html	587,429,608,438	21.6	13.57	inside	Tướng
+text	results	html	667,429,677,438	21.6	13.57	inside	HP
+text	results	html	711,429,729,438	21.6	13.57	inside	Khiên
+text	results	html	587,438,624,447	21.6	13.57	inside	Bạn · Scarlet
+text	results	html	667,438,692,447	21.6	13.57	inside	427/666
+text	results	html	711,438,714,447	21.6	13.57	inside	0
+text	results	html	587,447,627,456	21.6	13.57	outside	Bạn · Hendrik
+text	results	html	667,447,699,456	21.6	13.57	outside	1038/1643
+text	results	html	711,447,714,456	21.6	13.57	outside	0
+text	results	html	587,456,624,465	21.6	13.57	outside	Bạn · Rowan
+text	results	html	667,456,692,465	21.6	13.57	outside	278/490
+text	results	html	711,456,714,465	21.6	13.57	outside	0
+text	results	html	587,465,627,474	21.6	13.57	outside	Bạn · Morrow
+text	results	html	667,465,692,474	21.6	13.57	outside	363/490
+text	results	html	711,465,714,474	21.6	13.57	outside	0
+text	results	html	587,474,622,483	21.6	13.57	outside	Bạn · Thane
+text	results	html	667,474,695,483	21.6	13.57	outside	446/1040
+text	results	html	711,474,714,483	21.6	13.57	outside	0
+text	results	html	587,483,646,492	21.6	13.57	outside	Địch · Vua Sừng Tàn
+text	results	html	667,483,688,492	21.6	13.57	outside	0/3381
+text	results	html	711,483,714,492	21.6	13.57	outside	0
+text	results	html	587,492,638,501	21.6	13.57	outside	Địch · Thạch Nha
+text	results	html	667,492,688,501	21.6	13.57	outside	0/3381
+text	results	html	711,492,714,501	21.6	13.57	outside	0
+text	results	html	587,501,629,510	21.6	13.57	outside	Địch · Gai Độc
+text	results	html	667,501,688,510	21.6	13.57	outside	0/2254
+text	results	html	711,501,714,510	21.6	13.57	outside	0
+text	results	html	587,510,632,519	21.6	13.57	outside	Địch · Ảnh Trảo
+text	results	html	667,510,688,519	21.6	13.57	outside	0/2254
+text	results	html	711,510,714,519	21.6	13.57	outside	0
+text	results	html	587,519,633,528	21.6	13.57	outside	Địch · Tư Tế Tro
+text	results	html	667,519,688,528	21.6	13.57	outside	0/2254
+text	results	html	711,519,714,528	21.6	13.57	outside	0
+text	results	html	54,336,131,345	21.6	9.95	inside	NĂM NGƯỜI GIỮ LỜI
+text	results	html	458,336,561,345	21.6	13.57	inside	Đội tự di chuyển · Nhịp đánh riêng
+text	results	html	115,357,144,365	21.6	10.32	inside	1 · TRƯỚC
+text	results	html	95,378,129,389	21.6	13.57	inside	Scarlet
+text	results	html	95,391,117,399	21.6	8.21	inside	PHÁP SƯ
+text	results	html	95,404,134,412	21.6	9.63	inside	Cấp 3 · Thường
+text	results	html	218,357,247,365	21.6	10.32	inside	2 · TRƯỚC
+text	results	html	197,378,239,389	21.6	13.57	inside	Hendrik
+text	results	html	197,391,213,399	21.6	8.21	inside	HỘ VỆ
+text	results	html	197,404,239,412	21.6	9.63	inside	Cấp 5 · Tinh Anh
+text	results	html	329,357,349,365	21.6	10.32	inside	3 · SAU
+text	results	html	300,378,334,389	21.6	13.57	inside	Rowan
+text	results	html	300,391,320,399	21.6	8.21	inside	HỖ TRỢ
+text	results	html	300,404,339,412	21.6	9.63	inside	Cấp 1 · Thường
+text	results	html	432,357,452,365	21.6	10.32	inside	4 · SAU
+text	results	html	402,378,443,389	21.6	13.57	inside	Morrow
+text	results	html	402,391,425,399	21.6	8.21	inside	PHÁP SƯ
+text	results	html	402,404,442,412	21.6	9.63	inside	Cấp 1 · Thường
+text	results	html	534,357,555,365	21.6	10.32	inside	5 · SAU
+text	results	html	505,378,536,389	21.6	13.57	inside	Thane
+text	results	html	505,391,534,399	21.6	8.21	inside	CẬN CHIẾN
+text	results	html	505,404,547,412	21.6	9.63	inside	Cấp 3 · Tinh Anh
+text	results	html	54,433,151,442	21.6	8.86	inside	Lưu tự động trên trình duyệt này
+text	results	html	360,433,561,442	21.6	8.86	inside	Enter: tiếp tục · Space: chiến đấu · U: nâng cấp · E: tiến h
+text	results	html	344,149,456,158	21.6	11.49	inside	LỜI THỀ ĐƯỢC GIỮ TRỌN
+text	results	html	311,166,489,187	21.6	15.69	inside	Chiến thắng · 5-5
+text	results	html	242,196,558,224	21.6	12.29	inside	Vùng đất này đã được giải phóng. Về bản đồ, chọn tướng rồi b
+text	results	html	307,240,493,252	21.6	12.29	inside	+544 vàng · +204 kinh nghiệm · +2 ấn tiến hóa
+text	results	html	358,283,442,295	21.6	1.23	inside	VỀ BẢN ĐỒ · ENTER
+screen	398	results	ea9e9196	drawn
+uncaught	0
+shot	C:/Users/PuuGoo/Desktop/my-game/production/qa/evidence/oathbound-expanded/86-scarlet-small.png	154007
