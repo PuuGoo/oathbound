@@ -1,0 +1,230 @@
+FAIL	Gwyneth preserves index8 identity and owns one active plus three real passives	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'prototype-ranged'
+- 'gwyneth'
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:10:186
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	all Gwyneth tuning values are finite live config records	AssertionError [ERR_ASSERTION]: divineArrowCooldown
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:11:431
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Divine Arrow hits only live unbanished enemies in their starting half for210percent	TypeError: Cannot read properties of undefined (reading 'find')
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:9:1070)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:12:166
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:12:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Divine Arrow eligibility waits when enemy half is empty and rechecks on release	TypeError: Cannot read properties of null (reading 'id')
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:13:301
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:13:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Divine Arrow accuracy adaptation is weaken not a permanent stat and expires	TypeError: Cannot read properties of undefined (reading 'find')
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:9:1070)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:14:109
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Strength In Numbers grants25percentcrit only while no live targetable enemy is nearby	AssertionError [ERR_ASSERTION]: 0 ~= undefined
+    at close (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:170)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:15:117
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	normal attack rolls fire and lightning separately at release, then waits for actual projectile arrival	TypeError: f.sys.normalAttack is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:16:181
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	non-proc arrows remain ordinary100percent and do not invent burning or chain targets	TypeError: f.sys.normalAttack is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:17:122
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:17:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	lightning hits primary plus nearby enemies once, excludes far dead and banished, no recursive chain	TypeError: f.sys.normalAttack is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:18:165
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:18:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	combined fire and lightning use220percent once and carry burn to actual nearby hits	TypeError: f.sys.normalAttack is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:19:147
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:19:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	burn produces five40percent ticks over5seconds, never damages during render or at application	TypeError: f.sys.normalAttack is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:20:159
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:20:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	burn refresh from same source does not stack duplicate ticking records	TypeError: f.sys.normalAttack is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:21:157
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:21:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	released arrow and burn persist after caster death, but dead or banished destination is never hit	TypeError: f.sys.normalAttack is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:22:163
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:22:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	only Gwyneth owns elemental normal-arrow handling and passives cannot be manually resolved	TypeError: f.sys.normalAttack is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:23:141
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:23:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	actual target acquisition prefers opposing lane before distance and ignores stale target	AssertionError [ERR_ASSERTION]: Expected "actual" to be reference-equal to "expected":
++ actual - expected
+... Skipped lines
+
+  {
+    animation: 'idle',
+    animationTime: 0,
+    attack: 100,
+    banishLeft: 0,
+...
+    maxHP: 10000,
++   name: 'near',
+-   name: 'enemy',
+    recovery: 0,
+    shield: 0,
+    side: 1,
+    skillTimers: {},
++   slot: 1,
+-   slot: 0,
+    speed: 12,
++   x: 400,
++   y: 500
+-   x: 700,
+-   y: 400
+  }
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:24:360
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:24:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	actual resolveAction dispatches a normal Gwyneth attack through elemental projectile API	Error: fell through ordinary delivery
+    at deliver (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:25:206)
+    at Object.resolveAction (evalmachine.<anonymous>:14:21)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:25:346
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:25:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+FAIL	actual startAction uses configured slower normal cadence without delaying other hero attacks	AssertionError [ERR_ASSERTION]: 1.15 ~= NaN
+    at close (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:170)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:26:450
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:26:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	cosmetic callbacks do not alter proc rolls, damage or burn state	TypeError: f.sys.normalAttack is not a function
+    at run (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:27:157)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:27:360
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:7:47)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\gwyneth-skills-unit.cjs:27:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+unit_total	0
+unit_failed	18

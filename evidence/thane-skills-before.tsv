@@ -1,0 +1,220 @@
+FAIL	base Thane uses a distinct source kit while awakened Thane remains explicit prototype	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'prototype-blade'
+- 'thane'
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:22:177
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:22:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	all Thane tuning records are finite editable values	AssertionError [ERR_ASSERTION]: eviscerateCooldown
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:23:466
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:23:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Focus supplies 14 percent seeded crit without inheriting blade attack or Brilliance	AssertionError [ERR_ASSERTION]: 0 ~= undefined
+    at close (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:12:28)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:24:115
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:24:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Execution is never offered before four real critical hits	TypeError: Cannot read properties of null (reading 'id')
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:25:475
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:25:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Execution cast consumes exactly four critical charges; failed gating cannot resolve it	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+true !== false
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:26:125
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:26:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	non-critical hits and other heroes do not add Execution charges	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 0
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:27:139
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:27:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Execution has real timed leading hits then an 80 percent plus 15 percent max HP finisher	AssertionError [ERR_ASSERTION]: missing execution
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:19:78)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:28:163
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:28:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Execution is interruptible and never damages a replacement when its chosen target dies	AssertionError [ERR_ASSERTION]: missing execution
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:19:78)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:29:222
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:29:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Lunge damages one target and adds a finite self-only crit buff	AssertionError [ERR_ASSERTION]: missing lunge
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:19:78)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:30:96
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:30:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Eviscerate queues seven separate 80 percent random attacks rather than an immediate AoE	AssertionError [ERR_ASSERTION]: missing eviscerate
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:19:78)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:31:121
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:31:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	random target rolls are gameplay-seeded and exclude dead or banished units at each pulse	AssertionError [ERR_ASSERTION]: missing eviscerate
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:19:78)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:32:122
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:32:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Eviscerate prevents incoming damage during windup and channel, then ends immunity	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+200 !== 0
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:33:154
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:33:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	control interrupts Eviscerate, removes immunity and cancels remaining unreleased hits	AssertionError [ERR_ASSERTION]: missing eviscerate
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:19:78)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:34:119
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:34:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	no clock tick freezes channels, immunity and queued damage	AssertionError [ERR_ASSERTION]: missing eviscerate
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:19:78)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:35:92
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:35:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Thane rejects another kit action and its passive cannot be manually cast	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+true !== false
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:36:159
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:36:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	actual Lunge action windup accounts for approach distance, not a teleport or remote hit	TypeError: Cannot read properties of undefined (reading 'find')
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:39:538
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:39:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	actual battle AI advances a Lunge toward its live target during windup	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+0 !== 1
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:40:591
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:40:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	cosmetic callbacks never change Thane results or consume seeded rolls	AssertionError [ERR_ASSERTION]: missing lunge
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:19:78)
+    at run (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:41:154)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:41:362
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:41:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+unit_total	0
+unit_failed	18

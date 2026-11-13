@@ -1,0 +1,11 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+scope	first Eluard impact integration run before fixture state correction
+unit_total	15
+unit_failed	1
+failure	divine recovery cannot resurrect and waits for unbanished return when its timer expires: 0 !== 15000
+cause	fixture assigned divineRecoveryLeft without divineRecovering=true; production shield break sets both, and actual-impact recovery test passed
+correction	fixture now explicitly establishes the complete recovering state for both banished and dead cases; assertions unchanged
+next_run	16 passed / 0 failed; later presentation case brings Eluard to17
+combined_initial	412 cases reported /32suites/3failed; retained evidence/eluard-combined.tsv
+combined_cause	legacy extracted-impact fixtures omit heroSkillSystem when source has no buffs. Unconditional optional-member access still requires that identifier; dispatch divine absorber only for target.kitKind eluard.
+combined_after	442 cases /32suites/0failed; evidence/eluard-combined-after.tsv

@@ -1,0 +1,184 @@
+FAIL	Rigby index11 owns three actives and a reactive Well Rested not generic guardian buffs	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'prototype-guardian'
+- 'rigby'
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:5:107
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:547)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Rigby values are editable finite config records	AssertionError [ERR_ASSERTION]: barrelCooldown
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:6:559
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:547)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Barrel release creates one projectile without immediate damage or unrelated buffs	AssertionError [ERR_ASSERTION]: barrelBomb
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:4:918)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:7:115
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:547)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	barrel arrival does150percent then a separately delayed260percent area blast	AssertionError [ERR_ASSERTION]: barrelBomb
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:4:918)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:8:110
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:547)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:8:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	barrel blast uses the stored ground point not a later moving target and can outlive caster	AssertionError [ERR_ASSERTION]: barrelBomb
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:4:918)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:9:124
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:547)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Barrel applies twelve60percent burn ticks without recursive elemental procs or stacking refresh	AssertionError [ERR_ASSERTION]: barrelBomb
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:4:918)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:10:129
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:547)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	barrel projectile never explodes on a dead banished or entering destination	AssertionError [ERR_ASSERTION]: barrelBomb
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:4:918)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:11:157
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:547)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Fire Breath hits nearby enemies in front and uses disclosed weaken instead of accuracy	AssertionError [ERR_ASSERTION]: fireBreath
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:4:918)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:12:188
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:547)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:12:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Frenzy first and second stack only self14percent reduction and25percent haste each	AssertionError [ERR_ASSERTION]: drunkenFrenzy
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:4:918)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:13:116
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:547)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:13:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	third stack enters8second frenzy and disables further drinking until reset	AssertionError [ERR_ASSERTION]: 0 ~= NaN
+    at close (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:670)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:14:215
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:547)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	frenzy expiry resets all stacks and begins Well Rested without an immediate free heal	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 0
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:15:235
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:547)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Well Rested heals5percent maxHP twelve times on simulation seconds then stops	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+0 !== NaN
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:16:304
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:547)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	rested never resurrects and banished seconds do not bank healing for later	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+0 !== 1
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:17:282
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:547)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:17:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	passive lookup and unticked pause never advance Frenzy or Rested	AssertionError [ERR_ASSERTION]: drunkenFrenzy
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:4:918)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:18:98
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:547)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:18:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Rigby rejects old prototype guardian skill IDs	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+true !== false
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:19:151
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:547)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:19:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+unit_total	0
+unit_failed	15

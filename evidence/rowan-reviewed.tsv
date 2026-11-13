@@ -1,0 +1,37 @@
+PASS	Rowan has two active spells and two explicitly adapted reactive entries
+PASS	Rowan configuration is finite and tunable rather than inline gameplay numbers
+PASS	Dazzle selects distinct seeded targets per pulse without applying all coins immediately
+PASS	Dazzle allied energy replacement is a finite haste buff, not healing or persistent currency
+PASS	Dazzle never selects dead or banished targets and respects control immunity
+PASS	Dazzle channel is canceled by caster death or stun before remaining pulses
+PASS	Avian Assault chooses the nearest live in-range enemy, with multiple real sixty-percent hits
+PASS	Avian damage reduction adaptation expires and never inherits Fawkes Silver Bolt
+PASS	Avian cannot schedule ranged damage if every enemy is out of configured reach
+PASS	Healthy Supplies starts with exactly three nonrenewing shared potions
+PASS	supply health threshold is strictly below half, cannot prevent a fatal hit or resurrect
+PASS	per-hero potion cooldown does not block a different injured nearby ally
+PASS	three uses exhaust supply and elapsed time never silently replenishes bottles
+PASS	supplies skip far, dead, banished allies and disappear with dead merchant by policy
+PASS	Damage Control handles only a hit greater than ten percent of max HP and then waits three seconds
+PASS	Damage Control cooldown uses simulation time and its mitigation does not heal or generate energy
+PASS	Damage Control is not spent on an incoming hit absorbed entirely by a shield
+PASS	reactive supplies and damage control are not manually castable cooldown skills
+PASS	cosmetic hooks leave seeded choices, healing and damage unchanged
+PASS	Rowan mitigation runs before deciding a fatal Hendrik rescue
+PASS	ongoing protection redirects before spending Rowans defensive cooldown
+FAIL	Rowan presentation has finite labels for all four effects and never mutates combat	AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(labels.includes('DAZZLE'))
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:31:836
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:31:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+unit_total	21
+unit_failed	1

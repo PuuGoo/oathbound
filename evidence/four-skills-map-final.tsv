@@ -1,0 +1,101 @@
+browser	/c/Program Files/Google/Chrome/Application/chrome.exe
+time	2026-11-12 18:36:32
+render	cheap
+ua	HeadlessChrome/157.0.0.0
+scene	0	title
+state	0	title	{"t":0,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+scene	1	play
+state	1	play	{"t":0.02,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+playinput	76	click:text=Belinda
+state	90	play	{"t":1.5,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":3,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+digits	log	14px "Segoe UI", Arial	tabular	0
+loop	log	none	no loop() step was marked
+first	log	none	no state.beat
+pressure	none	the game set no number state.margin in play
+steptime	90	0.006	0.300
+frametime	1	128.8	128.8	60	1	1
+done	90	play	stop	1.5	634
+measured	1280x720
+text	play	canvas	167,430,184,439	17.6	8.11	inside	1-1
+text	play	canvas	139,460,212,471	16.2	9.90	inside	Lối Mòn Sương
+text	play	canvas	303,383,321,392	17.6	10.98	inside	1-2
+text	play	canvas	290,412,334,421	16.2	5.80	inside	Chưa mở
+text	play	canvas	428,426,445,435	17.6	10.58	inside	1-3
+text	play	canvas	415,456,459,465	16.2	5.41	inside	Chưa mở
+text	play	canvas	560,355,579,364	17.6	10.98	inside	1-4
+text	play	canvas	547,385,591,394	16.2	5.80	inside	Chưa mở
+text	play	canvas	717,308,734,317	17.6	10.98	inside	1-5
+text	play	canvas	704,337,748,346	16.2	5.80	inside	Chưa mở
+text	play	canvas	360,488,606,502	16.2	8.46	inside	Chọn dấu mốc để xem đội địch và phần thưởng
+text	play	html	89,14,291,41	13.5	13.57	inside	OATHBOUND
+text	play	html	89,45,261,59	13.5	8.21	inside	CHIẾN DỊCH BÌNH MINH
+text	play	html	349,18,586,36	13.5	13.57	inside	Chương 1 · Rừng Thức Giấc
+text	play	html	349,42,574,57	13.5	8.21	inside	0 / 10 ải đã giải phóng · Sức mạnh đội 4663
+text	play	html	855,21,887,36	13.5	8.21	inside	VÀNG
+text	play	html	855,36,878,54	13.5	13.57	inside	450
+text	play	html	927,21,1006,36	13.5	8.21	inside	KINH NGHIỆM
+text	play	html	927,36,950,54	13.5	13.57	inside	120
+text	play	html	1045,21,1121,36	13.5	8.21	inside	ẤN TIẾN HÓA
+text	play	html	1045,36,1053,54	13.5	13.57	inside	0
+text	play	html	1150,30,1181,45	13.5	9.72	inside	Đặt lại
+text	play	html	93,99,334,113	13.5	9.95	inside	HÀNH TRÌNH CỦA NGƯỜI GIỮ LỜI
+text	play	html	93,120,413,151	13.5	13.57	inside	Miền Rừng Thức Giấc
+text	play	html	93,158,298,175	13.5	11.25	inside	Năm lời thề. Một bình minh chưa tới.
+text	play	html	107,196,210,212	13.5	9.49	inside	01 · Rừng Thức Giấc
+text	play	html	246,196,339,212	13.5	4.06	inside	02 · Thành Tro Tàn
+text	play	html	940,120,985,134	13.5	9.95	inside	ẢI 1-1
+text	play	html	1075,120,1169,134	13.5	9.95	inside	THỬ THÁCH MỚI
+text	play	html	940,144,1115,168	13.5	13.57	inside	Lối Mòn Sương
+text	play	html	940,176,1164,210	13.5	10.01	inside	Thạch Nha · Thạch Nha · Gai Độc · Gai Độc · Gai Độc
+text	play	html	979,224,1016,245	13.5	13.57	inside	4663
+text	play	html	964,249,1031,263	13.5	8.21	inside	ĐỘI CỦA BẠN
+text	play	html	1100,224,1137,245	13.5	13.57	inside	3239
+text	play	html	1087,249,1150,263	13.5	8.21	inside	ĐỘI ĐỐI THỦ
+text	play	html	940,275,991,292	13.5	13.57	inside	160 vàng
+text	play	html	1004,275,1038,292	13.5	13.57	inside	60 KN
+text	play	html	1051,275,1075,292	13.5	13.57	inside	2 ấn
+text	play	html	988,307,1128,325	13.5	1.12	inside	CHIẾN ĐẤU · SPACE
+text	play	html	940,351,1040,370	13.5	13.57	inside	Belinda · Cấp 1
+text	play	html	1114,353,1176,367	13.5	8.21	inside	Khởi Nguyên
+text	play	html	940,377,1022,391	13.5	10.01	inside	HP 490 · Công 89
+text	play	html	967,453,1028,467	13.5	9.72	inside	Nâng cấp · U
+text	play	html	957,467,1037,482	13.5	5.87	inside	55 vàng + 12 KN
+text	play	html	1091,446,1146,460	13.5	3.52	inside	Tiến hóa · E
+text	play	html	1072,460,1165,489	13.5	5.87	inside	Cấp 3 · 180 vàng · 4 ấn
+text	play	html	940,506,1001,520	13.5	10.78	inside	Divine Light
+text	play	html	940,521,1168,535	13.5	8.21	inside	4 đợt ánh sáng, mỗi đợt 110% công trong vùng.
+text	play	html	940,540,1033,554	13.5	10.78	inside	Divine Retribution
+text	play	html	940,555,1169,584	13.5	8.21	inside	Đạn ánh sáng nổ khi chạm mục tiêu; 160% công vùng gần.
+text	play	html	940,589,1030,603	13.5	10.78	inside	Brilliance · Nội tại
+text	play	html	940,604,1095,618	13.5	8.21	inside	Nội tại: +12% xác suất chí mạng.
+text	play	html	940,623,981,637	13.5	10.78	inside	Blessing
+text	play	html	940,638,1168,667	13.5	8.21	inside	Đồng minh công cao nhất: +15% công và +15% chí mạng.
+text	play	html	940,674,1140,689	13.5	8.91	inside	Mẹo: để hộ vệ phía trước, trị liệu phía sau.
+text	play	html	86,538,210,552	13.5	9.95	inside	NĂM NGƯỜI GIỮ LỜI
+text	play	html	677,538,832,552	13.5	13.57	inside	Chọn tướng để xem và nâng cấp
+text	play	html	851,538,888,552	13.5	9.72	inside	Xếp đội
+text	play	html	184,571,231,584	13.5	10.32	inside	1 · TRƯỚC
+text	play	html	151,602,214,620	13.5	13.57	inside	Estrilda
+text	play	html	151,625,175,639	13.5	8.21	inside	KỴ SĨ
+text	play	html	151,648,214,662	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	348,571,395,584	13.5	10.32	inside	2 · TRƯỚC
+text	play	html	315,602,360,620	13.5	13.57	inside	Bram
+text	play	html	315,625,346,639	13.5	8.21	inside	HỘ VỆ
+text	play	html	315,648,378,662	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	527,571,559,584	13.5	10.32	inside	3 · SAU
+text	play	html	480,602,520,620	13.5	13.57	inside	Sylra
+text	play	html	480,625,517,639	13.5	8.21	inside	XẠ THỦ
+text	play	html	480,648,542,662	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	691,571,723,584	13.5	10.32	inside	4 · SAU
+text	play	html	644,602,705,620	13.5	13.57	inside	Belinda
+text	play	html	644,625,687,639	13.5	8.21	inside	PHÁP SƯ
+text	play	html	644,648,707,662	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	855,571,888,584	13.5	10.32	inside	5 · SAU
+text	play	html	808,602,850,620	13.5	13.57	inside	Lumi
+text	play	html	808,625,847,639	13.5	8.21	inside	TRỊ LIỆU
+text	play	html	808,648,871,662	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	86,692,241,707	13.5	8.86	inside	Lưu tự động trên trình duyệt này
+text	play	html	576,692,897,707	13.5	8.86	inside	Enter: tiếp tục · Space: chiến đấu · U: nâng cấp · E: tiến h
+screen	90	play	d422b4b3	drawn
+uncaught	0
+shot	/c/Users/PuuGoo/Desktop/my-game/prototypes/oathbound/evidence/four-skills-map-final.png	354469

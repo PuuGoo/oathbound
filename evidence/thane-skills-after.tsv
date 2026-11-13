@@ -1,0 +1,30 @@
+PASS	base Thane uses a distinct source kit while awakened Thane remains explicit prototype
+PASS	all Thane tuning records are finite editable values
+PASS	Focus supplies 14 percent seeded crit without inheriting blade attack or Brilliance
+PASS	Execution is never offered before four real critical hits
+PASS	Execution cast consumes exactly four critical charges; failed gating cannot resolve it
+PASS	non-critical hits and other heroes do not add Execution charges
+PASS	Execution has real timed leading hits then an 80 percent plus 15 percent max HP finisher
+PASS	Execution is interruptible and never damages a replacement when its chosen target dies
+PASS	Lunge damages one target and adds a finite self-only crit buff
+PASS	Eviscerate queues seven separate 80 percent random attacks rather than an immediate AoE
+PASS	random target rolls are gameplay-seeded and exclude dead or banished units at each pulse
+PASS	Eviscerate prevents incoming damage during windup and channel, then ends immunity
+PASS	control interrupts Eviscerate, removes immunity and cancels remaining unreleased hits
+PASS	no clock tick freezes channels, immunity and queued damage
+PASS	Thane rejects another kit action and its passive cannot be manually cast
+FAIL	actual Lunge action windup accounts for approach distance, not a teleport or remote hit	ReferenceError: cadence is not defined
+    at Object.startAction (evalmachine.<anonymous>:4:22)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:39:498
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:11:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\thane-skills-unit.cjs:39:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+PASS	actual battle AI advances a Lunge toward its live target during windup
+PASS	cosmetic callbacks never change Thane results or consume seeded rolls
+unit_total	17
+unit_failed	1

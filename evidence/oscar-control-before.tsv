@@ -1,0 +1,31 @@
+PASS	Oscar index12 owns four active mechanics and no old blade prototype
+PASS	Oscar numeric tuning is live finite editable records
+PASS	Aura deals270percent once then creates a stationary eleven-second self-only haste field and four knives
+PASS	Fine Cuts throws to two weakest eligible HP ratios not an out-of-range cached foe
+PASS	knife damage and persistent ground point happen on projectile arrival, including a lethal hit
+PASS	a thrown knife outlives caster but invalid destination cannot create a ground knife
+PASS	Slice waits without a usable own ground knife rather than teleporting without a destination
+PASS	Slice consumes exactly one nearby-enemy knife, teleports within arena and deals200percent around destination
+PASS	Slice cannot consume another Oscar knife or an empty destination without enemies
+PASS	knife lifetime and refresh retain bounded records rather than growing forever
+PASS	Unfazed cleans supported negative modifier fields while preserving positive mixed fields
+PASS	Unfazed persists by simulation not duration, refresh does not stack and actual stun removes it
+PASS	blocked control does not clear Unfazed or turn it into immunity
+PASS	Oscar refuses old prototype skills and pure bonus lookups do not move or tick records
+FAIL	actual Confine control clears Unfazed while a blocked Confine preserves it	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+true !== false
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:19:332
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:3:527)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:19:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+PASS	Oscar Canvas renders knives aura and four captions without changing simulation
+unit_total	15
+unit_failed	1

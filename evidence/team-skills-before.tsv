@@ -1,0 +1,46 @@
+FAIL	three new heroes each expose four skills and correct passive counts	Cannot read properties of undefined (reading 'length')
+FAIL	Lucius party shield refreshes and expires without stacking	Expected values to be strictly equal:
+
+0 !== NaN
+
+FAIL	Lucius heals lowest health ratio and gives finite defensive buff	Cannot read properties of undefined (reading 'target')
+FAIL	Divine Strike hits nearby targets and knocks down, not far rear	Expected values to be strictly equal:
+
+0 !== 1
+
+FAIL	Blessed Shield reduces incoming damage and resists control until expiry	Expected values to be strictly equal:
+
+100 !== NaN
+
+PASS	ready ultimate ends Lucius shield stance early
+FAIL	Fawkes Confine selects highest attack and removes target from combat for duration	Cannot read properties of undefined (reading 'target')
+FAIL	Purification damages only targetable enemies and removes positive effects not debuffs	Expected values to be strictly equal:
+
+0 !== 1
+
+FAIL	Abate slows an enemy temporarily	Expected values to be strictly equal:
+
+0 !== undefined
+
+FAIL	Silver Bolt modifies normal shots only and adds debuffed-target bonus	Expected values to be strictly equal:
+
+100 !== NaN
+
+FAIL	Raine Cripple marks all available enemies and boosts incoming damage	Expected values to be strictly equal:
+
+100 !== NaN
+
+FAIL	Raine Barrage schedules five shots to each stream, may share target	Expected values to be strictly equal:
+
+0 !== NaN
+
+FAIL	Lock On applies offensive buffs on ally hit, no base heal, refresh not stack	Expected values to be strictly equal:
+
+0 !== undefined
+
+FAIL	Exploit passive scales with missing health only for Raine	Expected values to be strictly equal:
+
+100 !== NaN
+
+PASS	banish prevents queued hits and does not count as death
+unit_total	2

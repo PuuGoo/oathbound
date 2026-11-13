@@ -1,0 +1,230 @@
+FAIL	Rowan has two active spells and two explicitly adapted reactive entries	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'prototype-support'
+- 'rowan'
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:10:110
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Rowan configuration is finite and tunable rather than inline gameplay numbers	AssertionError [ERR_ASSERTION]: dazzleCooldown
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:11:574
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Dazzle selects distinct seeded targets per pulse without applying all coins immediately	AssertionError [ERR_ASSERTION]: dazzle
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:9:1148)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:12:121
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:12:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Dazzle allied energy replacement is a finite haste buff, not healing or persistent currency	AssertionError [ERR_ASSERTION]: dazzle
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:9:1148)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:13:143
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:13:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Dazzle never selects dead or banished targets and respects control immunity	AssertionError [ERR_ASSERTION]: dazzle
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:9:1148)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:14:223
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Dazzle channel is canceled by caster death or stun before remaining pulses	AssertionError [ERR_ASSERTION]: dazzle
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:9:1148)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:15:145
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Avian Assault chooses the nearest live in-range enemy, with multiple real sixty-percent hits	AssertionError [ERR_ASSERTION]: avianAssault
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:9:1148)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:16:126
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Avian damage reduction adaptation expires and never inherits Fawkes Silver Bolt	AssertionError [ERR_ASSERTION]: avianAssault
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:9:1148)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:17:113
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:17:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Avian cannot schedule ranged damage if every enemy is out of configured reach	AssertionError [ERR_ASSERTION]: avianAssault
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:9:1148)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:18:129
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:18:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Healthy Supplies starts with exactly three nonrenewing shared potions	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== NaN
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:19:195
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:19:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	supply health threshold is strictly below half, cannot prevent a fatal hit or resurrect	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+NaN !== 0
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:20:288
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:20:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	per-hero potion cooldown does not block a different injured nearby ally	AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(f.u.hp>FIX.low)
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:21:239
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:21:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	three uses exhaust supply and elapsed time never silently replenishes bottles	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 0
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:22:207
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:22:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+PASS	supplies skip far, dead, banished allies and disappear with dead merchant by policy
+FAIL	Damage Control handles only a hit greater than ten percent of max HP and then waits three seconds	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 0
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:24:193
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:24:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Damage Control cooldown uses simulation time and its mitigation does not heal or generate energy	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 0
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:25:289
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:25:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Damage Control is not spent on an incoming hit absorbed entirely by a shield	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 0
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:26:194
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:26:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	reactive supplies and damage control are not manually castable cooldown skills	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+true !== false
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:27:181
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:27:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	cosmetic hooks leave seeded choices, healing and damage unchanged	AssertionError [ERR_ASSERTION]: dazzle
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:9:1148)
+    at run (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:28:128)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:28:477
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:8:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rowan-skills-unit.cjs:28:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+unit_total	1
+unit_failed	18

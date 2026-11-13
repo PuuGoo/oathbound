@@ -1,0 +1,304 @@
+suite	belinda-animation-unit.cjs
+PASS	mage enters sprite attack and emits event
+PASS	all Belinda clip crops stay within packed atlas
+PASS	Belinda idle loops but death holds last of eight frames
+PASS	mage one-shots return idle on their configured duration
+PASS	mage death resists new attack and never loops
+PASS	unavailable Belinda sheet draws nothing
+unit_total	6
+suite	expanded-campaign-unit.cjs
+PASS	campaign contains six chapters and thirty stage names
+PASS	enemy power strictly increases through every transition including boss exits
+PASS	every chapter ends in a boss and all earlier stages keep five enemies
+PASS	bench upgrades never inflate active team power
+PASS	new identities calculate stats through their combat role
+unit_total	5
+suite	expanded-roster-unit.cjs
+PASS	catalog appends seventeen unique identities preserving first five
+PASS	base and awakened variants stay separate
+PASS	new kits explicitly identify prototype roles
+PASS	legacy progress migrates all currencies upgrades and formation
+PASS	expanded progress survives reload without resetting bench
+PASS	malformed saves rejected
+PASS	bench hero replaces exactly one slot without mutating input
+PASS	active hero swaps instead of duplicating
+PASS	invalid equip requests cannot corrupt formation
+unit_total	9
+suite	expanded-skills-unit.cjs
+PASS	five explicit role kits each have three real actives, one passive and openly prototype names
+PASS	original five kits and exact active IDs remain available without kitKind
+PASS	unknown explicit kitKind never silently inherits an original role kit
+PASS	three independent live timers use shared prototype tuning and oldest-ready selection
+PASS	spawn staggering and cooldown reset use the same machinery for every prototype kit
+PASS	blade cleave is local and forward-facing, unlike targeted attacks
+PASS	blade weakening strike damages only one foe and expires
+PASS	blade haste is self-only, refreshes without stacking, leaves base attack untouched
+PASS	guardian slam damages the nearby cluster and interrupts actions
+PASS	guardian shield is finite, self-only and refreshes rather than stacking
+PASS	guardian party reduction excludes dead/banished allies and expires leaving only its passive
+PASS	support bolt waits for real projectile impact and is not Silver Bolt
+PASS	support projectile skips a destination that dies or is banished
+PASS	support heals lowest targetable health ratio, with its own healing passive
+PASS	support party attack buff never changes unit.attack and excludes unavailable allies
+PASS	ranged volley schedules real finite pulses, stun cancels remaining shots
+PASS	ranged volley total is configured damage and never uses Raine missing-health damage
+PASS	ranged slowing shot has actual damage and temporary slow
+PASS	ranged haste stacks with its own always-on cadence passive then expires
+PASS	mage area burst is centered on target, not caster, and excludes far foes
+PASS	mage weakening field is a separate damaging area debuff
+PASS	mage party crit buff has no attack buff, and refreshes without stacking
+PASS	prototype passive identities do not inherit Raine, Fawkes or Belinda logic
+PASS	prototype mage seeded crit emits only prototype passive feedback, not Brilliance
+PASS	all five original passive paths preserve their existing exact numbers
+PASS	prototype kit cannot resolve another prototype or an original hero skill
+PASS	prototypes choose support skills out of attack range through original ready machinery
+PASS	prototype abilities retarget a dead/banished enemy and never hit excluded enemies
+PASS	each side uses its own party and enemy lists, never hardcodes heroes
+PASS	all prototype render branches are finite, labelled and pure with recognizable geometric feedback
+PASS	prototype critical presentation never emits original Belinda effect
+PASS	cosmetic hooks do not change prototype damage, buffs, timers, events or gameplay rolls
+PASS	cleave really excludes a close enemy behind the caster
+PASS	guardian passive reduces real incoming damage and adds with a finite party buff
+PASS	prototype status timers and queued volley hits freeze when tick is not called
+PASS	dead prototype caster cancels scheduled volley hits but not an already released bolt
+PASS	evolved prototype actions use the existing evolve multiplier, not a second damage path
+PASS	prototype bolt renderer is recognizable, finite and pure
+PASS	every prototype active has matching Vietnamese release captions and real buff/hit visuals
+unit_total	39
+unit_failed	0
+not_assessed	live battle integration, screenshots, balance, native input and official hero fidelity; prototypes intentionally use invented Vietnamese abilities
+suite	four-skills-regression-unit.cjs
+PASS	distinct Inspire and Blessing attack bonuses both contribute
+PASS	Royal Charge windup allows travel from maximum eligible range into hit width
+PASS	selected short-range spell approaches within its own reach instead of generic ranged stop
+PASS	ready support skill is executable while older offensive spell is out of range
+unit_total	4
+suite	four-skills-unit.cjs
+PASS	each hero has four skills but Brilliance alone is passive
+PASS	timers independent and oldest-ready prevents starvation
+PASS	Inspire buffs every living ally for configured duration without permanent attack mutation
+PASS	Blessing chooses highest-attack living ally and adds attack/crit
+PASS	Brilliance seeded critical threshold applies and emits passive feedback
+PASS	Joust schedules five hits then finisher and excludes far foe
+PASS	dead caster cancels remaining multi-hit channel
+PASS	knockdown interrupts channel but Royal Charge resists it
+PASS	Royal Charge damages foes along path only
+PASS	Ridicule primary plus nearby area and weakening expire
+PASS	Divine Light emits four real timed hits within target area
+PASS	Divine Retribution defers explosion until actual orb arrival
+PASS	dead destination receives no orb explosion
+PASS	buff refresh does not stack same skill and death targets cannot be buffed
+unit_total	14
+not_assessed	native input, exact AFK Arena fidelity and live full encounter; actual skill helpers with fixed impact recorder
+suite	iteration-10-terminal-unit.cjs
+PASS	ongoing battle before timeout stays active
+PASS	exact timeout boundary loses without spending or rewarding
+PASS	timeout beyond boundary also loses
+PASS	defeat takes precedence over timeout wording
+PASS	enemy elimination at timeout awards victory
+PASS	first-clear victory awards configured battle reward exactly once per finish call
+PASS	repeat clear does not increment campaign count
+PASS	final clear reaches configured total without exceeding it
+PASS	defeat keeps progression and emits defeat event
+unit_total	9
+not_assessed	actual 90-second browser fight, action/projectile simulation and simultaneous-wipe design; terminal checks use isolated dt=0 fixtures
+suite	iteration-11-combat-unit.cjs
+PASS	living retained target wins over nearest candidate
+PASS	dead target is replaced with nearest living foe
+PASS	assassin initially prefers surviving back row
+PASS	assassin falls back when back row is dead
+PASS	no living targets returns null
+PASS	healing caps at maximum HP
+PASS	healing cannot revive a dead target
+PASS	shield absorbs damage before HP
+PASS	fully absorbed damage leaves HP intact
+PASS	death cancels unreleased action and movement
+PASS	damage does not restart animation on a dead target
+PASS	busy windup is not replaced by a hit reaction
+PASS	recovery is not replaced by a hit reaction
+PASS	idle living target receives hit reaction
+PASS	melee release at exact reach boundary hits
+PASS	melee release beyond reach misses
+PASS	ranged release queues projectile without immediate damage
+PASS	release ignores already-dead targets
+PASS	healer retargets a dead selected ally to living weakest ally
+PASS	dead primary target receives no released single-target attack
+PASS	shield feedback records absorption without changing HP damage
+PASS	partial shield feedback retains actual HP damage
+unit_total	22
+not_assessed	full projectile flight, animation playback, movement and live timing interactions; direct helpers use fixed fixtures and midpoint damage RNG
+suite	iteration-13-animation-unit.cjs
+PASS	idle wraps at configured frame count
+PASS	negative render time clamps to first frame
+PASS	one-shot rendering clamps to final frame
+PASS	all clip crops remain within original 1086x1448 atlas
+PASS	draw uses configured row crop and anchor
+PASS	facing changes transform sign without changing crop
+PASS	unavailable sprite returns false without drawing
+PASS	new animation resets time and records one event
+PASS	death cannot be interrupted by attack hit or skill
+PASS	procedural enemy does not enter hero sprite clips
+PASS	one-shot stays active before duration and returns idle at boundary
+PASS	death clock advances but terminal clip remains death
+PASS	no battle animation advance is safe
+unit_total	13
+not_assessed	visual animation quality and all four skill variants in a live fight; draw arguments and helper transitions only
+suite	iteration-14-save-unit.cjs
+PASS	missing save returns fresh progress
+PASS	malformed JSON returns fresh progress
+PASS	blocked reads return fresh progress
+PASS	wrong version returns fresh progress
+PASS	valid progress retains resources levels evolution and formation
+PASS	duplicate formation is rejected
+PASS	out-of-range formation identity is rejected
+PASS	fractional formation identity is rejected
+PASS	wrong roster or formation lengths are rejected
+PASS	null hero is rejected without throwing
+PASS	invalid resource fields are rejected
+PASS	invalid cleared counts are rejected
+PASS	invalid levels are rejected
+PASS	non-boolean evolution is rejected
+PASS	separate fresh saves do not share hero objects
+PASS	successful save stores progress and clears failure flag
+PASS	failed write preserves session progress and previous stored value
+PASS	later successful save recovers from temporary write failure
+unit_total	18
+not_assessed	native browser storage quota/private-mode behavior, corrupt-file recovery UI and user saves; storage doubles only
+suite	iteration-21-selection-unit.cjs
+PASS	next chapter selection updates visible chapter
+PASS	previous chapter selection restores visible chapter
+PASS	locked stage is ignored
+PASS	invalid indices are ignored
+PASS	selection outside play is ignored
+PASS	selection during battle is ignored
+unit_total	6
+not_assessed	native keyboard navigation; helper assertions only, see prescribed runtime captures separately
+suite	iteration-23-focus-loss-unit.cjs
+reproduced_old_behavior	pending P resumes immediately after old blur handler
+PASS	focus loss clears both held and pending input
+PASS	pending P cannot undo automatic pause on next step
+PASS	map focus loss clears pending upgrade and stage selection without scene change
+PASS	existing pause and results are not resumed by focus loss
+unit_total	4
+not_assessed	native OS focus switching and browser blur timing; actual helper and update functions tested with isolated pending-input sets
+suite	iteration-25-projectile-unit.cjs
+PASS	released projectile still lands after source death while battle continues
+PASS	dead destination cancels projectile without damage or effects
+PASS	exact single-step arrival applies damage and removes projectile
+PASS	projectile just beyond arrival travels but does not apply early damage
+PASS	homing direction uses current destination position
+PASS	healing projectile caps HP on arrival
+PASS	later projectile drops after earlier arrival kills shared destination
+unit_total	7
+not_assessed	browser flight rendering, full encounter timing, movement AI and animation playback; actual helpers called once per fixed recovery fixture, midpoint damage RNG
+suite	iteration-26-progression-unit.cjs
+PASS	exact upgrade currency buys one level and saves once
+PASS	one gold short does not spend either currency
+PASS	one essence short does not spend either currency
+PASS	maximum level rejects upgrade without spending
+PASS	last permitted upgrade reaches cap and another cannot spend
+PASS	upgrade follows selected hero identity after formation rearrangement
+PASS	exact evolution threshold spends only gold and shards once
+PASS	evolution one level below threshold preserves all resources
+PASS	evolution one shard short preserves all resources
+PASS	evolution one gold short preserves all resources
+PASS	already evolved hero cannot spend a second evolution cost
+PASS	both progression actions reject covered scenes and active combat
+unit_total	12
+not_assessed	browser upgrade/evolution presentation, native controls, real persistence failures and long-term balance; actual progression helpers with save/toast recorders
+suite	iteration-31-movement-unit.cjs
+PASS	diagonal approach advances by configured speed times step
+PASS	melee approach stops at configured hysteresis boundary without overshoot
+PASS	ranged approach uses ranged stopping distance
+PASS	already within approach range does not move or accumulate motion
+PASS	lancer and assassin movement multipliers apply independently
+PASS	charge applies its speed and stops at charge range
+PASS	retreat moves away while continuing to face destination
+PASS	leftward target updates facing and zero step adds no movement
+PASS	coincident positions stay finite for approach and retreat
+PASS	arena clamp handles both extremes and preserves interior position
+unit_total	10
+not_assessed	AI movement decisions, ally separation, full encounters, animation quality or native input; actual movement/clamp helpers tested once per fixed fixture
+suite	iteration-33-pause-clock-unit.cjs
+PASS	P pause entry freezes visual clock and combat together
+PASS	Escape pause entry also freezes both clocks
+PASS	pause hold and resume do not advance visual or combat clocks
+PASS	ordinary battle step advances visual time and combat once
+unit_total	4
+not_assessed	native pause inputs, visual quality and full combat determinism; direct update with combat-call recorder
+suite	iteration-37-role-skill-unit.cjs
+PASS	warden shields living front slots only
+PASS	warden falls back to self when no front slot survives
+PASS	warden preserves stronger existing shield rather than stacking
+PASS	mage releases exactly one area delivery per living foe
+PASS	enemy boss area skill targets heroes not own team
+PASS	lancer secondary delivery excludes primary and dead rear targets
+PASS	evolution adds skill multiplier but not normal attack multiplier
+PASS	enemy shaman heals living own-team replacement after target death
+unit_total	8
+not_assessed	projectile arrival, actual damage, live skill timing/animation and full encounters; delivery calls recorded, not simulated
+suite	iteration-9-ui-unit.cjs
+PASS	browser modifier combinations never become game commands
+PASS	composition and already-consumed events stay out of game shortcuts
+PASS	unmodified game shortcuts remain active
+PASS	Space and Enter belong to a native focused control
+PASS	game shortcuts remain available outside controls
+PASS	non-activation shortcut remains available on buttons
+PASS	editing fields own all keyboard input
+PASS	non-element event target does not suppress shortcuts
+PASS	removed hero card resolves by identity, not formation position
+PASS	removed action resolves by ID
+PASS	disabled upgrade falls back to selected hero
+PASS	hidden upgrade falls back to selected hero
+PASS	connected or absent focus is untouched
+PASS	pause and results do not restore background panel focus
+PASS	battle details summary resolves without map fallback
+PASS	overlay scenes mark every background control region inert
+PASS	play scene restores background interaction
+unit_total	17
+not_assessed	native browser focus, Tab order and default button activation; these are DOM-double unit tests only
+suite	skill-vfx-unit.cjs
+PASS	records snapshot coordinates without cyclic unit references
+PASS	one visual per actual timed hit, with no additional damage
+PASS	visual record cap bounds repeated impacts
+PASS	simulation-time expiry freezes with unchanged battle clock
+PASS	all skill render branches are finite and rendering mutates no battle state
+PASS	cosmetic anticipation never moves hitbox; death and knockdown suppress pose
+PASS	ordinary projectiles keep legacy renderer
+PASS	Brilliance is a mage passive hit flash, not a cast
+PASS	cosmetic hooks preserve skill damage, timers, events and RNG calls
+PASS	actual sprite helper holds skill pose during long action/channel then returns idle
+PASS	incoming damage does not replace an ongoing channel animation
+unit_total	11
+suite	team-skills-unit.cjs
+PASS	three new heroes each expose four skills and correct passive counts
+PASS	Lucius party shield refreshes and expires without stacking
+PASS	Lucius heals lowest health ratio and gives finite defensive buff
+PASS	Divine Strike hits nearby targets and knocks down, not far rear
+PASS	Blessed Shield reduces incoming damage and resists control until expiry
+PASS	ready ultimate ends Lucius shield stance early
+PASS	Fawkes Confine selects highest attack and removes target from combat for duration
+PASS	Purification damages only targetable enemies and removes positive effects not debuffs
+PASS	Abate slows an enemy temporarily
+PASS	Silver Bolt modifies normal shots only and adds debuffed-target bonus
+PASS	Raine Cripple marks all available enemies and boosts incoming damage
+PASS	Raine Barrage schedules five shots to each stream, may share target
+PASS	Lock On applies offensive buffs on ally hit, no base heal, refresh not stack
+PASS	Exploit passive scales with missing health only for Raine
+PASS	banish prevents queued hits and does not count as death
+PASS	shaman selects available injured ally rather than a confined ally
+PASS	shaman retargets heal if ally is confined during windup
+unit_total	17
+suite	team-sprites-unit.cjs
+PASS	all three embedded PNGs equal derived local assets
+PASS	all clip rectangles fit PNG width and height
+PASS	idle and authored run loop; death clamps
+PASS	four skill row aliases remain within real clips
+PASS	negative time clamps to first frame and ground anchor fixed
+PASS	all allied roles enter actual animation helper and death stays terminal
+PASS	source background removal preserves enclosed white armor
+PASS	unchanged save slot IDs remain mapped to new names without migration
+unit_total	8
+combined_cases	243
+combined_suites	21
+failed_suites	0

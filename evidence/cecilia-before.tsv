@@ -1,0 +1,245 @@
+FAIL	Cecilia stable index10 has three actives and a once-only reactive opening	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'prototype-blade'
+- 'cecilia'
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:11:94
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:7:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	all Cecilia timing geometry and mechanic values are live config records	AssertionError [ERR_ASSERTION]: judgementCooldown
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:12:580
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:7:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:12:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	unarrived Cecilia remains alive but cannot be damaged or selected by factory	AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(f.u.entryLeft>0)
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:13:115
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:7:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:13:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Atonement arrives behind mirrored formation target with bounded position and three marks	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 0
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:14:168
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:7:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	opening fallback skips dead or banished mirror, never resurrects a dead caster	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ undefined
+- {
+-   animation: 'idle',
+-   animationTime: 0,
+-   attack: 100,
+-   banishLeft: NaN,
+-   buffs: {},
+-   castCounts: {},
+-   castToken: 0,
+-   channelLeft: NaN,
+-   controlLeft: NaN,
+-   critCount: 0,
+-   facing: -1,
+-   hp: 10000,
+-   kind: 'lancer',
+-   kitKind: 'fixture',
+-   maxHP: 10000,
+-   name: 'other',
+-   shield: 0,
+-   side: 1,
+-   skillTimers: {},
+-   slot: 0,
+-   x: 750,
+-   y: 400
+- }
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:15:254
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:7:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	enemy-side Atonement uses mirrored side and clamps behind left-facing target	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ undefined
+- {
+-   animation: 'idle',
+-   animationTime: 0,
+-   attack: 100,
+-   banishLeft: NaN,
+-   buffs: {},
+-   castCounts: {},
+-   castToken: 0,
+-   channelLeft: NaN,
+-   controlLeft: NaN,
+-   critCount: 0,
+-   facing: -1,
+-   hp: 10000,
+-   kind: 'lancer',
+-   kitKind: 'fixture',
+-   maxHP: 10000,
+-   name: 'mirror',
+-   shield: 0,
+-   side: 0,
+-   skillTimers: {},
+-   slot: 2,
+-   x: 460,
+-   y: 400
+- }
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:16:316
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:7:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Judgement targets highest own marks rather than cached enemy and evaluates pre-hit threshold	AssertionError [ERR_ASSERTION]: judgementDay
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:9:891)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:17:126
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:7:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:17:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Judgement at five marks adds disclosed second300percent damage and caps symbols	AssertionError [ERR_ASSERTION]: judgementDay
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:9:891)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:18:133
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:7:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:18:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	three-stage Purification adds one mark per use not per pulse and scales from pre-cast marks	TypeError: f.sys.sinCount is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:19:136
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:7:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:19:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	control cancels unreleased opening or purification pulses without removing existing marks	TypeError: f.sys.sinCount is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:20:277
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:7:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:20:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Judgement never damages dead banished or entering targets and does not consume marks	AssertionError [ERR_ASSERTION]: judgementDay
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:9:891)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:21:140
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:7:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:21:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Devil Trap weakens only enemies currently inside a stationary circle	AssertionError [ERR_ASSERTION]: devilTrap
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:9:891)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:22:138
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:7:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:22:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	first real exit hits320percent exactly once per enemy per circle including later entrants	AssertionError [ERR_ASSERTION]: devilTrap
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:9:891)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:23:142
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:7:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:23:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	banishment is not an exit hit and old circle expires without final burst	AssertionError [ERR_ASSERTION]: devilTrap
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:9:891)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:24:122
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:7:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:24:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	released circle persists caster death but refresh replaces own circle without stacking	AssertionError [ERR_ASSERTION]: devilTrap
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:9:891)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:25:136
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:7:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:25:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	marks are isolated per Cecilia source and lookup is pure	TypeError: f.sys.sinCount is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:26:200
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:7:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:26:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+unit_total	0
+unit_failed	16

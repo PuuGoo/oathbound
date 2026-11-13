@@ -1,0 +1,20 @@
+PASS	Peggy index15 has four own actives and two guard attachments not additional heroes
+PASS	Peggy numeric balance geometry and timers are editable config records
+PASS	Duty buffs living guards for12seconds without duplicating or healing them
+PASS	Duty with no guards summons exactly one and350percent guard attack knockback stun nearby enemies
+PASS	guards attack with independent simulation cooldown and never consume extra hero slots
+PASS	available guards intercept a configured share of actual incoming Peggy damage but not ordinary shield-only damage
+PASS	dead owner removes guards and cannot heal or attack through them
+PASS	banished Peggy freezes guards without reviving depleted ones or causing attacks
+PASS	Royal Scroll heals living guards and exactly one weakest eligible non-summoned ally220percent
+PASS	Royal Scroll does not resurrect guard or heal an unavailable selected ally
+PASS	Royal Guards creates eight-second20percent current guardHP shields for each guard and nearest ally without summing overlaps
+PASS	Royal Marksmen sends five real timed projectiles to nearest instead of cached far enemy
+PASS	Marksman arrival applies70percent damage and explicit accuracy-weaken/haste-slow substitutes
+PASS	unreleased marksmen cancel on control and released arrows cannot strike banished or dead targets
+PASS	Peggy own kit refuses generic role spells and no tick means no guard movement or damage
+PASS	Peggy guards and four captions render with finite Canvas values without advancing combat
+PASS	a nearly dead guard cannot intercept more damage than its remaining effective health
+PASS	enemy-side Peggy guards and summoned arrival mirror push direction
+unit_total	18
+unit_failed	0

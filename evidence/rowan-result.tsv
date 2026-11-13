@@ -1,0 +1,182 @@
+browser	/c/Program Files/Google/Chrome/Application/chrome.exe
+time	2026-11-13 03:34:31
+render	cheap
+ua	HeadlessChrome/157.0.0.0
+scene	0	title
+state	0	title	{"t":0,"score":10,"gained":"","chapter":2,"selectedStage":10,"selectedHero":5,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+scene	1	play
+state	1	play	{"t":0.02,"score":10,"gained":"","chapter":2,"selectedStage":10,"selectedHero":5,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+playinput	4	Space
+saved	639	localstorage	oathbound.save.v1
+scene	640	results
+state	640	results	{"t":10.67,"score":11,"gained":"Ải đã được giải phóng","chapter":2,"selectedStage":10,"selectedHero":5,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":10,"heroes":[{"maxHP":1040,"attac
+state	1538	results	{"t":25.63,"score":11,"gained":"Ải đã được giải phóng","chapter":2,"selectedStage":10,"selectedHero":5,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":10,"heroes":[{"maxHP":1040,"attac
+digits	log	14px "Segoe UI", Arial	tabular	0
+digits	log	19px "Segoe UI", Arial	tabular	0
+digits	log	11px "Segoe UI", Arial	tabular	0
+loop	log	none	no loop() step was marked
+first	log	none	no state.beat
+ending	log	results	gained	Ải đã được giải phóng
+pressure	none	the game set no number state.margin in play
+steptime	1538	0.042	4.600
+frametime	10	81.2	236.4	60	10	10
+done	1538	results	stop	25.6	3286
+measured	1280x800
+text	results	canvas	601,425,742,437	12.2	8.72	inside	TĂNG CHÍ MẠNG · TĂNG CÔNG
+text	results	canvas	449,503,506,513	12.2	7.47	inside	TĂNG CÔNG
+text	results	canvas	737,341,795,352	13.5	4.95	inside	ĐÁNH NGÃ
+text	results	canvas	648,265,695,274	16.2	6.62	inside	LUNGE
+text	results	canvas	627,333,718,342	16.2	6.99	inside	SHIELD BASH
+text	results	canvas	750,385,783,398	22.9	7.87	inside	−68
+text	results	canvas	745,390,785,403	22.9	12.01	inside	−221
+text	results	canvas	427,391,474,403	16.2	11.72	inside	Gwyneth
+text	results	canvas	427,405,473,414	13.5	11.03	inside	666 / 666
+text	results	canvas	655,434,688,443	16.2	12.02	inside	Thane
+text	results	canvas	646,449,698,458	13.5	11.05	inside	904 / 1040
+text	results	canvas	467,447,504,456	16.2	12.01	inside	Scarlet
+text	results	canvas	462,461,508,470	13.5	10.88	inside	666 / 666
+text	results	canvas	652,502,695,511	16.2	11.93	inside	Hendrik
+text	results	canvas	644,517,702,526	13.5	11.05	inside	1075 / 1643
+text	results	canvas	461,512,496,521	16.2	12.05	inside	Rowan
+text	results	canvas	454,527,501,536	13.5	11.05	inside	490 / 490
+text	results	html	28,16,253,46	12.2	13.57	inside	OATHBOUND
+text	results	html	28,50,219,66	12.2	8.21	inside	CHIẾN DỊCH BÌNH MINH
+text	results	html	317,20,564,41	12.2	13.57	inside	Chương 3 · Đèo Băng Lam
+text	results	html	317,47,574,64	12.2	8.21	inside	11 / 30 ải đã giải phóng · Sức mạnh đội 7375
+text	results	html	879,24,915,40	12.2	8.21	inside	VÀNG
+text	results	html	879,40,913,60	12.2	13.57	inside	1938
+text	results	html	959,24,1046,40	12.2	8.21	inside	KINH NGHIỆM
+text	results	html	959,40,985,60	12.2	13.57	inside	935
+text	results	html	1090,24,1174,40	12.2	8.21	inside	ẤN TIẾN HÓA
+text	results	html	1090,40,1108,60	12.2	13.57	inside	14
+text	results	html	1207,34,1241,50	12.2	9.72	inside	Đặt lại
+text	results	html	28,111,313,127	12.2	9.95	inside	ẢI 3-1 · TỰ CHIẾN THỜI GIAN THỰC
+text	results	html	28,127,194,158	12.2	13.57	inside	Bến Tuyết
+text	results	html	800,124,893,145	12.2	9.72	inside	Tạm dừng · P
+text	results	html	39,183,186,199	12.2	10.56	inside	Thane · ĐANG TUNG CHIÊU
+text	results	html	214,183,285,199	12.2	12.79	inside	Hendrik · 4.2s
+text	results	html	313,183,390,199	12.2	12.79	inside	Gwyneth · 2.8s
+text	results	html	418,183,483,199	12.2	12.79	inside	Scarlet · 3.0s
+text	results	html	511,183,576,199	12.2	12.79	inside	Rowan · 1.0s
+text	results	html	973,133,1152,149	12.2	9.95	inside	GIAO TRANH LIÊN TỤC
+text	results	html	1192,133,1228,149	12.2	9.95	inside	5 vs 5
+text	results	html	973,166,1038,197	12.2	13.57	inside	10.6
+text	results	html	1038,180,1091,194	12.2	8.21	inside	/ 90 giây
+text	results	html	973,204,1167,221	12.2	10.01	inside	5 anh hùng · 0 địch còn chiến đấu
+text	results	html	973,243,1170,259	12.2	9.95	inside	KỸ NĂNG VỪA THI TRIỂN
+text	results	html	973,259,1047,275	12.2	11.24	inside	Thane: Lunge!
+text	results	html	973,333,1232,371	12.2	10.01	inside	Cận chiến áp sát · kỹ năng có hồi chiêu riêng. Chiêu mới ghi
+text	results	html	973,379,1130,393	12.2	9.95	inside	5 BỘ KỸ NĂNG · CUỘN XEM ↓
+text	results	html	973,407,1072,423	12.2	13.57	inside	Thane · 4 kỹ năng
+text	results	html	978,433,1034,449	12.2	9.74	inside	Eviscerate
+text	results	html	978,452,1022,468	12.2	10.04	inside	0.8s · ×1
+text	results	html	1109,433,1144,449	12.2	9.74	inside	Lunge
+text	results	html	1109,452,1153,468	12.2	10.04	inside	5.0s · ×3
+text	results	html	978,482,1033,498	12.2	9.74	inside	Execution
+text	results	html	978,501,1073,517	12.2	10.04	inside	Chí mạng 2/4 · ×2
+text	results	html	1109,482,1141,498	12.2	9.74	inside	Focus
+text	results	html	1109,501,1219,517	12.2	10.04	inside	Nội tại · 10 chí mạng
+text	results	html	973,531,1083,547	12.2	13.57	inside	Hendrik · 4 kỹ năng
+text	results	html	978,557,1061,573	12.2	9.74	inside	Crippling Blow
+text	results	html	978,576,1022,592	12.2	10.04	inside	6.8s · ×2
+text	results	html	1109,557,1174,573	12.2	9.74	inside	Shield Bash
+text	results	html	1109,576,1153,592	12.2	10.04	inside	4.2s · ×3
+text	results	html	978,606,1070,622	12.2	9.74	inside	Sacrificial Shield
+text	results	html	978,625,1073,641	12.2	10.04	inside	Chờ cứu hàng sau
+text	results	html	1109,606,1162,622	12.2	9.74	inside	Standfast
+text	results	html	1109,625,1183,641	12.2	10.04	inside	Chờ HP <40%
+text	results	html	973,655,1088,671	12.2	13.57	inside	Gwyneth · 4 kỹ năng
+text	results	html	978,681,1081,713	12.2	9.74	inside	Thử nghiệm · Loạt bắn
+text	results	html	978,716,1022,732	12.2	10.04	inside	5.4s · ×2
+text	results	html	1109,681,1210,713	12.2	9.74	inside	Thử nghiệm · Đạn níu chân
+text	results	html	1109,716,1153,732	12.2	10.04	inside	2.8s · ×1
+text	results	html	978,746,1084,778	12.2	9.74	inside	Thử nghiệm · Nhịp ngắm
+text	results	html	978,781,1022,797	12.2	10.04	inside	7.3s · ×1
+text	results	html	1109,746,1206,778	12.2	9.74	inside	Thử nghiệm · Tay vững
+text	results	html	1109,781,1198,797	12.2	10.04	inside	Nội tại · luôn bật
+text	results	html	973,811,1076,827	12.2	13.57	outside	Scarlet · 4 kỹ năng
+text	results	html	978,837,1086,869	12.2	9.74	outside	Thử nghiệm · Vòng bùng sáng
+text	results	html	978,872,1022,888	12.2	10.04	outside	5.2s · ×2
+text	results	html	1109,837,1212,869	12.2	9.74	outside	Thử nghiệm · Màn suy lực
+text	results	html	1109,872,1153,888	12.2	10.04	outside	3.0s · ×1
+text	results	html	978,902,1087,934	12.2	9.74	outside	Thử nghiệm · Nhãn sáng
+text	results	html	978,937,1022,953	12.2	10.04	outside	7.0s · ×1
+text	results	html	1109,902,1204,934	12.2	9.74	outside	Thử nghiệm · Tia may mắn
+text	results	html	1109,937,1198,953	12.2	10.04	outside	Nội tại · luôn bật
+text	results	html	973,967,1076,983	12.2	13.57	outside	Rowan · 4 kỹ năng
+text	results	html	978,993,1015,1009	12.2	9.74	outside	Dazzle
+text	results	html	978,1012,1022,1028	12.2	10.04	outside	1.4s · ×1
+text	results	html	1109,993,1185,1009	12.2	9.74	outside	Avian Assault
+text	results	html	1109,1012,1153,1028	12.2	10.04	outside	1.0s · ×2
+text	results	html	978,1042,1073,1058	12.2	9.74	outside	Healthy Supplies
+text	results	html	978,1061,1071,1077	12.2	10.04	outside	Còn 1/3 bình · ×2
+text	results	html	1109,1042,1201,1058	12.2	9.74	outside	Damage Control
+text	results	html	1109,1061,1153,1077	12.2	10.04	outside	0.0s · ×0
+text	results	html	988,624,1037,641	12.2	10.01	inside	Đội bạn
+text	results	html	1035,687,1174,707	12.2	9.72	inside	Tạm dừng / rút lui
+text	results	html	986,739,1130,755	12.2	13.57	inside	Bảng HP · khiên của hai đội
+text	results	html	973,763,1010,779	12.2	13.57	inside	Tướng
+text	results	html	1105,763,1122,779	12.2	13.57	inside	HP
+text	results	html	1188,763,1221,779	12.2	13.57	inside	Khiên
+text	results	html	973,779,1034,795	12.2	13.57	inside	Bạn · Thane
+text	results	html	1105,779,1155,795	12.2	13.57	inside	904/1040
+text	results	html	1188,779,1195,795	12.2	13.57	inside	0
+text	results	html	973,795,1044,811	12.2	13.57	outside	Bạn · Hendrik
+text	results	html	1105,795,1162,811	12.2	13.57	outside	1075/1643
+text	results	html	1188,795,1195,811	12.2	13.57	outside	0
+text	results	html	973,811,1049,827	12.2	13.57	outside	Bạn · Gwyneth
+text	results	html	1105,811,1149,827	12.2	13.57	outside	666/666
+text	results	html	1188,811,1195,827	12.2	13.57	outside	0
+text	results	html	973,827,1037,843	12.2	13.57	outside	Bạn · Scarlet
+text	results	html	1105,827,1149,843	12.2	13.57	outside	666/666
+text	results	html	1188,827,1195,843	12.2	13.57	outside	0
+text	results	html	973,843,1037,859	12.2	13.57	outside	Bạn · Rowan
+text	results	html	1105,843,1149,859	12.2	13.57	outside	490/490
+text	results	html	1188,843,1195,859	12.2	13.57	outside	0
+text	results	html	973,859,1063,875	12.2	13.57	outside	Địch · Thạch Nha
+text	results	html	1105,859,1142,875	12.2	13.57	outside	0/1720
+text	results	html	1188,859,1195,875	12.2	13.57	outside	0
+text	results	html	973,875,1063,891	12.2	13.57	outside	Địch · Thạch Nha
+text	results	html	1105,875,1142,891	12.2	13.57	outside	0/1720
+text	results	html	1188,875,1195,891	12.2	13.57	outside	0
+text	results	html	973,891,1047,907	12.2	13.57	outside	Địch · Gai Độc
+text	results	html	1105,891,1142,907	12.2	13.57	outside	0/1147
+text	results	html	1188,891,1195,907	12.2	13.57	outside	0
+text	results	html	973,907,1053,923	12.2	13.57	outside	Địch · Ảnh Trảo
+text	results	html	1105,907,1142,923	12.2	13.57	outside	0/1147
+text	results	html	1188,907,1195,923	12.2	13.57	outside	0
+text	results	html	973,923,1055,939	12.2	13.57	outside	Địch · Tư Tế Tro
+text	results	html	1105,923,1142,939	12.2	13.57	outside	0/1147
+text	results	html	1188,923,1195,939	12.2	13.57	outside	0
+text	results	html	24,598,162,614	12.2	9.95	inside	NĂM NGƯỜI GIỮ LỜI
+text	results	html	743,598,926,614	12.2	13.57	inside	Đội tự di chuyển · Nhịp đánh riêng
+text	results	html	133,634,185,649	12.2	10.32	inside	1 · TRƯỚC
+text	results	html	97,671,152,691	12.2	13.57	inside	Thane
+text	results	html	97,695,148,709	12.2	8.21	inside	CẬN CHIẾN
+text	results	html	97,718,172,733	12.2	9.63	inside	Cấp 3 · Tinh Anh
+text	results	html	316,634,368,649	12.2	10.32	inside	2 · TRƯỚC
+text	results	html	279,671,353,691	12.2	13.57	inside	Hendrik
+text	results	html	279,695,308,709	12.2	8.21	inside	HỘ VỆ
+text	results	html	279,718,354,733	12.2	9.63	inside	Cấp 5 · Tinh Anh
+text	results	html	514,634,550,649	12.2	10.32	inside	3 · SAU
+text	results	html	462,671,540,691	12.2	13.57	inside	Gwyneth
+text	results	html	462,695,496,709	12.2	8.21	inside	XẠ THỦ
+text	results	html	462,718,532,733	12.2	9.63	inside	Cấp 3 · Thường
+text	results	html	696,634,733,649	12.2	10.32	inside	4 · SAU
+text	results	html	644,671,706,691	12.2	13.57	inside	Scarlet
+text	results	html	644,695,684,709	12.2	8.21	inside	PHÁP SƯ
+text	results	html	644,718,714,733	12.2	9.63	inside	Cấp 3 · Thường
+text	results	html	879,634,915,649	12.2	10.32	inside	5 · SAU
+text	results	html	827,671,888,691	12.2	13.57	inside	Rowan
+text	results	html	827,695,863,709	12.2	8.21	inside	HỖ TRỢ
+text	results	html	827,718,896,733	12.2	9.63	inside	Cấp 1 · Thường
+text	results	html	24,769,197,785	12.2	8.86	inside	Lưu tự động trên trình duyệt này
+text	results	html	569,769,926,785	12.2	8.86	inside	Enter: tiếp tục · Space: chiến đấu · U: nâng cấp · E: tiến h
+text	results	html	540,265,740,281	12.2	11.49	inside	LỜI THỀ ĐƯỢC GIỮ TRỌN
+text	results	html	483,295,797,332	12.2	15.69	inside	Chiến thắng · 3-1
+text	results	html	360,349,920,399	12.2	12.29	inside	Vùng đất này đã được giải phóng. Về bản đồ, chọn tướng rồi b
+text	results	html	474,426,806,447	12.2	12.29	inside	+320 vàng · +120 kinh nghiệm · +2 ấn tiến hóa
+text	results	html	566,503,714,524	12.2	1.23	inside	VỀ BẢN ĐỒ · ENTER
+screen	1538	results	575fad58	drawn
+uncaught	0
+shot	/c/Users/PuuGoo/Desktop/my-game/production/qa/evidence/oathbound-expanded/37-rowan-result.png	354793

@@ -1,0 +1,10 @@
+PASS	records snapshot coordinates without cyclic unit references
+PASS	one visual per actual timed hit, with no additional damage
+PASS	visual record cap bounds repeated impacts
+PASS	simulation-time expiry freezes with unchanged battle clock
+PASS	all skill render branches are finite and rendering mutates no battle state
+PASS	cosmetic anticipation never moves hitbox; death and knockdown suppress pose
+PASS	ordinary projectiles keep legacy renderer
+PASS	Brilliance is a mage passive hit flash, not a cast
+PASS	cosmetic hooks preserve skill damage, timers, events and RNG calls
+unit_total	9

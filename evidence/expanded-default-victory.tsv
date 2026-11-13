@@ -1,0 +1,189 @@
+browser	/c/Program Files/Google/Chrome/Application/chrome.exe
+time	2026-11-13 00:25:36
+render	cheap
+ua	HeadlessChrome/157.0.0.0
+scene	0	title
+state	0	title	{"t":0,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+scene	1	play
+state	1	play	{"t":0.02,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+playinput	4	Space
+saved	613	localstorage	oathbound.save.v1
+scene	614	results
+state	614	results	{"t":10.23,"score":1,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":0,"heroes":[{"maxHP":588,"attack":8
+state	998	results	{"t":16.63,"score":1,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":0,"heroes":[{"maxHP":588,"attack":8
+digits	log	14px "Segoe UI", Arial	tabular	0
+digits	log	19px "Segoe UI", Arial	tabular	0
+digits	log	11px "Segoe UI", Arial	tabular	0
+loop	log	none	no loop() step was marked
+first	log	none	no state.beat
+ending	log	results	gained	Ải đã được giải phóng
+pressure	none	the game set no number state.margin in play
+steptime	998	0.052	2.500
+frametime	10	98.1	264.8	60	10	9
+done	998	results	stop	16.6	3090
+measured	1280x800
+text	results	canvas	633,214,692,225	13.5	7.16	inside	ĐÁNH NGÃ
+text	results	canvas	279,390,331,402	12.2	8.72	inside	TĂNG NHỊP
+text	results	canvas	321,441,374,453	12.2	7.96	inside	TĂNG NHỊP
+text	results	canvas	374,494,420,506	12.2	7.27	inside	HỒI PHỤC
+text	results	canvas	299,503,351,515	12.2	7.48	inside	TĂNG NHỊP
+text	results	canvas	526,319,592,328	16.2	5.39	inside	RIDICULE
+text	results	canvas	338,334,457,343	16.2	8.32	inside	DIVINE BLESSING
+text	results	canvas	273,231,338,240	16.2	6.73	inside	BARRAGE
+text	results	canvas	275,281,421,290	16.2	8.69	inside	DIVINE RETRIBUTION
+text	results	canvas	276,343,375,352	16.2	8.06	inside	PURIFICATION
+text	results	canvas	641,264,681,277	22.9	12.01	inside	−131
+text	results	canvas	647,264,679,277	22.9	12.01	inside	−55
+text	results	canvas	381,381,414,394	22.9	12.22	inside	+84
+text	results	canvas	647,264,679,277	22.9	12.01	inside	−63
+text	results	canvas	290,400,320,409	16.2	11.91	inside	Raine
+text	results	canvas	281,415,328,424	13.5	11.05	inside	490 / 490
+text	results	canvas	328,450,367,459	16.2	12.18	inside	Belinda
+text	results	canvas	324,465,371,474	13.5	10.93	inside	490 / 490
+text	results	canvas	540,488,578,497	16.2	11.91	inside	Estrilda
+text	results	canvas	536,503,582,512	13.5	10.94	inside	588 / 588
+text	results	canvas	381,503,413,512	16.2	11.93	inside	Lucius
+text	results	canvas	374,518,420,527	13.5	11.05	inside	735 / 735
+text	results	canvas	202,512,240,521	16.2	12.05	inside	Fawkes
+text	results	canvas	197,527,244,536	13.5	11.05	inside	490 / 490
+text	results	html	28,16,253,46	12.2	13.57	inside	OATHBOUND
+text	results	html	28,50,219,66	12.2	8.21	inside	CHIẾN DỊCH BÌNH MINH
+text	results	html	317,20,580,41	12.2	13.57	inside	Chương 1 · Rừng Thức Giấc
+text	results	html	317,47,567,64	12.2	8.21	inside	1 / 30 ải đã giải phóng · Sức mạnh đội 4663
+text	results	html	879,24,915,40	12.2	8.21	inside	VÀNG
+text	results	html	879,40,905,60	12.2	13.57	inside	610
+text	results	html	959,24,1046,40	12.2	8.21	inside	KINH NGHIỆM
+text	results	html	959,40,985,60	12.2	13.57	inside	180
+text	results	html	1090,24,1174,40	12.2	8.21	inside	ẤN TIẾN HÓA
+text	results	html	1090,40,1099,60	12.2	13.57	inside	2
+text	results	html	1207,34,1241,50	12.2	9.72	inside	Đặt lại
+text	results	html	28,111,313,127	12.2	9.95	inside	ẢI 1-1 · TỰ CHIẾN THỜI GIAN THỰC
+text	results	html	28,127,247,158	12.2	13.57	inside	Lối Mòn Sương
+text	results	html	800,125,893,146	12.2	9.72	inside	Tạm dừng · P
+text	results	html	39,184,134,200	12.2	10.56	inside	Estrilda · Sẵn sàng
+text	results	html	162,184,252,200	12.2	12.79	inside	Lucius · Sẵn sàng
+text	results	html	280,184,366,200	12.2	12.79	inside	Raine · Sẵn sàng
+text	results	html	394,184,490,200	12.2	12.79	inside	Belinda · Sẵn sàng
+text	results	html	518,184,612,200	12.2	12.79	inside	Fawkes · Sẵn sàng
+text	results	html	973,133,1152,149	12.2	9.95	inside	GIAO TRANH LIÊN TỤC
+text	results	html	1192,133,1228,149	12.2	9.95	inside	5 vs 5
+text	results	html	973,166,1038,197	12.2	13.57	inside	10.2
+text	results	html	1038,180,1091,194	12.2	8.21	inside	/ 90 giây
+text	results	html	973,204,1167,221	12.2	10.01	inside	5 anh hùng · 0 địch còn chiến đấu
+text	results	html	973,243,1170,259	12.2	9.95	inside	KỸ NĂNG VỪA THI TRIỂN
+text	results	html	973,259,1068,275	12.2	11.24	inside	Gai Độc: Tuyệt kỹ!
+text	results	html	973,333,1214,371	12.2	10.01	inside	Cận chiến áp sát · kỹ năng tự dùng với hồi chiêu riêng. Bril
+text	results	html	973,379,1130,393	12.2	9.95	inside	5 BỘ KỸ NĂNG · CUỘN XEM ↓
+text	results	html	973,407,1080,423	12.2	13.57	inside	Estrilda · 4 kỹ năng
+text	results	html	978,433,1008,449	12.2	9.74	inside	Joust
+text	results	html	978,452,1022,468	12.2	10.04	inside	0.0s · ×1
+text	results	html	1109,433,1183,449	12.2	9.74	inside	Royal Charge
+text	results	html	1109,452,1153,468	12.2	10.04	inside	0.0s · ×1
+text	results	html	978,482,1016,498	12.2	9.74	inside	Inspire
+text	results	html	978,501,1022,517	12.2	10.04	inside	0.0s · ×1
+text	results	html	1109,482,1154,498	12.2	9.74	inside	Ridicule
+text	results	html	1109,501,1153,517	12.2	10.04	inside	2.9s · ×2
+text	results	html	973,531,1073,547	12.2	13.57	inside	Lucius · 4 kỹ năng
+text	results	html	978,557,1090,573	12.2	9.74	inside	Heaven’s Protection
+text	results	html	978,576,1022,592	12.2	10.04	inside	0.0s · ×1
+text	results	html	1109,557,1181,573	12.2	9.74	inside	Divine Strike
+text	results	html	1109,576,1153,592	12.2	10.04	inside	0.0s · ×1
+text	results	html	978,606,1064,622	12.2	9.74	inside	Divine Blessing
+text	results	html	978,625,1022,641	12.2	10.04	inside	3.7s · ×2
+text	results	html	1109,606,1189,622	12.2	9.74	inside	Blessed Shield
+text	results	html	1109,625,1153,641	12.2	10.04	inside	0.0s · ×1
+text	results	html	973,655,1069,671	12.2	13.57	inside	Raine · 4 kỹ năng
+text	results	html	978,681,1019,697	12.2	9.74	inside	Cripple
+text	results	html	978,700,1022,716	12.2	10.04	inside	0.0s · ×1
+text	results	html	1109,681,1153,697	12.2	9.74	inside	Barrage
+text	results	html	1109,700,1153,716	12.2	10.04	inside	3.1s · ×2
+text	results	html	978,730,1024,746	12.2	9.74	inside	Lock On
+text	results	html	978,749,1022,765	12.2	10.04	inside	0.0s · ×1
+text	results	html	1109,730,1148,746	12.2	9.74	inside	Exploit
+text	results	html	1109,749,1198,765	12.2	10.04	inside	Nội tại · luôn bật
+text	results	html	973,779,1080,795	12.2	13.57	inside	Belinda · 4 kỹ năng
+text	results	html	978,805,1046,821	12.2	9.74	outside	Divine Light
+text	results	html	978,824,1022,840	12.2	10.04	outside	0.0s · ×1
+text	results	html	1109,805,1213,821	12.2	9.74	outside	Divine Retribution
+text	results	html	1109,824,1153,840	12.2	10.04	outside	2.5s · ×2
+text	results	html	978,854,1030,870	12.2	9.74	outside	Brilliance
+text	results	html	978,873,1081,889	12.2	10.04	outside	Nội tại · 0 chí mạng
+text	results	html	1109,854,1155,870	12.2	9.74	outside	Blessing
+text	results	html	1109,873,1153,889	12.2	10.04	outside	0.0s · ×1
+text	results	html	973,903,1078,919	12.2	13.57	outside	Fawkes · 4 kỹ năng
+text	results	html	978,929,1044,945	12.2	9.74	outside	Purification
+text	results	html	978,948,1022,964	12.2	10.04	outside	5.7s · ×2
+text	results	html	1109,929,1142,945	12.2	9.74	outside	Abate
+text	results	html	1109,948,1153,964	12.2	10.04	outside	0.0s · ×1
+text	results	html	978,978,1022,994	12.2	9.74	outside	Confine
+text	results	html	978,997,1022,1013	12.2	10.04	outside	2.3s · ×1
+text	results	html	1109,978,1167,994	12.2	9.74	outside	Silver Bolt
+text	results	html	1109,997,1198,1013	12.2	10.04	outside	Nội tại · luôn bật
+text	results	html	988,624,1037,641	12.2	10.01	inside	Đội bạn
+text	results	html	1035,687,1174,707	12.2	9.72	inside	Tạm dừng / rút lui
+text	results	html	986,739,1130,755	12.2	13.57	inside	Bảng HP · khiên của hai đội
+text	results	html	973,763,1010,779	12.2	13.57	inside	Tướng
+text	results	html	1116,763,1132,779	12.2	13.57	inside	HP
+text	results	html	1185,763,1217,779	12.2	13.57	inside	Khiên
+text	results	html	973,779,1040,795	12.2	13.57	inside	Bạn · Estrilda
+text	results	html	1116,779,1159,795	12.2	13.57	inside	588/588
+text	results	html	1185,779,1191,795	12.2	13.57	inside	0
+text	results	html	973,795,1035,811	12.2	13.57	outside	Bạn · Lucius
+text	results	html	1116,795,1159,811	12.2	13.57	outside	735/735
+text	results	html	1185,795,1191,811	12.2	13.57	outside	0
+text	results	html	973,811,1031,827	12.2	13.57	outside	Bạn · Raine
+text	results	html	1116,811,1159,827	12.2	13.57	outside	490/490
+text	results	html	1185,811,1191,827	12.2	13.57	outside	0
+text	results	html	973,827,1041,843	12.2	13.57	outside	Bạn · Belinda
+text	results	html	1116,827,1159,843	12.2	13.57	outside	490/490
+text	results	html	1185,827,1191,843	12.2	13.57	outside	0
+text	results	html	973,843,1040,859	12.2	13.57	outside	Bạn · Fawkes
+text	results	html	1116,843,1159,859	12.2	13.57	outside	490/490
+text	results	html	1185,843,1191,859	12.2	13.57	outside	0
+text	results	html	973,859,1063,875	12.2	13.57	outside	Địch · Thạch Nha
+text	results	html	1116,859,1146,875	12.2	13.57	outside	0/485
+text	results	html	1185,859,1191,875	12.2	13.57	outside	0
+text	results	html	973,875,1063,891	12.2	13.57	outside	Địch · Thạch Nha
+text	results	html	1116,875,1146,891	12.2	13.57	outside	0/485
+text	results	html	1185,875,1191,891	12.2	13.57	outside	0
+text	results	html	973,891,1047,907	12.2	13.57	outside	Địch · Gai Độc
+text	results	html	1116,891,1146,907	12.2	13.57	outside	0/323
+text	results	html	1185,891,1191,907	12.2	13.57	outside	0
+text	results	html	973,907,1047,923	12.2	13.57	outside	Địch · Gai Độc
+text	results	html	1116,907,1146,923	12.2	13.57	outside	0/323
+text	results	html	1185,907,1191,923	12.2	13.57	outside	0
+text	results	html	973,923,1047,939	12.2	13.57	outside	Địch · Gai Độc
+text	results	html	1116,923,1146,939	12.2	13.57	outside	0/323
+text	results	html	1185,923,1191,939	12.2	13.57	outside	0
+text	results	html	24,598,162,614	12.2	9.95	inside	NĂM NGƯỜI GIỮ LỜI
+text	results	html	743,598,926,614	12.2	13.57	inside	Đội tự di chuyển · Nhịp đánh riêng
+text	results	html	133,634,185,649	12.2	10.32	inside	1 · TRƯỚC
+text	results	html	97,671,167,691	12.2	13.57	inside	Estrilda
+text	results	html	97,695,119,709	12.2	8.21	inside	KỴ SĨ
+text	results	html	97,718,167,733	12.2	9.63	inside	Cấp 1 · Thường
+text	results	html	316,634,368,649	12.2	10.32	inside	2 · TRƯỚC
+text	results	html	279,671,338,691	12.2	13.57	inside	Lucius
+text	results	html	279,695,362,709	12.2	8.21	inside	HỘ VỆ · HỒI PHỤC
+text	results	html	279,718,349,733	12.2	9.63	inside	Cấp 1 · Thường
+text	results	html	514,634,550,649	12.2	10.32	inside	3 · SAU
+text	results	html	462,671,513,691	12.2	13.57	inside	Raine
+text	results	html	462,695,540,709	12.2	8.21	inside	XẠ THỦ · HỖ TRỢ
+text	results	html	462,718,532,733	12.2	9.63	inside	Cấp 1 · Thường
+text	results	html	696,634,733,649	12.2	10.32	inside	4 · SAU
+text	results	html	644,671,712,691	12.2	13.57	inside	Belinda
+text	results	html	644,695,684,709	12.2	8.21	inside	PHÁP SƯ
+text	results	html	644,718,714,733	12.2	9.63	inside	Cấp 1 · Thường
+text	results	html	879,634,915,649	12.2	10.32	inside	5 · SAU
+text	results	html	827,665,892,685	12.2	13.57	inside	Fawkes
+text	results	html	827,689,903,715	12.2	8.21	inside	XẠ THỦ · KHỐNG CHẾ
+text	results	html	827,724,896,739	12.2	9.63	inside	Cấp 1 · Thường
+text	results	html	24,769,197,785	12.2	8.86	inside	Lưu tự động trên trình duyệt này
+text	results	html	569,769,926,785	12.2	8.86	inside	Enter: tiếp tục · Space: chiến đấu · U: nâng cấp · E: tiến h
+text	results	html	540,265,740,281	12.2	11.49	inside	LỜI THỀ ĐƯỢC GIỮ TRỌN
+text	results	html	485,295,795,332	12.2	15.69	inside	Chiến thắng · 1-1
+text	results	html	360,349,920,399	12.2	12.29	inside	Vùng đất này đã được giải phóng. Về bản đồ, chọn tướng rồi b
+text	results	html	478,426,802,447	12.2	12.29	inside	+160 vàng · +60 kinh nghiệm · +2 ấn tiến hóa
+text	results	html	566,503,714,524	12.2	1.23	inside	VỀ BẢN ĐỒ · ENTER
+screen	998	results	69d4b08e	drawn
+uncaught	0
+shot	/c/Users/PuuGoo/Desktop/my-game/production/qa/evidence/oathbound-expanded/08-default-victory.png	345950

@@ -1,0 +1,182 @@
+FAIL	awakened index14 owns separate two actives and two reactive mechanics	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'prototype-mage'
+- 'eluard-awakened'
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:5:145
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:3:526)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	all awakened numeric adaptation knobs are editable finite config records	AssertionError [ERR_ASSERTION]: fracturedCooldown
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:6:596
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:3:526)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Fractured Reality hits450percent then ten drift create two150percent pulses and two progress not an instant full realm	AssertionError [ERR_ASSERTION]: fracturedReality
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:4:1126)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:7:152
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:3:526)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Fate corrects a real failing crit check not every attack and never consumes gameplay RNG for lookups	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+false !== true
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:8:184
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:3:526)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:8:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Fate refuses insufficient configured proficiency and unavailable caster	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 0
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:9:337
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:3:526)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Fate respects per-ally five and total ten corrections in two simulation seconds then resets	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== NaN
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:10:536
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:3:526)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	full divergence destroys ordinary and divine shields only on actual three-second realm pulse	AssertionError [ERR_ASSERTION]: fracturedReality
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:4:1126)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:11:162
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:3:526)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Astral Desolation releases260percent and eight150percent ticks not immediate burn	AssertionError [ERR_ASSERTION]: astralDesolation
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:4:1126)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:12:115
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:3:526)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:12:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	attribute strip is per initial stats bounded50percent and boss maxHP is never stripped	AssertionError [ERR_ASSERTION]: astralDesolation
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:4:1126)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:13:203
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:3:526)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:13:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	decree refresh replaces own timer and invalid targets receive no tick or maxHP strip	AssertionError [ERR_ASSERTION]: astralDesolation
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:4:1126)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:14:118
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:3:526)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Negate nullifies actual lethal impact twice with brief unavailable state not resurrection or healing	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+9892 !== 0
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:15:413
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:3:526)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	nonlethal shielded and already dead hits do not spend fatal nullifications	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 0
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:16:181
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:3:526)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Negate respects caster availability enemy-side mirroring and actual ally refuge cancels actions	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+0 !== 1
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:17:469
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:3:526)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:17:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	awakened refuses base Eluard and role spells, projections are records not additional combatants	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+true !== false
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:18:196
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:3:526)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-eluard-skills-unit.cjs:18:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+unit_total	0
+unit_failed	14

@@ -1,0 +1,244 @@
+FAIL	Hendrik has two timed attacks and two once-per-battle reactive skills	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'prototype-guardian'
+- 'hendrik'
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:19:108
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:19:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	all Hendrik numbers are finite editable configuration records	AssertionError [ERR_ASSERTION]: cripplingBlowCooldown
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:20:562
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:20:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Crippling Blow hits only surrounding enemies for 140 percent	AssertionError [ERR_ASSERTION]: cripplingBlow
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:16:78)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:21:94
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:21:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Crippling Blow stun grows in lost-health steps with a configured cap	AssertionError [ERR_ASSERTION]: cripplingBlow
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:16:78)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:22:118
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:22:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Shield Bash damages one target, knocks it back and stuns without touching remote foes	AssertionError [ERR_ASSERTION]: shieldBash
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:16:78)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:23:137
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:23:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Shield Bash respects control immunity for both stun and push	AssertionError [ERR_ASSERTION]: shieldBash
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:16:78)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:24:159
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:24:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	fatal backline hit triggers Sacrificial Shield before death and guardian takes damage	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+0 !== 300
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:25:198
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:25:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	nonfatal or front-row damage never spends the rescue	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ undefined
+- false
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:26:208
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:26:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	shield absorption is considered before deciding whether an incoming hit is fatal	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ undefined
+- false
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:27:230
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:27:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	rescue redirects later nonfatal hits then expires and cannot activate a second time	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+0 !== 300
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:28:227
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:28:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	a dead or confined guardian cannot rescue, and never revives a dead ally	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ undefined
+- false
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:29:345
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:29:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	redirect damage applies guardian mitigation and shield without double offensive crit or variance	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+1000 !== 742
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:30:319
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:30:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	two Hendriks cannot bounce redirected damage in a rescue recursion	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+0 !== 300
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:31:280
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:31:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Standfast only activates below forty percent after a nonlethal hit, once per battle	TypeError: f.sys.afterDamage is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:32:159
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:32:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Standfast heals six percent max HP each second, not once per render or partial tick	TypeError: f.sys.afterDamage is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:33:136
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:33:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Standfast stops at ninety percent with no extra heal and reduction disappears	TypeError: f.sys.afterDamage is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:34:130
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:34:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Standfast stops at ten seconds even if incoming damage prevents reaching ninety percent	TypeError: f.sys.afterDamage is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:35:140
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:35:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	death or control cancels Standfast healing without rearming its once-per-battle use	TypeError: f.sys.afterDamage is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:36:182
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:36:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	no tick means no healing, guard countdown or defensive timer advance	TypeError: f.sys.afterDamage is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:37:175
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:9:50)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\hendrik-skills-unit.cjs:37:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+PASS	reactive skills are never offered as cooldown attacks or resolved manually
+unit_total	1
+unit_failed	19

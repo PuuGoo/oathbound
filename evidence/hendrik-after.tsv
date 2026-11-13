@@ -1,0 +1,22 @@
+PASS	Hendrik has two timed attacks and two once-per-battle reactive skills
+PASS	all Hendrik numbers are finite editable configuration records
+PASS	Crippling Blow hits only surrounding enemies for 140 percent
+PASS	Crippling Blow stun grows in lost-health steps with a configured cap
+PASS	Shield Bash damages one target, knocks it back and stuns without touching remote foes
+PASS	Shield Bash respects control immunity for both stun and push
+PASS	fatal backline hit triggers Sacrificial Shield before death and guardian takes damage
+PASS	nonfatal or front-row damage never spends the rescue
+PASS	shield absorption is considered before deciding whether an incoming hit is fatal
+PASS	rescue redirects later nonfatal hits then expires and cannot activate a second time
+PASS	a dead or confined guardian cannot rescue, and never revives a dead ally
+PASS	redirect damage applies guardian mitigation and shield without double offensive crit or variance
+PASS	two Hendriks cannot bounce redirected damage in a rescue recursion
+PASS	Standfast only activates below forty percent after a nonlethal hit, once per battle
+PASS	Standfast heals six percent max HP each second, not once per render or partial tick
+PASS	Standfast stops at ninety percent with no extra heal and reduction disappears
+PASS	Standfast stops at ten seconds even if incoming damage prevents reaching ninety percent
+PASS	death or control cancels Standfast healing without rearming its once-per-battle use
+PASS	no tick means no healing, guard countdown or defensive timer advance
+PASS	reactive skills are never offered as cooldown attacks or resolved manually
+unit_total	20
+unit_failed	0

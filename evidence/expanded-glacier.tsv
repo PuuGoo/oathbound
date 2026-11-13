@@ -1,0 +1,106 @@
+browser	/c/Program Files/Google/Chrome/Application/chrome.exe
+time	2026-11-13 00:21:46
+render	cheap
+ua	HeadlessChrome/157.0.0.0
+scene	0	title
+state	0	title	{"t":0,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+scene	1	play
+state	1	play	{"t":0.02,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+playinput	4	click:text=03_·_Đèo_Băng_Lam
+state	102	play	{"t":1.7,"score":0,"gained":"","chapter":2,"selectedStage":10,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+digits	log	14px "Segoe UI", Arial	tabular	0
+loop	log	none	no loop() step was marked
+first	log	none	no state.beat
+pressure	none	the game set no number state.margin in play
+steptime	102	0.007	0.200
+frametime	1	244.8	244.8	60	1	1
+done	102	play	stop	1.7	1578
+measured	1280x800
+text	play	canvas	114,478,133,488	17.6	8.11	inside	3-1
+text	play	canvas	100,510,149,520	16.2	5.42	inside	Chưa mở
+text	play	canvas	265,426,286,436	17.6	10.98	inside	3-2
+text	play	canvas	251,458,300,468	16.2	5.80	inside	Chưa mở
+text	play	canvas	404,474,424,484	17.6	10.58	inside	3-3
+text	play	canvas	390,506,439,516	16.2	5.41	inside	Chưa mở
+text	play	canvas	551,395,572,405	17.6	10.27	inside	3-4
+text	play	canvas	537,427,586,437	16.2	5.80	inside	Chưa mở
+text	play	canvas	725,342,745,352	17.6	10.27	inside	3-5
+text	play	canvas	711,374,760,384	16.2	2.74	inside	Chưa mở
+text	play	canvas	329,543,602,558	16.2	8.46	inside	Chọn dấu mốc để xem đội địch và phần thưởng
+text	play	html	28,16,253,46	12.2	13.57	inside	OATHBOUND
+text	play	html	28,50,219,66	12.2	8.21	inside	CHIẾN DỊCH BÌNH MINH
+text	play	html	317,20,564,41	12.2	13.57	inside	Chương 3 · Đèo Băng Lam
+text	play	html	317,47,567,64	12.2	8.21	inside	0 / 30 ải đã giải phóng · Sức mạnh đội 4663
+text	play	html	879,24,915,40	12.2	8.21	inside	VÀNG
+text	play	html	879,40,905,60	12.2	13.57	inside	450
+text	play	html	959,24,1046,40	12.2	8.21	inside	KINH NGHIỆM
+text	play	html	959,40,985,60	12.2	13.57	inside	120
+text	play	html	1090,24,1174,40	12.2	8.21	inside	ẤN TIẾN HÓA
+text	play	html	1090,40,1099,60	12.2	13.57	inside	0
+text	play	html	1207,34,1241,50	12.2	9.72	inside	Đặt lại
+text	play	html	32,110,300,126	12.2	9.95	inside	HÀNH TRÌNH CỦA NGƯỜI GIỮ LỜI
+text	play	html	32,133,256,168	12.2	13.57	inside	Đèo Băng Lam
+text	play	html	32,175,406,194	12.2	11.25	inside	Chương 3 · Địch mạnh dần qua từng ải · Trùm ở cuối chương
+text	play	html	42,215,130,229	12.2	12.95	inside	01 · Rừng Thức Giấc
+text	play	html	154,215,233,229	12.2	12.95	inside	02 · Thành Tro Tàn
+text	play	html	257,215,340,229	12.2	9.49	inside	03 · Đèo Băng Lam
+text	play	html	364,215,437,229	12.2	12.95	inside	04 · Sa Mạc Kính
+text	play	html	461,215,531,229	12.2	12.95	inside	05 · Vực Tinh Tú
+text	play	html	555,215,672,229	12.2	12.95	inside	06 · Thánh Điện Bình Minh
+text	play	html	973,133,1023,149	12.2	9.95	inside	ẢI 3-1
+text	play	html	1124,133,1228,149	12.2	9.95	inside	THỬ THÁCH MỚI
+text	play	html	973,160,1121,187	12.2	13.57	inside	Bến Tuyết
+text	play	html	973,194,1228,232	12.2	10.01	inside	Thạch Nha · Thạch Nha · Gai Độc · Ảnh Trảo · Tư Tế Tro
+text	play	html	1017,248,1058,272	12.2	13.57	inside	4663
+text	play	html	1000,276,1074,292	12.2	8.21	inside	ĐỘI CỦA BẠN
+text	play	html	1146,248,1198,272	12.2	13.57	inside	11216
+text	play	html	1136,276,1207,292	12.2	8.21	inside	ĐỘI ĐỐI THỦ
+text	play	html	973,305,1029,324	12.2	13.57	inside	320 vàng
+text	play	html	1044,305,1090,324	12.2	13.57	inside	120 KN
+text	play	html	1105,305,1131,324	12.2	13.57	inside	2 ấn
+text	play	html	995,341,1214,381	12.2	1.05	inside	CHƯA MỞ · VƯỢT CHƯƠNG TRƯỚC
+text	play	html	973,409,1084,430	12.2	13.57	inside	Estrilda · Cấp 1
+text	play	html	1167,411,1236,427	12.2	8.21	inside	Khởi Nguyên
+text	play	html	973,438,1065,454	12.2	10.01	inside	HP 588 · Công 86
+text	play	html	1003,522,1071,538	12.2	9.72	inside	Nâng cấp · U
+text	play	html	993,538,1081,554	12.2	5.87	inside	55 vàng + 12 KN
+text	play	html	1142,514,1202,530	12.2	3.52	inside	Tiến hóa · E
+text	play	html	1120,530,1224,562	12.2	5.87	inside	Cấp 3 · 180 vàng · 4 ấn
+text	play	html	973,581,1003,597	12.2	10.78	inside	Joust
+text	play	html	973,598,1178,614	12.2	8.21	inside	5 đòn 60% + kết thúc 150%; đánh ngã.
+text	play	html	973,619,1047,635	12.2	10.78	inside	Royal Charge
+text	play	html	973,636,1216,668	12.2	8.21	inside	Lao xuyên, 200% công; đánh ngã; miễn khống chế khi lao.
+text	play	html	973,673,1011,689	12.2	10.78	inside	Inspire
+text	play	html	973,690,1152,706	12.2	8.21	inside	Toàn đội +30% công trong 8 giây.
+text	play	html	973,711,1018,727	12.2	10.78	inside	Ridicule
+text	play	html	973,728,1219,760	12.2	8.21	inside	150% mục tiêu + 60% vùng gần; giảm 14% sát thương địch trong
+text	play	html	973,768,1195,784	12.2	8.91	inside	Mẹo: để hộ vệ phía trước, trị liệu phía sau.
+text	play	html	24,602,162,618	12.2	9.95	inside	NĂM NGƯỜI GIỮ LỜI
+text	play	html	562,602,735,618	12.2	13.57	inside	Chọn tướng để xem và nâng cấp
+text	play	html	760,602,838,618	12.2	9.72	inside	Bộ sưu tập · 22
+text	play	html	874,602,915,618	12.2	9.72	inside	Xếp đội
+text	play	html	133,643,185,658	12.2	10.32	inside	1 · TRƯỚC
+text	play	html	97,680,167,700	12.2	13.57	inside	Estrilda
+text	play	html	97,704,119,718	12.2	8.21	inside	KỴ SĨ
+text	play	html	97,727,167,742	12.2	9.63	inside	Cấp 1 · Thường
+text	play	html	316,643,368,658	12.2	10.32	inside	2 · TRƯỚC
+text	play	html	279,680,338,700	12.2	13.57	inside	Lucius
+text	play	html	279,704,362,718	12.2	8.21	inside	HỘ VỆ · HỒI PHỤC
+text	play	html	279,727,349,742	12.2	9.63	inside	Cấp 1 · Thường
+text	play	html	514,643,550,658	12.2	10.32	inside	3 · SAU
+text	play	html	462,680,513,700	12.2	13.57	inside	Raine
+text	play	html	462,704,540,718	12.2	8.21	inside	XẠ THỦ · HỖ TRỢ
+text	play	html	462,727,532,742	12.2	9.63	inside	Cấp 1 · Thường
+text	play	html	696,643,733,658	12.2	10.32	inside	4 · SAU
+text	play	html	644,680,712,700	12.2	13.57	inside	Belinda
+text	play	html	644,704,684,718	12.2	8.21	inside	PHÁP SƯ
+text	play	html	644,727,714,742	12.2	9.63	inside	Cấp 1 · Thường
+text	play	html	879,643,915,658	12.2	10.32	inside	5 · SAU
+text	play	html	827,674,892,694	12.2	13.57	inside	Fawkes
+text	play	html	827,698,903,724	12.2	8.21	inside	XẠ THỦ · KHỐNG CHẾ
+text	play	html	827,733,896,748	12.2	9.63	inside	Cấp 1 · Thường
+text	play	html	24,778,197,794	12.2	8.86	inside	Lưu tự động trên trình duyệt này
+text	play	html	569,778,926,794	12.2	8.86	inside	Enter: tiếp tục · Space: chiến đấu · U: nâng cấp · E: tiến h
+screen	102	play	3c104a93	drawn
+uncaught	0
+shot	/c/Users/PuuGoo/Desktop/my-game/production/qa/evidence/oathbound-expanded/04-glacier-preview.png	424623

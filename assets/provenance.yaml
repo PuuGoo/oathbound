@@ -26,9 +26,226 @@
   date: 2026-11-12
   ships: false
   usage: "Local runtime; identical derived PNG embedded in belinda-sprite.js."
+- path: assets/raine-atlas.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/3.Raine/preview_atlas_white_bg_3.Raine.png"
+    sha256: "37fb386643b0f0fe47cf482877c33090886266cb9307fc02d8588784e5a254d3"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public rights unverified."}
+  transformation: "Edge-connected near-white removal, measured body anchors/nonuniform crops, detached crop-edge pruning; tools/import-team.cjs. Inferred6rows, repeated skill poses where no dedicated row supplied."
+  date: 2026-11-12
+  ships: false
+  usage: "Local derived PNG, identical embedded copy in team-sprites.js."
+- path: assets/fawkes-atlas.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/4.Fawkes/preview_atlas_white_bg4Fawkes.png"
+    sha256: "86f62bcce284338a1b4413e7117e99c971fc502cf6dd56955e9e4165e70dc35b"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public rights unverified."}
+  transformation: "Same importer; inferred8rows incl run/coffin/spirit poses; overlapping detached effects are approximate."
+  date: 2026-11-12
+  ships: false
+  usage: "Local derived PNG, identical embedded copy in team-sprites.js."
+- path: assets/lucius-atlas.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/5.Lucius/preview_atlas_white_bgLucius.png"
+    sha256: "c222557332955f8e58bd99ad9b3f581cece3aa8bfef2ab9f0530fce11416b7bc"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public rights unverified."}
+  transformation: "Same importer; inferred7rows incl run/shield/blessing. White armor protected where enclosed; matte approximate."
+  date: 2026-11-12
+  ships: false
+  usage: "Local derived PNG, identical embedded copy in team-sprites.js."
 - path: assets/notes.md
   origin: code
   tool: "Claude Code asset mapping notes"
   model: "tinb/gpt-6.1-sol"
   date: 2026-11-11
   ships: false
+- path: assets/expanded-thane.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/6.Thane/Thane’s Fantasy Combat Sprite Atlas.png"
+    sha256: "c638c18c48cecd0dca382af8661c4d53a30a951893e2d58107eeb1a3583fe979"
+    dimensions: "1536x1024"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public distribution rights unverified."}
+  transformation: "tools/import-expanded.cjs: low-alpha noise cleanup, measured nonuniform crops, detached crop-edge pruning, fixed body scale and 256px cells anchored at x128/ground220. Gray canvas already has alpha. Characterless dash and faded death tail excluded. Oversize effect margins clipped. Numbered aliases: skill1=skillDash, skill2=skillSwords, skill3=skillArc; inferred labels, not an authored skill manifest."
+  date: 2026-11-13
+  ships: false
+  usage: "Local derived PNG; identical embedded copy in expanded-sprites.js. Source/derived hashes, clip counts and limitations retained in evidence/expanded-import.tsv."
+- path: assets/expanded-hendrik.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/7.Hendrik/preview_atlas_white_bgHendrik.png"
+    sha256: "cdcc958e3cbf50fb43510bbb433dc462a3acaa49a3393ce049d3c977241b59b2"
+    dimensions: "1536x1024"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public distribution rights unverified."}
+  transformation: "tools/import-expanded.cjs: edge-connected white cleanup, measured nonuniform crops, detached crop-edge pruning, fixed body scale and 256px cells anchored at x128/ground220. Slam ends before detached rocks; bottom VFX-only row excluded. Oversize effect margins clip. Numbered aliases: skill1=skillShield, skill2=skillSlam; inferred action labels, not an authored skill manifest."
+  date: 2026-11-13
+  ships: false
+  usage: "Local derived PNG; identical embedded copy in expanded-sprites.js. Full import facts retained in evidence/expanded-import.tsv."
+- path: assets/expanded-rowan.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/8.Rowan/preview_atlas_white_bgRowan.png"
+    sha256: "2e466b8d981568a3f5c9a386208f93fa1867deafef6114c12dc024694c48849b"
+    dimensions: "830x1024"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public distribution rights unverified."}
+  transformation: "tools/import-expanded.cjs: edge-connected white cleanup, measured nonuniform crops, detached crop-edge pruning, fixed body scale and 256px cells anchored at x128/ground220. Right-edge partial effects excluded; only visible staff action available. Alias skill1=skillStaff; inferred label, not an authored full skill manifest. Oversize effect margins clip."
+  date: 2026-11-13
+  ships: false
+  usage: "Local derived PNG; identical embedded copy in expanded-sprites.js. Full import facts retained in evidence/expanded-import.tsv."
+- path: assets/expanded-gwyneth.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/9.Gwyneth/preview_atlas_white_bgGwyneth.png"
+    sha256: "026f252114b037dad83f45720ed76d7288e51cb1a555dff028112a1cd3f3b24e"
+    dimensions: "1536x1024"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public distribution rights unverified."}
+  transformation: "tools/import-expanded.cjs: edge-connected white cleanup, measured nonuniform crops, detached crop-edge pruning, fixed body scale and 256px cells anchored at x128/ground220. Projectile/target/pillar VFX-only cells excluded. Aliases skill1=skillVolley, skill2=skillFlame, skill3=skillPillar; inferred action labels, not an authored skill manifest. Oversize effect margins clip."
+  date: 2026-11-13
+  ships: false
+  usage: "Local derived PNG; identical embedded copy in expanded-sprites.js. Full import facts retained in evidence/expanded-import.tsv."
+- path: assets/expanded-rosaline.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/10.Rosaline/rosaline_preview_atlas_white_bgRosaline.png"
+    sha256: "84170facf2fccb093ff30caa5dc8479cb7147bf645a3d147d43cbd1f26829e4b"
+    dimensions: "1536x1024"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public distribution rights unverified."}
+  transformation: "tools/import-expanded.cjs: edge-connected white cleanup, measured nonuniform crops, detached crop-edge pruning, fixed body scale and 256px cells anchored at x128/ground220. Bottom loose crockery and aura-only cells excluded. Alias skill1=skillTea; inferred action label, not an authored skill manifest. Oversize effect margins clipped."
+  date: 2026-11-13
+  ships: false
+  usage: "Local derived PNG; identical embedded copy in expanded-sprites.js. Full import facts retained in evidence/expanded-import.tsv."
+- path: assets/expanded-cecilia.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/11.Cecilia/reference_review_white_bgCecilia.png"
+    sha256: "6d2b001503b4c009144a1e08a6850055232a660b032b3871acb3543b79817adf"
+    dimensions: "1400x1560"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public distribution rights unverified."}
+  transformation: "tools/import-expanded.cjs: edge-connected white cleanup, complete portrait crop, scale 0.13, 256px cell anchored at x128/ground220. STATIC REFERENCE ONLY: one portrait, no authored animation. attack, hit, death and skill1 explicitly alias the single idle frame. No synthetic animation or full skill claimed."
+  date: 2026-11-13
+  ships: false
+  usage: "Local static-reference fallback; identical embedded copy in expanded-sprites.js. Explicit alias limitations and full import facts retained in evidence/expanded-import.tsv."
+- path: assets/expanded-rigby.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/12.Rigby/preview_atlas_white_bgRigby.png"
+    sha256: "b1b086da60b61f5124db026176a4734d75d4f97a40b3af6f8385904c417b2f76"
+    dimensions: "1536x1024"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public distribution rights unverified."}
+  transformation: "tools/import-expanded.cjs: edge-connected white cleanup, measured nonuniform crops, detached crop-edge pruning, fixed body scale and 256px cells anchored at x128/ground220. Rolling barrels/projectiles/explosions excluded; barrel action retains four character windup poses only. Aliases skill1=skillBarrel, skill2=skillDrink, skill3=skillSpit, skill4=skillRoll; inferred labels, not authored full skills. Oversize effect margins clipped."
+  date: 2026-11-13
+  ships: false
+  usage: "Local derived PNG; identical embedded copy in expanded-sprites.js. Full import facts retained in evidence/expanded-import.tsv."
+- path: assets/expanded-oscar.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/13.Oscar/preview_atlas_white_bgOscar.png"
+    sha256: "b4e3c13042c0367eebeb61605a93609690a989903acf26ad9e3199499e892c8d"
+    dimensions: "1536x657"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public distribution rights unverified."}
+  transformation: "tools/import-expanded.cjs: edge-connected white cleanup, measured nonuniform crops, detached crop-edge pruning, fixed body scale and 256px cells anchored at x128/ground220. No attack/skill action supplied: attack and skill1 explicitly alias idle. First death pose is head-cropped in the original and excluded. No authored attack or full skill claimed."
+  date: 2026-11-13
+  ships: false
+  usage: "Local derived PNG with explicit idle fallback aliases; identical embedded copy in expanded-sprites.js. Full import facts retained in evidence/expanded-import.tsv."
+- path: assets/expanded-eluard.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/14.Eluard/preview_atlas_white_bgEluard.png"
+    sha256: "49f7dd3e2dc581c50fe278b5e998d4ea6ea2a7da39879df5828f822b29bac22e"
+    dimensions: "4032x5760"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public distribution rights unverified."}
+  transformation: "tools/import-expanded.cjs: edge-connected white cleanup, one complete portrait crop, scale 0.14, 256px cell anchored at x128/ground220. STATIC REFERENCE ONLY: 3x4 source repeats one portrait, not action animation. attack, hit, death and skill1 explicitly alias single idle frame; no synthetic animation or full skill claimed. Distinct from awakened Catalyst of Fate."
+  date: 2026-11-13
+  ships: false
+  usage: "Local static-reference fallback; identical embedded copy in expanded-sprites.js. Explicit alias limitations and full import facts retained in evidence/expanded-import.tsv."
+- path: assets/expanded-eluard-awakened.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/15.EluardAwakend/preview_atlas_white_bgEluardAwakend.png"
+    sha256: "7b929cef0ebeada5016ec7633758651ce42ee41f6cc6425a44c4d6080457e834"
+    dimensions: "1536x1024"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public distribution rights unverified."}
+  transformation: "tools/import-expanded.cjs: edge-connected white cleanup, measured nonuniform crops, detached crop-edge pruning, fixed body scale and 256px cells anchored at x128/ground220. Catalyst of Fate identity from saved HTML filename. Hit reuses standing/crouch subset of shared death row. Right-side VFX-only columns excluded; large dome/effect margins clipped. Aliases skill1=skillFate, skill2=skillHourglass, skill3=skillCards, skill4=skillDome; inferred labels, not an authored skill manifest."
+  date: 2026-11-13
+  ships: false
+  usage: "Local derived PNG; identical embedded copy in expanded-sprites.js. Full import facts retained in evidence/expanded-import.tsv."
+- path: assets/expanded-peggy.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/16.Peggy/preview_atlas_white_bgPeggy.png"
+    sha256: "72504d00be9113ba22aefa4bdcbec75346eca509a03fbdda335dac385913f6ee"
+    dimensions: "1010x1024"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public distribution rights unverified."}
+  transformation: "tools/import-expanded.cjs: edge-connected white cleanup, measured nonuniform crops, detached crop-edge pruning, fixed body scale and 256px cells anchored at x128/ground220. Guards/carriage/gifts are separate entities and excluded. Those action clips retain visible character windup poses only. Aliases skill1=skillGuards, skill2=skillCrown, skill3=skillCarriage, skill4=skillGift; not authored full skills. Oversize effect margins clip."
+  date: 2026-11-13
+  ships: false
+  usage: "Local derived PNG; identical embedded copy in expanded-sprites.js. Full import facts retained in evidence/expanded-import.tsv."
+- path: assets/expanded-walker.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/17.Walker/Cowboy Gunslinger Sprite Atlas.png"
+    sha256: "7f3237438ba0603337c7531b92d2f97490b395a65a0d760949880ff6f20b1be7"
+    dimensions: "1536x1024"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public distribution rights unverified."}
+  transformation: "tools/import-expanded.cjs: edge-connected white cleanup, measured nonuniform crops, detached crop-edge pruning, fixed body scale and 256px cells anchored at x128/ground220. 13-column atlas. Hit reuses upright/crouch subset of shared action/death row. Detached projectile/impact-only and bottom VFX excluded. Aliases skill1=skillAim, skill2=skillDash, skill3=skillBarrage; inferred labels. Oversize effect margins clipped."
+  date: 2026-11-13
+  ships: false
+  usage: "Local derived PNG; identical embedded copy in expanded-sprites.js. Full import facts retained in evidence/expanded-import.tsv."
+- path: assets/expanded-morrow.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/18.Morrow/morrow_preview_atlas_white_bgMorrow.png"
+    sha256: "6c5e5404c60b939495e703c1282e55e1f52d27ad666d30c105ae5148c86757a6"
+    dimensions: "1536x1024"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public distribution rights unverified."}
+  transformation: "tools/import-expanded.cjs: edge-connected white cleanup, measured nonuniform crops, detached crop-edge pruning, fixed body scale and 256px cells anchored at x128/ground220. No character skill rows: skill1, skill2 and skill3 explicitly alias sole attack/cast row. Portal, dome and explosion rows are VFX-only and excluded; faded death tail excluded. No authored full skills claimed."
+  date: 2026-11-13
+  ships: false
+  usage: "Local derived PNG with explicit shared attack aliases; identical embedded copy in expanded-sprites.js. Full import facts retained in evidence/expanded-import.tsv."
+- path: assets/expanded-scarlet.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/19.Scarlet/preview_atlas_white_bgScarlet.png"
+    sha256: "197647fc27739499250fc7d27679e2516e1c7c0facdef0f575418acb5173d490"
+    dimensions: "1536x1024"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public distribution rights unverified."}
+  transformation: "tools/import-expanded.cjs: edge-connected white cleanup, measured nonuniform crops, detached crop-edge pruning, fixed body scale and 256px cells anchored at x128/ground220. Detached bolts and ritual explosion-only cells excluded. Aliases skill1=skillRitual, skill2=skillBolt, skill3=skillStorm; inferred labels, not an authored skill manifest. Oversize effect margins clipped."
+  date: 2026-11-13
+  ships: false
+  usage: "Local derived PNG; identical embedded copy in expanded-sprites.js. Full import facts retained in evidence/expanded-import.tsv."
+- path: assets/expanded-thane-awakened.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/20.Thane/preview_atlas_white_bgThane.png"
+    sha256: "062525f17ce2402e7996cfc96f287273c7e35003eef30fa1f58a61ae1254bda1"
+    dimensions: "1536x1024"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public distribution rights unverified."}
+  transformation: "tools/import-expanded.cjs: edge-connected white cleanup, measured nonuniform crops, detached crop-edge pruning, fixed body scale and 256px cells anchored at x128/ground220. The Veiled Wind identity from saved HTML filename. Left portraits/turnarounds and bottom VFX-only strip excluded; overlapping wind trails trimmed at measured gutters. Aliases skill1=skillThrust, skill2=skillWind, skill3=skillWhirl; inferred labels, not an authored skill manifest."
+  date: 2026-11-13
+  ships: false
+  usage: "Local derived PNG; identical embedded copy in expanded-sprites.js. Full import facts retained in evidence/expanded-import.tsv."
+- path: assets/expanded-sonja.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/21.Sonja/preview_atlas_white_bgSonja.png"
+    sha256: "59d520660dc2051492983f15c42301d4e72d5e84f9b47a83bea7d67192fc2ad8"
+    dimensions: "6144x3072"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public distribution rights unverified."}
+  transformation: "tools/import-expanded.cjs: edge-connected white cleanup, measured character crops, detached crop-edge pruning, fixed body scale and 256px cells anchored at x128/ground220. 16-column output. Embedded purple target/effect art retained only in character-containing crops; wide aura margins clip rather than shrinking bodies. No clear run row. Aliases skill1=skillRoses, skill2=skillAura, skill3=skillShadow, skill4=skillRoseBlade; inferred labels, not an authored full skill manifest."
+  date: 2026-11-13
+  ships: false
+  usage: "Local derived PNG; identical embedded copy in expanded-sprites.js. Full import facts retained in evidence/expanded-import.tsv."
+- path: assets/expanded-palmer.png
+  origin: you
+  source:
+    local_path: "C:/Users/PuuGoo/Desktop/Assets Afk Arena/Heros/22.Palmer/preview_atlas_white_bgPalmer.png"
+    sha256: "369c61facc5060b4e99300e726b466fa6fd8c04da47f4d614e766653fb9b9f16"
+    dimensions: "1536x1024"
+  licence: {id: UNKNOWN, note: "User-requested local use only; public distribution rights unverified."}
+  transformation: "tools/import-expanded.cjs: edge-connected white cleanup, measured nonuniform crops, detached crop-edge pruning, fixed body scale and 256px cells anchored at x128/ground220. Support-skill rows are VFX-only and excluded. skill1, skill2 and skill3 explicitly alias staff attack action, not authored support animations. Oversize effect margins clipped."
+  date: 2026-11-13
+  ships: false
+  usage: "Local derived PNG with explicit shared attack aliases; identical embedded copy in expanded-sprites.js. Full import facts retained in evidence/expanded-import.tsv."

@@ -1,0 +1,164 @@
+FAIL	Oscar index12 owns four active mechanics and no old blade prototype	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'prototype-blade'
+- 'oscar'
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:5:143
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:3:527)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Oscar numeric tuning is live finite editable records	AssertionError [ERR_ASSERTION]: auraHasteCooldown
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:6:488
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:3:527)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Aura deals270percent once then creates a stationary eleven-second self-only haste field and four knives	AssertionError [ERR_ASSERTION]: auraHaste
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:4:901)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:7:137
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:3:527)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Fine Cuts throws to two weakest eligible HP ratios not an out-of-range cached foe	AssertionError [ERR_ASSERTION]: fineCuts
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:4:901)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:8:154
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:3:527)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:8:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	knife damage and persistent ground point happen on projectile arrival, including a lethal hit	AssertionError [ERR_ASSERTION]: fineCuts
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:4:901)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:9:136
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:3:527)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	a thrown knife outlives caster but invalid destination cannot create a ground knife	AssertionError [ERR_ASSERTION]: fineCuts
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:4:901)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:10:178
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:3:527)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Slice waits without a usable own ground knife rather than teleporting without a destination	AssertionError [ERR_ASSERTION]: sliceDice
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:4:901)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:11:275
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:3:527)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Slice consumes exactly one nearby-enemy knife, teleports within arena and deals200percent around destination	AssertionError [ERR_ASSERTION]: fineCuts
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:4:901)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:12:142
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:3:527)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:12:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Slice cannot consume another Oscar knife or an empty destination without enemies	AssertionError [ERR_ASSERTION]: sliceDice
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:4:901)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:13:175
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:3:527)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:13:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	knife lifetime and refresh retain bounded records rather than growing forever	AssertionError [ERR_ASSERTION]: auraHaste
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:4:901)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:14:132
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:3:527)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Unfazed cleans supported negative modifier fields while preserving positive mixed fields	AssertionError [ERR_ASSERTION]: unfazed
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:4:901)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:15:240
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:3:527)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Unfazed persists by simulation not duration, refresh does not stack and actual stun removes it	AssertionError [ERR_ASSERTION]: unfazed
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:4:901)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:16:128
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:3:527)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	blocked control does not clear Unfazed or turn it into immunity	AssertionError [ERR_ASSERTION]: unfazed
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:4:901)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:17:97
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:3:527)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:17:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Oscar refuses old prototype skills and pure bonus lookups do not move or tick records	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+true !== false
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:18:191
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:3:527)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\oscar-skills-unit.cjs:18:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+unit_total	0
+unit_failed	14

@@ -1,0 +1,192 @@
+FAIL	Rosaline preserves index9 with four individual actives not role prototypes	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'prototype-support'
+- 'rosaline'
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:6:95
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:3:613)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Rosaline mechanics use finite editable config records	AssertionError [ERR_ASSERTION]: motivationCooldown
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:7:487
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:3:613)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	follow chooses highest configured combat rating excluding self and stays until recipient unavailable	TypeError: f.sys.followTarget is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:8:151
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:3:613)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:8:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	follow mitigation is40percent while a valid ally exists, not while alone	AssertionError [ERR_ASSERTION]: 100 ~= NaN
+    at close (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:3:736)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:9:104
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:3:613)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Motivation reduces only followed ally cooldowns once and never creates energy or heals	AssertionError [ERR_ASSERTION]: motivation
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:5:1240)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:10:209
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:3:613)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	support skills wait rather than using self when every other ally is dead or banished	AssertionError [ERR_ASSERTION]: afternoonTea
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:5:1240)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:11:324
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:3:613)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Afternoon Tea heals150percent of Rosaline attack only to followed ally with a living HP cap	AssertionError [ERR_ASSERTION]: afternoonTea
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:5:1240)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:12:156
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:3:613)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:12:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Crazy Crockery schedules two120percent thrown projectiles at separate times to followed allies enemy	AssertionError [ERR_ASSERTION]: crazyCrockery
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:5:1240)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:13:134
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:3:613)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:13:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	crockery cannot release a new projectile if target escapes range and never redirects to distant cached target	AssertionError [ERR_ASSERTION]: crazyCrockery
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:5:1240)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:14:143
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:3:613)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	control cancels unthrown crockery while already released projectile survives caster death	AssertionError [ERR_ASSERTION]: crazyCrockery
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:5:1240)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:15:123
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:3:613)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Spring Cleaning uses timed80percent hits around followed ally for4seconds not an immediate whole-field burst	AssertionError [ERR_ASSERTION]: springCleaning
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:5:1240)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:16:142
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:3:613)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Spring Cleaning rear-ally knockback respects immunity and frontline ally has no push	AssertionError [ERR_ASSERTION]: springCleaning
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:5:1240)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:17:240
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:3:613)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:17:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	cleaning damage immunity ends with channel or control, and never grants resurrection	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+100 !== 0
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:18:161
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:3:613)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:18:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	cleaning cannot damage enemies around old recipient after that ally dies or is banished	AssertionError [ERR_ASSERTION]: springCleaning
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:5:1240)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:19:174
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:3:613)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:19:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	follow movement integration uses actual bounded moveUnit rather than teleporting companion	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+0 !== 1
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:20:809
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:3:613)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:20:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Rosaline never inherits protoMend/protoRally and cosmetic hooks do not alter real skills	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+true !== false
+
+    at run (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:21:199)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:21:430
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:3:613)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rosaline-skills-unit.cjs:21:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+unit_total	0
+unit_failed	16

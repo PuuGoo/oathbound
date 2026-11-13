@@ -1,0 +1,188 @@
+browser	/c/Program Files/Google/Chrome/Application/chrome.exe
+time	2026-11-13 04:10:49
+render	cheap
+ua	HeadlessChrome/157.0.0.0
+scene	0	title
+state	0	title	{"t":0,"score":11,"gained":"","chapter":2,"selectedStage":11,"selectedHero":7,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+scene	1	play
+state	1	play	{"t":0.02,"score":11,"gained":"","chapter":2,"selectedStage":11,"selectedHero":7,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+playinput	4	click:text=CHIẾN_ĐẤU_·_SPACE
+saved	338	localstorage	(1 keys)
+state	338	play	{"t":5.63,"score":11,"gained":"","chapter":2,"selectedStage":11,"selectedHero":7,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":11,"heroes":[{"maxHP":490,"attack":50,"hp":490,"kind":"
+digits	log	14px "Segoe UI", Arial	tabular	0
+digits	log	19px "Segoe UI", Arial	tabular	0
+digits	log	11px "Segoe UI", Arial	tabular	0
+loop	log	none	no loop() step was marked
+first	log	none	no state.beat
+pressure	none	the game set no number state.margin in play
+steptime	338	0.122	3.200
+frametime	5	98.5	239.9	60	5	4
+done	338	play	stop	5.6	1856
+measured	1280x800
+text	play	canvas	293,369,370,381	12.2	4.91	inside	TĂNG CHÍ MẠNG
+text	play	canvas	665,219,724,230	13.5	7.16	inside	ĐÁNH NGÃ
+text	play	canvas	169,391,369,403	12.2	4.91	inside	TĂNG CÔNG · TĂNG CHÍ MẠNG · TĂNG NHỊP
+text	play	canvas	511,242,570,253	13.5	4.95	inside	ĐÁNH NGÃ
+text	play	canvas	482,403,600,413	12.2	4.63	inside	GIẢM CÔNG · GIẢM CÔNG
+text	play	canvas	140,456,377,468	12.2	7.96	inside	TĂNG CÔNG · NHỊP THAY ENERGY · TĂNG CHÍ MẠNG
+text	play	canvas	412,457,490,469	12.2	7.96	inside	TĂNG CHÍ MẠNG
+text	play	canvas	347,491,668,503	12.2	7.27	inside	TĂNG CHÍ MẠNG · TĂNG CÔNG · NHỊP THAY ENERGY · TĂNG CHÍ MẠNG
+text	play	canvas	506,341,564,352	13.5	2.56	inside	ĐÁNH NGÃ
+text	play	canvas	638,341,696,352	13.5	4.95	inside	ĐÁNH NGÃ
+text	play	canvas	278,228,386,237	16.2	5.30	inside	AVIAN ASSAULT
+text	play	canvas	169,293,348,308	16.2	1.48	inside	THỬ NGHIỆM · NHÃN SÁNG
+text	play	canvas	177,228,362,243	16.2	2.03	inside	THỬ NGHIỆM · NHỊP NGẮM
+text	play	canvas	406,298,497,307	16.2	6.25	inside	SHIELD BASH
+text	play	canvas	482,309,524,322	22.9	7.87	inside	−173
+text	play	canvas	314,378,350,387	16.2	11.75	inside	Rowan
+text	play	canvas	308,393,355,402	13.5	10.65	inside	490 / 490
+text	play	canvas	674,391,715,402	16.2	11.75	inside	Gai Độc
+text	play	canvas	668,405,720,414	13.5	10.78	inside	869 / 1196
+text	play	canvas	246,435,293,447	16.2	12.05	inside	Gwyneth
+text	play	canvas	247,450,293,459	13.5	10.47	inside	666 / 666
+text	play	canvas	512,413,569,424	16.2	11.73	inside	Thạch Nha
+text	play	canvas	514,428,567,437	13.5	11.05	inside	446 / 1793
+text	play	canvas	241,500,277,509	16.2	11.91	inside	Scarlet
+text	play	canvas	236,515,282,524	13.5	11.05	inside	666 / 666
+text	play	canvas	431,467,473,476	16.2	12.05	inside	Hendrik
+text	play	canvas	423,482,480,491	13.5	10.93	inside	1107 / 1643
+text	play	canvas	491,533,525,542	16.2	12.05	inside	Thane
+text	play	canvas	482,548,534,557	13.5	11.05	inside	808 / 1040
+text	play	canvas	642,512,692,521	16.2	12.05	inside	Tư Tế Tro
+text	play	canvas	641,527,693,536	13.5	11.05	inside	991 / 1196
+text	play	html	28,16,253,46	12.2	13.57	inside	OATHBOUND
+text	play	html	28,50,219,66	12.2	8.21	inside	CHIẾN DỊCH BÌNH MINH
+text	play	html	317,20,564,41	12.2	13.57	inside	Chương 3 · Đèo Băng Lam
+text	play	html	317,47,574,64	12.2	8.21	inside	11 / 30 ải đã giải phóng · Sức mạnh đội 7375
+text	play	html	879,24,915,40	12.2	8.21	inside	VÀNG
+text	play	html	879,40,913,60	12.2	13.57	inside	1938
+text	play	html	959,24,1046,40	12.2	8.21	inside	KINH NGHIỆM
+text	play	html	959,40,985,60	12.2	13.57	inside	935
+text	play	html	1090,24,1174,40	12.2	8.21	inside	ẤN TIẾN HÓA
+text	play	html	1090,40,1108,60	12.2	13.57	inside	14
+text	play	html	1207,34,1241,50	12.2	9.72	inside	Đặt lại
+text	play	html	28,111,313,127	12.2	9.95	inside	ẢI 3-2 · TỰ CHIẾN THỜI GIAN THỰC
+text	play	html	28,127,225,158	12.2	13.57	inside	Đèo Gió Buốt
+text	play	html	800,124,893,145	12.2	9.72	inside	Tạm dừng · P
+text	play	html	39,183,189,199	12.2	10.56	inside	Rowan · ĐANG TUNG CHIÊU
+text	play	html	217,183,288,199	12.2	12.79	inside	Hendrik · 3.8s
+text	play	html	316,183,393,199	12.2	12.79	inside	Gwyneth · 3.4s
+text	play	html	421,183,486,199	12.2	12.79	inside	Scarlet · 3.2s
+text	play	html	514,183,576,199	12.2	12.79	inside	Thane · 0.5s
+text	play	html	973,133,1152,149	12.2	9.95	inside	GIAO TRANH LIÊN TỤC
+text	play	html	1192,133,1228,149	12.2	9.95	inside	5 vs 5
+text	play	html	973,166,1022,197	12.2	13.57	inside	5.6
+text	play	html	1022,180,1075,194	12.2	8.21	inside	/ 90 giây
+text	play	html	973,204,1167,221	12.2	10.01	inside	5 anh hùng · 3 địch còn chiến đấu
+text	play	html	973,243,1170,259	12.2	9.95	inside	KỸ NĂNG VỪA THI TRIỂN
+text	play	html	973,259,1088,275	12.2	11.24	inside	Rowan: Avian Assault!
+text	play	html	973,333,1232,371	12.2	10.01	inside	Cận chiến áp sát · kỹ năng có hồi chiêu riêng. Chiêu mới ghi
+text	play	html	973,379,1130,393	12.2	9.95	inside	5 BỘ KỸ NĂNG · CUỘN XEM ↓
+text	play	html	973,407,1076,423	12.2	13.57	inside	Rowan · 4 kỹ năng
+text	play	html	978,433,1015,449	12.2	9.74	inside	Dazzle
+text	play	html	978,452,1022,468	12.2	10.04	inside	5.7s · ×1
+text	play	html	1109,433,1185,449	12.2	9.74	inside	Avian Assault
+text	play	html	1109,452,1153,468	12.2	10.04	inside	5.0s · ×2
+text	play	html	978,482,1073,498	12.2	9.74	inside	Healthy Supplies
+text	play	html	978,501,1071,517	12.2	10.04	inside	Còn 1/3 bình · ×2
+text	play	html	1109,482,1201,498	12.2	9.74	inside	Damage Control
+text	play	html	1109,501,1153,517	12.2	10.04	inside	0.0s · ×0
+text	play	html	973,531,1083,547	12.2	13.57	inside	Hendrik · 4 kỹ năng
+text	play	html	978,557,1061,573	12.2	9.74	inside	Crippling Blow
+text	play	html	978,576,1022,592	12.2	10.04	inside	3.8s · ×1
+text	play	html	1109,557,1174,573	12.2	9.74	inside	Shield Bash
+text	play	html	1109,576,1153,592	12.2	10.04	inside	4.1s · ×2
+text	play	html	978,606,1070,622	12.2	9.74	inside	Sacrificial Shield
+text	play	html	978,625,1073,641	12.2	10.04	inside	Chờ cứu hàng sau
+text	play	html	1109,606,1162,622	12.2	9.74	inside	Standfast
+text	play	html	1109,625,1183,641	12.2	10.04	inside	Chờ HP <40%
+text	play	html	973,655,1088,671	12.2	13.57	inside	Gwyneth · 4 kỹ năng
+text	play	html	978,681,1081,713	12.2	9.74	inside	Thử nghiệm · Loạt bắn
+text	play	html	978,716,1022,732	12.2	10.04	inside	3.4s · ×1
+text	play	html	1109,681,1210,713	12.2	9.74	inside	Thử nghiệm · Đạn níu chân
+text	play	html	1109,716,1153,732	12.2	10.04	inside	7.7s · ×1
+text	play	html	978,746,1084,778	12.2	9.74	inside	Thử nghiệm · Nhịp ngắm
+text	play	html	978,781,1029,797	12.2	10.04	inside	12.1s · ×1
+text	play	html	1109,746,1206,778	12.2	9.74	inside	Thử nghiệm · Tay vững
+text	play	html	1109,781,1198,797	12.2	10.04	inside	Nội tại · luôn bật
+text	play	html	973,811,1076,827	12.2	13.57	outside	Scarlet · 4 kỹ năng
+text	play	html	978,837,1086,869	12.2	9.74	outside	Thử nghiệm · Vòng bùng sáng
+text	play	html	978,872,1022,888	12.2	10.04	outside	3.2s · ×1
+text	play	html	1109,837,1212,869	12.2	9.74	outside	Thử nghiệm · Màn suy lực
+text	play	html	1109,872,1153,888	12.2	10.04	outside	8.0s · ×1
+text	play	html	978,902,1087,934	12.2	9.74	outside	Thử nghiệm · Nhãn sáng
+text	play	html	978,937,1029,953	12.2	10.04	outside	12.0s · ×1
+text	play	html	1109,902,1204,934	12.2	9.74	outside	Thử nghiệm · Tia may mắn
+text	play	html	1109,937,1198,953	12.2	10.04	outside	Nội tại · luôn bật
+text	play	html	973,967,1072,983	12.2	13.57	outside	Thane · 4 kỹ năng
+text	play	html	978,993,1034,1009	12.2	9.74	outside	Eviscerate
+text	play	html	978,1012,1022,1028	12.2	10.04	outside	6.6s · ×1
+text	play	html	1109,993,1144,1009	12.2	9.74	outside	Lunge
+text	play	html	1109,1012,1153,1028	12.2	10.04	outside	0.5s · ×1
+text	play	html	978,1042,1033,1058	12.2	9.74	outside	Execution
+text	play	html	978,1061,1073,1077	12.2	10.04	outside	Chí mạng 3/4 · ×0
+text	play	html	1109,1042,1141,1058	12.2	9.74	outside	Focus
+text	play	html	1109,1061,1212,1077	12.2	10.04	outside	Nội tại · 3 chí mạng
+text	play	html	988,624,1037,641	12.2	10.01	inside	Đội bạn
+text	play	html	1035,687,1174,707	12.2	9.72	inside	Tạm dừng / rút lui
+text	play	html	986,739,1130,755	12.2	13.57	inside	Bảng HP · khiên của hai đội
+text	play	html	973,763,1010,779	12.2	13.57	inside	Tướng
+text	play	html	1105,763,1122,779	12.2	13.57	inside	HP
+text	play	html	1188,763,1221,779	12.2	13.57	inside	Khiên
+text	play	html	973,779,1037,795	12.2	13.57	inside	Bạn · Rowan
+text	play	html	1105,779,1149,795	12.2	13.57	inside	490/490
+text	play	html	1188,779,1195,795	12.2	13.57	inside	0
+text	play	html	973,795,1044,811	12.2	13.57	outside	Bạn · Hendrik
+text	play	html	1105,795,1162,811	12.2	13.57	outside	1107/1643
+text	play	html	1188,795,1195,811	12.2	13.57	outside	0
+text	play	html	973,811,1049,827	12.2	13.57	outside	Bạn · Gwyneth
+text	play	html	1105,811,1149,827	12.2	13.57	outside	666/666
+text	play	html	1188,811,1195,827	12.2	13.57	outside	0
+text	play	html	973,827,1037,843	12.2	13.57	outside	Bạn · Scarlet
+text	play	html	1105,827,1149,843	12.2	13.57	outside	666/666
+text	play	html	1188,827,1195,843	12.2	13.57	outside	0
+text	play	html	973,843,1034,859	12.2	13.57	outside	Bạn · Thane
+text	play	html	1105,843,1155,859	12.2	13.57	outside	808/1040
+text	play	html	1188,843,1195,859	12.2	13.57	outside	0
+text	play	html	973,859,1063,875	12.2	13.57	outside	Địch · Thạch Nha
+text	play	html	1105,859,1155,875	12.2	13.57	outside	446/1793
+text	play	html	1188,859,1195,875	12.2	13.57	outside	0
+text	play	html	973,875,1063,891	12.2	13.57	outside	Địch · Thạch Nha
+text	play	html	1105,875,1142,891	12.2	13.57	outside	0/1793
+text	play	html	1188,875,1195,891	12.2	13.57	outside	0
+text	play	html	973,891,1047,907	12.2	13.57	outside	Địch · Gai Độc
+text	play	html	1105,891,1155,907	12.2	13.57	outside	869/1196
+text	play	html	1188,891,1195,907	12.2	13.57	outside	0
+text	play	html	973,907,1053,923	12.2	13.57	outside	Địch · Ảnh Trảo
+text	play	html	1105,907,1142,923	12.2	13.57	outside	0/1196
+text	play	html	1188,907,1195,923	12.2	13.57	outside	0
+text	play	html	973,923,1055,939	12.2	13.57	outside	Địch · Tư Tế Tro
+text	play	html	1105,923,1155,939	12.2	13.57	outside	991/1196
+text	play	html	1188,923,1195,939	12.2	13.57	outside	0
+text	play	html	24,598,162,614	12.2	9.95	inside	NĂM NGƯỜI GIỮ LỜI
+text	play	html	743,598,926,614	12.2	13.57	inside	Đội tự di chuyển · Nhịp đánh riêng
+text	play	html	133,634,185,649	12.2	10.32	inside	1 · TRƯỚC
+text	play	html	97,671,158,691	12.2	13.57	inside	Rowan
+text	play	html	97,695,133,709	12.2	8.21	inside	HỖ TRỢ
+text	play	html	97,718,167,733	12.2	9.63	inside	Cấp 1 · Thường
+text	play	html	316,634,368,649	12.2	10.32	inside	2 · TRƯỚC
+text	play	html	279,671,353,691	12.2	13.57	inside	Hendrik
+text	play	html	279,695,308,709	12.2	8.21	inside	HỘ VỆ
+text	play	html	279,718,354,733	12.2	9.63	inside	Cấp 5 · Tinh Anh
+text	play	html	514,634,550,649	12.2	10.32	inside	3 · SAU
+text	play	html	462,671,540,691	12.2	13.57	inside	Gwyneth
+text	play	html	462,695,496,709	12.2	8.21	inside	XẠ THỦ
+text	play	html	462,718,532,733	12.2	9.63	inside	Cấp 3 · Thường
+text	play	html	696,634,733,649	12.2	10.32	inside	4 · SAU
+text	play	html	644,671,706,691	12.2	13.57	inside	Scarlet
+text	play	html	644,695,684,709	12.2	8.21	inside	PHÁP SƯ
+text	play	html	644,718,714,733	12.2	9.63	inside	Cấp 3 · Thường
+text	play	html	879,634,915,649	12.2	10.32	inside	5 · SAU
+text	play	html	827,671,881,691	12.2	13.57	inside	Thane
+text	play	html	827,695,878,709	12.2	8.21	inside	CẬN CHIẾN
+text	play	html	827,718,901,733	12.2	9.63	inside	Cấp 3 · Tinh Anh
+text	play	html	24,769,197,785	12.2	8.86	inside	Lưu tự động trên trình duyệt này
+text	play	html	569,769,926,785	12.2	8.86	inside	Enter: tiếp tục · Space: chiến đấu · U: nâng cấp · E: tiến h
+screen	338	play	baea329d	drawn
+uncaught	0
+shot	/c/Users/PuuGoo/Desktop/my-game/production/qa/evidence/oathbound-expanded/41-rowan-range-reviewed.png	512389

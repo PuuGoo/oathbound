@@ -1,0 +1,178 @@
+FAIL	Peggy index15 has four own actives and two guard attachments not additional heroes	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'prototype-support'
+- 'peggy'
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:5:158
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:3:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Peggy numeric balance geometry and timers are editable config records	AssertionError [ERR_ASSERTION]: dutyCooldown
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:6:742
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:3:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Duty buffs living guards for12seconds without duplicating or healing them	TypeError: Cannot read properties of undefined (reading '0')
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:7:120
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:3:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Duty with no guards summons exactly one and350percent guard attack knockback stun nearby enemies	TypeError: f.u.royalGuards is not iterable
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:8:147
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:3:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:8:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	guards attack with independent simulation cooldown and never consume extra hero slots	AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(f.enemy.hp<F.hp)
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:9:145
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:3:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	available guards intercept a configured share of actual incoming Peggy damage but not ordinary shield-only damage	TypeError: Cannot read properties of undefined (reading '0')
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:10:185
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:3:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	dead owner removes guards and cannot heal or attack through them	TypeError: Cannot read properties of undefined (reading 'filter')
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:11:172
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:3:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	banished Peggy freezes guards without reviving depleted ones or causing attacks	TypeError: Cannot read properties of undefined (reading '0')
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:12:143
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:3:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:12:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Royal Scroll heals living guards and exactly one weakest eligible non-summoned ally220percent	TypeError: f.u.royalGuards is not iterable
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:13:144
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:3:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:13:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Royal Scroll does not resurrect guard or heal an unavailable selected ally	TypeError: Cannot read properties of undefined (reading '0')
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:14:121
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:3:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Royal Guards creates eight-second20percent current guardHP shields for each guard and nearest ally without summing overlaps	AssertionError [ERR_ASSERTION]: royalGuards
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:4:1073)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:15:157
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:3:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Royal Marksmen sends five real timed projectiles to nearest instead of cached far enemy	AssertionError [ERR_ASSERTION]: royalMarksmen
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:4:1073)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:16:121
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:3:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Marksman arrival applies70percent damage and explicit accuracy-weaken/haste-slow substitutes	AssertionError [ERR_ASSERTION]: royalMarksmen
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:4:1073)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:17:126
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:3:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:17:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	unreleased marksmen cancel on control and released arrows cannot strike banished or dead targets	AssertionError [ERR_ASSERTION]: royalMarksmen
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:4:1073)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:18:130
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:3:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:18:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Peggy own kit refuses generic role spells and no tick means no guard movement or damage	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+true !== false
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:19:181
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:3:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\peggy-skills-unit.cjs:19:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+unit_total	0
+unit_failed	15

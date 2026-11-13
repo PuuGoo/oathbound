@@ -1,0 +1,3 @@
+PASS	protoSnareShot preserves range-checked target instead of distant weak enemy
+PASS	protoVolley preserves range-checked target instead of distant weak enemy
+unit_total	2

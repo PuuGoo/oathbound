@@ -1,0 +1,184 @@
+browser	/c/Program Files/Google/Chrome/Application/chrome.exe
+time	2026-11-13 00:45:55
+render	cheap
+ua	HeadlessChrome/157.0.0.0
+scene	0	title
+state	0	title	{"t":0,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+scene	1	play
+state	1	play	{"t":0.02,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+playinput	4	click:text=Bộ_sưu_tập
+state	102	play	{"t":0.07,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":5,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+digits	log	14px "Segoe UI", Arial	tabular	0
+loop	log	none	no loop() step was marked
+first	log	none	no state.beat
+pressure	none	the game set no number state.margin in play
+steptime	102	0.003	0.200
+frametime	1	651.8	651.8	60	1	1
+done	102	play	stop	1.7	1860
+measured	1280x800
+text	play	canvas	115,478,133,488	17.6	8.11	inside	1-1
+text	play	canvas	83,511,165,523	16.2	9.90	inside	Lối Mòn Sương
+text	play	canvas	266,426,286,436	17.6	10.98	inside	1-2
+text	play	canvas	251,458,300,468	16.2	5.80	inside	Chưa mở
+text	play	canvas	405,474,424,484	17.6	10.58	inside	1-3
+text	play	canvas	390,506,439,516	16.2	5.41	inside	Chưa mở
+text	play	canvas	552,395,572,405	17.6	10.98	inside	1-4
+text	play	canvas	537,427,586,437	16.2	5.80	inside	Chưa mở
+text	play	canvas	726,342,745,352	17.6	10.98	inside	1-5
+text	play	canvas	711,374,760,384	16.2	5.80	inside	Chưa mở
+text	play	canvas	329,543,602,558	16.2	8.46	inside	Chọn dấu mốc để xem đội địch và phần thưởng
+text	play	html	28,16,253,46	12.2	13.57	inside	OATHBOUND
+text	play	html	28,50,219,66	12.2	8.21	inside	CHIẾN DỊCH BÌNH MINH
+text	play	html	317,20,580,41	12.2	13.57	inside	Chương 1 · Rừng Thức Giấc
+text	play	html	317,47,567,64	12.2	8.21	inside	0 / 30 ải đã giải phóng · Sức mạnh đội 4663
+text	play	html	879,24,915,40	12.2	8.21	inside	VÀNG
+text	play	html	879,40,905,60	12.2	13.57	inside	450
+text	play	html	959,24,1046,40	12.2	8.21	inside	KINH NGHIỆM
+text	play	html	959,40,985,60	12.2	13.57	inside	120
+text	play	html	1090,24,1174,40	12.2	8.21	inside	ẤN TIẾN HÓA
+text	play	html	1090,40,1099,60	12.2	13.57	inside	0
+text	play	html	1207,34,1241,50	12.2	9.72	inside	Đặt lại
+text	play	html	32,110,300,126	12.2	9.95	inside	HÀNH TRÌNH CỦA NGƯỜI GIỮ LỜI
+text	play	html	32,133,286,168	12.2	13.57	inside	Rừng Thức Giấc
+text	play	html	32,175,406,194	12.2	11.25	inside	Chương 1 · Địch mạnh dần qua từng ải · Trùm ở cuối chương
+text	play	html	42,215,130,229	12.2	9.49	inside	01 · Rừng Thức Giấc
+text	play	html	154,215,233,229	12.2	12.95	inside	02 · Thành Tro Tàn
+text	play	html	257,215,340,229	12.2	12.95	inside	03 · Đèo Băng Lam
+text	play	html	364,215,437,229	12.2	12.95	inside	04 · Sa Mạc Kính
+text	play	html	461,215,531,229	12.2	12.95	inside	05 · Vực Tinh Tú
+text	play	html	555,215,672,229	12.2	12.95	inside	06 · Thánh Điện Bình Minh
+text	play	html	973,133,1023,149	12.2	9.95	inside	ẢI 1-1
+text	play	html	1124,133,1228,149	12.2	9.95	inside	THỬ THÁCH MỚI
+text	play	html	973,160,1167,187	12.2	13.57	inside	Lối Mòn Sương
+text	play	html	973,195,1222,233	12.2	10.01	inside	Thạch Nha · Thạch Nha · Gai Độc · Gai Độc · Gai Độc
+text	play	html	1017,249,1058,273	12.2	13.57	inside	4663
+text	play	html	1000,277,1074,293	12.2	8.21	inside	ĐỘI CỦA BẠN
+text	play	html	1151,249,1192,273	12.2	13.57	inside	3239
+text	play	html	1136,277,1207,293	12.2	8.21	inside	ĐỘI ĐỐI THỦ
+text	play	html	973,306,1029,325	12.2	13.57	inside	160 vàng
+text	play	html	1044,306,1082,325	12.2	13.57	inside	60 KN
+text	play	html	1097,306,1123,325	12.2	13.57	inside	2 ấn
+text	play	html	1027,342,1182,362	12.2	1.12	inside	CHIẾN ĐẤU · SPACE
+text	play	html	973,390,1074,411	12.2	13.57	inside	Thane · Cấp 1
+text	play	html	1167,392,1236,408	12.2	8.21	inside	Khởi Nguyên
+text	play	html	973,419,1065,435	12.2	10.01	inside	HP 588 · Công 86
+text	play	html	1003,503,1071,519	12.2	9.72	inside	Nâng cấp · U
+text	play	html	993,519,1081,535	12.2	5.87	inside	55 vàng + 12 KN
+text	play	html	1142,495,1202,511	12.2	3.52	inside	Tiến hóa · E
+text	play	html	1120,511,1224,543	12.2	5.87	inside	Cấp 3 · 180 vàng · 4 ấn
+text	play	html	973,562,1113,578	12.2	10.78	inside	Thử nghiệm · Chém quét
+text	play	html	973,579,1230,612	12.2	8.21	inside	Kỹ năng prototype: chém vùng trước mặt ở cự ly gần.
+text	play	html	973,617,1126,633	12.2	10.78	inside	Thử nghiệm · Chém suy lực
+text	play	html	973,633,1225,666	12.2	8.21	inside	Kỹ năng prototype: chém một địch và tạm giảm công của nó.
+text	play	html	973,671,1110,687	12.2	10.78	inside	Thử nghiệm · Nhịp kiếm
+text	play	html	973,688,1221,721	12.2	8.21	inside	Kỹ năng prototype: chỉ bản thân tạm tăng nhịp đánh.
+text	play	html	973,725,1145,741	12.2	10.78	inside	Thử nghiệm · Lưỡi sắc · Nội tại
+text	play	html	973,742,1177,758	12.2	8.21	inside	Nội tại prototype: tăng công bản thân.
+text	play	html	973,766,1195,782	12.2	8.91	inside	Mẹo: để hộ vệ phía trước, trị liệu phía sau.
+text	play	html	24,602,162,618	12.2	9.95	inside	NĂM NGƯỜI GIỮ LỜI
+text	play	html	562,602,735,618	12.2	13.57	inside	Chọn tướng để xem và nâng cấp
+text	play	html	760,602,838,618	12.2	9.72	inside	Bộ sưu tập · 22
+text	play	html	874,602,915,618	12.2	9.72	inside	Xếp đội
+text	play	html	133,643,185,658	12.2	10.32	inside	1 · TRƯỚC
+text	play	html	97,680,167,700	12.2	13.57	inside	Estrilda
+text	play	html	97,704,119,718	12.2	8.21	inside	KỴ SĨ
+text	play	html	97,727,167,742	12.2	9.63	inside	Cấp 1 · Thường
+text	play	html	316,643,368,658	12.2	10.32	inside	2 · TRƯỚC
+text	play	html	279,680,338,700	12.2	13.57	inside	Lucius
+text	play	html	279,704,362,718	12.2	8.21	inside	HỘ VỆ · HỒI PHỤC
+text	play	html	279,727,349,742	12.2	9.63	inside	Cấp 1 · Thường
+text	play	html	514,643,550,658	12.2	10.32	inside	3 · SAU
+text	play	html	462,680,513,700	12.2	13.57	inside	Raine
+text	play	html	462,704,540,718	12.2	8.21	inside	XẠ THỦ · HỖ TRỢ
+text	play	html	462,727,532,742	12.2	9.63	inside	Cấp 1 · Thường
+text	play	html	696,643,733,658	12.2	10.32	inside	4 · SAU
+text	play	html	644,680,712,700	12.2	13.57	inside	Belinda
+text	play	html	644,704,684,718	12.2	8.21	inside	PHÁP SƯ
+text	play	html	644,727,714,742	12.2	9.63	inside	Cấp 1 · Thường
+text	play	html	879,643,915,658	12.2	10.32	inside	5 · SAU
+text	play	html	827,674,892,694	12.2	13.57	inside	Fawkes
+text	play	html	827,698,903,724	12.2	8.21	inside	XẠ THỦ · KHỐNG CHẾ
+text	play	html	827,733,896,748	12.2	9.63	inside	Cấp 1 · Thường
+text	play	html	24,778,197,794	12.2	8.86	inside	Lưu tự động trên trình duyệt này
+text	play	html	569,778,926,794	12.2	8.86	inside	Enter: tiếp tục · Space: chiến đấu · U: nâng cấp · E: tiến h
+text	play	html	101,61,348,88	12.2	12.24	inside	Bộ sưu tập · 22 tướng
+text	play	html	101,92,598,109	12.2	7.40	inside	Chọn đúng 5 tướng ra trận · Hai ô đầu là hàng trước · Tất cả
+text	play	html	1045,75,1164,96	12.2	9.72	inside	Đóng bộ sưu tập
+text	play	html	116,202,204,223	12.2	7.05	inside	Ô 1 · Estrilda
+text	play	html	244,202,325,223	12.2	9.72	inside	Ô 2 · Lucius
+text	play	html	365,202,442,223	12.2	9.72	inside	Ô 3 · Raine
+text	play	html	482,202,571,223	12.2	9.72	inside	Ô 4 · Belinda
+text	play	html	611,202,698,223	12.2	9.72	inside	Ô 5 · Fawkes
+text	play	html	162,368,218,389	12.2	9.72	inside	Estrilda
+text	play	html	160,394,220,409	12.2	5.87	inside	KỴ SĨ · Cấp 1
+text	play	html	138,414,242,429	12.2	5.87	inside	ĐANG RA TRẬN · Ô 1
+text	play	html	347,368,393,389	12.2	9.72	inside	Lucius
+text	play	html	307,394,433,409	12.2	5.87	inside	HỘ VỆ · HỒI PHỤC · Cấp 1
+text	play	html	318,414,422,429	12.2	5.87	inside	ĐANG RA TRẬN · Ô 2
+text	play	html	529,368,571,389	12.2	9.72	inside	Raine
+text	play	html	489,394,611,409	12.2	5.87	inside	XẠ THỦ · HỖ TRỢ · Cấp 1
+text	play	html	498,414,602,429	12.2	5.87	inside	ĐANG RA TRẬN · Ô 3
+text	play	html	702,368,758,389	12.2	9.72	inside	Belinda
+text	play	html	690,394,770,409	12.2	5.87	inside	PHÁP SƯ · Cấp 1
+text	play	html	678,414,782,429	12.2	5.87	inside	ĐANG RA TRẬN · Ô 4
+text	play	html	883,368,937,389	12.2	9.72	inside	Fawkes
+text	play	html	843,394,977,424	12.2	5.87	inside	XẠ THỦ · KHỐNG CHẾ · Cấp 1
+text	play	html	858,429,962,444	12.2	5.87	inside	ĐANG RA TRẬN · Ô 5
+text	play	html	1067,368,1113,389	12.2	6.45	inside	Thane
+text	play	html	1044,394,1136,409	12.2	3.90	inside	CẬN CHIẾN · Cấp 1
+text	play	html	1026,414,1154,429	12.2	3.90	inside	DỰ BỊ · CHIÊU PROTOTYPE
+text	play	html	160,588,220,609	12.2	9.72	inside	Hendrik
+text	play	html	156,614,224,629	12.2	5.87	inside	HỘ VỆ · Cấp 1
+text	play	html	126,634,254,649	12.2	5.87	inside	DỰ BỊ · CHIÊU PROTOTYPE
+text	play	html	345,588,395,609	12.2	9.72	inside	Rowan
+text	play	html	332,614,408,629	12.2	5.87	inside	HỖ TRỢ · Cấp 1
+text	play	html	306,634,434,649	12.2	5.87	inside	DỰ BỊ · CHIÊU PROTOTYPE
+text	play	html	517,588,583,609	12.2	9.72	inside	Gwyneth
+text	play	html	513,614,587,629	12.2	5.87	inside	XẠ THỦ · Cấp 1
+text	play	html	486,634,614,649	12.2	5.87	inside	DỰ BỊ · CHIÊU PROTOTYPE
+text	play	html	699,588,761,609	12.2	9.72	inside	Rosaline
+text	play	html	692,614,768,629	12.2	5.87	inside	HỖ TRỢ · Cấp 1
+text	play	html	666,634,794,649	12.2	5.87	inside	DỰ BỊ · CHIÊU PROTOTYPE
+text	play	html	886,588,934,609	12.2	9.72	inside	Cecilia
+text	play	html	864,614,956,629	12.2	5.87	inside	CẬN CHIẾN · Cấp 1
+text	play	html	846,634,974,649	12.2	5.87	inside	DỰ BỊ · CHIÊU PROTOTYPE
+text	play	html	1068,588,1112,609	12.2	9.72	inside	Rigby
+text	play	html	1056,614,1124,629	12.2	5.87	inside	HỘ VỆ · Cấp 1
+text	play	html	1026,634,1154,649	12.2	5.87	inside	DỰ BỊ · CHIÊU PROTOTYPE
+text	play	html	169,808,211,829	12.2	9.72	outside	Oscar
+text	play	html	144,834,236,849	12.2	5.87	outside	CẬN CHIẾN · Cấp 1
+text	play	html	126,854,254,869	12.2	5.87	outside	DỰ BỊ · CHIÊU PROTOTYPE
+text	play	html	346,808,394,829	12.2	9.72	outside	Eluard
+text	play	html	330,834,410,849	12.2	5.87	outside	PHÁP SƯ · Cấp 1
+text	play	html	306,854,434,869	12.2	5.87	outside	DỰ BỊ · CHIÊU PROTOTYPE
+text	play	html	490,808,610,850	12.2	9.72	outside	Eluard · Catalyst of Fate
+text	play	html	510,855,590,870	12.2	5.87	outside	PHÁP SƯ · Cấp 1
+text	play	html	486,875,614,890	12.2	5.87	outside	DỰ BỊ · CHIÊU PROTOTYPE
+text	play	html	707,808,753,829	12.2	9.72	outside	Peggy
+text	play	html	692,834,768,849	12.2	5.87	outside	HỖ TRỢ · Cấp 1
+text	play	html	666,854,794,869	12.2	5.87	outside	DỰ BỊ · CHIÊU PROTOTYPE
+text	play	html	884,808,936,829	12.2	9.72	outside	Walker
+text	play	html	873,834,947,849	12.2	5.87	outside	XẠ THỦ · Cấp 1
+text	play	html	846,854,974,869	12.2	5.87	outside	DỰ BỊ · CHIÊU PROTOTYPE
+text	play	html	1060,808,1120,829	12.2	9.72	outside	Morrow
+text	play	html	1050,834,1130,849	12.2	5.87	outside	PHÁP SƯ · Cấp 1
+text	play	html	1026,854,1154,869	12.2	5.87	outside	DỰ BỊ · CHIÊU PROTOTYPE
+text	play	html	164,1028,216,1049	12.2	9.72	outside	Scarlet
+text	play	html	150,1054,230,1069	12.2	5.87	outside	PHÁP SƯ · Cấp 1
+text	play	html	126,1074,254,1089	12.2	5.87	outside	DỰ BỊ · CHIÊU PROTOTYPE
+text	play	html	301,1028,439,1070	12.2	9.72	outside	Thane · The Veiled Wind
+text	play	html	324,1075,416,1090	12.2	5.87	outside	CẬN CHIẾN · Cấp 1
+text	play	html	306,1095,434,1110	12.2	5.87	outside	DỰ BỊ · CHIÊU PROTOTYPE
+text	play	html	529,1028,571,1049	12.2	9.72	outside	Sonja
+text	play	html	516,1054,584,1069	12.2	5.87	outside	HỘ VỆ · Cấp 1
+text	play	html	486,1074,614,1089	12.2	5.87	outside	DỰ BỊ · CHIÊU PROTOTYPE
+text	play	html	704,1028,756,1049	12.2	9.72	outside	Palmer
+text	play	html	692,1054,768,1069	12.2	5.87	outside	HỖ TRỢ · Cấp 1
+text	play	html	666,1074,794,1089	12.2	5.87	outside	DỰ BỊ · CHIÊU PROTOTYPE
+text	play	html	101,708,731,725	12.2	12.24	inside	Thane · HP 588 · Công 86. 3 chiêu tự động + nội tại theo vai
+text	play	html	771,705,808,726	12.2	12.24	inside	Vị trí
+text	play	html	929,707,1014,728	12.2	9.72	inside	Đưa vào đội
+text	play	html	1052,707,1164,728	12.2	9.72	inside	Xem / nâng cấp
+screen	102	play	17f77298	drawn
+uncaught	0
+shot	/c/Users/PuuGoo/Desktop/my-game/production/qa/evidence/oathbound-expanded/16-collection-row-fixed.png	158530

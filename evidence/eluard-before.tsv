@@ -1,0 +1,201 @@
+FAIL	base Eluard index13 is individual while awakened index14 stays separate	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'prototype-mage'
+- 'eluard'
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:6:147
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:3:536)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Eluard all effects duration and cooldown values are editable records	AssertionError [ERR_ASSERTION]: sanctimonyCooldown
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:7:445
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:3:536)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Divine Miracle grants150percent maxHP separate from ordinary shields at initialization	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== NaN
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:8:125
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:3:536)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:8:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	actual impact absorbs divine shield before HP and before ordinary shield without false stun	AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(f.u.divineShield<before)
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:9:211
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:3:536)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	shield-only break from actual impact triggers8second stun with no health loss	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+1 !== 0
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:10:246
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:3:536)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	unshielded follow-up damage is350percent but breaking hit spill is not multiplied retroactively	AssertionError [ERR_ASSERTION]: 100 ~= NaN
+    at close (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:3:658)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:11:146
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:3:536)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	divine recovery recreates150percent shield after8simulationseconds not on render	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+1 !== 0
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:12:223
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:3:536)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:12:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	divine recovery cannot resurrect and waits for unbanished return when its timer expires	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+0 !== NaN
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:13:280
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:3:536)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:13:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Sanctimony consumes old divine amount capped500percentattack then replaces180percentmaxHP without break stun	AssertionError [ERR_ASSERTION]: sanctimony
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:5:1038)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:14:184
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:3:536)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Sanctimony without old divine shield grants a new shield without a fabricated global hit	AssertionError [ERR_ASSERTION]: sanctimony
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:5:1038)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:15:141
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:3:536)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Prayer selects farthest forward actual ally not lowest slot or weakest HP	AssertionError [ERR_ASSERTION]: prayerProtection
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:5:1038)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:16:129
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:3:536)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Prayer immunity cancels on source stun death banish or channel expiry and never grants control immunity	AssertionError [ERR_ASSERTION]: prayerProtection
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:5:1038)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:17:190
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:3:536)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:17:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	enemy-side Prayer mirrors farthest-forward X and ignores unavailable allies	AssertionError [ERR_ASSERTION]: prayerProtection
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:5:1038)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:18:290
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:3:536)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:18:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Judgment releases220percent globally and actual allied kills add50percent each without rewarding dead target	TypeError: Cannot read properties of undefined (reading '0')
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:19:243
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:3:536)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:19:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Judgment is interruptible before release and does not hit banished dead or entering enemies	AssertionError [ERR_ASSERTION]: eluardJudgment
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:5:1038)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:20:125
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:3:536)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:20:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Eluard refuses role prototype IDs and pure shield/prayer bonus lookups cannot change state	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+true !== false
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:21:189
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:3:536)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\eluard-skills-unit.cjs:21:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+unit_total	0
+unit_failed	16

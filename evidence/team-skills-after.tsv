@@ -1,0 +1,16 @@
+PASS	three new heroes each expose four skills and correct passive counts
+PASS	Lucius party shield refreshes and expires without stacking
+PASS	Lucius heals lowest health ratio and gives finite defensive buff
+PASS	Divine Strike hits nearby targets and knocks down, not far rear
+PASS	Blessed Shield reduces incoming damage and resists control until expiry
+PASS	ready ultimate ends Lucius shield stance early
+PASS	Fawkes Confine selects highest attack and removes target from combat for duration
+PASS	Purification damages only targetable enemies and removes positive effects not debuffs
+PASS	Abate slows an enemy temporarily
+PASS	Silver Bolt modifies normal shots only and adds debuffed-target bonus
+PASS	Raine Cripple marks all available enemies and boosts incoming damage
+PASS	Raine Barrage schedules five shots to each stream, may share target
+PASS	Lock On applies offensive buffs on ally hit, no base heal, refresh not stack
+PASS	Exploit passive scales with missing health only for Raine
+PASS	banish prevents queued hits and does not count as death
+unit_total	15

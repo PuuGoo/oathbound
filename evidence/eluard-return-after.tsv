@@ -1,0 +1,21 @@
+PASS	base Eluard index13 is individual while awakened index14 stays separate
+PASS	Eluard all effects duration and cooldown values are editable records
+PASS	Divine Miracle grants150percent maxHP separate from ordinary shields at initialization
+PASS	actual impact absorbs divine shield before HP and before ordinary shield without false stun
+PASS	shield-only break from actual impact triggers8second stun with no health loss
+PASS	unshielded follow-up damage is350percent but breaking hit spill is not multiplied retroactively
+PASS	divine recovery recreates150percent shield after8simulationseconds not on render
+PASS	divine recovery cannot resurrect and waits for unbanished return when its timer expires
+PASS	Sanctimony consumes old divine amount capped500percentattack then replaces180percentmaxHP without break stun
+PASS	Sanctimony without old divine shield grants a new shield without a fabricated global hit
+PASS	Prayer selects farthest forward actual ally not lowest slot or weakest HP
+PASS	Prayer immunity cancels on source stun death banish or channel expiry and never grants control immunity
+PASS	enemy-side Prayer mirrors farthest-forward X and ignores unavailable allies
+PASS	Judgment releases220percent globally and actual allied kills add50percent each without rewarding dead target
+PASS	Judgment is interruptible before release and does not hit banished dead or entering enemies
+PASS	Eluard refuses role prototype IDs and pure shield/prayer bonus lookups cannot change state
+PASS	Eluard Canvas shield prayer and four captions draw with finite arguments and no simulation mutation
+PASS	expired divine recovery shields Eluard on the exact confinement return step before actual incoming damage
+PASS	Eluard divine shield prevents a false lethal Hendrik rescue while ongoing protection still redirects once
+unit_total	19
+unit_failed	0

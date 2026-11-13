@@ -1,0 +1,159 @@
+FAIL	Walker index16 owns three active skills and one passive without inherited Raine effects	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'prototype-ranged'
+- 'walker'
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:3:163
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Walker tuning records include shell reload crit amplification and pellet geometry	AssertionError [ERR_ASSERTION]: saloonCooldown
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:4:631
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:4:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	normal Walker shell releases an actual projectile with80percent primary and four25percent pellets	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+false !== true
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:5:136
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	pellets bypass critical checks and cannot generate Old Faithful even with100percent crit buff	TypeError: Cannot read properties of undefined (reading 'skillId')
+    at Object.projectileImpact (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\hero-skills.js:578:10)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:6:201
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Saloon cancels reload for8seconds and suppresses other active casts while strengthening normals	AssertionError [ERR_ASSERTION]: saloonBlast
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:1625)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:7:146
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	magazine empties into simulation reload and no extra shell is released while reloading	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+false !== true
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:8:308
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:8:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Spittoon deals140percent in melee and only an actual knockdown queues the240percent followup	AssertionError [ERR_ASSERTION]: spittoonSmack
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:1625)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:9:126
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Spittoon does not remote smack and interrupt cancels unreleased follow shot	AssertionError [ERR_ASSERTION]: spittoonSmack
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:1625)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:10:133
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Gunslinger chooses two lowest health ratios at release and360percent arrives by projectile	AssertionError [ERR_ASSERTION]: gunslinger
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:1625)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:11:169
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Gunslinger lowHP crit bonus is scoped to this shot and Old Faithful only increments on actual critical	AssertionError [ERR_ASSERTION]: gunslinger
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:1625)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:12:152
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:12:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Old Faithful stacks2percent critical multiplier to60percent cap and no bonus to ordinary damage	AssertionError [ERR_ASSERTION]: undefined ~= undefined
+    at close (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:658)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:13:212
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:13:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	released shell outlives caster but cannot hit a banished dead or entering target	TypeError: Cannot read properties of undefined (reading 'skillId')
+    at Object.projectileImpact (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\hero-skills.js:578:10)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:14:338
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	pure lookups never advance Walker timers and generic role spells are rejected	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+true !== false
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:15:184
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+unit_total	0
+unit_failed	13

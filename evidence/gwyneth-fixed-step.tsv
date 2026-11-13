@@ -1,0 +1,26 @@
+PASS	Gwyneth preserves index8 identity and owns one active plus three real passives
+PASS	all Gwyneth tuning values are finite live config records
+PASS	Divine Arrow hits only live unbanished enemies in their starting half for210percent
+PASS	Divine Arrow eligibility waits when enemy half is empty and rechecks on release
+PASS	Divine Arrow accuracy adaptation is weaken not a permanent stat and expires
+PASS	Strength In Numbers grants25percentcrit only while no live targetable enemy is nearby
+PASS	normal attack rolls fire and lightning separately at release, then waits for actual projectile arrival
+PASS	non-proc arrows remain ordinary100percent and do not invent burning or chain targets
+PASS	lightning hits primary plus nearby enemies once, excludes far dead and banished, no recursive chain
+PASS	combined fire and lightning use220percent once and carry burn to actual nearby hits
+PASS	burn produces five40percent ticks over5seconds, never damages during render or at application
+PASS	burn refresh from same source does not stack duplicate ticking records
+PASS	released arrow and burn persist after caster death, but dead or banished destination is never hit
+PASS	only Gwyneth owns elemental normal-arrow handling and passives cannot be manually resolved
+PASS	actual target acquisition prefers opposing lane before distance and ignores stale target
+PASS	actual resolveAction dispatches a normal Gwyneth attack through elemental projectile API
+PASS	actual startAction uses configured slower normal cadence without delaying other hero attacks
+PASS	cosmetic callbacks do not alter proc rolls, damage or burn state
+PASS	Gwyneth presentation draws elemental projectiles and all kit labels without combat mutation
+PASS	actual battle projectile loop resolves Gwyneth arrow once even after caster death
+PASS	burn does not advance on cosmetic tick or paused game update
+PASS	enemy-side Divine Arrow mirrors half-field eligibility and excludes invaders behind midpoint
+PASS	elemental proc rolls occur once per arrow and rendering never rerolls a released projectile
+PASS	burn delivers all configured ticks under real fixed sixty-Hz simulation steps
+unit_total	24
+unit_failed	0

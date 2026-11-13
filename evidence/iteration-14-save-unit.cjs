@@ -6,7 +6,7 @@ const config={window:{}};vm.createContext(config);vm.runInContext(fs.readFileSyn
 const tune=new Proxy({},{get:(_,key)=>config.window.CONFIG[key].value});
 function source(name,next){const start=html.indexOf(`function ${name}(`),end=html.indexOf(next,start);assert.ok(start>=0&&end>start,name);return html.slice(start,end);}
 let stored=null,readFails=false,writeFails=false,writes=0;
-const context={tune,HEROES:Array.from({length:5},()=>({})),SAVE:'test-only',state:{saveFailed:false},uiDirty:false,
+const context={window:{migrateRosterProgress:require('../roster-system.js').migrateProgress},totalStages:()=>tune.chapters*tune.stagesPerChapter,tune,HEROES:Array.from({length:5},()=>({})),SAVE:'test-only',state:{saveFailed:false},uiDirty:false,
  localStorage:{getItem(){if(readFails)throw new Error('read blocked');return stored;},setItem(key,value){if(writeFails)throw new Error('write blocked');assert.equal(key,'test-only');stored=value;writes++;}}};
 vm.createContext(context);vm.runInContext(source('fresh','let progress=load();')+source('save','function statFor('),context);
 function valid(){return JSON.parse(JSON.stringify(context.fresh()));}
@@ -25,7 +25,7 @@ check('fractional formation identity is rejected',()=>{const p=valid();p.formati
 check('wrong roster or formation lengths are rejected',()=>{for(const key of ['heroes','formation']){const p=valid();p[key].pop();set(p);expectFresh();}});
 check('null hero is rejected without throwing',()=>{const p=valid();p.heroes[0]=null;set(p);expectFresh();});
 check('invalid resource fields are rejected',()=>{for(const key of ['gold','essence','shards'])for(const value of [-1,null,'100']){const p=valid();p[key]=value;set(p);expectFresh();}});
-check('invalid cleared counts are rejected',()=>{for(const value of [-1,0.5,11,null]){const p=valid();p.cleared=value;set(p);expectFresh();}});
+check('invalid cleared counts are rejected',()=>{for(const value of [-1,0.5,tune.chapters*tune.stagesPerChapter+1,null]){const p=valid();p.cleared=value;set(p);expectFresh();}});
 check('invalid levels are rejected',()=>{for(const value of [0,-1,1.5,31,null,'3']){const p=valid();p.heroes[0].level=value;set(p);expectFresh();}});
 check('non-boolean evolution is rejected',()=>{for(const value of [null,0,'true']){const p=valid();p.heroes[0].evolved=value;set(p);expectFresh();}});
 check('separate fresh saves do not share hero objects',()=>{const a=context.fresh(),b=context.fresh();a.heroes[0].level=4;assert.equal(b.heroes[0].level,1);});

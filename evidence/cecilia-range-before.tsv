@@ -1,0 +1,40 @@
+PASS	Cecilia stable index10 has three actives and a once-only reactive opening
+PASS	all Cecilia timing geometry and mechanic values are live config records
+PASS	unarrived Cecilia remains alive but cannot be damaged or selected by factory
+PASS	Atonement arrives behind mirrored formation target with bounded position and three marks
+PASS	opening fallback skips dead or banished mirror, never resurrects a dead caster
+PASS	enemy-side Atonement uses mirrored side and clamps behind left-facing target
+PASS	Judgement targets highest own marks rather than cached enemy and evaluates pre-hit threshold
+PASS	Judgement at five marks adds disclosed second300percent damage and caps symbols
+PASS	three-stage Purification adds one mark per use not per pulse and scales from pre-cast marks
+PASS	control cancels unreleased opening or purification pulses without removing existing marks
+PASS	Judgement never damages dead banished or entering targets and does not consume marks
+PASS	Devil Trap weakens only enemies currently inside a stationary circle
+PASS	first real exit hits320percent exactly once per enemy per circle including later entrants
+PASS	banishment is not an exit hit and old circle expires without final burst
+PASS	released circle persists caster death but refresh replaces own circle without stacking
+PASS	marks are isolated per Cecilia source and lookup is pure
+PASS	combined trap and other weaken effects cannot turn damage negative or heal enemies
+PASS	actual target helpers exclude entering units but living still counts them for victory
+PASS	fixed60Hz arrival does not apply all opening pulses in the arrival step
+PASS	no simulation tick freezes opening delay and trap lifetime
+PASS	Cecilia presentation renders four labels and symbol counts without mutation or gameplay RNG
+PASS	actual impact and deliver return before damage healing or projectiles to unarrived Cecilia
+PASS	no targets at arrival leaves Cecilia present without a fabricated hit or repeated opening
+PASS	two marks before Judgement do not stun merely because this cast raises count to three
+FAIL	Purification rechecks melee range for every queued pulse and never retargets escaped target	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+3 !== 1
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:35:292
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:7:28)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\cecilia-skills-unit.cjs:35:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+unit_total	24
+unit_failed	1

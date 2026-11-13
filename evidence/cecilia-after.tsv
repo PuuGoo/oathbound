@@ -1,0 +1,18 @@
+PASS	Cecilia stable index10 has three actives and a once-only reactive opening
+PASS	all Cecilia timing geometry and mechanic values are live config records
+PASS	unarrived Cecilia remains alive but cannot be damaged or selected by factory
+PASS	Atonement arrives behind mirrored formation target with bounded position and three marks
+PASS	opening fallback skips dead or banished mirror, never resurrects a dead caster
+PASS	enemy-side Atonement uses mirrored side and clamps behind left-facing target
+PASS	Judgement targets highest own marks rather than cached enemy and evaluates pre-hit threshold
+PASS	Judgement at five marks adds disclosed second300percent damage and caps symbols
+PASS	three-stage Purification adds one mark per use not per pulse and scales from pre-cast marks
+PASS	control cancels unreleased opening or purification pulses without removing existing marks
+PASS	Judgement never damages dead banished or entering targets and does not consume marks
+PASS	Devil Trap weakens only enemies currently inside a stationary circle
+PASS	first real exit hits320percent exactly once per enemy per circle including later entrants
+PASS	banishment is not an exit hit and old circle expires without final burst
+PASS	released circle persists caster death but refresh replaces own circle without stacking
+PASS	marks are isolated per Cecilia source and lookup is pure
+unit_total	16
+unit_failed	0

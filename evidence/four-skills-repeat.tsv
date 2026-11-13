@@ -1,0 +1,161 @@
+browser	/c/Program Files/Google/Chrome/Application/chrome.exe
+time	2026-11-12 18:36:24
+render	cheap
+ua	HeadlessChrome/157.0.0.0
+scene	0	title
+state	0	title	{"t":0,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+scene	1	play
+state	1	play	{"t":0.02,"score":0,"gained":"","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+playinput	4	Space
+saved	176	localstorage	oathbound.save.v1
+scene	177	results
+state	177	results	{"t":2.95,"score":1,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":0,"selectedHero":0,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":0,"heroes":[{"maxHP":588,"attack":86
+scene	309	play
+state	309	play	{"t":5.15,"score":1,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":1,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+scene	787	results
+state	787	results	{"t":13.12,"score":2,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":1,"selectedHero":0,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":1,"heroes":[{"maxHP":588,"attack":8
+scene	1069	play
+state	1069	play	{"t":17.82,"score":2,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":2,"selectedHero":0,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+state	1500	play	{"t":25,"score":2,"gained":"Ải đã được giải phóng","chapter":0,"selectedStage":2,"selectedHero":0,"swap":null,"arranging":false,"mode":"battle","battle":{"stage":2,"heroes":[{"maxHP":588,"attack":86,"
+digits	log	14px "Segoe UI", Arial	tabular	0
+digits	log	19px "Segoe UI", Arial	tabular	0
+digits	log	11px "Segoe UI", Arial	tabular	0
+loop	log	none	no loop() step was marked
+first	log	none	no state.beat
+ending	log	results	gained	Ải đã được giải phóng
+ending	log	results	gained	Ải đã được giải phóng
+pressure	none	the game set no number state.margin in play
+steptime	1500	0.035	1.800
+frametime	18	64.5	138.5	60	18	16
+done	1500	play	stop	25.0	2810
+measured	1280x720
+text	play	canvas	653,174,705,184	13.5	5.57	inside	ĐÁNH NGÃ
+text	play	canvas	381,337,459,343	12.2	10.41	inside	INSPIRE · BLESSING
+text	play	canvas	717,351,767,360	12.2	10.41	inside	GIẢM CÔNG
+text	play	canvas	625,385,656,392	12.2	7.96	inside	INSPIRE
+text	play	canvas	422,400,453,406	12.2	7.96	inside	INSPIRE
+text	play	canvas	645,441,676,447	12.2	7.26	inside	INSPIRE
+text	play	canvas	443,455,475,461	12.2	7.48	inside	INSPIRE
+text	play	canvas	660,200,699,212	22.9	2.77	inside	−207
+text	play	canvas	660,328,698,338	16.2	12.05	inside	Gai Độc
+text	play	canvas	661,341,696,349	13.5	11.18	inside	22 / 421
+text	play	canvas	409,343,431,354	16.2	11.24	inside	Sylra
+text	play	canvas	398,356,441,364	13.5	10.45	inside	490 / 490
+text	play	canvas	723,360,761,370	16.2	12.19	inside	Gai Độc
+text	play	canvas	721,373,762,381	13.5	11.18	inside	351 / 421
+text	play	canvas	623,391,658,399	16.2	11.31	inside	Estrilda
+text	play	canvas	620,404,661,412	13.5	11.05	inside	514 / 588
+text	play	canvas	420,406,455,414	16.2	12.05	inside	Belinda
+text	play	canvas	416,419,458,427	13.5	11.05	inside	490 / 490
+text	play	canvas	648,447,673,455	16.2	11.91	inside	Bram
+text	play	canvas	640,460,681,468	13.5	11.05	inside	104 / 735
+text	play	canvas	448,461,471,469	16.2	12.05	inside	Lumi
+text	play	canvas	438,474,480,482	13.5	11.05	inside	490 / 490
+text	play	html	89,14,291,41	13.5	13.57	inside	OATHBOUND
+text	play	html	89,45,261,59	13.5	8.21	inside	CHIẾN DỊCH BÌNH MINH
+text	play	html	349,18,586,36	13.5	13.57	inside	Chương 1 · Rừng Thức Giấc
+text	play	html	349,42,574,57	13.5	8.21	inside	2 / 10 ải đã giải phóng · Sức mạnh đội 4663
+text	play	html	855,21,887,36	13.5	8.21	inside	VÀNG
+text	play	html	855,36,878,54	13.5	13.57	inside	786
+text	play	html	927,21,1006,36	13.5	8.21	inside	KINH NGHIỆM
+text	play	html	927,36,950,54	13.5	13.57	inside	246
+text	play	html	1045,21,1121,36	13.5	8.21	inside	ẤN TIẾN HÓA
+text	play	html	1045,36,1053,54	13.5	13.57	inside	4
+text	play	html	1150,30,1181,45	13.5	9.72	inside	Đặt lại
+text	play	html	89,100,346,114	13.5	9.95	inside	ẢI 1-3 · TỰ CHIẾN THỜI GIAN THỰC
+text	play	html	89,114,207,142	13.5	13.57	inside	Rễ Cây Cổ
+text	play	html	784,112,868,131	13.5	9.72	inside	Tạm dừng · P
+text	play	html	99,166,237,180	13.5	10.56	inside	Estrilda · ĐANG TUNG CHIÊU
+text	play	html	262,166,313,180	13.5	12.79	inside	Bram · 0.5s
+text	play	html	339,166,464,180	13.5	12.79	inside	Sylra · ĐANG TUNG CHIÊU
+text	play	html	489,166,551,180	13.5	12.79	inside	Belinda · 0.8s
+text	play	html	576,166,626,180	13.5	12.79	inside	Lumi · 0.5s
+text	play	html	940,120,1101,134	13.5	9.95	inside	GIAO TRANH LIÊN TỤC
+text	play	html	1136,120,1169,134	13.5	9.95	inside	5 vs 5
+text	play	html	940,149,984,177	13.5	13.57	inside	5.9
+text	play	html	984,162,1032,175	13.5	8.21	inside	/ 90 giây
+text	play	html	940,184,1114,199	13.5	10.01	inside	5 anh hùng · 2 địch còn chiến đấu
+text	play	html	940,219,1117,233	13.5	9.95	inside	KỸ NĂNG VỪA THI TRIỂN
+text	play	html	940,233,1007,247	13.5	11.24	inside	Estrilda: Joust!
+text	play	html	940,300,1157,334	13.5	10.01	inside	Cận chiến áp sát · kỹ năng tự dùng với hồi chiêu riêng. Bril
+text	play	html	940,343,1036,358	13.5	13.57	inside	Estrilda · 4 kỹ năng
+text	play	html	944,367,971,381	13.5	9.74	inside	Joust
+text	play	html	944,384,984,398	13.5	10.04	inside	3.4s · ×2
+text	play	html	1064,367,1131,381	13.5	9.74	inside	Royal Charge
+text	play	html	1064,384,1104,398	13.5	10.04	inside	3.4s · ×2
+text	play	html	944,411,979,425	13.5	9.74	inside	Inspire
+text	play	html	944,428,984,442	13.5	10.04	inside	0.4s · ×1
+text	play	html	1064,411,1105,425	13.5	9.74	inside	Ridicule
+text	play	html	1064,428,1104,442	13.5	10.04	inside	2.0s · ×2
+text	play	html	940,454,1036,468	13.5	13.57	inside	Belinda · 4 kỹ năng
+text	play	html	944,477,1005,492	13.5	9.74	inside	Divine Light
+text	play	html	944,494,984,509	13.5	10.04	inside	0.8s · ×1
+text	play	html	1064,477,1158,492	13.5	9.74	inside	Divine Retribution
+text	play	html	1064,494,1104,509	13.5	10.04	inside	1.4s · ×2
+text	play	html	944,521,991,536	13.5	9.74	inside	Brilliance
+text	play	html	944,539,1037,553	13.5	10.04	inside	Nội tại · 0 chí mạng
+text	play	html	1064,521,1106,536	13.5	9.74	inside	Blessing
+text	play	html	1064,539,1104,553	13.5	10.04	inside	1.0s · ×1
+text	play	html	953,566,997,582	13.5	10.01	inside	Đội bạn
+text	play	html	996,623,1120,641	13.5	9.72	inside	Tạm dừng / rút lui
+text	play	html	951,670,1081,684	13.5	13.57	inside	Bảng HP · khiên của hai đội
+text	play	html	940,691,973,706	13.5	13.57	inside	Tướng
+text	play	html	1068,691,1083,706	13.5	13.57	inside	HP
+text	play	html	1130,691,1159,706	13.5	13.57	inside	Khiên
+text	play	html	940,706,1000,720	13.5	13.57	inside	Bạn · Estrilda
+text	play	html	1068,706,1107,720	13.5	13.57	inside	514/588
+text	play	html	1130,706,1148,720	13.5	13.57	inside	121
+text	play	html	940,720,991,734	13.5	13.57	outside	Bạn · Bram
+text	play	html	1068,720,1107,734	13.5	13.57	outside	104/735
+text	play	html	1130,720,1136,734	13.5	13.57	outside	0
+text	play	html	940,734,988,749	13.5	13.57	outside	Bạn · Sylra
+text	play	html	1068,734,1107,749	13.5	13.57	outside	490/490
+text	play	html	1130,734,1136,749	13.5	13.57	outside	0
+text	play	html	940,749,1001,763	13.5	13.57	outside	Bạn · Belinda
+text	play	html	1068,749,1107,763	13.5	13.57	outside	490/490
+text	play	html	1130,749,1136,763	13.5	13.57	outside	0
+text	play	html	940,763,989,778	13.5	13.57	outside	Bạn · Lumi
+text	play	html	1068,763,1107,778	13.5	13.57	outside	490/490
+text	play	html	1130,763,1136,778	13.5	13.57	outside	0
+text	play	html	940,778,1020,792	13.5	13.57	outside	Địch · Thạch Nha
+text	play	html	1068,778,1095,792	13.5	13.57	outside	0/632
+text	play	html	1130,778,1136,792	13.5	13.57	outside	0
+text	play	html	940,792,1020,806	13.5	13.57	outside	Địch · Thạch Nha
+text	play	html	1068,792,1095,806	13.5	13.57	outside	0/632
+text	play	html	1130,792,1136,806	13.5	13.57	outside	0
+text	play	html	940,806,1007,821	13.5	13.57	outside	Địch · Gai Độc
+text	play	html	1068,806,1101,821	13.5	13.57	outside	22/421
+text	play	html	1130,806,1136,821	13.5	13.57	outside	0
+text	play	html	940,821,1007,835	13.5	13.57	outside	Địch · Gai Độc
+text	play	html	1068,821,1107,835	13.5	13.57	outside	351/421
+text	play	html	1130,821,1136,835	13.5	13.57	outside	0
+text	play	html	940,835,1013,850	13.5	13.57	outside	Địch · Tư Tế Tro
+text	play	html	1068,835,1095,850	13.5	13.57	outside	0/421
+text	play	html	1130,835,1136,850	13.5	13.57	outside	0
+text	play	html	86,538,210,552	13.5	9.95	inside	NĂM NGƯỜI GIỮ LỜI
+text	play	html	733,538,897,552	13.5	13.57	inside	Đội tự di chuyển · Nhịp đánh riêng
+text	play	html	184,571,231,584	13.5	10.32	inside	1 · TRƯỚC
+text	play	html	151,602,214,620	13.5	13.57	inside	Estrilda
+text	play	html	151,625,175,639	13.5	8.21	inside	KỴ SĨ
+text	play	html	151,648,214,662	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	348,571,395,584	13.5	10.32	inside	2 · TRƯỚC
+text	play	html	315,602,360,620	13.5	13.57	inside	Bram
+text	play	html	315,625,346,639	13.5	8.21	inside	HỘ VỆ
+text	play	html	315,648,378,662	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	527,571,559,584	13.5	10.32	inside	3 · SAU
+text	play	html	480,602,520,620	13.5	13.57	inside	Sylra
+text	play	html	480,625,517,639	13.5	8.21	inside	XẠ THỦ
+text	play	html	480,648,542,662	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	691,571,723,584	13.5	10.32	inside	4 · SAU
+text	play	html	644,602,705,620	13.5	13.57	inside	Belinda
+text	play	html	644,625,687,639	13.5	8.21	inside	PHÁP SƯ
+text	play	html	644,648,707,662	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	855,571,888,584	13.5	10.32	inside	5 · SAU
+text	play	html	808,602,850,620	13.5	13.57	inside	Lumi
+text	play	html	808,625,847,639	13.5	8.21	inside	TRỊ LIỆU
+text	play	html	808,648,871,662	13.5	9.63	inside	Cấp 1 · Thường
+text	play	html	86,692,241,707	13.5	8.86	inside	Lưu tự động trên trình duyệt này
+text	play	html	576,692,897,707	13.5	8.86	inside	Enter: tiếp tục · Space: chiến đấu · U: nâng cấp · E: tiến h
+screen	1500	play	12246b88	drawn
+uncaught	0
+shot	/c/Users/PuuGoo/Desktop/my-game/prototypes/oathbound/evidence/four-skills-repeat.png	358530

@@ -1,0 +1,16 @@
+PASS	Oscar index12 owns four active mechanics and no old blade prototype
+PASS	Oscar numeric tuning is live finite editable records
+PASS	Aura deals270percent once then creates a stationary eleven-second self-only haste field and four knives
+PASS	Fine Cuts throws to two weakest eligible HP ratios not an out-of-range cached foe
+PASS	knife damage and persistent ground point happen on projectile arrival, including a lethal hit
+PASS	a thrown knife outlives caster but invalid destination cannot create a ground knife
+PASS	Slice waits without a usable own ground knife rather than teleporting without a destination
+PASS	Slice consumes exactly one nearby-enemy knife, teleports within arena and deals200percent around destination
+PASS	Slice cannot consume another Oscar knife or an empty destination without enemies
+PASS	knife lifetime and refresh retain bounded records rather than growing forever
+PASS	Unfazed cleans supported negative modifier fields while preserving positive mixed fields
+PASS	Unfazed persists by simulation not duration, refresh does not stack and actual stun removes it
+PASS	blocked control does not clear Unfazed or turn it into immunity
+PASS	Oscar refuses old prototype skills and pure bonus lookups do not move or tick records
+unit_total	14
+unit_failed	0

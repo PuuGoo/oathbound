@@ -1,0 +1,18 @@
+PASS	Rosaline preserves index9 with four individual actives not role prototypes
+PASS	Rosaline mechanics use finite editable config records
+PASS	follow chooses highest configured combat rating excluding self and stays until recipient unavailable
+PASS	follow mitigation is40percent while a valid ally exists, not while alone
+PASS	Motivation reduces only followed ally cooldowns once and never creates energy or heals
+PASS	support skills wait rather than using self when every other ally is dead or banished
+PASS	Afternoon Tea heals150percent of Rosaline attack only to followed ally with a living HP cap
+PASS	Crazy Crockery schedules two120percent thrown projectiles at separate times to followed allies enemy
+PASS	crockery cannot release a new projectile if target escapes range and never redirects to distant cached target
+PASS	control cancels unthrown crockery while already released projectile survives caster death
+PASS	Spring Cleaning uses timed80percent hits around followed ally for4seconds not an immediate whole-field burst
+PASS	Spring Cleaning rear-ally knockback respects immunity and frontline ally has no push
+PASS	cleaning damage immunity ends with channel or control, and never grants resurrection
+PASS	cleaning cannot damage enemies around old recipient after that ally dies or is banished
+PASS	follow movement integration uses actual bounded moveUnit rather than teleporting companion
+PASS	Rosaline never inherits protoMend/protoRally and cosmetic hooks do not alter real skills
+unit_total	16
+unit_failed	0

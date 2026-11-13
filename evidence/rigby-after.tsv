@@ -1,0 +1,43 @@
+PASS	Rigby index11 owns three actives and a reactive Well Rested not generic guardian buffs
+PASS	Rigby values are editable finite config records
+PASS	Barrel release creates one projectile without immediate damage or unrelated buffs
+PASS	barrel arrival does150percent then a separately delayed260percent area blast
+PASS	barrel blast uses the stored ground point not a later moving target and can outlive caster
+FAIL	Barrel applies twelve60percent burn ticks without recursive elemental procs or stacking refresh	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+11 !== 12
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:10:327
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:547)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+PASS	barrel projectile never explodes on a dead banished or entering destination
+PASS	Fire Breath hits nearby enemies in front and uses disclosed weaken instead of accuracy
+PASS	Frenzy first and second stack only self14percent reduction and25percent haste each
+PASS	third stack enters8second frenzy and disables further drinking until reset
+PASS	frenzy expiry resets all stacks and begins Well Rested without an immediate free heal
+FAIL	Well Rested heals5percent maxHP twelve times on simulation seconds then stops	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+11 !== 12
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:16:304
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:3:547)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\rigby-skills-unit.cjs:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+PASS	rested never resurrects and banished seconds do not bank healing for later
+PASS	passive lookup and unticked pause never advance Frenzy or Rested
+PASS	Rigby rejects old prototype guardian skill IDs
+unit_total	13
+unit_failed	2
