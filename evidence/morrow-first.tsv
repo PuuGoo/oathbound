@@ -1,0 +1,14 @@
+PASS	Morrow index17 has three actives one passive and no inherited Belinda
+PASS	all Morrow damage duration geometry and cadence values have editable records
+PASS	Eye releases five200percent local area pulses and silence without stun or root
+PASS	silence blocks active readiness but never cancels released damage or a normal
+PASS	Binding220percent roots movement4s without interrupting attacks and excludes manipulated target
+PASS	Demonic selects highest actual damage dealt enemy then250percent and6s manipulation without changing side
+PASS	damageDealt counts actual HP lost not overkill shield or heals
+PASS	charm target lookup selects own living eligible teammates excluding self while keeping victory sides stable
+PASS	Abyssal additional220percent uses a separate4s cooldown per enemy at normal projectile arrival
+PASS	dead banished entering destinations receive neither Morrow projectile damage nor passive
+PASS	released Morrow projectile survives caster death but unreleased Eye pulses cancel on interruption
+PASS	root silence and manipulation expire exactly on fixed simulation boundaries, with no lookup mutation
+unit_total	12
+unit_failed	0

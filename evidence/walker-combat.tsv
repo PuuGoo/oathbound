@@ -1,0 +1,111 @@
+browser	/c/Program Files/Google/Chrome/Application/chrome.exe
+time	2026-11-13 08:58:22
+render	cheap
+badinput	Enter,click:text=Bộ_sưu_tập_·_22,click:text=Walker,click:text=Đưa_vào_đội,click:text=Đóng_bộ_sưu_tập,click:text=CHIẾN_ĐẤU_·_SPACE,wait:5
+ua	HeadlessChrome/157.0.0.0
+scene	0	title
+state	0	title	{"t":0,"score":21,"gained":"","chapter":4,"selectedStage":21,"selectedHero":15,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+saved	30	localstorage	(1 keys)
+state	30	title	{"t":0.5,"score":21,"gained":"","chapter":4,"selectedStage":21,"selectedHero":15,"swap":null,"arranging":false,"mode":"map","battle":null,"saveFailed":false}
+digits	log	14px "Segoe UI", Arial	tabular	0
+loop	log	none	no loop() step was marked
+first	log	none	no state.beat
+pressure	none	the game set no number state.margin in play
+steptime	30	0.013	0.200
+frametime	none	no frame was drawn in play
+done	30	title	stop	0.5	1218
+measured	1280x720
+text	title	canvas	166,430,184,439	17.6	10.57	inside	5-1
+text	title	canvas	156,460,195,468	16.2	9.90	inside	Cầu Sao
+text	title	canvas	302,383,321,392	17.6	8.11	inside	5-2
+text	title	canvas	279,413,344,424	16.2	10.45	inside	Rìa Hư Không
+text	title	canvas	427,426,445,435	17.6	10.58	inside	5-3
+text	title	canvas	415,456,459,465	16.2	5.41	inside	Chưa mở
+text	title	canvas	560,355,579,364	17.6	10.98	inside	5-4
+text	title	canvas	547,385,591,394	16.2	5.80	inside	Chưa mở
+text	title	canvas	716,308,734,317	17.6	10.98	inside	5-5
+text	title	canvas	704,337,748,346	16.2	5.80	inside	Chưa mở
+text	title	canvas	360,488,606,502	16.2	8.46	inside	Chọn dấu mốc để xem đội địch và phần thưởng
+text	title	html	89,14,291,41	13.5	13.57	inside	OATHBOUND
+text	title	html	89,45,261,59	13.5	8.21	inside	CHIẾN DỊCH BÌNH MINH
+text	title	html	349,18,549,36	13.5	13.57	inside	Chương 5 · Vực Tinh Tú
+text	title	html	349,42,580,57	13.5	8.21	inside	21 / 30 ải đã giải phóng · Sức mạnh đội 7725
+text	title	html	855,21,887,36	13.5	8.21	inside	VÀNG
+text	title	html	855,36,886,54	13.5	13.57	inside	5534
+text	title	html	927,21,1006,36	13.5	8.21	inside	KINH NGHIỆM
+text	title	html	927,36,958,54	13.5	13.57	inside	2398
+text	title	html	1045,21,1121,36	13.5	8.21	inside	ẤN TIẾN HÓA
+text	title	html	1045,36,1061,54	13.5	13.57	inside	30
+text	title	html	1150,30,1181,45	13.5	9.72	inside	Đặt lại
+text	title	html	93,99,334,113	13.5	9.95	inside	HÀNH TRÌNH CỦA NGƯỜI GIỮ LỜI
+text	title	html	93,120,259,151	13.5	13.57	inside	Vực Tinh Tú
+text	title	html	93,158,430,175	13.5	11.25	inside	Chương 5 · Địch mạnh dần qua từng ải · Trùm ở cuối chương
+text	title	html	102,194,181,206	13.5	12.95	inside	01 · Rừng Thức Giấc
+text	title	html	202,194,274,206	13.5	12.95	inside	02 · Thành Tro Tàn
+text	title	html	296,194,370,206	13.5	12.95	inside	03 · Đèo Băng Lam
+text	title	html	392,194,457,206	13.5	12.95	inside	04 · Sa Mạc Kính
+text	title	html	479,194,542,206	13.5	9.49	inside	05 · Vực Tinh Tú
+text	title	html	564,194,669,206	13.5	12.95	inside	06 · Thánh Điện Bình Minh
+text	title	html	940,120,985,134	13.5	9.95	inside	ẢI 5-2
+text	title	html	1075,120,1169,134	13.5	9.95	inside	THỬ THÁCH MỚI
+text	title	html	940,144,1095,168	13.5	13.57	inside	Rìa Hư Không
+text	title	html	940,176,1169,210	13.5	10.01	inside	Thạch Nha · Thạch Nha · Gai Độc · Ảnh Trảo · Tư Tế Tro
+text	title	html	979,224,1016,245	13.5	13.57	inside	7725
+text	title	html	964,249,1031,263	13.5	8.21	inside	ĐỘI CỦA BẠN
+text	title	html	1095,224,1142,245	13.5	13.57	inside	19738
+text	title	html	1087,249,1150,263	13.5	8.21	inside	ĐỘI ĐỐI THỦ
+text	title	html	940,275,991,292	13.5	13.57	inside	496 vàng
+text	title	html	1004,275,1045,292	13.5	13.57	inside	186 KN
+text	title	html	1058,275,1082,292	13.5	13.57	inside	2 ấn
+text	title	html	988,307,1128,325	13.5	1.12	inside	CHIẾN ĐẤU · SPACE
+text	title	html	940,351,1031,370	13.5	13.57	inside	Peggy · Cấp 5
+text	title	html	1134,353,1176,367	13.5	8.21	inside	Tinh Anh
+text	title	html	940,377,1034,391	13.5	10.01	inside	HP 1096 · Công 112
+text	title	html	967,522,1028,536	13.5	9.72	inside	Nâng cấp · U
+text	title	html	954,536,1040,551	13.5	5.87	inside	122 vàng + 27 KN
+text	title	html	1091,515,1146,529	13.5	3.52	inside	Đã tiến hóa
+text	title	html	1072,529,1165,558	13.5	5.87	inside	Cấp 3 · 180 vàng · 4 ấn
+text	title	html	940,575,1000,589	13.5	10.78	inside	Duty Bound
+text	title	html	940,590,1167,635	13.5	8.21	inside	Hai hộ vệ80%stats, đánh/bảo vệ phụ thuộc chủ. Tăng45%nhịp/gi
+text	title	html	940,639,999,653	13.5	10.78	inside	Royal Scroll
+text	title	html	940,654,1174,684	13.5	8.21	inside	Hồi220%công cho hộ vệ còn sống và1đồng minh tỷ lệHP thấp nhấ
+text	title	html	940,688,1006,702	13.5	10.78	inside	Royal Guards
+text	title	html	940,703,1173,733	13.5	8.21	outside	Mỗi hộ vệ tạo khiên20%HP hiện tại cho mình vàđồng minh gần n
+text	title	html	940,737,1024,751	13.5	10.78	outside	Royal Marksmen
+text	title	html	940,752,1174,797	13.5	8.21	outside	Năm đạn70%công vào địch gần nhất; suy công/làmchậm10%7s thay
+text	title	html	940,804,1140,818	13.5	8.91	outside	Mẹo: để hộ vệ phía trước, trị liệu phía sau.
+text	title	html	86,542,210,556	13.5	9.95	inside	NĂM NGƯỜI GIỮ LỜI
+text	title	html	570,542,725,556	13.5	13.57	inside	Chọn tướng để xem và nâng cấp
+text	title	html	748,542,818,556	13.5	9.72	inside	Bộ sưu tập · 22
+text	title	html	851,542,888,556	13.5	9.72	inside	Xếp đội
+text	title	html	184,579,231,592	13.5	10.32	inside	1 · TRƯỚC
+text	title	html	151,612,197,630	13.5	13.57	inside	Peggy
+text	title	html	151,634,184,646	13.5	8.21	inside	HỖ TRỢ
+text	title	html	151,654,219,668	13.5	9.63	inside	Cấp 5 · Tinh Anh
+text	title	html	348,579,395,592	13.5	10.32	inside	2 · TRƯỚC
+text	title	html	315,612,382,630	13.5	13.57	inside	Hendrik
+text	title	html	315,634,341,646	13.5	8.21	inside	HỘ VỆ
+text	title	html	315,654,383,668	13.5	9.63	inside	Cấp 5 · Tinh Anh
+text	title	html	527,579,559,592	13.5	10.32	inside	3 · SAU
+text	title	html	480,612,534,630	13.5	13.57	inside	Rowan
+text	title	html	480,634,512,646	13.5	8.21	inside	HỖ TRỢ
+text	title	html	480,654,542,668	13.5	9.63	inside	Cấp 1 · Thường
+text	title	html	691,579,723,592	13.5	10.32	inside	4 · SAU
+text	title	html	644,612,699,630	13.5	13.57	inside	Scarlet
+text	title	html	644,634,680,646	13.5	8.21	inside	PHÁP SƯ
+text	title	html	644,654,707,668	13.5	9.63	inside	Cấp 3 · Thường
+text	title	html	855,579,888,592	13.5	10.32	inside	5 · SAU
+text	title	html	808,612,857,630	13.5	13.57	inside	Thane
+text	title	html	808,634,854,646	13.5	8.21	inside	CẬN CHIẾN
+text	title	html	808,654,875,668	13.5	9.63	inside	Cấp 3 · Tinh Anh
+text	title	html	86,700,241,715	13.5	8.86	inside	Lưu tự động trên trình duyệt này
+text	title	html	576,700,897,715	13.5	8.86	inside	Enter: tiếp tục · Space: chiến đấu · U: nâng cấp · E: tiến h
+text	title	html	484,190,796,205	13.5	11.49	inside	MỘT CUỘC VIỄN CHINH FANTASY · 5 ĐẤU 5
+text	title	html	394,216,886,282	13.5	13.40	inside	OATHBOUND
+text	title	html	464,295,816,328	13.5	15.69	inside	Chiến Dịch Bình Minh
+text	title	html	525,344,755,363	13.5	12.29	inside	Rừng xưa đã đánh mất ánh mặt trời.
+text	title	html	560,421,720,440	13.5	1.23	inside	BẮT ĐẦU HÀNH TRÌNH
+text	title	html	465,473,815,488	13.5	10.55	inside	Xếp đội hình → xem tự chiến đấu → nhận thưởng → nâng cấp & t
+screen	30	title	9ee42959	drawn
+uncaught	0
+shot	C:/Users/PuuGoo/Desktop/my-game/production/qa/evidence/oathbound-expanded/74-walker-combat.png	355489

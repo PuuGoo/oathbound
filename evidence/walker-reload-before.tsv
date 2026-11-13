@@ -1,0 +1,36 @@
+PASS	Walker index16 owns three active skills and one passive without inherited Raine effects
+PASS	Walker tuning records include shell reload crit amplification and pellet geometry
+PASS	normal Walker shell releases an actual projectile with80percent primary and four25percent pellets
+PASS	pellets bypass critical checks and cannot generate Old Faithful even with100percent crit buff
+PASS	Saloon cancels reload for8seconds and suppresses other active casts while strengthening normals
+PASS	magazine empties into simulation reload and no extra shell is released while reloading
+PASS	Spittoon deals140percent in melee and only an actual knockdown queues the240percent followup
+PASS	Spittoon does not remote smack and interrupt cancels unreleased follow shot
+PASS	Gunslinger chooses two lowest health ratios at release and360percent arrives by projectile
+PASS	Gunslinger lowHP crit bonus is scoped to this shot and Old Faithful only increments on actual critical
+PASS	Old Faithful stacks2percent critical multiplier to60percent cap and no bonus to ordinary damage
+PASS	released shell outlives caster but cannot hit a banished dead or entering target
+PASS	pure lookups never advance Walker timers and generic role spells are rejected
+PASS	production impact forwards noCrit options so pellets cannot feed Fate or Old Faithful
+PASS	failed critical primary may use Fate once but its four pellets never use Fate
+PASS	actual normal-action release routes Walker through a shell rather than an ordinary arrow
+PASS	Walker catalog discloses reload and prototype adaptations rather than claiming role kit
+PASS	Walker captions shell and hit feedback render without changing combat or undefined Canvas values
+PASS	Saloon ends at exactly480 fixed60Hz steps and reload refills at exactly90
+PASS	actual AI uses only normal attacks during Saloon and approaches Spittoon melee range after it ends
+FAIL	actual AI does not play a phantom normal attack while Walker is reloading	AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(!actions.some(a=>a.u===f.u))
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:26:880
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:2:535)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\walker-skills-unit.cjs:26:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+unit_total	20
+unit_failed	1

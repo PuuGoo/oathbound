@@ -2,6 +2,25 @@
 // All balance and timing values are live, editable tuning values.
 window.CONFIG = {
   seed: 617,
+  // Morrow: Ultimate block becomes active-skill silence; roots do not stun.
+  eyeCooldown: {value:11,min:1,max:30,step:0.1},
+  eyeDelay: {value:1.2,min:0,max:15,step:0.1},
+  eyeDamage: {value:2,min:0,max:6,step:0.1},
+  eyeHits: {value:5,min:1,max:10,step:1},
+  eyeInterval: {value:0.3,min:0.1,max:2,step:0.05},
+  eyeRadius: {value:150,min:20,max:400,step:5},
+  eyeSilence: {value:4,min:0,max:10,step:0.1},
+  bindingCooldown: {value:7,min:1,max:30,step:0.1},
+  bindingDelay: {value:0.7,min:0,max:15,step:0.1},
+  bindingDamage: {value:2.2,min:0,max:6,step:0.1},
+  bindingDuration: {value:4,min:0,max:10,step:0.1},
+  bindingRange: {value:330,min:50,max:800,step:5},
+  murmursCooldown: {value:13,min:1,max:30,step:0.1},
+  murmursDelay: {value:2,min:0,max:15,step:0.1},
+  murmursDamage: {value:2.5,min:0,max:6,step:0.1},
+  murmursDuration: {value:6,min:0,max:15,step:0.1},
+  abyssalDamage: {value:2.2,min:0,max:6,step:0.1},
+  abyssalCooldown: {value:4,min:0.1,max:15,step:0.1},
   // Walker: finite magazine/reload and crit amplification are explicit prototype conversions.
   saloonCooldown: {value:13,min:1,max:30,step:0.1},
   saloonDelay: {value:2,min:0,max:15,step:0.1},

@@ -1,0 +1,44 @@
+PASS	Morrow index17 has three actives one passive and no inherited Belinda
+PASS	all Morrow damage duration geometry and cadence values have editable records
+PASS	Eye releases five200percent local area pulses and silence without stun or root
+PASS	silence blocks active readiness but never cancels released damage or a normal
+PASS	Binding220percent roots movement4s without interrupting attacks and excludes manipulated target
+PASS	Demonic selects highest actual damage dealt enemy then250percent and6s manipulation without changing side
+PASS	damageDealt counts actual HP lost not overkill shield or heals
+PASS	charm target lookup selects own living eligible teammates excluding self while keeping victory sides stable
+PASS	Abyssal additional220percent uses a separate4s cooldown per enemy at normal projectile arrival
+PASS	dead banished entering destinations receive neither Morrow projectile damage nor passive
+PASS	released Morrow projectile survives caster death but unreleased Eye pulses cancel on interruption
+PASS	root silence and manipulation expire exactly on fixed simulation boundaries, with no lookup mutation
+PASS	production movement cannot advance a rooted unit but does not suppress its normal release
+PASS	actual acquireTarget clears hostile cache during charm and friendly cache after charm expires
+FAIL	charmed Walker shell captures allied pellet recipients at release and does not hit the original enemy team	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+9946 !== 10000
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:19:335
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:3:601)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:19:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	actual AI picks an in-range uncharmed Binding target and charmed generic units use normals against teammates	AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(action)
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:20:1064
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:3:601)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:20:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+unit_total	14
+unit_failed	2

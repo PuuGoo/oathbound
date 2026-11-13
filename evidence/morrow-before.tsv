@@ -1,0 +1,148 @@
+FAIL	Morrow index17 has three actives one passive and no inherited Belinda	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'prototype-mage'
+- 'morrow'
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:5:90
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:3:601)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	all Morrow damage duration geometry and cadence values have editable records	AssertionError [ERR_ASSERTION]: eyeCooldown
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:6:413
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:3:601)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Eye releases five200percent local area pulses and silence without stun or root	AssertionError [ERR_ASSERTION]: eyeEvil
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:4:1014)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:7:112
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:3:601)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	silence blocks active readiness but never cancels released damage or a normal	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+false !== true
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:8:239
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:3:601)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:8:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Binding220percent roots movement4s without interrupting attacks and excludes manipulated target	AssertionError [ERR_ASSERTION]: bindingTerror
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:4:1014)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:9:156
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:3:601)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Demonic selects highest actual damage dealt enemy then250percent and6s manipulation without changing side	AssertionError [ERR_ASSERTION]: demonicMurmurs
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:4:1014)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:10:203
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:3:601)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	damageDealt counts actual HP lost not overkill shield or heals	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 0
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:11:150
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:3:601)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	charm target lookup selects own living eligible teammates excluding self while keeping victory sides stable	TypeError: f.sys.attackTargets is not a function
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:12:178
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:3:601)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:12:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Abyssal additional220percent uses a separate4s cooldown per enemy at normal projectile arrival	TypeError: Cannot read properties of undefined (reading 'skillId')
+    at Object.projectileImpact (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\hero-skills.js:599:64)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:13:169
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:3:601)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:13:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	dead banished entering destinations receive neither Morrow projectile damage nor passive	TypeError: Cannot read properties of undefined (reading 'skillId')
+    at Object.projectileImpact (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\hero-skills.js:599:64)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:14:312
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:3:601)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	released Morrow projectile survives caster death but unreleased Eye pulses cancel on interruption	TypeError: Cannot read properties of undefined (reading 'skillId')
+    at Object.projectileImpact (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\hero-skills.js:599:64)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:15:181
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:3:601)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	root silence and manipulation expire exactly on fixed simulation boundaries, with no lookup mutation	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 0
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:16:285
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:3:601)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\morrow-skills-unit.cjs:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+unit_total	0
+unit_failed	12
