@@ -232,7 +232,7 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   }
   /** Most overdue ready skill wins; independent cooldowns cannot starve later skills. */
   function ready(u,target=null){
-    if(u.entryLeft>0)return null;
+    if(u.entryLeft>0||(kitKey(u)==='walker'&&u.saloonLeft>0))return null;
     const ordered=kit(u).filter(s=>!s.passive&&!s.reactive&&(s.id!=='sliceDice'||sliceKnife(u))&&(s.id!=='fineCuts'||alive(foes(u,battle())).some(t=>distance(u,t)<=tune.fineCutsRange))&&(s.id!=='drunkenFrenzy'||!(u.frenzyLeft>0))&&(!(kitKey(u)==='rosaline'&&s.support)||followTarget(u))&&(s.id!=='divineArrow'||alive(foes(u,battle())).some(t=>inEnemyHalf(u,t)))&&(!s.requiresCrits||u.executionCharges>=tune.executionCrits)&&(u.skillTimers?.[s.id]??Infinity)<=0).sort((a,b)=>u.skillTimers[a.id]-u.skillTimers[b.id]);
     return (target?ordered.find(s=>s.support||distance(u,target)<=tune[s.range]):null)||ordered[0]||null;
   }
@@ -300,7 +300,8 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
     if(target.kind!=='boss'){const hp=fraction('hp');loss.hp+=hp;const value=loss.initialHP*hp;target.maxHP=Math.max(1,target.maxHP-value);target.hp=Math.min(target.hp,target.maxHP);p.hp+=value;}
   }
   /** Apply live attack/debuff modifiers and seeded critical rolls at actual impact. */
-  function damage(source,target,amount,normal=false){
+  function damage(source,target,amount,normal=false,options={}){
+    options??={};
     if(target?.banishLeft>0||target?.entryLeft>0||bonus(target,'damageImmune')>0)return{amount:0,critical:false};
     let multiplier=1;
     if(original(source,'ranger'))multiplier+=tune.exploitMax*Math.max(0,1-target.hp/(target.maxHP||target.hp||1));
@@ -309,10 +310,11 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
     const offensive=amount*multiplier;
     multiplier*=1+bonus(target,'vulnerable');multiplier*=Math.max(0,1-bonus(target,'reduction'));
     if(target.buffs?.lockOn?.left>0&&target.buffs.lockOn.fromSide===source.side){source.buffs??={};source.buffs.lockOnReward={haste:tune.lockOnHaste,crit:tune.lockOnCrit,left:tune.lockOnBuffDuration};}
-    const chance=(original(source,'mage')?tune.brillianceCrit:0)+bonus(source,'crit');
-    const critical=chance>0&&(rng()<Math.min(tune.critChanceCap,chance)||correctFate(source,target));if(critical){visual?.critical(source,target);source.critCount=(source.critCount||0)+1;if(kitKey(source)==='thane')source.executionCharges=(source.executionCharges||0)+1;if(kitKey(source)==='gwyneth'&&passiveBonus(source,'crit')>0){source.castCounts.strengthInNumbers=(source.castCounts.strengthInNumbers||0)+1;visual?.buff(source,source,'strengthInNumbers');}emit({type:'critical',actor:source.name,target:target.name,passive:original(source,'mage')?'brilliance':kitKey(source)==='prototype-mage'?'protoSpark':kitKey(source)==='thane'?'focus':null});if(original(source,'mage')&&!source.action&&!(source.channelLeft>0)&&source.animation!=='death')animate(source,'skillAura');}
-    const unmitigated=offensive*(critical?tune.criticalMultiplier:1);
-    return{amount:amount*multiplier*(critical?tune.criticalMultiplier:1),critical,unmitigated};
+    const critMultiplier=tune.criticalMultiplier+(kitKey(source)==='walker'?(source.oldFaithful||0):0);
+    const chance=(original(source,'mage')?tune.brillianceCrit:0)+bonus(source,'crit')+(options.crit||0);
+    const critical=!options.noCrit&&chance>0&&(rng()<Math.min(tune.critChanceCap,chance)||correctFate(source,target));if(critical){visual?.critical(source,target);source.critCount=(source.critCount||0)+1;if(kitKey(source)==='walker'){source.oldFaithful=Math.min(tune.oldFaithfulCap,(source.oldFaithful||0)+tune.oldFaithfulStep);source.castCounts.oldFaithful=(source.castCounts.oldFaithful||0)+1;visual?.buff(source,source,'oldFaithful');}if(kitKey(source)==='thane')source.executionCharges=(source.executionCharges||0)+1;if(kitKey(source)==='gwyneth'&&passiveBonus(source,'crit')>0){source.castCounts.strengthInNumbers=(source.castCounts.strengthInNumbers||0)+1;visual?.buff(source,source,'strengthInNumbers');}emit({type:'critical',actor:source.name,target:target.name,passive:original(source,'mage')?'brilliance':kitKey(source)==='prototype-mage'?'protoSpark':kitKey(source)==='thane'?'focus':null});if(original(source,'mage')&&!source.action&&!(source.channelLeft>0)&&source.animation!=='death')animate(source,'skillAura');}
+    const unmitigated=offensive*(critical?critMultiplier:1);
+    return{amount:amount*multiplier*(critical?critMultiplier:1),critical,unmitigated};
   }
   /** Separate Divine Shield layer; shield-only breaks still interrupt and arm recovery. */
   function absorbDivine(u,value){
@@ -368,7 +370,7 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
     }
   }
   const within=(list,center,radius)=>alive(list).filter(t=>distance(t,center)<=radius);
-  function hit(source,target,amount,skill,control=0){if(target.hp<=0||target.banishLeft>0||target.entryLeft>0)return;impact(source,target,amount);visual?.hit(source,target,skill);if(control)stun(target,control);emit({type:'skill-hit',actor:source.name,target:target.name,skill});}
+  function hit(source,target,amount,skill,control=0,options=null){if(target.hp<=0||target.banishLeft>0||target.entryLeft>0)return;impact(source,target,amount,false,false,null,options);visual?.hit(source,target,skill);if(control)stun(target,control);emit({type:'skill-hit',actor:source.name,target:target.name,skill});}
   function schedule(source,targets,amount,skill,count,interval,finisher=null){
     const b=battle();b.skillHits??=[];
     for(let n=0;n<count;n++)b.skillHits.push({source,targets:[...targets],amount,skill,left:n*interval,token:source.castToken,control:0});
@@ -420,13 +422,19 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   function resolve(u,a){
     if(!a.skillId)return false;
     const prototype=kitKey(u)?.startsWith('prototype-');
-    if((prototype||['thane','hendrik','rowan','gwyneth','rosaline','cecilia','rigby','oscar','eluard','eluard-awakened','peggy'].includes(kitKey(u)))&&!kit(u).some(s=>s.id===a.skillId&&!s.passive&&!s.reactive))return false;
+    if((prototype||['thane','hendrik','rowan','gwyneth','rosaline','cecilia','rigby','oscar','eluard','eluard-awakened','peggy','walker'].includes(kitKey(u)))&&!kit(u).some(s=>s.id===a.skillId&&!s.passive&&!s.reactive))return false;
     if(a.skillId==='execution'&&(!u.executionAuthorized||u.executionToken!==u.castToken))return false;
     const b=battle(),enemies=alive(foes(u,b)),allies=alive(own(u,b));
     const target=a.target?.hp>0&&!(a.target.banishLeft>0)&&!(a.target.entryLeft>0)?a.target:enemies.sort((p,q)=>distance(u,p)-distance(u,q))[0];
     const power=u.attack*(a.evolved?tune.evolveMultiplier:1);
     if(prototype)resolvePrototype(u,a,b,enemies,allies,target,power);
-    else if(a.skillId==='dutyBound'){
+    else if(a.skillId==='saloonBlast'){
+      u.reloadLeft=0;u.shotgunAmmo=tune.shotgunMagazine;u.saloonLeft=tune.saloonDuration;visual?.buff(u,u,a.skillId);
+    }else if(a.skillId==='spittoonSmack'){
+      if(target&&distance(u,target)<=tune.spittoonRange){const token=target.castToken;hit(u,target,power*tune.spittoonDamage,a.skillId);stun(target,tune.spittoonStun);if(target.hp>0&&target.castToken!==token&&target.controlLeft>0){b.skillHits.push({source:u,targets:[target],walkerFollow:true,amount:power*tune.spittoonFollowDamage,skill:a.skillId,left:tune.spittoonFollowDelay,token:u.castToken});u.channelLeft=tune.spittoonFollowDelay;}}
+    }else if(a.skillId==='gunslinger'){
+      for(const t of [...enemies].sort((a,c)=>a.hp/a.maxHP-c.hp/c.maxHP||a.slot-c.slot).slice(0,tune.gunslingerTargets))b.projectiles.push({source:u,target:t,x:u.x,y:u.y-65,amount:power*tune.gunslingerDamage,skillId:a.skillId,spell:false,heal:false,t:0});
+    }else if(a.skillId==='dutyBound'){
       let guards=u.royalGuards.filter(g=>g.hp>0);
       if(!guards.length){const g=makeGuard(u,0);u.royalGuards=[g];guards=[g];for(const t of within(enemies,u,tune.guardProtectRadius)){hit(u,t,g.attack*tune.guardArrivalDamage,a.skillId);if(bonus(t,'controlImmune')<=0){t.x=Math.max(tune.arenaLeft,Math.min(tune.arenaRight,t.x+(u.side===0?1:-1)*tune.guardPush));stun(t,tune.guardArrivalStun);}}}
       for(const g of guards)g.dutyLeft=tune.dutyDuration;
@@ -569,6 +577,11 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   }
   /** Roll elemental conversions at release; only a projectile arrival applies damage or burns. */
   function normalAttack(u,target,amount){
+    if(kitKey(u)==='walker'){
+      if(!target||target.hp<=0||target.banishLeft>0||target.entryLeft>0||u.reloadLeft>0)return true;
+      battle().projectiles.push({source:u,target,x:u.x,y:u.y-65,amount,heal:false,normal:true,spell:false,skillId:'walkerShell',enhanced:u.saloonLeft>0,t:0});
+      if(!(u.saloonLeft>0)){u.shotgunAmmo--;if(u.shotgunAmmo<=0)u.reloadLeft=tune.shotgunReload;}return true;
+    }
     if(kitKey(u)!=='gwyneth')return false;
     if(!target||target.hp<=0||target.banishLeft>0||target.entryLeft>0)return true;
     const flaming=rng()<tune.flamingChance,lightning=rng()<tune.lightningChance;
@@ -582,6 +595,14 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   }
   /** Released projectiles resolve once on arrival, including after caster death. */
   function projectileImpact(p){
+    if(['walkerShell','gunslinger','spittoonSmack'].includes(p.skillId)){
+      if(p.target.hp<=0||p.target.banishLeft>0||p.target.entryLeft>0)return true;
+      if(p.skillId==='walkerShell'){
+        const targets=within(foes(p.source,battle()),p.target,tune.shotgunRadius).sort((a,c)=>a.slot-c.slot);hit(p.source,p.target,p.amount*tune.shotgunDamage,'saloonBlast');
+        if(p.enhanced)for(const t of targets)hit(p.source,t,p.amount*tune.shotgunEnhancedDamage,'saloonBlast');
+        const count=p.enhanced?tune.shotgunEnhancedPellets:tune.shotgunPellets;for(let n=0;n<count&&targets.length;n++)hit(p.source,targets[n%targets.length],p.amount*tune.shotgunPelletDamage,'saloonBlast',0,{noCrit:true});
+      }else hit(p.source,p.target,p.amount,p.skillId,0,p.skillId==='gunslinger'?{crit:p.target.hp/p.target.maxHP<tune.gunslingerThreshold?tune.gunslingerCrit:0}:null);return true;
+    }
     if(p.skillId==='royalMarksmen'){
       if(p.target.hp<=0||p.target.banishLeft>0||p.target.entryLeft>0)return true;
       if(inEnemyHalf(p.source,p.target)&&rng()<Math.min(tune.marksmenMissMax,distance(p.source,p.target)/tune.marksmenDistance*tune.marksmenMissMax)){emit({type:'skill-miss',actor:p.source.name,target:p.target.name,skill:p.skillId});return true;}
@@ -617,6 +638,7 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   function tick(b,dt){
     for(const key of ['oscarKnives','oscarAuras'])if(b[key])b[key]=b[key].filter(e=>{e.left=Math.max(0,e.left-dt);return e.left>0;});
     for(const u of [...b.heroes,...b.enemies]){
+      if(kitKey(u)==='walker'&&u.hp>0){u.saloonLeft=Math.max(0,u.saloonLeft-dt);if(u.reloadLeft>0){u.reloadLeft=Math.max(0,u.reloadLeft-dt);if(u.reloadLeft<Number.EPSILON*1024){u.reloadLeft=0;u.shotgunAmmo=tune.shotgunMagazine;}}}
       if(kitKey(u)==='peggy')tickGuards(u,b,dt);
       if(kitKey(u)==='eluard-awakened'){
         u.fateClock+=dt;if(u.fateClock+Number.EPSILON*1024>=tune.fateWindow){u.fateClock=Math.max(0,u.fateClock-Math.floor((u.fateClock+Number.EPSILON*1024)/tune.fateWindow)*tune.fateWindow);u.fateChecks={};u.fateTotal=0;}
@@ -683,6 +705,7 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
     b.skillHits=b.skillHits.filter(h=>{
       if(h.source.hp<=0||h.source.banishLeft>0||h.token!==h.source.castToken)return false;
       h.left-=dt;if(h.left>0)return true;
+      if(h.walkerFollow){for(const t of h.targets)if(t.hp>0&&!(t.banishLeft>0)&&!(t.entryLeft>0))b.projectiles.push({source:h.source,target:t,x:h.source.x,y:h.source.y-65,amount:h.amount,skillId:h.skill,spell:false,heal:false,t:0});return false;}
       if(h.marksman){for(const t of h.targets)if(t.hp>0&&!(t.banishLeft>0)&&!(t.entryLeft>0))b.projectiles.push({source:h.source,target:t,x:h.source.x,y:h.source.y-65,amount:h.amount,skillId:h.skill,spell:false,heal:false,t:0});return false;}
       if(h.judgment){for(const t of alive(foes(h.source,b)))hit(h.source,t,h.amount*(1+(t.slainSides?.[h.source.side]||0)*tune.eluardJudgmentBonus),h.skill);return false;}
       if(h.crockery){for(const t of h.targets)if(t.hp>0&&!(t.banishLeft>0)&&distance(h.source,t)<=tune.crockeryRange)b.projectiles.push({source:h.source,target:t,x:h.source.x,y:h.source.y-65,amount:h.amount,skillId:h.skill,spell:true,heal:false,t:0});return false;}

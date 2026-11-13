@@ -177,7 +177,7 @@ function acquireTarget(unit,foes){
   return unit.target;
 }
 /** Damage cannot revive a corpse. Busy attack/skill clips resist visual hit interruption. */
-function impact(source,target,amount,heal=false,normal=false,redirect=null){
+function impact(source,target,amount,heal=false,normal=false,redirect=null,options=null){
   if(!target||target.hp<=0||target.banishLeft>0||target.entryLeft>0)return;
   const b=state.battle;let value=Math.round(amount),absorbed=0;
   if(heal){value=Math.min(value,target.maxHP-target.hp);target.hp+=value;}
@@ -186,7 +186,7 @@ function impact(source,target,amount,heal=false,normal=false,redirect=null){
     if(redirect){
       if(heroSkillSystem.bonus(target,'damageImmune')>0)return;
       value=Math.round(amount*(1+heroSkillSystem.bonus(target,'vulnerable'))*Math.max(0,1-heroSkillSystem.bonus(target,'reduction')));
-    }else if(source.buffs){const modified=heroSkillSystem.damage(source,target,amount,normal);value=Math.round(modified.amount);raw=modified.unmitigated??amount;}
+    }else if(source.buffs){const modified=heroSkillSystem.damage(source,target,amount,normal,options);value=Math.round(modified.amount);raw=modified.unmitigated??amount;}
     if(['warden','brute','boss'].includes(target.kind))value=Math.round(value*(1-tune.armorReduction*(1-(target.astralLoss?.defense||0))));
     variance??=1+(rng()*2-1)*tune.damageVariance;value=Math.round(value*variance);
     if(!redirect&&value>0&&source.buffs){const ongoing=heroSkillSystem.guardDamage?.(target,0);if(ongoing){impact(source,ongoing,raw,false,false,{variance});return;}}
@@ -215,7 +215,7 @@ function resolveAction(unit,action){
   if(action.skillId){heroSkillSystem.resolve(unit,action);return;}
   const b=state.battle,foes=unit.side===0?b.enemies:b.heroes,allies=unit.side===0?b.heroes:b.enemies;
   const special=action.special,bonus=special&&unit.side===0&&progress.heroes[unit.index].evolved?tune.evolveMultiplier:1,attack=unit.attack*bonus;
-  if(!special&&unit.kitKind==='gwyneth'&&heroSkillSystem.normalAttack(unit,action.target,attack))return;
+  if(!special&&['gwyneth','walker'].includes(unit.kitKind)&&heroSkillSystem.normalAttack(unit,action.target,attack))return;
   let target=action.target;
   if(special&&(unit.kind==='healer'||unit.kind==='shaman')){
     target=target?.hp>0&&!(target.banishLeft>0)?target:weakest(allies);deliver(unit,target,attack*tune.healPower,true,true);
