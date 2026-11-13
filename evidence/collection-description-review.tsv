@@ -1,0 +1,10 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+item	observation
+change	Existing collectionInfo overflow region now has tabindex=0, role=region, Vietnamese accessible name, and focus-visible outline. Existing size caps, scroll behavior, combat, save and formation logic unchanged.
+test_first	collection-description-before-concise.tsv records 1 pass / 2 fail before markup/CSS change. Verbose first failure log retained locally only; not included in delivery.
+focused	collection-description-after.tsv: 3 pass / 0 fail against actual HTML/CSS/keydown guard. These are markup contracts, not browser keyboard tests.
+combined	collection-description-combined.tsv: 625 named cases / 45 suites / 0 failed suites. Inline JavaScript parses; no disabled test.
+visual	Retained 126-description-region.png at 1280x720 and 127-description-region-small.png at 800x450 inspected. Visible portraits, slot buttons, filters, description region and actions remain contained. Both logs uncaught 0. Runtime evidence lives in parent production/qa/evidence/oathbound-expanded/, not published.
+limitations	Captures leave focus on close button, so neither description focus outline nor native scrolling/Tab/screen-reader behavior was visually verified. Long description still uses a bounded scroll viewport and is not all visible at once on small screens. No accessibility certification or human-feel signoff.
+boundaries	No original images, README, Last Light, root fishing brief, assets, dependencies, runtime network resources or real-user browser save changed. Asset rights remain UNKNOWN / ships:false.
+review	Self-review only; no independent accessibility audit.

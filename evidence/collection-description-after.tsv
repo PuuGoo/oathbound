@@ -1,0 +1,5 @@
+PASS	long collection description is a named keyboard-focusable region
+PASS	focused description has a visible outline while existing overflow remains available
+PASS	collection dialog still guards gameplay key interception before default prevention
+unit_total	3
+unit_failed	0

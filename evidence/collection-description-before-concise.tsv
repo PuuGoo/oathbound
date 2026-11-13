@@ -1,0 +1,5 @@
+FAIL	long collection description is a named keyboard-focusable region	The input did not match the regular expression /\btabindex="0"/. Input:
+FAIL	focused description has a visible outline while existing overflow remains available	The input did not match the regular expression /#collectionInfo:focus-visible\s*\{[^}]*outline:\s*2px solid #e8c483[^}]*outline-offset:\s*2px/. Input:
+PASS	collection dialog still guards gameplay key interception before default prevention
+unit_total	1
+unit_failed	2
