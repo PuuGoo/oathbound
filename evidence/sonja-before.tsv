@@ -1,0 +1,145 @@
+FAIL	Sonja index20 own3active1passive not Lucius defensive kit	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'prototype-guardian'
+- 'sonja'
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:5:78
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Sonja values geometry durations thresholds counts and proc limits are configured	AssertionError [ERR_ASSERTION]: goldCooldown
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:6:586
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Gold allallies5charges halve5incominghits and refresh rather than stack charges	AssertionError [ERR_ASSERTION]: goldRoses
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:4:1003)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:7:113
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:7:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Gold reaction80percent is queued once from actual damage attempt with norecursivechain	AssertionError [ERR_ASSERTION]: goldRoses
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:4:1003)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:8:120
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:8:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Glimmer outside20percent reduction and70percent retaliation at mostoncepersecond	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+0 !== undefined
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:9:119
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Glimmer firstHPbelow60 enters25s once and stops normal release but leaves skills enabled	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 1
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:10:189
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+FAIL	Glimmer heals2percentmaxHP perpresentrose eachsecond capped12percent without energy	AssertionError [ERR_ASSERTION]: goldRoses
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:4:1003)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:11:117
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Dark Vines fixedarea3x180 then weakestally8sshield actualHPdamage floor220percent	AssertionError [ERR_ASSERTION]: darkVines
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:4:1003)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:12:146
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:12:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	shieldedBlackRosecannotinflateearnedshield and releasedBlackRosepersistsaftercasterdeath	AssertionError [ERR_ASSERTION]: darkVines
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:4:1003)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:13:122
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:13:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Blood placesonmostinjuredpreferunmarked then5actualHPdamageevents70percentextra andcapped8percentdrain	AssertionError [ERR_ASSERTION]: bloodRose
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:4:1003)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:14:150
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	Blood secondarydoesnotconsumeitself or otherrosesandshieldonlyhitdoesnotconsumeRed	AssertionError [ERR_ASSERTION]: bloodRose
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:4:1003)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:15:116
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+FAIL	deadbanishedentering recipients nevergainroses/heal or resurrection	AssertionError [ERR_ASSERTION]: goldRoses
+    at Object.cast (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:4:1003)
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:16:113
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:3:603)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\sonja-skills-unit.cjs:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+unit_total	0
+unit_failed	12

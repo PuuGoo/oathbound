@@ -1,0 +1,18 @@
+PASS	awakened Thane index19 is separate from base Thane with3actives1reactive not Focus
+PASS	all awakened Thane timing geometry hits and haste are configured records
+PASS	Winds Fury once start selects lowest absoluteHP not ratio teleports300percent and grants260percent8s shield
+PASS	Winds Edge4real350percent hits with temporary stun and cooldown reset for Dueling
+PASS	Edge unavailable primary converts all remaining hits to global enemies without selecting another primary
+PASS	Maelstrom active3x240percent then200percent forward wind excludes enemies behind caster
+PASS	Maelstrom passive adds120percent only on actual normal release within melee reach
+PASS	Dueling deals260percent near creates12szone locks target knocks others outward and gives30percent haste only inside
+PASS	Vortex expires on720fixed60Hzsteps and no bonus lookup changes zone lifetime
+PASS	stun cancels unreleased Edge or Maelstrom while dead banished entering enemies cannot be hit
+PASS	base and awakened do not accept each others skills or old prototype spells
+PASS	actual normal dispatch applies Maelstrom extra and vortex target lock overrides cached alternative
+PASS	Edge stays global even if the original banished primary returns between later slashes
+PASS	opening Fury ignores unavailable lowHP enemies and cannot execute from dead caster
+PASS	vortex is owner-specific acyclic and disappears when owner dies or is confined
+PASS	awakened presentation has four defined captions finite shapes and pure zone draw
+unit_total	16
+unit_failed	0

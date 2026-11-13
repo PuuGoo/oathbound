@@ -1,0 +1,28 @@
+PASS	awakened Thane index19 is separate from base Thane with3actives1reactive not Focus
+PASS	all awakened Thane timing geometry hits and haste are configured records
+FAIL	Winds Fury once start selects lowest absoluteHP not ratio teleports300percent and grants260percent8s shield	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 0.6833333333333332
+- 0.7
+
+    at C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-thane-skills-unit.cjs:6:310
+    at test (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-thane-skills-unit.cjs:2:595)
+    at Object.<anonymous> (C:\Users\PuuGoo\Desktop\my-game\prototypes\oathbound\evidence\awakened-thane-skills-unit.cjs:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+PASS	Winds Edge4real350percent hits with temporary stun and cooldown reset for Dueling
+PASS	Edge unavailable primary converts all remaining hits to global enemies without selecting another primary
+PASS	Maelstrom active3x240percent then200percent forward wind excludes enemies behind caster
+PASS	Maelstrom passive adds120percent only on actual normal release within melee reach
+PASS	Dueling deals260percent near creates12szone locks target knocks others outward and gives30percent haste only inside
+PASS	Vortex expires on720fixed60Hzsteps and no bonus lookup changes zone lifetime
+PASS	stun cancels unreleased Edge or Maelstrom while dead banished entering enemies cannot be hit
+PASS	base and awakened do not accept each others skills or old prototype spells
+unit_total	10
+unit_failed	1

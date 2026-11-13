@@ -4,6 +4,18 @@
 (function(root){
 'use strict';
 const KITS={
+  sonja:[
+    {id:'goldRoses',name:'Gold Roses',animation:'skillShield',summary:'Mỗi đồng minh5lần giảm50%damage, nguồn đánh mất80%công Sonja; dùng lại refresh5.',cooldown:'goldCooldown',delay:'goldDelay',support:true},
+    {id:'glimmeringBrilliance',name:'Glimmering Brilliance',animation:'skillAura',summary:'Ngoài trạng thái:giảm20%,phản70% tối đa1/s. Lần đầu HP<60%:25s ngừng đánh thường,hồi2%HP/hoa/s cap12%; khôngenergy.',reactive:true},
+    {id:'darkVines',name:'Dark Vines',animation:'skillArc',summary:'Hoa đen tại địch yếu:3nhịp180%vùng, rồi khiên8s cho đồng minh yếu bằng HPthật gây ra,tối thiểu220%công.',cooldown:'vinesCooldown',delay:'vinesDelay',support:true},
+    {id:'bloodRose',name:'Blood Rose',animation:'skill',summary:'Hoa đỏ5lần nhận damage thêm70%; thu hồi hút8%maxHP cap240%công,hồiHPthật x2 khi Glimmer.',cooldown:'bloodCooldown',delay:'bloodDelay',support:true}
+  ],
+  'thane-awakened':[
+    {id:'windsEdge',name:'Wind’s Edge',animation:'skillArc',summary:'4nhát350%,choáng ngắn; mất đích thì các nhát còn lại đánh toàn địch. Reset hồi Dueling.',cooldown:'windsEdgeCooldown',delay:'windsEdgeDelay',range:'meleeRange'},
+    {id:'maelstrom',name:'Maelstrom',animation:'skill',summary:'Đánh thường thêm120%gió; chủ động3nhát240% rồi200% vùng trước.',cooldown:'maelstromCooldown',delay:'maelstromDelay',range:'meleeRange'},
+    {id:'duelingBlades',name:'Dueling Blades',animation:'skillShield',summary:'260%gần và vùng đấu12s; đẩy người khác ra, riêng Thane trong vùng+30%nhịp. Không Dodge trong engine.',cooldown:'duelingCooldown',delay:'duelingDelay',range:'meleeRange'},
+    {id:'windsFury',name:'Winds of Fury',animation:'skillAura',summary:'Một lần đầu trận: lao tới địch HP tuyệt đối thấp nhất,300%hất tung; khiên260%công8s.',reactive:true}
+  ],
   scarlet:[
     {id:'darkRage',name:'Dark Rage',animation:'skillArc',summary:'12nhịp190%,20%đánh phe mình; địch trúng nhậnMiasma5s/tối đa5tầng.',cooldown:'rageCooldown',delay:'rageDelay',support:true},
     {id:'shadedCorruption',name:'Shaded Corruption',animation:'skillShield',summary:'Đủ5tầngMiasma cùng nguồn thì trói chân/khóa chiêu; không giảmheal upgrade21.',passive:true},
@@ -163,7 +175,62 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   function addMiasma(source,target){if(target.hp<=0||target.side===source.side||target.banishLeft>0||target.entryLeft>0)return;target.miasma??=[];const ownLayers=target.miasma.filter(e=>e.source===source.side+':'+source.slot&&e.left>0);if(ownLayers.length>=tune.miasmaCap){const oldest=ownLayers.sort((a,b)=>a.left-b.left)[0];target.miasma.splice(target.miasma.indexOf(oldest),1);}target.miasma.push({source:source.side+':'+source.slot,left:tune.miasmaDuration});if(miasmaCount(target,source)>=tune.miasmaCap){controlStatus(target,'rootLeft',0);controlStatus(target,'silenceLeft',0);source.castCounts.shadedCorruption=(source.castCounts.shadedCorruption||0)+1;}visual?.buff(source,target,'shadedCorruption');}
   /** Arm cooldown before damage, avoiding recursive aura chains from its own explosion. */
   function triggerDarkAura(u,b){if(u.hp<=0||u.banishLeft>0||u.entryLeft>0||u.darkAuraLeft>0)return;const enemies=alive(foes(u,b));if(!enemies.length)return;const subject=alive([...b.heroes,...b.enemies]).filter(t=>t.hp/t.maxHP<tune.darkAuraThreshold).sort((a,c)=>a.hp/a.maxHP-c.hp/c.maxHP||a.side-c.side||a.slot-c.slot)[0];if(!subject)return;const center=[...enemies].sort((a,c)=>within(enemies,c,tune.darkAuraRadius).length-within(enemies,a,tune.darkAuraRadius).length||a.slot-c.slot)[0];u.darkAuraLeft=tune.darkAuraCooldown;u.castCounts.darkAura=(u.castCounts.darkAura||0)+1;subject.x=center.x;subject.y=center.y;subject.action=null;subject.channelLeft=0;subject.castToken++;const victims=[...new Set([subject,...within(enemies,center,tune.darkAuraRadius)])];for(const t of victims)hit(u,t,u.attack*tune.darkAuraDamage,'darkAura');visual?.release(u,{skillId:'darkAura',target:subject});}
+  /** Pure rose lookup; ownership uses scalar IDs, never circular unit references. */
+  function roseCount(target,color){return (target[color==='gold'?'goldRoses':'redRoses']||[]).filter(e=>e.charges>0).length;}
+  const roseOwner=e=>[...battle().heroes,...battle().enemies].find(u=>u.side===e.ownerSide&&u.slot===e.ownerSlot);
+  function queueRose(source,target,amount,skill,drain=false,multiplier=1){if(!target)return;const b=battle();b.roseReactions??=[];b.roseReactions.push({ownerSide:source.side,ownerSlot:source.slot,targetSide:target.side,targetSlot:target.slot,amount,skill,drain,multiplier});}
+  /** Incoming non-secondary hits consume one Gold Rose; immunity/zero damage consumes nothing. */
+  function roseIncoming(source,target,value,options){
+    if(value<=0||options?.roseSecondary||source.side===target.side)return value;
+    const gold=(target.goldRoses||[]).find(e=>e.charges>0),owner=gold&&roseOwner(gold);
+    if(owner){gold.charges--;value*=1-tune.goldReduction;queueRose(owner,source,owner.attack*tune.goldRetaliation,'goldRoses');}
+    if(kitKey(target)==='sonja'&&!(target.glimmerLeft>0)&&!(target.glimmerRetaliationLeft>0)){
+      target.glimmerRetaliationLeft=tune.glimmerRetaliationCooldown;target.castCounts.glimmerRetaliation=(target.castCounts.glimmerRetaliation||0)+1;queueRose(target,source,target.attack*tune.glimmerRetaliation,'glimmeringBrilliance');
+    }return value;
+  }
+  /** Only actual health damage consumes Red Rose charges; queued secondary hits never recurse. */
+  function roseDamage(source,target,lost,options){
+    if(lost<=0||options?.roseSecondary)return;
+    for(const rose of target.redRoses||[]){if(rose.charges<=0)continue;const owner=roseOwner(rose);if(!owner)continue;
+      rose.charges--;queueRose(owner,target,owner.attack*tune.bloodDamage,'bloodRose');
+      if(rose.charges===0){owner.castCounts.bloodReclaim=(owner.castCounts.bloodReclaim||0)+1;queueRose(owner,target,Math.min(target.maxHP*tune.bloodDrain,owner.attack*tune.bloodDrainCap),'bloodRose',true,owner.glimmerLeft>0?tune.bloodGlimmerHeal:1);}
+    }
+  }
+  /** Rose fields stop counting on unavailable combatants; Black Roses count while on the ground. */
+  function battlefieldRoses(b){return alive([...b.heroes,...b.enemies]).reduce((n,u)=>n+roseCount(u,'gold')+roseCount(u,'red'),0)+(b.blackRoses||[]).filter(e=>e.remaining>0).length;}
+  function tickSonja(u,b,dt){
+    u.glimmerRetaliationLeft=Math.max(0,(u.glimmerRetaliationLeft||0)-dt);if(u.glimmerRetaliationLeft<Number.EPSILON*1024)u.glimmerRetaliationLeft=0;
+    if(u.hp<=0||u.banishLeft>0||u.entryLeft>0)return;
+    if(!u.glimmerUsed&&u.hp/u.maxHP<tune.glimmerThreshold){u.glimmerUsed=true;u.glimmerLeft=tune.glimmerDuration;u.glimmerClock=0;u.castCounts.glimmeringBrilliance=1;if(u.action&&!u.action.special)u.action=null;visual?.buff(u,u,'glimmeringBrilliance');}
+    if(u.glimmerLeft>0){u.glimmerClock+=Math.min(dt,u.glimmerLeft);u.glimmerLeft=Math.max(0,u.glimmerLeft-dt);if(u.glimmerLeft<Number.EPSILON*1024)u.glimmerLeft=0;
+      while(u.glimmerClock+Number.EPSILON*1024>=tune.roseInterval){u.glimmerClock-=tune.roseInterval;const heal=u.maxHP*Math.min(tune.glimmerHealCap,battlefieldRoses(b)*tune.glimmerHeal);if(heal>0)impact(u,u,heal,true);}
+    }
+  }
+  /** Drain detached queued work once; it cannot enqueue another rose reaction. */
+  function tickRoses(b,dt){
+    for(const e of b.roseReactions?.splice(0)||[]){const source=roseOwner(e),target=[...b.heroes,...b.enemies].find(t=>t.side===e.targetSide&&t.slot===e.targetSlot);if(!source||!target||target.hp<=0||target.banishLeft>0||target.entryLeft>0)continue;const hp=target.hp;hit(source,target,e.amount,e.skill,0,{roseSecondary:true,noCrit:true});if(e.drain&&hp>target.hp&&source.hp>0&&!(source.banishLeft>0)&&!(source.entryLeft>0))impact(source,source,(hp-target.hp)*e.multiplier,true);}
+    if(b.blackRoses)b.blackRoses=b.blackRoses.filter(e=>{
+      const source=roseOwner(e);if(!source)return false;e.clock+=dt;
+      while(e.remaining>0&&e.clock+Number.EPSILON*1024>=tune.roseInterval){e.clock-=tune.roseInterval;e.remaining--;for(const t of within(foes(source,b),e,tune.vinesRadius)){const hp=t.hp;hit(source,t,e.amount,'darkVines',0,{roseSecondary:true,noCrit:true});e.damage+=hp-t.hp;}}
+      if(e.remaining===0){const target=alive(own(source,b)).sort((a,c)=>a.hp/a.maxHP-c.hp/c.maxHP||a.slot-c.slot)[0];if(target){target.shield=Math.max(target.shield||0,Math.round(Math.max(e.damage,e.minimum)));target.shieldLeft=Math.max(target.shieldLeft||0,tune.vinesShieldDuration);visual?.buff(source,target,'darkVines');}return false;}return true;
+    });
+  }
+  /** Scalar ownership keeps runtime snapshots acyclic; leaving ends this fixed zone. */
+  function vortex(u){return (battle()?.windVortices||[]).find(e=>e.ownerSide===u.side&&e.ownerSlot===u.slot&&e.left>0&&u.hp>0&&!(u.banishLeft>0)&&!(u.entryLeft>0)&&distance(u,e)<=tune.vortexRadius)||null;}
+  /** One opening leap; unavailable enemies are never entry targets. */
+  function windsFury(u,b){
+    if(!u.furyPending||u.hp<=0||u.banishLeft>0||u.entryLeft>0)return;
+    const target=alive(foes(u,b)).sort((a,c)=>a.hp-c.hp||a.slot-c.slot)[0];if(!target)return;
+    u.furyPending=false;u.castCounts.windsFury=(u.castCounts.windsFury||0)+1;u.skillTimers.duelingBlades=0;
+    u.x=Math.max(tune.arenaLeft,Math.min(tune.arenaRight,target.x+(u.side===0?-1:1)*tune.furyOffset));u.y=target.y;u.facing=target.x>=u.x?1:-1;u.target=target;
+    u.action=null;u.channelLeft=0;u.castToken++;u.shield=Math.max(u.shield||0,Math.round(u.attack*tune.furyShield));u.shieldLeft=Math.max(u.shieldLeft||0,tune.furyShieldDuration);
+    hit(u,target,u.attack*tune.furyDamage,'windsFury',tune.furyStun);animate(u,'skillAura');visual?.release(u,{skillId:'windsFury',target});
+  }
+  /** Pure locked-target lookup; loss of the opponent does not silently assign a replacement. */
+  function duelTarget(u){const e=vortex(u);return e?alive(foes(u,battle())).find(t=>t.side===e.targetSide&&t.slot===e.targetSlot)||null:null;}
   const passiveBonus=(u,key)=>{
+    if(kitKey(u)==='sonja'&&key==='reduction')return u.glimmerLeft>0?0:tune.glimmerReduction;
+    if(kitKey(u)==='thane-awakened'&&key==='haste')return vortex(u)?tune.vortexHaste:0;
     if(['rooted','skillBlocked'].includes(key)&&miasmaCount(u)>=tune.miasmaCap&&bonus(u,'controlImmune')<=0&&u.action?.skillId!=='royalCharge')return 1;
     if(kitKey(u)==='eluard'&&key==='vulnerable')return u.divineShield>0?0:tune.miracleVulnerability-1;
     if(key==='damageImmune'&&battle()&&alive(own(u,battle())).some(s=>kitKey(s)==='eluard'&&s.prayerTargetSlot===u.slot&&s.prayerToken===s.castToken&&s.channelLeft>0))return 1;
@@ -242,8 +309,10 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   /** Initialize per-battle timers only: save records remain unchanged. */
   function initialize(u){
     u.buffs={};u.controlLeft=0;u.channelLeft=0;u.castToken=0;u.skillTimers={};u.castCounts={};u.critCount=0;u.banishLeft=0;
+    u.goldRoses=[];u.redRoses=[];if(kitKey(u)==='sonja'){u.glimmerUsed=false;u.glimmerLeft=0;u.glimmerClock=0;u.glimmerRetaliationLeft=0;}
     u.slainSides={};u.miasma=[];if(kitKey(u)==='scarlet')u.darkAuraLeft=0;u.damageDealt=0;u.rootLeft=0;u.silenceLeft=0;u.charmLeft=0;if(kitKey(u)==='morrow')u.abyssalTimers={};u.fateProficiency=tune.fateProficiency;u.fateDissolve=tune.fateDissolve;
     if(kitKey(u)==='eluard-awakened'){u.causalDrift=0;u.divergence=0;u.realmActive=false;u.realmClock=0;u.causalPulses=0;u.fateClock=0;u.fateChecks={};u.fateTotal=0;u.negateUsed=0;u.astralProjections=foes(u,battle()).map(t=>({side:t.side,slot:t.slot,attack:0,defense:0,hp:0,initialAttack:t.attack,initialHP:t.maxHP}));}
+    if(kitKey(u)==='thane-awakened')u.furyPending=true;
     if(kitKey(u)==='walker'){u.oldFaithful=0;u.saloonLeft=0;u.reloadLeft=0;u.shotgunAmmo=tune.shotgunMagazine;}
     if(kitKey(u)==='peggy'){u.guardAttacks=0;u.royalGuards=[makeGuard(u,0),makeGuard(u,1)];}
     if(kitKey(u)==='eluard'){u.divineShield=Math.round(u.maxHP*tune.miracleShield);u.divineRecoveryLeft=0;u.divineRecovering=false;u.prayerTargetSlot=null;u.prayerToken=null;u.castCounts.divineMiracle=1;}
@@ -261,7 +330,7 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   /** Most overdue ready skill wins; independent cooldowns cannot starve later skills. */
   function ready(u,target=null){
     if(u.entryLeft>0||u.silenceLeft>0||u.charmLeft>0||bonus(u,'skillBlocked')>0||(kitKey(u)==='walker'&&u.saloonLeft>0))return null;
-    const ordered=kit(u).filter(s=>!s.passive&&!s.reactive&&(s.id!=='sliceDice'||sliceKnife(u))&&(s.id!=='fineCuts'||alive(foes(u,battle())).some(t=>distance(u,t)<=tune.fineCutsRange))&&(s.id!=='drunkenFrenzy'||!(u.frenzyLeft>0))&&(!(kitKey(u)==='rosaline'&&s.support)||followTarget(u))&&(s.id!=='divineArrow'||alive(foes(u,battle())).some(t=>inEnemyHalf(u,t)))&&(!s.requiresCrits||u.executionCharges>=tune.executionCrits)&&(u.skillTimers?.[s.id]??Infinity)<=0).sort((a,b)=>u.skillTimers[a.id]-u.skillTimers[b.id]);
+    const ordered=kit(u).filter(s=>(s.id!=='duelingBlades'||!vortex(u))&&!s.passive&&!s.reactive&&(s.id!=='sliceDice'||sliceKnife(u))&&(s.id!=='fineCuts'||alive(foes(u,battle())).some(t=>distance(u,t)<=tune.fineCutsRange))&&(s.id!=='drunkenFrenzy'||!(u.frenzyLeft>0))&&(!(kitKey(u)==='rosaline'&&s.support)||followTarget(u))&&(s.id!=='divineArrow'||alive(foes(u,battle())).some(t=>inEnemyHalf(u,t)))&&(!s.requiresCrits||u.executionCharges>=tune.executionCrits)&&(u.skillTimers?.[s.id]??Infinity)<=0).sort((a,b)=>u.skillTimers[a.id]-u.skillTimers[b.id]);
     if(kitKey(u)==='walker')return ordered[0]||null;
     return (target?ordered.find(s=>s.support||distance(u,target)<=tune[s.range]):null)||ordered[0]||null;
   }
@@ -451,13 +520,37 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   function resolve(u,a){
     if(!a.skillId)return false;
     const prototype=kitKey(u)?.startsWith('prototype-');
-    if((prototype||['thane','hendrik','rowan','gwyneth','rosaline','cecilia','rigby','oscar','eluard','eluard-awakened','peggy','walker','morrow','scarlet'].includes(kitKey(u)))&&!kit(u).some(s=>s.id===a.skillId&&!s.passive&&!s.reactive))return false;
+    if((prototype||['sonja','thane-awakened','thane','hendrik','rowan','gwyneth','rosaline','cecilia','rigby','oscar','eluard','eluard-awakened','peggy','walker','morrow','scarlet'].includes(kitKey(u)))&&!kit(u).some(s=>s.id===a.skillId&&!s.passive&&!s.reactive))return false;
     if(a.skillId==='execution'&&(!u.executionAuthorized||u.executionToken!==u.castToken))return false;
     const b=battle(),enemies=alive(foes(u,b)),allies=alive(own(u,b));
     const target=a.target?.hp>0&&!(a.target.banishLeft>0)&&!(a.target.entryLeft>0)?a.target:enemies.sort((p,q)=>distance(u,p)-distance(u,q))[0];
     const power=u.attack*(a.evolved?tune.evolveMultiplier:1);
     if(prototype)resolvePrototype(u,a,b,enemies,allies,target,power);
-    else if(a.skillId==='darkRage'){
+    else if(a.skillId==='goldRoses'){
+      for(const t of allies){t.goldRoses??=[];t.goldRoses=t.goldRoses.filter(e=>e.ownerSide!==u.side||e.ownerSlot!==u.slot);t.goldRoses.push({ownerSide:u.side,ownerSlot:u.slot,charges:tune.goldCharges});visual?.buff(u,t,a.skillId);}
+    }else if(a.skillId==='darkVines'){
+      const t=[...enemies].sort((a,c)=>a.hp/a.maxHP-c.hp/c.maxHP||a.slot-c.slot)[0];if(t){b.blackRoses??=[];b.blackRoses.push({ownerSide:u.side,ownerSlot:u.slot,x:t.x,y:t.y,amount:power*tune.vinesDamage,minimum:power*tune.vinesShield,remaining:tune.vinesHits,clock:0,damage:0});}
+    }else if(a.skillId==='bloodRose'){
+      const t=[...enemies].sort((a,c)=>Number(roseCount(a,'red')>0)-Number(roseCount(c,'red')>0)||a.hp/a.maxHP-c.hp/c.maxHP||a.slot-c.slot)[0];if(t){t.redRoses??=[];t.redRoses=t.redRoses.filter(e=>e.ownerSide!==u.side||e.ownerSlot!==u.slot);t.redRoses.push({ownerSide:u.side,ownerSlot:u.slot,charges:tune.bloodCharges});visual?.buff(u,t,a.skillId);}
+    }else if(a.skillId==='windsEdge'){
+      u.skillTimers.duelingBlades=0;u.edgeFallbackToken=null;
+      if(a.target){stun(a.target,tune.windsEdgeStun);schedule(u,[a.target],power*tune.windsEdgeDamage,a.skillId,tune.windsEdgeHits,tune.windsEdgeInterval);for(const h of b.skillHits)if(h.source===u&&h.token===u.castToken&&h.skill===a.skillId)h.edge=true;}
+    }else if(a.skillId==='maelstrom'){
+      if(target){schedule(u,[target],power*tune.maelstromDamage,a.skillId,tune.maelstromHits,tune.maelstromInterval);for(const h of b.skillHits)if(h.source===u&&h.token===u.castToken&&h.skill===a.skillId)h.maelstrom=true;
+        b.skillHits.push({source:u,targets:[],amount:power*tune.maelstromWindDamage,skill:a.skillId,left:tune.maelstromHits*tune.maelstromInterval,token:u.castToken,windSweep:true});u.channelLeft=tune.maelstromHits*tune.maelstromInterval;}
+    }else if(a.skillId==='duelingBlades'){
+      if(target&&!vortex(u)){
+        b.windVortices??=[];b.windVortices=b.windVortices.filter(e=>e.ownerSide!==u.side||e.ownerSlot!==u.slot);
+        const zone={ownerSide:u.side,ownerSlot:u.slot,targetSide:target.side,targetSlot:target.slot,x:u.x,y:u.y,left:tune.vortexDuration};b.windVortices.push(zone);
+        for(const t of within(enemies,u,tune.vortexRadius)){
+          hit(u,t,power*tune.duelingDamage,a.skillId);
+          if(t!==target&&t.hp>0&&bonus(t,'controlImmune')<=0&&t.action?.skillId!=='royalCharge'){
+            const dx=t.x-zone.x,dy=t.y-zone.y,d=Math.hypot(dx,dy),r=tune.vortexRadius+tune.vortexPush;
+            t.x=Math.max(tune.arenaLeft,Math.min(tune.arenaRight,zone.x+(d?dx/d:u.facing)*r));t.y=Math.max(tune.arenaTop,Math.min(tune.arenaBottom,zone.y+(d?dy/d:0)*r));
+          }
+        }u.target=target;
+      }
+    }else if(a.skillId==='darkRage'){
       for(let n=0;n<tune.rageHits;n++)b.skillHits.push({source:u,targets:[],rage:true,amount:power*tune.rageDamage,skill:a.skillId,left:n*tune.rageInterval,token:u.castToken});u.channelLeft=(tune.rageHits-1)*tune.rageInterval;
     }else if(a.skillId==='arcaneAbsorption'){
       let stolen=0;for(const t of within(enemies,u,tune.absorptionRadius)){const hp=t.hp;hit(u,t,Math.min(t.maxHP*tune.absorptionHP,power*tune.absorptionCap),a.skillId);stolen+=hp-t.hp;}if(stolen>0)impact(u,u,stolen,true);
@@ -616,6 +709,10 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   }
   /** Roll elemental conversions at release; only a projectile arrival applies damage or burns. */
   function normalAttack(u,target,amount){
+    if(kitKey(u)==='sonja'&&u.glimmerLeft>0)return true;
+    if(kitKey(u)==='thane-awakened'){
+      if(target&&target.hp>0&&!(target.banishLeft>0)&&!(target.entryLeft>0)&&distance(u,target)<=tune.meleeRange+tune.rangeHysteresis){impact(u,target,amount,false,true);hit(u,target,amount*tune.maelstromNormalDamage,'maelstrom');}return true;
+    }
     if(kitKey(u)==='morrow'){
       if(target&&target.hp>0&&!(target.banishLeft>0)&&!(target.entryLeft>0))battle().projectiles.push({source:u,target,x:u.x,y:u.y-65,amount,heal:false,normal:true,spell:true,skillId:'morrowBolt',t:0});return true;
     }
@@ -683,8 +780,12 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   }
   /** Tick with simulation time only; pause does not call this method. */
   function tick(b,dt){
+    tickRoses(b,dt);
+    if(b.windVortices)b.windVortices=b.windVortices.filter(e=>{e.left=Math.max(0,e.left-dt);if(e.left<Number.EPSILON*1024)e.left=0;const u=(e.ownerSide===0?b.heroes:b.enemies).find(u=>u.slot===e.ownerSlot);return e.left>0&&u&&vortex(u)===e;});
+    for(const u of [...b.heroes,...b.enemies])if(kitKey(u)==='thane-awakened')windsFury(u,b);
     for(const key of ['oscarKnives','oscarAuras'])if(b[key])b[key]=b[key].filter(e=>{e.left=Math.max(0,e.left-dt);return e.left>0;});
     for(const u of [...b.heroes,...b.enemies]){
+      if(kitKey(u)==='sonja')tickSonja(u,b,dt);
       if(u.miasma)u.miasma=u.miasma.filter(e=>{e.left=Math.max(0,e.left-dt);if(e.left<Number.EPSILON*1024)e.left=0;return e.left>0;});
       if(kitKey(u)==='scarlet'){u.darkAuraLeft=Math.max(0,u.darkAuraLeft-dt);if(u.darkAuraLeft<Number.EPSILON*1024)u.darkAuraLeft=0;triggerDarkAura(u,b);}
       for(const key of ['rootLeft','silenceLeft','charmLeft']){u[key]=Math.max(0,(u[key]||0)-dt);if(u[key]<Number.EPSILON*1024)u[key]=0;}
@@ -756,6 +857,9 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
     b.skillHits=b.skillHits.filter(h=>{
       if(h.source.hp<=0||h.source.banishLeft>0||h.token!==h.source.castToken)return false;
       h.left-=dt;if(h.left>0)return true;
+      if(h.edge){const primary=h.targets[0];if(primary.hp<=0||primary.banishLeft>0||primary.entryLeft>0)h.source.edgeFallbackToken=h.token;const targets=h.source.edgeFallbackToken===h.token?alive(foes(h.source,b)):h.targets;for(const t of targets)hit(h.source,t,h.amount,h.skill);return false;}
+      if(h.windSweep){for(const t of within(foes(h.source,b),h.source,tune.maelstromRadius).filter(t=>(t.x-h.source.x)*h.source.facing>=0))hit(h.source,t,h.amount,h.skill);return false;}
+      if(h.maelstrom){for(const t of h.targets)if(distance(h.source,t)<=tune.meleeRange+tune.rangeHysteresis)hit(h.source,t,h.amount,h.skill);return false;}
       if(h.rage){const friendly=rng()<tune.rageFriendly,candidates=alive(friendly?own(h.source,b):foes(h.source,b));if(candidates.length){const t=candidates[Math.min(candidates.length-1,Math.floor(rng()*candidates.length))];hit(h.source,t,h.amount,h.skill);if(!friendly)addMiasma(h.source,t);}return false;}
       if(h.eye){for(const t of within(foes(h.source,b),h,tune.eyeRadius)){hit(h.source,t,h.amount,h.skill);controlStatus(t,'silenceLeft',tune.eyeSilence);}return false;}
       if(h.walkerFollow){for(const t of h.targets)if(t.hp>0&&!(t.banishLeft>0)&&!(t.entryLeft>0))b.projectiles.push({source:h.source,target:t,x:h.source.x,y:h.source.y-65,amount:h.amount,skillId:h.skill,spell:false,heal:false,t:0});return false;}
@@ -785,7 +889,7 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
       for(const t of targets){if(h.skill==='bladePurification'&&distance(h.source,t)>tune.meleeRange+tune.rangeHysteresis)continue;if(h.skill==='avianAssault'&&distance(h.source,t)>tune.avianRange)continue;hit(h.source,t,h.amount,h.skill,h.control);if(h.skill==='avianAssault'&&t.hp>0&&!(t.banishLeft>0))buff(h.source,t,'avianAssault',{weaken:tune.avianWeaken},tune.avianDuration);}return false;
     });
   }
-  return{kit,initialize,ready,nextCooldown,cast,resolve,normalAttack,attackTargets,miasmaCount,followTarget,sinCount,absorbDivine,negateFatal,interceptGuard,projectileImpact,tick,damage,stun,bonus,guardDamage,afterDamage,incomingDamage};
+  return{kit,initialize,ready,nextCooldown,cast,resolve,normalAttack,roseCount,roseIncoming,roseDamage,duelTarget,attackTargets,miasmaCount,followTarget,sinCount,absorbDivine,negateFatal,interceptGuard,projectileImpact,tick,damage,stun,bonus,guardDamage,afterDamage,incomingDamage};
 }
 root.HERO_KITS=KITS;root.createHeroSkillSystem=createHeroSkillSystem;
 if(typeof module!=='undefined')module.exports={KITS,createHeroSkillSystem};
