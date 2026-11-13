@@ -1,0 +1,6 @@
+PASS	slot selection restores focus to the rebuilt same slot without equipping or changing selected hero
+PASS	hero selection retains existing focused replacement by stable identity
+PASS	unrelated clicks neither render equip nor move focus
+PASS	explicit equip and close actions remain independently routed
+unit_total	4
+unit_failed	0

@@ -1,0 +1,10 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+item	observation
+finding	Choosing a replacement formation slot rebuilt its clicked button without restoring focus; hero-card selection already restored identity focus.
+fix	Actual delegated slot listener now focuses the newly rendered same-slot button with preventScroll:true. Selection alone still does not equip, mutate formation/save or change selected hero.
+test_first	collection-slot-focus-before.tsv: 3 pass / 1 fail; focus-call assertion failed before implementation.
+focused	collection-slot-focus-after.tsv: 4 pass / 0 fail using actual bindCollectionControls with DOM doubles; slot restoration, hero restoration, unrelated click and explicit equip/close routing retained.
+combined	collection-slot-focus-combined.tsv: 640 named cases / 48 suites / 0 failed suites. Inline game JavaScript parses.
+runtime	Retained 131-collection-slot-focus.png and 132-collection-slot-focus-small.png inspected at 1280x720 and 800x450 after prescribed helper selected slot4 Morrow. Same rebuilt slot has visible focus ring, dropdown reads4-Sau; five formation slots unchanged, count22/22, controls contained. Both logs uncaught0. Evidence remains in parent production/qa/evidence/oathbound-expanded/; isolated QA profile only.
+limits	Synthetic helper click plus screenshot shows programmatic focus restoration, not complete native Tab/keyboard/touch/screen-reader approval. No full campaign balance or performance claim. No custom player/probe added.
+boundaries	No originals, assets, README, Last Light, root fishing brief, dependencies, runtime network or real-user save changed; asset rights UNKNOWN / ships:false. Self-review only for this follow-up.
