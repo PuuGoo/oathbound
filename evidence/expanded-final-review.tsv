@@ -1,0 +1,21 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+item	observation
+scope	Palmer finalization and six-chapter campaign verification; 22 distinct adapted hero identities, exactly five active allies
+unit_regression	607 named cases; 40 suites; zero failed suites; evidence/palmer-combined-final.tsv
+palmer_focused	22 passing cases; evidence/palmer-faith-after.tsv
+faith_healing_defect	Second prayer pulse reproduced 80 versus expected82; corrected to use current attack bonus before adding the next Faith stack
+independent_review	Read-only Palmer sharing/recovery/refund/control review; Faith healing finding reproduced, fixed and independently reinspected; not a whole-game approval
+floating_heal_labels	Hide rounded-zero healing labels only; exact fractional health recovery remains unchanged
+runtime_6_4	Victory observed with Palmer; retained local screenshot101
+runtime_6_5_loss	Original Palmer level3 team defeated; no enemy difficulty changes or fabricated save progress
+runtime_6_5_earned	Four earned upgrades and evolution to Palmer level7 elite; first clear observed in screenshot103; first-clear reward624gold234experience2seals
+runtime_final_source	Corrected Faith source won boss replay in screenshot104; repeat reward254gold98experience0seals
+runtime_reload	Screenshot105 retained30of30 cleared; formation Palmer7elite/Hendrik5elite/Rowan1/Morrow1/Thane3elite;8554gold4006experience36seals
+runtime_final_prayer	Screenshot106 shows boss combat at4.6s, five allies/five enemies, Palmer praying Faith3of10; visual state inspected
+runtime_errors	Logs99through106 report uncaught0; no error or badinput observed in checked logs
+syntax	Four JavaScript modules and one inline script parsed; whitespace check passed with line-ending warnings only
+balance_limit	Campaign clears accumulated while kits evolved; not all30stages retested with the final22-kit version; not a universal team-balance claim
+input_limit	Synthetic helper inputs do not establish native focus, scrolling, touch support or human feel approval
+other_limits	Actual90secondtimeout and embedded-manifest load/memory benchmark not established
+assets	RightsUNKNOWN and ships:false remain; no new asset payload or browser profile included in this final Git changeset
+protected	No existing README, supplied original resource, LastLight or root fishing brief modified by this changeset

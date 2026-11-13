@@ -217,7 +217,7 @@ function createHeroSkillSystem({tune,rng,battle,impact,animate,emit,visual=null}
   function tickPalmer(u,b,dt){
     if(u.hp<=0||u.banishLeft>0||u.entryLeft>0)return;
     if(u.praying){if(!alive(own(u,b)).some(t=>t!==u)){u.praying=false;return;}u.prayerClock+=dt;
-      while(u.praying&&u.prayerClock+Number.EPSILON*1024>=tune.prayerInterval){u.prayerClock-=tune.prayerInterval;for(const t of within(own(u,b),u,tune.prayerRadius))impact(u,t,u.attack*tune.prayerHeal,true);u.faith=Math.min(tune.faithCap,u.faith+1);u.castCounts.powerLight=(u.castCounts.powerLight||0)+1;visual?.buff(u,u,'powerLight');if(u.faith>=tune.faithCap)u.praying=false;}
+      while(u.praying&&u.prayerClock+Number.EPSILON*1024>=tune.prayerInterval){u.prayerClock-=tune.prayerInterval;for(const t of within(own(u,b),u,tune.prayerRadius))impact(u,t,u.attack*(1+bonus(u,'attack'))*tune.prayerHeal,true);u.faith=Math.min(tune.faithCap,u.faith+1);u.castCounts.powerLight=(u.castCounts.powerLight||0)+1;visual?.buff(u,u,'powerLight');if(u.faith>=tune.faithCap)u.praying=false;}
     }
   }
   function tickDivineDebts(b,dt){if(b.divineDebts)b.divineDebts=b.divineDebts.filter(e=>{
