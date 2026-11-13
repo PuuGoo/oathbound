@@ -1,0 +1,7 @@
+PASS	bench identity upgrade spends exact costs without changing active heroes or formation
+PASS	bench evolution persists on correct identity while preserving all active levels
+PASS	equipping upgraded bench identity replaces one slot and reload retains22records and five unique slots
+PASS	equipping already active identity swaps rather than duplicates and preserves bench records
+PASS	collection equip rejects combat and covered scenes before spending saving or rebuilding
+unit_total	5
+unit_failed	0

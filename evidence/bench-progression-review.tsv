@@ -1,0 +1,8 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+item	observation
+scope	Test-only cross-module bench progression coverage; no game source, balance, UI or save-schema changes.
+focused	bench-progression-current.tsv: 5 pass / 0 fail. Actual upgrade/evolve/equipSelected/save/load functions with real expanded catalog and roster migration; storage/DOM/toast doubles only.
+contracts	Bench identity21 upgrades/evolves without changing active heroes, spends exact costs, persists its own record; equip replaces one slot; active re-equip swaps; reload retains22records and five unique slots; combat/covered-scene equip rejected.
+combined	bench-progression-combined.tsv: 645 named cases / 49 suites / 0 failed suites. No disabled test or alternate economy implementation.
+limits	In-memory storage recorder is not real browser persistence/failure or native control approval. No new player-visible implementation, so no new screenshot claimed for this test-only addition. Prior observed layouts remain131/132, not a new playtest.
+boundaries	No originals, assets, README, Last Light, root fishing brief, dependencies, runtime network or real-user save changed. Rights UNKNOWN / ships:false unchanged. Self-review only.
