@@ -1,0 +1,8 @@
+PASS	unfiltered actual renderer includes every stable identity and exactly five equip slots
+PASS	name matching trims whitespace and ignores letter case without altering formation or selection
+PASS	role filter combines with name filter rather than replacing it
+FAIL	no match gives explicit empty feedback and visible zero-of-total result count	The input did not match the regular expression /Không tìm thấy tướng phù hợp/. Input:
+FAIL	filtered count updates and clearing filters restores every identity without save mutation	Expected values to be strictly equal:
+FAIL	result status is a named polite non-atomic-interruption live status in actual markup	The expression evaluated to a falsy value:
+unit_total	3
+unit_failed	3

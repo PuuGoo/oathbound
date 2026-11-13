@@ -1,0 +1,8 @@
+PASS	unfiltered actual renderer includes every stable identity and exactly five equip slots
+PASS	name matching trims whitespace and ignores letter case without altering formation or selection
+PASS	role filter combines with name filter rather than replacing it
+PASS	no match gives explicit empty feedback and visible zero-of-total result count
+PASS	filtered count updates and clearing filters restores every identity without save mutation
+PASS	result status is a named polite non-atomic-interruption live status in actual markup
+unit_total	6
+unit_failed	0

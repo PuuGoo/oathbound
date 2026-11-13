@@ -1,0 +1,9 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+item	observation
+scope	Collection now reports visible result count against catalog total and explicit no-match guidance. Existing name/role matching, selection, five slots, equip/save and portrait loading preserved.
+test_first	collection-filter-before.tsv: 3 pass / 3 fail; existing filter behavior passed while missing result count/no-match/status contracts failed.
+focused	collection-filter-after.tsv: 6 pass / 0 fail, executing actual renderCollection with deterministic DOM doubles: all22 identities, five slots, trimmed case-insensitive name, combined role/name, zero-match text/count, reset restored list and no formation/progress mutation.
+combined	collection-filter-combined.tsv: 636 named cases / 47 suites / 0 failed suites. Inline JavaScript parses; no suppressed test.
+observed	Retained 129-collection-count.png and 130-collection-count-small.png inspected at 1280x720 and 800x450. Actual 22/22 count visible beside filter, portraits/slot buttons/actions contained; both logs uncaught 0. Parent production/qa/evidence/oathbound-expanded/ only, isolated QA profile.
+limits	No-match state and changed-filter count verified with actual-function DOM doubles, not visually captured in browser. Existing prescribed helpers do not type search text; no custom browser player/probe added. Native search typing, scrolling, keyboard focus and live-status screen-reader announcement remain unassessed. Small bounded description remains scrollable rather than fully visible.
+boundaries	No original assets, README, Last Light, root fishing brief, dependency, runtime network or real-user save changes. Asset rights UNKNOWN / ships:false unchanged. Self-review only for this follow-up.
