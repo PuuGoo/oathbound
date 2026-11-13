@@ -1,0 +1,23 @@
+FAIL	lazy renderer constructs no Image until an actual atlas draw request	Expected values to be strictly equal:
+
+2 !== 0
+
+FAIL	first requested atlas loads once and subsequent pending draws do not request again	Expected values to be strictly equal:
+
+2 !== 1
+
+FAIL	unrequested identities stay unloaded and unknown identity never creates Image	Expected values to be strictly equal:
+
+2 !== 1
+
+FAIL	failed atlas not retried every frame and reports its own name	Expected values to be strictly equal:
+
+2 !== 1
+
+PASS	default eager compatibility remains available to existing renderer clients
+FAIL	game opts into lazy atlas requests and redraws open collection portraits on load	The expression evaluated to a falsy value:
+
+  assert.ok(html.includes('createTeamSprites({tune,lazy:true'))
+
+unit_total	1
+unit_failed	5

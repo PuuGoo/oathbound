@@ -1,0 +1,18 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+item	observation
+scope	Optional on-demand Image creation for 20 team/expanded atlas identities; production opts in; default eager renderer remains compatible. No source image or embedded payload changed.
+test_first	lazy-sprites-before.tsv: 1 pass / 5 fail against eager implementation. lazy-portrait-before.tsv: 6 pass / 1 fail before canvas-only redraw helper.
+focused	lazy-sprites-after.tsv: 7 pass / 0 fail; actual renderer with Image/Canvas doubles and extracted production onload/redraw functions.
+combined	lazy-sprites-combined.tsv: 622 named cases / 44 suites / 0 failed suites. Renderer and inline game JavaScript parse successfully.
+request_policy	Metadata lookup creates no Image; first draw requests one identity once; pending/failed images do not request every frame. Failed image reports its own identity. No cache eviction or retry UI added.
+collection_callback	Only existing canvases are cleared and redrawn when an atlas loads while collection is open. No card, filter or slot-control reconstruction in callback. Closed collection is not redrawn. Unit doubles are not native keyboard approval.
+observed_121_122	Earlier onload integration: actual 6-5 combat at 4.6s and visible collection portraits; retained PNGs inspected; both uncaught 0. Superseded callback by canvas-only helper before final observations.
+observed_123	Final source collection at 1280x720: visible portraits present, five selected slots and controls contained. Retained PNG inspected; uncaught 0.
+observed_124	Final source collection at 800x450: four visible portraits, five slot buttons, filter and actions contained; detail text is small and long description partly clipped. Retained PNG inspected; uncaught 0. No claim that all cards or full description were visible.
+observed_125	Final source actual 6-5 combat at 3.6s: five allies and five enemies, all five roster portraits present, live Morrow caption and Palmer Faith 2/10. Retained PNG inspected; uncaught 0.
+evidence_location	Retained runtime PNG/TSV pairs 121-125 in production/qa/evidence/oathbound-expanded/ under the parent workspace; isolated QA profile only, not real-user save or public artifact.
+helper_attempt	First final observation attempt passed a relative dot folder; helper resolved project root and exited 1 for missing index.html. Corrected to absolute game folder; did not treat failed attempt as runtime evidence.
+previous_exit_flow	Health-details observations 118 victory, 119 immediate post-pause retreat click remained paused, 120 rendered-pause retreat returned to map with battle null and progress preserved. Inspected earlier; no game code change needed for helper click timing.
+limits	Embedded JavaScript/base64 is still parsed at startup. Rendering unfiltered collection requests every generated card, including offscreen ones. Estrilda and Belinda remain eager. No measured RAM/GPU/load-time saving; approximately 403MiB is only width*height*4 theoretical sum for 20 atlases, not actual allocation. No all-30-final-version balance or native keyboard/touch/screen-reader/human-feel approval.
+rights	Asset rights remain UNKNOWN / ships:false. No original asset edits, new asset publication, external library, dependency installation or runtime network resource.
+review	Self-review only for this follow-up; no independent performance audit.
