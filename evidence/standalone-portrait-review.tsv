@@ -1,0 +1,11 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+item	observation
+finding	Independent read-only audit found Estrilda/Belinda standalone onload only set readiness/uiDirty, so a portrait skipped while loading could remain blank after all team-atlas callbacks had already completed.
+reproduction	standalone-portrait-before.tsv: 7 pass / 2 fail. Actual extracted onload, drawCollectionPortrait and redrawCollectionPortraits with deterministic Image/Canvas doubles: zero post-load draws instead of one for each standalone atlas.
+fix	Both standalone callbacks now call the same guarded canvas-only redraw when collection is open. No card/control reconstruction, source asset change or gameplay mutation.
+focused	standalone-portrait-after.tsv: 9 pass / 0 fail, including zero pre-load draws, one after standalone completes last, and no extra redraw when dialog closed.
+combined	standalone-portrait-combined.tsv: 630 named cases / 46 suites / 0 failed suites. Includes three new catalog cross-module contracts; roster doc comment corrected, no catalog behavior change. Inline game and roster source parse successfully.
+independent_recheck	Original reviewer re-inspected both handlers/shared helper and independently ran 9 focused cases with 0 failed. Reported issue resolved; did not independently rerun combined suite or perform browser/native-focus audit.
+runtime	Final 128-standalone-portrait-final.png inspected: Estrilda and Belinda portraits visible alongside other collection portraits, five selected slots and controls contained. Log uncaught 0. Retained under parent production/qa/evidence/oathbound-expanded/; isolated QA profile only.
+limits	Browser screenshot is ordinary completion, not controlled load-last timing; deterministic actual-function tests establish that ordering regression. No native keyboard/touch/screen-reader, full final campaign balance or measured memory/load improvement claim.
+boundaries	No original images, README, Last Light, root fishing brief, asset rights, dependencies, runtime network resource or real-user save changed. Rights UNKNOWN / ships:false persists.

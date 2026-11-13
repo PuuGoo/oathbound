@@ -1,0 +1,5 @@
+PASS	every current hero resolves four distinct named skills without role-prototype fallback
+PASS	all active kit timing references resolve editable finite config records
+PASS	hero identities have isolated skill arrays and base-awakened variants do not share kits
+unit_total	3
+unit_failed	0

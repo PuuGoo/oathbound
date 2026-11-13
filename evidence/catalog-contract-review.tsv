@@ -1,0 +1,8 @@
+# PROTOTYPE - NOT FOR PRODUCTION
+item	observation
+scope	Added cross-module catalog contracts only; production behavior unchanged. Corrected stale expandCatalog doc comment that claimed all extra heroes used generic role kits.
+focused	catalog-contract-current.tsv: 3 pass / 0 fail. Actual BASE_HEROES + expandCatalog + HERO_KITS + CONFIG loaded locally.
+contracts	All 22 current identities resolve four distinct named skills without prototype fallback; active cooldown/delay keys resolve finite editable config records in bounds; every identity uses a distinct kit array, including base/awakened pairs.
+combined	catalog-contract-combined.tsv: 628 named cases / 46 suites / 0 failed suites. No failing test suppressed.
+limits	Contracts do not establish campaign balance, full official AFK mechanics, native input/accessibility or runtime performance. No player-visible change, so no new screenshot is claimed for this test-only addition.
+boundaries	No original assets, README, Last Light, root fishing brief, dependencies, runtime network or real-user save changed. Asset rights remain UNKNOWN / ships:false.

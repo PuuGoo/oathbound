@@ -1,0 +1,11 @@
+// PROTOTYPE - NOT FOR PRODUCTION
+// Cross-module catalog contracts use actual production records, not alternate combat logic.
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+const {expandCatalog}=require('../roster-system.js'),{KITS}=require('../hero-skills.js');
+const html=fs.readFileSync(path.join(__dirname,'../index.html'),'utf8'),base=vm.runInNewContext(html.match(/const BASE_HEROES=(\[[^\n]+\]);/)[1]),heroes=expandCatalog(base),context={window:{}};
+vm.createContext(context);vm.runInContext(fs.readFileSync(path.join(__dirname,'../config.js'),'utf8'),context);const config=context.window.CONFIG;
+let passed=0,failed=0;function test(name,fn){try{fn();passed++;console.log('PASS\t'+name);}catch(e){failed++;console.log('FAIL\t'+name+'\t'+e.message.split('\n')[0]);}}
+test('every current hero resolves four distinct named skills without role-prototype fallback',()=>{for(const hero of heroes){const key=hero.kitKind||hero.id,kit=KITS[key];assert.ok(!key.startsWith('prototype-'),hero.id);assert.equal(kit?.length,4,hero.id);assert.equal(new Set(kit.map(s=>s.id)).size,kit.length,hero.id);for(const s of kit){assert.ok(s.name&&s.summary,hero.id+':'+s.id);assert.ok(!s.id.startsWith('proto'),hero.id+':'+s.id);}}});
+test('all active kit timing references resolve editable finite config records',()=>{for(const hero of heroes)for(const skill of KITS[hero.kitKind||hero.id]){if(skill.passive||skill.reactive)continue;for(const field of ['cooldown','delay']){const key=skill[field],value=config[key];assert.ok(value,hero.id+':'+skill.id+':'+field);for(const k of ['value','min','max','step'])assert.ok(Number.isFinite(value[k]),key+':'+k);assert.ok(value.min<=value.value&&value.value<=value.max,key);assert.ok(value.step>0,key);}assert.ok(config[skill.cooldown].value>0,skill.id);assert.ok(config[skill.delay].value>=0,skill.id);}});
+test('hero identities have isolated skill arrays and base-awakened variants do not share kits',()=>{const selected=heroes.map(h=>KITS[h.kitKind||h.id]);assert.equal(new Set(selected).size,heroes.length);for(const id of ['thane','eluard'])assert.notEqual(KITS[id],KITS[id+'-awakened']);});
+console.log('unit_total\t'+passed);console.log('unit_failed\t'+failed);if(failed)process.exitCode=1;

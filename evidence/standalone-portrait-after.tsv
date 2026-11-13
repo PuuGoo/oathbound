@@ -1,0 +1,11 @@
+PASS	lazy renderer constructs no Image until an actual atlas draw request
+PASS	first requested atlas loads once and subsequent pending draws do not request again
+PASS	unrequested identities stay unloaded and unknown identity never creates Image
+PASS	failed atlas not retried every frame and reports its own name
+PASS	default eager compatibility remains available to existing renderer clients
+PASS	game lazy onload redraws only existing portraits without rebuilding collection controls
+PASS	closed collection is not redrawn when a pending atlas finishes loading
+PASS	lancerSheet completing last repaints its existing collection portrait without team completion
+PASS	belindaSheet completing last repaints its existing collection portrait without team completion
+unit_total	9
+unit_failed	0

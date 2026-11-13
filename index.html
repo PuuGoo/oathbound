@@ -51,12 +51,12 @@ const heroSkillSystem=window.createHeroSkillSystem({tune,rng,battle:()=>state.ba
 const teamSprites=window.createTeamSprites({tune,lazy:true,onLoad:()=>{uiDirty=true;if($('collectionDialog').open)redrawCollectionPortraits();},onError:name=>{console.error('Không tải được sprite '+name);toast('Thiếu sprite '+name);}});
 const lancerSheet=new Image();
 let lancerAssetReady=false;
-lancerSheet.onload=()=>{lancerAssetReady=true;uiDirty=true;};
+lancerSheet.onload=()=>{lancerAssetReady=true;uiDirty=true;if($('collectionDialog').open)redrawCollectionPortraits();};
 lancerSheet.onerror=()=>{console.error('Không tải được assets/mounted-lancer.png');toast('Thiếu sprite mounted-lancer.png. Hãy giữ thư mục assets cạnh index.html.');};
 lancerSheet.src=window.LANCER_SPRITE_DATA||'assets/mounted-lancer.png';
 const belindaSheet=new Image();
 let belindaAssetReady=false;
-belindaSheet.onload=()=>{belindaAssetReady=true;uiDirty=true;};
+belindaSheet.onload=()=>{belindaAssetReady=true;uiDirty=true;if($('collectionDialog').open)redrawCollectionPortraits();};
 belindaSheet.onerror=()=>{console.error('Không tải được assets/belinda-mage.png');toast('Thiếu sprite Belinda. Hãy giữ belinda-sprite.js và thư mục assets cạnh index.html.');};
 belindaSheet.src=window.BELINDA_SPRITE_DATA||'assets/belinda-mage.png';
 /** Resolve packed atlas rows and anchors live from config, without trimming animation frames. */
